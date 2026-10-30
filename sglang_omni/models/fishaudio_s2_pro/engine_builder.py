@@ -251,4 +251,5 @@ class FishS2ProEngineBuilder(TtsEngineBuilder[request_builders.S2ProSGLangReques
         return {
             "stream_output_builder": self.stream_output_builder,
             "enable_async_decode": self.enable_async_decode,
+            "async_decode_resolve_before_prefill": True,
         }
