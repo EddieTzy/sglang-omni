@@ -47,6 +47,16 @@ _DEFAULT_TOP_P = 0.8
 _DEFAULT_REP_PENALTY = 1.1
 
 
+def select_decode_state(
+    state: Tensor, batch_size: int, state_slot_ids: Tensor | None
+) -> Tensor:
+    """Select persistent state in the current packed batch order."""
+    if state_slot_ids is None:
+        return state[:batch_size]
+    else:
+        return state.index_select(0, state_slot_ids)
+
+
 class S2ProAttention(nn.Module):
     def __init__(
         self,
@@ -268,6 +278,7 @@ class S2ProSGLangTextModel(nn.Module):
         im_end_token_id: int,
         max_batch_size: int,
         rep_history_len: int = 16,
+        decode_state_capacity: int | None = None,
     ) -> None:
         """Attach audio decoder and allocate persistent GPU buffers."""
         device = self.embed_tokens.weight.device
@@ -285,9 +296,22 @@ class S2ProSGLangTextModel(nn.Module):
         self.vq_codebook_offsets = audio_decoder.codebook_offsets.to(device)
         self.vq_scale = 1.0 / math.sqrt(num_codebooks + 1)
 
+        self.fixed_decode_slots_enabled = decode_state_capacity is not None
+        state_capacity = (
+            decode_state_capacity + max_batch_size
+            if decode_state_capacity is not None
+            else max_batch_size
+        )
+        padding_start = decode_state_capacity or 0
+        # note (EddieTzy): Graph padding owns distinct slots so scatter writes cannot race with real requests.
+        self.padding_decode_slot_ids = torch.arange(
+            padding_start, padding_start + max_batch_size, device=device
+        )
+        self.decode_slot_ids = self.padding_decode_slot_ids.clone()
+
         # Input buffers: VQ codes from previous step (updated by ModelRunner)
         self.vq_codes = torch.zeros(
-            max_batch_size, num_codebooks, dtype=torch.long, device=device
+            state_capacity, num_codebooks, dtype=torch.long, device=device
         )
         self.vq_mask = torch.zeros(max_batch_size, dtype=torch.bool, device=device)
 
@@ -309,30 +333,30 @@ class S2ProSGLangTextModel(nn.Module):
 
         self.graph_top_k = _GRAPH_TOP_K
         self.sampling_temperature = torch.full(
-            (max_batch_size,), _DEFAULT_TEMPERATURE, device=device
+            (state_capacity,), _DEFAULT_TEMPERATURE, device=device
         )
         self.sampling_top_p = torch.full(
-            (max_batch_size,), _DEFAULT_TOP_P, device=device
+            (state_capacity,), _DEFAULT_TOP_P, device=device
         )
         self.sampling_top_k = torch.full(
-            (max_batch_size,), _GRAPH_TOP_K, dtype=torch.long, device=device
+            (state_capacity,), _GRAPH_TOP_K, dtype=torch.long, device=device
         )
         self.sampling_rep_penalty = torch.full(
-            (max_batch_size,), _DEFAULT_REP_PENALTY, device=device
+            (state_capacity,), _DEFAULT_REP_PENALTY, device=device
         )
         # Per-request seed (``_NO_SEED`` = unseeded) + AR step for reproducible
         # semantic-token sampling via multinomial_with_seed.
         self.sampling_seeds = torch.full(
-            (max_batch_size,), _NO_SEED, dtype=torch.long, device=device
+            (state_capacity,), _NO_SEED, dtype=torch.long, device=device
         )
-        self.step_count = torch.zeros(max_batch_size, dtype=torch.long, device=device)
-        self.ras_temperature = torch.full((max_batch_size,), 1.0, device=device)
-        self.ras_top_p = torch.full((max_batch_size,), 0.9, device=device)
+        self.step_count = torch.zeros(state_capacity, dtype=torch.long, device=device)
+        self.ras_temperature = torch.full((state_capacity,), 1.0, device=device)
+        self.ras_top_p = torch.full((state_capacity,), 0.9, device=device)
         self.prev_tokens = torch.zeros(
-            max_batch_size, rep_history_len, dtype=torch.long, device=device
+            state_capacity, rep_history_len, dtype=torch.long, device=device
         )
         self.prev_token_count = torch.zeros(
-            max_batch_size, dtype=torch.long, device=device
+            state_capacity, dtype=torch.long, device=device
         )
         self.rep_history_len = rep_history_len
         self.async_decode_state_enabled = False
@@ -348,7 +372,7 @@ class S2ProSGLangTextModel(nn.Module):
             raise RuntimeError("VQ decode buffers are not initialized")
         else:
             pass
-        return int(self.vq_codes.shape[0])
+        return int(self.output_codes.shape[0])
 
     def forward(
         self,
@@ -371,7 +395,12 @@ class S2ProSGLangTextModel(nn.Module):
             # Decode: VQ combination from persistent buffers (CUDA-graph-safe)
             if self.vq_ready:
                 bs = hidden_states.shape[0]
-                vq_codes = self.vq_codes[:bs]
+                state_slot_ids = (
+                    self.decode_slot_ids[:bs]
+                    if self.fixed_decode_slots_enabled
+                    else None
+                )
+                vq_codes = select_decode_state(self.vq_codes, bs, state_slot_ids)
                 vq_mask = self.vq_mask[:bs]
                 offset_parts = vq_codes + self.vq_codebook_offsets[None, :]
                 all_embeds = self.vq_codebook_embeddings(offset_parts)
@@ -406,7 +435,12 @@ class S2ProSGLangTextModel(nn.Module):
 
         # Codebook decode: constrained sampling + batched codebook loop
         if self.vq_ready:
-            self.decode_codebooks(logits, hidden_states)
+            state_slot_ids = (
+                self.decode_slot_ids[: logits.shape[0]]
+                if self.fixed_decode_slots_enabled
+                else None
+            )
+            self.decode_codebooks(logits, hidden_states, state_slot_ids=state_slot_ids)
         else:
             pass
 
@@ -416,7 +450,13 @@ class S2ProSGLangTextModel(nn.Module):
         )
 
     @torch.no_grad()
-    def decode_codebooks(self, logits: Tensor, hidden_states: Tensor) -> None:
+    def decode_codebooks(
+        self,
+        logits: Tensor,
+        hidden_states: Tensor,
+        *,
+        state_slot_ids: Tensor | None = None,
+    ) -> None:
         """Constrained semantic sampling + batched codebook generation.
 
         Semantic tokens use temperature/top-p sampling with RAS fallback.
@@ -428,24 +468,32 @@ class S2ProSGLangTextModel(nn.Module):
         biased_logits = logits + self.semantic_bias
         biased_logits = biased_logits.to(torch.bfloat16).to(torch.float32)
 
-        count = self.prev_token_count[:bs]
+        count = select_decode_state(self.prev_token_count, bs, state_slot_ids)
+        previous = select_decode_state(self.prev_tokens, bs, state_slot_ids)
+        step_count = select_decode_state(self.step_count, bs, state_slot_ids)
         idx_base = count.unsqueeze(1) - self.ras_range.unsqueeze(0)
         idx_base = idx_base.clamp(min=0)
-        last4 = torch.gather(self.prev_tokens[:bs], 1, idx_base)
+        last4 = torch.gather(previous, 1, idx_base)
         sorted_last4 = torch.sort(last4, dim=-1).values
         has_dup = (sorted_last4[:, 1:] == sorted_last4[:, :-1]).any(dim=-1)
         use_ras = has_dup & (count >= 4)
 
         temperature = torch.where(
-            use_ras, self.ras_temperature[:bs], self.sampling_temperature[:bs]
+            use_ras,
+            select_decode_state(self.ras_temperature, bs, state_slot_ids),
+            select_decode_state(self.sampling_temperature, bs, state_slot_ids),
         ).unsqueeze(1)
         top_p = torch.where(
-            use_ras, self.ras_top_p[:bs], self.sampling_top_p[:bs]
+            use_ras,
+            select_decode_state(self.ras_top_p, bs, state_slot_ids),
+            select_decode_state(self.sampling_top_p, bs, state_slot_ids),
         ).unsqueeze(1)
 
-        prev = self.prev_tokens[:bs]
+        prev = previous
         scores = torch.gather(biased_logits, dim=-1, index=prev)
-        rep_penalty = self.sampling_rep_penalty[:bs].unsqueeze(1)
+        rep_penalty = select_decode_state(
+            self.sampling_rep_penalty, bs, state_slot_ids
+        ).unsqueeze(1)
         penalized = torch.where(scores < 0, scores * rep_penalty, scores / rep_penalty)
         valid_mask = self.rep_positions.unsqueeze(0) < count.unsqueeze(1)
         scores = torch.where(valid_mask, penalized, scores)
@@ -454,9 +502,10 @@ class S2ProSGLangTextModel(nn.Module):
         top_k_logits, top_k_indices = torch.topk(
             biased_logits, self.graph_top_k, dim=-1
         )
+        sampling_top_k = select_decode_state(self.sampling_top_k, bs, state_slot_ids)
         effective_k = torch.where(
-            self.sampling_top_k[:bs] > 0,
-            self.sampling_top_k[:bs].clamp(max=self.graph_top_k),
+            sampling_top_k > 0,
+            sampling_top_k.clamp(max=self.graph_top_k),
             self.graph_top_k,
         )
         per_k_mask = self.top_k_positions.unsqueeze(0) >= effective_k.unsqueeze(1)
@@ -473,10 +522,10 @@ class S2ProSGLangTextModel(nn.Module):
         )
         # Seeded rows draw reproducibly from (seed, step); unseeded rows keep the
         # legacy torch.multinomial draw, so unseeded decode is unchanged.
-        seeds = self.sampling_seeds[:bs]
+        seeds = select_decode_state(self.sampling_seeds, bs, state_slot_ids)
         unseeded_choice = torch.multinomial(probs, num_samples=1)
         seeded_choice = multinomial_with_seed(
-            torch.log(probs), seeds.clamp_min(0), self.step_count[:bs]
+            torch.log(probs), seeds.clamp_min(0), step_count
         )
         choice = torch.where((seeds >= 0).unsqueeze(-1), seeded_choice, unseeded_choice)
         semantic_token = top_k_indices.gather(-1, choice).squeeze(-1)
@@ -510,23 +559,28 @@ class S2ProSGLangTextModel(nn.Module):
         self.output_semantic_ids[:bs] = semantic_token
 
         if getattr(self, "async_decode_state_enabled", False):
-            # The next launch can start before the host resolves this step.
-            self.vq_codes[:bs].copy_(self.output_codes[:bs, 1:])
-            previous = self.prev_tokens[:bs]
-            count = self.prev_token_count[:bs]
             insert_at = count.clamp(max=self.rep_history_len - 1).unsqueeze(1)
             appended = previous.scatter(1, insert_at, semantic_token.unsqueeze(1))
             shifted = torch.cat((previous[:, 1:], semantic_token.unsqueeze(1)), dim=1)
             updated = torch.where(
                 (count >= self.rep_history_len).unsqueeze(1), shifted, appended
             )
-            self.prev_tokens[:bs].copy_(
-                torch.where(is_eos.unsqueeze(1), previous, updated)
+            next_history = torch.where(is_eos.unsqueeze(1), previous, updated)
+            next_count = torch.where(
+                is_eos, count, (count + 1).clamp(max=self.rep_history_len)
             )
-            self.prev_token_count[:bs].copy_(
-                torch.where(is_eos, count, (count + 1).clamp(max=self.rep_history_len))
-            )
-            self.step_count[:bs].add_((~is_eos).long())
+            if state_slot_ids is None:
+                self.vq_codes[:bs].copy_(self.output_codes[:bs, 1:])
+                self.prev_tokens[:bs].copy_(next_history)
+                self.prev_token_count[:bs].copy_(next_count)
+                self.step_count[:bs].add_((~is_eos).long())
+            else:
+                self.vq_codes.index_copy_(0, state_slot_ids, self.output_codes[:bs, 1:])
+                self.prev_tokens.index_copy_(0, state_slot_ids, next_history)
+                self.prev_token_count.index_copy_(0, state_slot_ids, next_count)
+                self.step_count.index_copy_(
+                    0, state_slot_ids, step_count + (~is_eos).long()
+                )
         else:
             pass
 

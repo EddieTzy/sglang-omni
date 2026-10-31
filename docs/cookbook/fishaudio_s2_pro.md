@@ -62,9 +62,22 @@ sgl-omni serve \
   --port 8000
 ```
 
-This is opt-in. A decode batch enters the lookahead path only after its request rows stabilize; prefill and batch changes use synchronous decoding. Before selecting an expected prefill batch, the scheduler resolves any pending decode so selection uses the updated request state. The GPU updates the previous codebooks, semantic repetition history, and sampling step before the next forward starts. The existing overlap scheduler remains disabled.
+This is opt-in. By default, a decode batch enters the lookahead path only after its request rows stabilize; prefill and batch changes use synchronous decoding. Before selecting an expected prefill batch, the scheduler resolves any pending decode so selection uses the updated request state. The GPU updates the previous codebooks, semantic repetition history, and sampling step before the next forward starts. The existing overlap scheduler remains disabled.
 
 One decode step may already be in flight when the host observes a request completion. The effective CUDA Graph batch size can therefore shrink one step later than in synchronous decoding. Different batch sizes can produce different floating-point results and generated codes, even with the same seed.
+
+Fixed request slots let decode overlap continue when the batch shrinks or its rows move:
+
+```bash
+sgl-omni serve \
+  --model-path fishaudio/s2-pro \
+  --config examples/configs/s2pro_tts.yaml \
+  --tts_engine.factory.enable_async_decode true \
+  --tts_engine.factory.enable_fixed_decode_slots true \
+  --port 8000
+```
+
+This experimental option is disabled by default and requires CUDA with async decode enabled. GPU feedback, sampling parameters, repetition history and step counters use the request's KV-pool slot instead of its packed batch row. Graph padding uses separate slots. Prefill still drains pending decode; newly admitted or retracted requests restore their slot state during prefill, while continuing requests retain their GPU state. The existing history-dependent generic sampling exclusions still apply, and fixed slots do not guarantee identical outputs across different graph batch sizes.
 
 ## Synthesize Speech
 

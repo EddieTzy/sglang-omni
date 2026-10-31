@@ -105,6 +105,7 @@ class FishS2ProModelRunner(ModelRunner):
 
     model: S2ProSGLangTextModel
     async_enabled: bool = False
+    fixed_decode_slots_enabled: bool = False
 
     def __init__(
         self, tp_worker: ModelWorker, output_processor: SGLangOutputProcessor
@@ -113,6 +114,7 @@ class FishS2ProModelRunner(ModelRunner):
         self.semantic_begin_id = int(self.model.semantic_begin_id)
         self.semantic_end_id = int(self.model.semantic_end_id)
         self.im_end_token_id = int(self.model.im_end_token_id)
+        self.fixed_decode_slots_enabled = self.model.fixed_decode_slots_enabled
         self.last_decode_request_ids: tuple[str, ...] | None = None
 
     def lookahead_eligible(self, batch: ScheduleBatch) -> bool:
@@ -122,6 +124,10 @@ class FishS2ProModelRunner(ModelRunner):
             pass
         if self.model.vq_codes.device.type != "cuda":
             return False
+        else:
+            pass
+        if self.fixed_decode_slots_enabled:
+            return super().lookahead_eligible(batch)
         else:
             pass
         request_ids = tuple(req.rid for req in batch.reqs)
@@ -138,7 +144,15 @@ class FishS2ProModelRunner(ModelRunner):
     ) -> None:
         del schedule_batch
         self.last_decode_request_ids = None
-        self.sync_decode_state(requests)
+        if self.fixed_decode_slots_enabled:
+            self.bind_decode_slots(forward_batch)
+            for request in requests:
+                slot_index = request.data.req.kv.req_pool_idx
+                assert slot_index is not None
+                self.sync_decode_row_state(slot_index, request.data)
+                self.model.vq_codes[slot_index].zero_()
+        else:
+            self.sync_decode_state(requests)
         input_embeds = self.build_prefill_input_embeds(forward_batch, requests)
         if input_embeds is not None:
             forward_batch.input_embeds = input_embeds
@@ -162,6 +176,11 @@ class FishS2ProModelRunner(ModelRunner):
         )
         self.model.vq_mask[:batch_size].copy_(is_semantic)
 
+        if self.fixed_decode_slots_enabled:
+            self.bind_decode_slots(forward_batch)
+            return
+        else:
+            pass
         request_ids = tuple(req.request_id for req in requests)
         if (
             self.async_enabled
@@ -189,6 +208,11 @@ class FishS2ProModelRunner(ModelRunner):
                 )
             )
         self.last_decode_request_ids = request_ids
+
+    def bind_decode_slots(self, forward_batch: ForwardBatch) -> None:
+        self.model.decode_slot_ids.copy_(self.model.padding_decode_slot_ids)
+        request_count = forward_batch.req_pool_indices.shape[0]
+        self.model.decode_slot_ids[:request_count].copy_(forward_batch.req_pool_indices)
 
     def post_prefill(
         self,

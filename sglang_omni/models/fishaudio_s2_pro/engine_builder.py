@@ -90,10 +90,16 @@ class FishS2ProEngineBuilder(TtsEngineBuilder[request_builders.S2ProSGLangReques
         max_new_tokens: int,
         ras_window: int,
         enable_async_decode: bool = False,
+        enable_fixed_decode_slots: bool = False,
     ) -> None:
         self.max_new_tokens = max_new_tokens
         self.ras_window = ras_window
         self.enable_async_decode = enable_async_decode
+        self.enable_fixed_decode_slots = enable_fixed_decode_slots
+        if enable_fixed_decode_slots and not enable_async_decode:
+            raise ValueError("Fish fixed decode slots require enable_async_decode")
+        else:
+            pass
         self.adapter: S2ProTokenizerAdapter | None = None
         self.tokenizer: PreTrainedTokenizerFast | None = None
 
@@ -185,6 +191,16 @@ class FishS2ProEngineBuilder(TtsEngineBuilder[request_builders.S2ProSGLangReques
         )
         self.tokenizer = tokenizer
         self.adapter = S2ProTokenizerAdapter(tokenizer)
+        if self.enable_fixed_decode_slots:
+            if model.embed_tokens.weight.device.type != "cuda":
+                raise ValueError("Fish fixed decode slots require CUDA")
+            else:
+                pass
+            decode_state_capacity = int(
+                model_worker.model_runner.req_to_token_pool.req_to_token.shape[0]
+            )
+        else:
+            decode_state_capacity = None
         fish_bootstrap.bootstrap_text_model_for_decode(
             text_model=model,
             audio_decoder=audio_decoder,
@@ -195,6 +211,7 @@ class FishS2ProEngineBuilder(TtsEngineBuilder[request_builders.S2ProSGLangReques
             num_codebooks=num_codebooks,
             codebook_size=codebook_size,
             ras_window=self.ras_window,
+            decode_state_capacity=decode_state_capacity,
         )
         model.async_decode_state_enabled = self.enable_async_decode
 
