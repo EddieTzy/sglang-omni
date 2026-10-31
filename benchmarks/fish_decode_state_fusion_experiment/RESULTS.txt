@@ -1,3 +1,5 @@
+Historical exploratory results. Complete previous-PR evaluation is archived in standard_eval_20261031/RESULTS.txt.
+
 Fish decode state fusion experiment
 Decision: retain the implementation as an experiment; do not open a new PR.
 The isolated state update is faster, but serving benefit is not reproducible.

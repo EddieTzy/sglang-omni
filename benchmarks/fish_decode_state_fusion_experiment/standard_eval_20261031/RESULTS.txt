@@ -1,0 +1,49 @@
+Fish decode state fusion: complete previous-PR evaluation
+
+Comparison: the existing async implementation versus integer-only state fusion, with async decode enabled in both arms.
+Baseline commit: 912c198e30ebe7a352b57b8184596a8d788fa404. Fusion commit: cd3fa72721c861811b345fae963362250d01f122.
+Model: fishaudio/s2-pro@1de9996b6be38b745688de084d87a5633f714e4e. Dataset: zhaochenyang20/seed-tts-eval-arrow@27f4c1adee83b5b29b7c4b375f6b976324bda308.
+Generation hardware: one RTX 5090 32 GB, physical GPU 1; separate GPU 2 scores quality after all generation finishes.
+Both suites use ABBA order: reference r1, fused r1, fused r2, reference r2.
+BF16, 4 GiB KV cache, torch.compile disabled, engine random_seed=42, model sampling defaults, no request seed.
+Natural-length streaming voice cloning using each sample reference; max_new_tokens=2048 is a safety cap.
+
+Canonical serving sweep:
+Maximum running requests=64; graph batches=[1,2,4,8,16,32,64]; concurrency-matched warmup before each point.
+Concurrency 1: 64 measured requests per arm, one pass. Concurrency 16: 512 per pass, two passes per arm. Concurrency 64: 1088 per pass, two passes per arm.
+All 6528 measured requests succeeded. No length-limit hits; every final terminal outcome and completion count was observed.
+Missing usage metadata is recovered outside the fixed timed window with the identical previous-PR client; no model or benchmark-source instrumentation.
+Concurrency 1:
+  reference: frame/s=[65.1]; requests/s=[0.812]; audio seconds/s=[3.021]; TTFA p50 seconds=[0.66]; TTFA p95 seconds=[0.6855]; mean latency seconds=[1.232]; mean RTF=[0.3279].
+  fused: frame/s=[65.0]; requests/s=[0.811]; audio seconds/s=[3.02]; TTFA p50 seconds=[0.6567]; TTFA p95 seconds=[0.6826]; mean latency seconds=[1.232]; mean RTF=[0.3279].
+  Two-pass mean changes (single pass for c1): frame/s=-0.154%; requests/s=-0.123%; TTFA p50=-0.500%; mean latency=+0.000%.
+Concurrency 16:
+  reference: frame/s=[445.9, 438.6]; requests/s=[5.217, 5.156]; audio seconds/s=[20.709, 20.37]; TTFA p50 seconds=[1.4862, 1.5185]; TTFA p95 seconds=[1.733, 1.7652]; mean latency seconds=[3.037, 3.072]; mean RTF=[0.7697, 0.7826].
+  fused: frame/s=[442.7, 442.0]; requests/s=[5.193, 5.197]; audio seconds/s=[20.561, 20.524]; TTFA p50 seconds=[1.5116, 1.5019]; TTFA p95 seconds=[1.716, 1.7408]; mean latency seconds=[3.048, 3.043]; mean RTF=[0.7737, 0.7749].
+  Two-pass mean changes (single pass for c1): frame/s=+0.023%; requests/s=+0.164%; TTFA p50=+0.293%; mean latency=-0.295%.
+Concurrency 64:
+  reference: frame/s=[721.0, 715.0]; requests/s=[8.419, 8.371]; audio seconds/s=[33.485, 33.205]; TTFA p50 seconds=[3.6385, 3.6469]; TTFA p95 seconds=[7.3468, 7.4178]; mean latency seconds=[7.528, 7.564]; mean RTF=[1.942, 1.9548].
+  fused: frame/s=[716.0, 714.8]; requests/s=[8.365, 8.356]; audio seconds/s=[33.253, 33.196]; TTFA p50 seconds=[3.7067, 3.6031]; TTFA p95 seconds=[7.2289, 7.3796]; mean latency seconds=[7.586, 7.569]; mean RTF=[1.9573, 1.9526].
+  Two-pass mean changes (single pass for c1): frame/s=-0.362%; requests/s=-0.411%; TTFA p50=+0.335%; mean latency=+0.417%.
+
+Full English/Chinese quality:
+Streaming concurrency=16; maximum running requests=16; graph batches=[1,2,4,8,16]; 16 warmup requests before each language/pass.
+Full EN=1088 and ZH=2020 samples, two passes per arm; 12432 measured syntheses. All samples are retained, including error-rate outliers.
+English metric is raw corpus WER, Chinese metric is raw corpus CER; Qwen3-ASR-1.7B. Speaker similarity is WavLM cosine x 100.
+en/reference: error-rate percent=[1.063384409277401, 1.0131457757682325]; SIM=[64.81592670083046, 64.95339503884315]; ASR evaluated=2176, skipped=0; SIM evaluated=2176, skipped=0.
+en/fused: error-rate percent=[0.9796533534287867, 1.1136230427865694]; SIM=[64.89080464314011, 64.61614135170684]; ASR evaluated=2176, skipped=0; SIM evaluated=2176, skipped=0.
+en fused-minus-reference: error rate=+0.0084 percentage points; SIM=-0.1312 points.
+en descriptive 95% paired-utterance bootstrap interval (2000 resamples, both passes retained): error-rate delta=[-0.0906243925886355, 0.12162950988145624] percentage points; SIM delta=[-0.337357678867, 0.07345288989736738] points. This is not a formal non-inferiority test.
+zh/reference: error-rate percent=[0.6601050489755359, 0.6743008564803862]; SIM=[74.03965648046814, 74.05966861271622]; ASR evaluated=4040, skipped=0; SIM evaluated=4040, skipped=0.
+zh/fused: error-rate percent=[0.664836984810486, 0.6908626319027114]; SIM=[74.05855665679024, 74.06131839941044]; ASR evaluated=4040, skipped=0; SIM evaluated=4040, skipped=0.
+zh fused-minus-reference: error rate=+0.0106 percentage points; SIM=+0.0103 points.
+zh descriptive 95% paired-utterance bootstrap interval (2000 resamples, both passes retained): error-rate delta=[-0.03181849835893126, 0.05450043274758362] percentage points; SIM delta=[-0.0914238962324539, 0.11221268191195949] points. This is not a formal non-inferiority test.
+
+Interpretation:
+The isolated state update reduces 16 GPU operations to one kernel. Serving and quality findings above use the complete previous-PR workload and supersede the earlier fixed-128-token exploratory comparison for this workload.
+All per-pass results are disclosed. The shared host, stochastic sampling and dynamic batching limit interpretation of small throughput differences; two passes are descriptive evidence rather than a formal performance confidence interval.
+No new PR is opened by this archive. The implementation and evidence remain on the experimental branch.
+
+Validation of the measured implementation: 232 CPU tests, 3 GPU tests, 2050 eager/CUDA graph state transitions, torch.compile integration, and 12 matched real-model code sequences passed; pre-commit --all-files passed.
+Per-request WAVs, speed results, transcripts, SIM scores, source fingerprints, GPU telemetry and exact local runner/configuration files are retained in the local standard_eval_20261031 experiment directory.
+This GitHub archive includes aggregate results, per-pass CSVs, quality audits and provenance hashes. It does not upload generated audio or dataset audio.

@@ -1,0 +1,100 @@
+{
+  "base_commit": "912c198e30ebe7a352b57b8184596a8d788fa404",
+  "fused_commit": "cd3fa72721c861811b345fae963362250d01f122",
+  "checkpoint": "fishaudio/s2-pro@1de9996b6be38b745688de084d87a5633f714e4e",
+  "dataset": "zhaochenyang20/seed-tts-eval-arrow@27f4c1adee83b5b29b7c4b375f6b976324bda308",
+  "comparison": "async decode enabled in both arms; only integer state fusion differs",
+  "tts_physical_gpu": 1,
+  "score_physical_gpu": 2,
+  "arms": [
+    [
+      "reference",
+      1
+    ],
+    [
+      "fused",
+      1
+    ],
+    [
+      "fused",
+      2
+    ],
+    [
+      "reference",
+      2
+    ]
+  ],
+  "performance": {
+    "stream": true,
+    "workloads": [
+      [
+        1,
+        64
+      ],
+      [
+        16,
+        512
+      ],
+      [
+        64,
+        1088
+      ]
+    ],
+    "second_pass_concurrencies": [
+      16,
+      64
+    ],
+    "expected_measured_requests": 6528,
+    "max_running_requests": 64,
+    "cuda_graph_bs": [
+      1,
+      2,
+      4,
+      8,
+      16,
+      32,
+      64
+    ]
+  },
+  "quality": {
+    "stream": true,
+    "concurrency": 16,
+    "languages": {
+      "en": 1088,
+      "zh": 2020
+    },
+    "expected_measured_requests": 12432,
+    "max_running_requests": 16,
+    "cuda_graph_bs": [
+      1,
+      2,
+      4,
+      8,
+      16
+    ]
+  },
+  "sampling": {
+    "temperature": 0.8,
+    "top_p": 0.8,
+    "top_k": 30,
+    "repetition_penalty": 1.1,
+    "engine_random_seed": 42,
+    "request_seed": null,
+    "max_new_tokens": 2048
+  },
+  "warmup": "concurrency-matched before every measured point",
+  "scoring": "Qwen3-ASR-1.7B raw corpus EN WER/ZH CER and WavLM cosine x 100; all samples retained",
+  "timing": "All generation arms sequential on GPU 1; GPU scoring starts after generation finishes",
+  "usage_recovery": "Identical old-PR client; missing terminal usage recovered outside the timed window",
+  "preflight": "64 streaming samples at concurrency 64 for each arm",
+  "sha256": {
+    "client.py": "2ac7566f15fd5b6ae3fbd97c7e093e6596741d529c4c8fa7eb826aec1dc2e027",
+    "performance.yaml": "e1d96499cb50f0c7dd41b725050e60c58ca2d973490bbabc2414b9bf0b0723b2",
+    "quality.yaml": "c10953cb773e05872cafd4aec9eed33eeab4b3ca1714d58632e25a86d19f2899",
+    "asr.yaml": "85578af086248bed3ca679cb924cef2c031da7fd18fd7ed18831f06a40f19c25",
+    "summarize_quality.py": "dda6ad3ef49220411cc1afcaa172c7b34804435abbadd4bfa2203804f3c82e00",
+    "audit_quality.py": "92ffa95b485a58f65ac400a413f39b3b1d9eda274f97986156b0d37e8f9190f9",
+    "summarize_performance.py": "74643c37ab62d4613e1f62e254747adf542b661e1530e96cceef89c70c8209cc",
+    "run_standard.py": "a1a1c91469668c5cf7b1a45e8f4d4a64b1607f1caa50c8a62168c822f75421f1"
+  }
+}
