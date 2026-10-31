@@ -15,6 +15,7 @@ from sglang.srt.layers.sampler import multinomial_with_seed
 from torch import Tensor, nn
 from transformers import PretrainedConfig
 
+from sglang_omni.models.fishaudio_s2_pro.decode_state import advance_decode_state
 from sglang_omni.vendor.sglang.core import ForwardBatch
 from sglang_omni.vendor.sglang.layers import (
     MergedColumnParallelLinear,
@@ -510,23 +511,37 @@ class S2ProSGLangTextModel(nn.Module):
         self.output_semantic_ids[:bs] = semantic_token
 
         if getattr(self, "async_decode_state_enabled", False):
-            # The next launch can start before the host resolves this step.
-            self.vq_codes[:bs].copy_(self.output_codes[:bs, 1:])
-            previous = self.prev_tokens[:bs]
-            count = self.prev_token_count[:bs]
-            insert_at = count.clamp(max=self.rep_history_len - 1).unsqueeze(1)
-            appended = previous.scatter(1, insert_at, semantic_token.unsqueeze(1))
-            shifted = torch.cat((previous[:, 1:], semantic_token.unsqueeze(1)), dim=1)
-            updated = torch.where(
-                (count >= self.rep_history_len).unsqueeze(1), shifted, appended
-            )
-            self.prev_tokens[:bs].copy_(
-                torch.where(is_eos.unsqueeze(1), previous, updated)
-            )
-            self.prev_token_count[:bs].copy_(
-                torch.where(is_eos, count, (count + 1).clamp(max=self.rep_history_len))
-            )
-            self.step_count[:bs].add_((~is_eos).long())
+            if self.output_codes.is_cuda:
+                advance_decode_state(
+                    self.output_codes[:bs],
+                    self.prev_tokens,
+                    self.prev_token_count,
+                    self.step_count,
+                    self.vq_codes,
+                    im_end_token_id=self.im_end_token_id,
+                )
+            else:
+                # The next launch can start before the host resolves this step.
+                self.vq_codes[:bs].copy_(self.output_codes[:bs, 1:])
+                previous = self.prev_tokens[:bs]
+                count = self.prev_token_count[:bs]
+                insert_at = count.clamp(max=self.rep_history_len - 1).unsqueeze(1)
+                appended = previous.scatter(1, insert_at, semantic_token.unsqueeze(1))
+                shifted = torch.cat(
+                    (previous[:, 1:], semantic_token.unsqueeze(1)), dim=1
+                )
+                updated = torch.where(
+                    (count >= self.rep_history_len).unsqueeze(1), shifted, appended
+                )
+                self.prev_tokens[:bs].copy_(
+                    torch.where(is_eos.unsqueeze(1), previous, updated)
+                )
+                self.prev_token_count[:bs].copy_(
+                    torch.where(
+                        is_eos, count, (count + 1).clamp(max=self.rep_history_len)
+                    )
+                )
+                self.step_count[:bs].add_((~is_eos).long())
         else:
             pass
 

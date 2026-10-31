@@ -1,0 +1,7 @@
+{
+  "precommit_exit_code": 0,
+  "cpu_regressions_exit_code": 0,
+  "gpu_regressions_exit_code": 0,
+  "final_kernel_exit_code": 0,
+  "diff_check_exit_code": 0
+}

@@ -1,0 +1,146 @@
+[
+  {
+    "seed": 101,
+    "reference_shape": [
+      11,
+      128
+    ],
+    "fused_shape": [
+      11,
+      128
+    ],
+    "equal": true
+  },
+  {
+    "seed": 102,
+    "reference_shape": [
+      11,
+      128
+    ],
+    "fused_shape": [
+      11,
+      128
+    ],
+    "equal": true
+  },
+  {
+    "seed": 103,
+    "reference_shape": [
+      11,
+      128
+    ],
+    "fused_shape": [
+      11,
+      128
+    ],
+    "equal": true
+  },
+  {
+    "seed": 104,
+    "reference_shape": [
+      11,
+      128
+    ],
+    "fused_shape": [
+      11,
+      128
+    ],
+    "equal": true
+  },
+  {
+    "seed": 201,
+    "reference_shape": [
+      11,
+      32
+    ],
+    "fused_shape": [
+      11,
+      32
+    ],
+    "equal": true
+  },
+  {
+    "seed": 202,
+    "reference_shape": [
+      11,
+      64
+    ],
+    "fused_shape": [
+      11,
+      64
+    ],
+    "equal": true
+  },
+  {
+    "seed": 203,
+    "reference_shape": [
+      11,
+      96
+    ],
+    "fused_shape": [
+      11,
+      96
+    ],
+    "equal": true
+  },
+  {
+    "seed": 204,
+    "reference_shape": [
+      11,
+      128
+    ],
+    "fused_shape": [
+      11,
+      128
+    ],
+    "equal": true
+  },
+  {
+    "seed": 301,
+    "reference_shape": [
+      11,
+      128
+    ],
+    "fused_shape": [
+      11,
+      128
+    ],
+    "equal": true
+  },
+  {
+    "seed": 401,
+    "reference_shape": [
+      11,
+      50
+    ],
+    "fused_shape": [
+      11,
+      50
+    ],
+    "equal": true
+  },
+  {
+    "seed": 501,
+    "reference_shape": [
+      11,
+      59
+    ],
+    "fused_shape": [
+      11,
+      59
+    ],
+    "equal": true
+  },
+  {
+    "seed": 602,
+    "reference_shape": [
+      11,
+      128
+    ],
+    "fused_shape": [
+      11,
+      128
+    ],
+    "equal": true
+  }
+]

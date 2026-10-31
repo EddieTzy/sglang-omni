@@ -1,0 +1,500 @@
+{
+  "controlled_comparison": [
+    {
+      "concurrency": 1,
+      "reference_rps": 0.5493912308361814,
+      "fused_rps": 0.5493986765382578,
+      "throughput_change_pct": 0.0013552640920622139,
+      "reference_latency_seconds": 1.8197842561057769,
+      "fused_latency_seconds": 1.8197393386314313,
+      "latency_change_pct": -0.002468285687973193
+    },
+    {
+      "concurrency": 4,
+      "reference_rps": 1.7775545149710148,
+      "fused_rps": 1.78005404305154,
+      "throughput_change_pct": 0.1406161138504336,
+      "reference_latency_seconds": 2.249426734594939,
+      "fused_latency_seconds": 2.246228406302786,
+      "latency_change_pct": -0.14218415043105725
+    },
+    {
+      "concurrency": 8,
+      "reference_rps": 3.038172874386218,
+      "fused_rps": 3.019429690388942,
+      "throughput_change_pct": -0.6169228932064064,
+      "reference_latency_seconds": 2.6305268933453285,
+      "fused_latency_seconds": 2.632393259264063,
+      "latency_change_pct": 0.07095026944814453
+    }
+  ],
+  "all_arms": [
+    {
+      "arm": "reference1",
+      "concurrency": 1,
+      "rps_mean": 0.560466293768204,
+      "rps_stdev": 0.0005397893538451104,
+      "rps_samples": [
+        0.5610189595452141,
+        0.5604395464376064,
+        0.5599403753217916
+      ],
+      "latency_mean_seconds": 1.7838237555891585
+    },
+    {
+      "arm": "reference1",
+      "concurrency": 4,
+      "rps_mean": 1.861308476856418,
+      "rps_stdev": 0.00047291510362470183,
+      "rps_samples": [
+        1.8608568886363461,
+        1.8612683767114284,
+        1.8618001652214795
+      ],
+      "latency_mean_seconds": 2.148200837934079
+    },
+    {
+      "arm": "reference1",
+      "concurrency": 8,
+      "rps_mean": 3.1479555633337646,
+      "rps_stdev": 0.015734937615597765,
+      "rps_samples": [
+        3.1588831025491633,
+        3.155062789183414,
+        3.129920798268716
+      ],
+      "latency_mean_seconds": 2.530974183464423
+    },
+    {
+      "arm": "fused1",
+      "concurrency": 1,
+      "rps_mean": 0.5497822882613785,
+      "rps_stdev": 0.0002761141021492551,
+      "rps_samples": [
+        0.5500989826908719,
+        0.5496558389486257,
+        0.549592043144638
+      ],
+      "latency_mean_seconds": 1.8184757077445586
+    },
+    {
+      "arm": "fused1",
+      "concurrency": 4,
+      "rps_mean": 1.781778318927633,
+      "rps_stdev": 0.0005640167226086307,
+      "rps_samples": [
+        1.7818472497329052,
+        1.7823047022313747,
+        1.7811830048186192
+      ],
+      "latency_mean_seconds": 2.24404943130988
+    },
+    {
+      "arm": "fused1",
+      "concurrency": 8,
+      "rps_mean": 3.0035525600941777,
+      "rps_stdev": 0.01543781933033999,
+      "rps_samples": [
+        3.012545714852556,
+        3.012385222801922,
+        2.985726742628055
+      ],
+      "latency_mean_seconds": 2.6335581167562245
+    },
+    {
+      "arm": "fused2",
+      "concurrency": 1,
+      "rps_mean": 0.5494830046709375,
+      "rps_stdev": 0.00012018752564666098,
+      "rps_samples": [
+        0.5493579127739544,
+        0.5495975991958068,
+        0.5494935020430513
+      ],
+      "latency_mean_seconds": 1.8194889641987781
+    },
+    {
+      "arm": "fused2",
+      "concurrency": 4,
+      "rps_mean": 1.7794450815108633,
+      "rps_stdev": 0.001235352522674719,
+      "rps_samples": [
+        1.778121204390005,
+        1.7796470115040575,
+        1.7805670286385276
+      ],
+      "latency_mean_seconds": 2.2470067397419675
+    },
+    {
+      "arm": "fused2",
+      "concurrency": 8,
+      "rps_mean": 3.019291864981251,
+      "rps_stdev": 0.016477956901227424,
+      "rps_samples": [
+        3.0056715172012436,
+        3.037608022462519,
+        3.0145960552799904
+      ],
+      "latency_mean_seconds": 2.635191210662015
+    },
+    {
+      "arm": "reference2",
+      "concurrency": 1,
+      "rps_mean": 0.5488423502938223,
+      "rps_stdev": 0.0001571973111057995,
+      "rps_samples": [
+        0.5486630682190992,
+        0.5489565768529622,
+        0.5489074058094057
+      ],
+      "latency_mean_seconds": 1.821623819511539
+    },
+    {
+      "arm": "reference2",
+      "concurrency": 4,
+      "rps_mean": 1.7794349611650107,
+      "rps_stdev": 0.0009551638492982519,
+      "rps_samples": [
+        1.7789706132803316,
+        1.7805335205645814,
+        1.7788007496501188
+      ],
+      "latency_mean_seconds": 2.2470955095486715
+    },
+    {
+      "arm": "reference2",
+      "concurrency": 8,
+      "rps_mean": 2.994550136329493,
+      "rps_stdev": 0.0159243590819639,
+      "rps_samples": [
+        2.9959692569674337,
+        3.0097174391966983,
+        2.977963712824346
+      ],
+      "latency_mean_seconds": 2.642686823984453
+    },
+    {
+      "arm": "reference3",
+      "concurrency": 1,
+      "rps_mean": 0.5493912308361814,
+      "rps_stdev": 0.000345459226072813,
+      "rps_samples": [
+        0.5497528529631142,
+        0.5493562421127843,
+        0.5490645974326457
+      ],
+      "latency_mean_seconds": 1.8197842561057769
+    },
+    {
+      "arm": "reference3",
+      "concurrency": 4,
+      "rps_mean": 1.7775545149710148,
+      "rps_stdev": 0.0014456372236716078,
+      "rps_samples": [
+        1.778515387442071,
+        1.778256199733202,
+        1.7758919577377712
+      ],
+      "latency_mean_seconds": 2.249426734594939
+    },
+    {
+      "arm": "reference3",
+      "concurrency": 8,
+      "rps_mean": 3.038172874386218,
+      "rps_stdev": 0.0020478919426431957,
+      "rps_samples": [
+        3.03584927192019,
+        3.03895452421039,
+        3.039714827028074
+      ],
+      "latency_mean_seconds": 2.6305268933453285
+    },
+    {
+      "arm": "fused3",
+      "concurrency": 1,
+      "rps_mean": 0.5493986765382578,
+      "rps_stdev": 0.00022886721774140716,
+      "rps_samples": [
+        0.5496257719027271,
+        0.5491680776922779,
+        0.5494021800197684
+      ],
+      "latency_mean_seconds": 1.8197393386314313
+    },
+    {
+      "arm": "fused3",
+      "concurrency": 4,
+      "rps_mean": 1.78005404305154,
+      "rps_stdev": 0.001428216820969758,
+      "rps_samples": [
+        1.7784241001574623,
+        1.7806516026561334,
+        1.781086426341024
+      ],
+      "latency_mean_seconds": 2.246228406302786
+    },
+    {
+      "arm": "fused3",
+      "concurrency": 8,
+      "rps_mean": 3.019429690388942,
+      "rps_stdev": 0.018615534530966815,
+      "rps_samples": [
+        3.008095030965832,
+        3.0092798696714476,
+        3.0409141705295473
+      ],
+      "latency_mean_seconds": 2.632393259264063
+    }
+  ],
+  "microbenchmark": {
+    "correctness_transitions": 2050,
+    "benchmark": [
+      {
+        "batch": 1,
+        "reference_us": 12.493599951267242,
+        "fused_us": 0.7519999984651804,
+        "samples_us": {
+          "reference": [
+            12.483837455511093,
+            12.482212483882904,
+            12.492600083351135,
+            12.493599951267242,
+            12.495037168264389,
+            12.495800107717514,
+            12.495837360620499,
+            12.493599951267242
+          ],
+          "fused": [
+            0.7519999984651804,
+            0.7519999984651804,
+            0.7528000045567751,
+            0.7519999984651804,
+            0.7528000045567751,
+            0.7536000106483698,
+            0.7519999984651804,
+            0.7519999984651804
+          ]
+        },
+        "saved_us": 11.741599952802062
+      },
+      {
+        "batch": 4,
+        "reference_us": 13.084319233894348,
+        "fused_us": 0.7803999818861485,
+        "samples_us": {
+          "reference": [
+            13.081437349319458,
+            13.081400096416473,
+            13.084638118743896,
+            13.0840003490448,
+            13.085436820983887,
+            13.082949817180634,
+            13.084638118743896,
+            13.087199628353119
+          ],
+          "fused": [
+            0.7780000101774931,
+            0.7807999849319458,
+            0.7815999910235405,
+            0.7832000032067299,
+            0.7788000162690878,
+            0.7776000071316957,
+            0.7815999910235405,
+            0.7799999788403511
+          ]
+        },
+        "saved_us": 12.3039192520082
+      },
+      {
+        "batch": 8,
+        "reference_us": 13.245218247175217,
+        "fused_us": 0.800000037997961,
+        "samples_us": {
+          "reference": [
+            13.245037198066711,
+            13.245399296283722,
+            13.244637846946716,
+            13.244587182998657,
+            13.243837654590607,
+            13.246199488639832,
+            13.245399296283722,
+            13.246999680995941
+          ],
+          "fused": [
+            0.7996000349521637,
+            0.800000037997961,
+            0.800000037997961,
+            0.800000037997961,
+            0.800000037997961,
+            0.7996000349521637,
+            0.800000037997961,
+            0.800000037997961
+          ]
+        },
+        "saved_us": 12.445218209177256
+      },
+      {
+        "batch": 16,
+        "reference_us": 14.056175202131271,
+        "fused_us": 0.81599997356534,
+        "samples_us": {
+          "reference": [
+            14.056187868118286,
+            14.056187868118286,
+            14.056399464607239,
+            14.055413007736206,
+            14.055399596691132,
+            14.056213200092316,
+            14.056162536144257,
+            14.054638147354126
+          ],
+          "fused": [
+            0.81599997356534,
+            0.81599997356534,
+            0.81599997356534,
+            0.81599997356534,
+            0.81599997356534,
+            0.81599997356534,
+            0.81599997356534,
+            0.81599997356534
+          ]
+        },
+        "saved_us": 13.240175228565931
+      },
+      {
+        "batch": 32,
+        "reference_us": 13.9066182076931,
+        "fused_us": 0.848000030964613,
+        "samples_us": {
+          "reference": [
+            13.906636834144592,
+            13.905799388885498,
+            13.905037939548492,
+            13.905799388885498,
+            13.907437026500702,
+            13.906799256801605,
+            13.908974826335907,
+            13.906599581241608
+          ],
+          "fused": [
+            0.848000030964613,
+            0.848000030964613,
+            0.848000030964613,
+            0.848000030964613,
+            0.848000030964613,
+            0.848000030964613,
+            0.848000030964613,
+            0.848000030964613
+          ]
+        },
+        "saved_us": 13.058618176728487
+      },
+      {
+        "batch": 64,
+        "reference_us": 14.151400327682495,
+        "fused_us": 0.848000030964613,
+        "samples_us": {
+          "reference": [
+            14.149825274944305,
+            14.15141224861145,
+            14.15058821439743,
+            14.151400327682495,
+            14.150600135326385,
+            14.151400327682495,
+            14.15223777294159,
+            14.151400327682495
+          ],
+          "fused": [
+            0.848000030964613,
+            0.848000030964613,
+            0.848000030964613,
+            0.848000030964613,
+            0.848000030964613,
+            0.848000030964613,
+            0.8484000340104103,
+            0.848000030964613
+          ]
+        },
+        "saved_us": 13.303400296717882
+      },
+      {
+        "batch": 128,
+        "reference_us": 14.457374811172485,
+        "fused_us": 0.8543999865651131,
+        "samples_us": {
+          "reference": [
+            14.45741206407547,
+            14.45821225643158,
+            14.45741206407547,
+            14.457349479198456,
+            14.45656269788742,
+            14.457400143146515,
+            14.455799758434296,
+            14.456599950790405
+          ],
+          "fused": [
+            0.8543999865651131,
+            0.8576000109314919,
+            0.8543999865651131,
+            0.8535999804735184,
+            0.8543999865651131,
+            0.8551999926567078,
+            0.8559999987483025,
+            0.8527999743819237
+          ]
+        },
+        "saved_us": 13.602974824607372
+      }
+    ],
+    "torch": "2.14.1+cu130",
+    "gpu": "NVIDIA GeForce RTX 5090",
+    "reference_kernel_count": 16,
+    "reference_kernels": [
+      "void at::native::elementwise_kernel<128, 2, at::native::gpu_kernel_impl_nocast<at::native::direct_copy_kernel_cuda(at::TensorIteratorBase&)::{lambda()#3}::operator()() const::{lambda()#4}::operator()() const::{lambda(long)#1}>(at::TensorIteratorBase&, at::native::direct_copy_kernel_cuda(at::TensorIteratorBase&)::{lambda()#3}::operator()() const::{lambda()#4}::operator()() const::{lambda(long)#1} const&)::{lambda(int)#1}>(int, at::native::gpu_kernel_impl_nocast<at::native::direct_copy_kernel_cuda(at::TensorIteratorBase&)::{lambda()#3}::operator()() const::{lambda()#4}::operator()() const::{lambda(long)#1}>(at::TensorIteratorBase&, at::native::direct_copy_kernel_cuda(at::TensorIteratorBase&)::{lambda()#3}::operator()() const::{lambda()#4}::operator()() const::{lambda(long)#1} const&)::{lambda(int)#1})",
+      "void at::native::vectorized_elementwise_kernel<2, at::native::(anonymous namespace)::launch_clamp_scalar(at::TensorIteratorBase&, c10::Scalar, c10::Scalar, at::native::detail::ClampLimits)::{lambda()#1}::operator()() const::{lambda()#4}::operator()() const::{lambda(long)#1}, std::array<char*, 2ul>, false>(int, at::native::(anonymous namespace)::launch_clamp_scalar(at::TensorIteratorBase&, c10::Scalar, c10::Scalar, at::native::detail::ClampLimits)::{lambda()#1}::operator()() const::{lambda()#4}::operator()() const::{lambda(long)#1}, std::array<char*, 2ul>)",
+      "Memcpy DtoD (Device -> Device)",
+      "void at::native::_scatter_gather_elementwise_kernel<128, 8, at::native::_cuda_scatter_gather_internal_kernel<true, at::native::OpaqueType<8>, long>::operator()<at::native::TensorAssign>(at::TensorIterator&, long, long, long, at::native::TensorAssign const&)::{lambda(int)#1}>(int, at::native::_cuda_scatter_gather_internal_kernel<true, at::native::OpaqueType<8>, long>::operator()<at::native::TensorAssign>(at::TensorIterator&, long, long, long, at::native::TensorAssign const&)::{lambda(int)#1})",
+      "void at::native::(anonymous namespace)::CatArrayBatchedCopy<at::native::(anonymous namespace)::OpaqueType<8u>, unsigned int, 2, 64, 64>(at::native::(anonymous namespace)::OpaqueType<8u>*, at::native::(anonymous namespace)::CatArrInputTensorMetadata<at::native::(anonymous namespace)::OpaqueType<8u>, unsigned int, 64, 64>, at::native::(anonymous namespace)::TensorSizeStride<unsigned int, 4u>, int, unsigned int)",
+      "void at::native::vectorized_elementwise_kernel<4, at::native::compare_scalar_kernel<long>(at::TensorIteratorBase&, at::native::(anonymous namespace)::OpType, long)::{lambda(long)#1}, std::array<char*, 2ul>, false>(int, at::native::compare_scalar_kernel<long>(at::TensorIteratorBase&, at::native::(anonymous namespace)::OpType, long)::{lambda(long)#1}, std::array<char*, 2ul>)",
+      "void at::native::elementwise_kernel<128, 2, at::native::gpu_kernel_impl_nocast<at::native::(anonymous namespace)::where_kernel_impl(at::TensorIterator&)::{lambda()#1}::operator()() const::{lambda()#4}::operator()() const::{lambda(bool, unsigned long, unsigned long)#1}>(at::TensorIteratorBase&, at::native::(anonymous namespace)::where_kernel_impl(at::TensorIterator&)::{lambda()#1}::operator()() const::{lambda()#4}::operator()() const::{lambda(bool, unsigned long, unsigned long)#1} const&)::{lambda(int)#1}>(int, at::native::gpu_kernel_impl_nocast<at::native::(anonymous namespace)::where_kernel_impl(at::TensorIterator&)::{lambda()#1}::operator()() const::{lambda()#4}::operator()() const::{lambda(bool, unsigned long, unsigned long)#1}>(at::TensorIteratorBase&, at::native::(anonymous namespace)::where_kernel_impl(at::TensorIterator&)::{lambda()#1}::operator()() const::{lambda()#4}::operator()() const::{lambda(bool, unsigned long, unsigned long)#1} const&)::{lambda(int)#1})",
+      "void at::native::elementwise_kernel<128, 2, at::native::gpu_kernel_impl_nocast<at::native::(anonymous namespace)::where_kernel_impl(at::TensorIterator&)::{lambda()#1}::operator()() const::{lambda()#4}::operator()() const::{lambda(bool, unsigned long, unsigned long)#1}>(at::TensorIteratorBase&, at::native::(anonymous namespace)::where_kernel_impl(at::TensorIterator&)::{lambda()#1}::operator()() const::{lambda()#4}::operator()() const::{lambda(bool, unsigned long, unsigned long)#1} const&)::{lambda(int)#1}>(int, at::native::gpu_kernel_impl_nocast<at::native::(anonymous namespace)::where_kernel_impl(at::TensorIterator&)::{lambda()#1}::operator()() const::{lambda()#4}::operator()() const::{lambda(bool, unsigned long, unsigned long)#1}>(at::TensorIteratorBase&, at::native::(anonymous namespace)::where_kernel_impl(at::TensorIterator&)::{lambda()#1}::operator()() const::{lambda()#4}::operator()() const::{lambda(bool, unsigned long, unsigned long)#1} const&)::{lambda(int)#1})",
+      "Memcpy DtoD (Device -> Device)",
+      "void at::native::vectorized_elementwise_kernel<2, at::native::CUDAFunctorOnSelf_add<long>, std::array<char*, 2ul>, false>(int, at::native::CUDAFunctorOnSelf_add<long>, std::array<char*, 2ul>)",
+      "void at::native::vectorized_elementwise_kernel<2, at::native::(anonymous namespace)::launch_clamp_scalar(at::TensorIteratorBase&, c10::Scalar, c10::Scalar, at::native::detail::ClampLimits)::{lambda()#1}::operator()() const::{lambda()#4}::operator()() const::{lambda(long)#1}, std::array<char*, 2ul>, false>(int, at::native::(anonymous namespace)::launch_clamp_scalar(at::TensorIteratorBase&, c10::Scalar, c10::Scalar, at::native::detail::ClampLimits)::{lambda()#1}::operator()() const::{lambda()#4}::operator()() const::{lambda(long)#1}, std::array<char*, 2ul>)",
+      "void at::native::vectorized_elementwise_kernel<2, at::native::(anonymous namespace)::where_kernel_impl(at::TensorIterator&)::{lambda()#1}::operator()() const::{lambda()#4}::operator()() const::{lambda(bool, unsigned long, unsigned long)#1}, std::array<char*, 4ul>, false>(int, at::native::(anonymous namespace)::where_kernel_impl(at::TensorIterator&)::{lambda()#1}::operator()() const::{lambda()#4}::operator()() const::{lambda(bool, unsigned long, unsigned long)#1}, std::array<char*, 4ul>)",
+      "Memcpy DtoD (Device -> Device)",
+      "void at::native::vectorized_elementwise_kernel<4, at::native::bitwise_not_kernel_cuda(at::TensorIteratorBase&)::{lambda(bool)#1}, std::array<char*, 2ul>, false>(int, at::native::bitwise_not_kernel_cuda(at::TensorIteratorBase&)::{lambda(bool)#1}, std::array<char*, 2ul>)",
+      "void at::native::unrolled_elementwise_kernel<at::native::direct_copy_kernel_cuda(at::TensorIteratorBase&)::{lambda()#3}::operator()() const::{lambda()#4}::operator()() const::{lambda(long)#1}, std::array<char*, 2ul>, 4, TrivialOffsetCalculator<1, unsigned int>, TrivialOffsetCalculator<1, unsigned int>, at::native::memory::LoadWithCast<1>, at::native::memory::StoreWithCast<1> >(int, at::native::direct_copy_kernel_cuda(at::TensorIteratorBase&)::{lambda()#3}::operator()() const::{lambda()#4}::operator()() const::{lambda(long)#1}, std::array<char*, 2ul>, TrivialOffsetCalculator<1, unsigned int>, TrivialOffsetCalculator<1, unsigned int>, at::native::memory::LoadWithCast<1>, at::native::memory::StoreWithCast<1>)",
+      "void at::native::vectorized_elementwise_kernel<2, at::native::CUDAFunctor_add<long>, std::array<char*, 3ul>, false>(int, at::native::CUDAFunctor_add<long>, std::array<char*, 3ul>)"
+    ],
+    "fused_kernel_count": 1,
+    "fused_kernels": [
+      "advance_decode_state_kernel"
+    ]
+  },
+  "settings": {
+    "base_commit": "912c198e30ebe7a352b57b8184596a8d788fa404",
+    "gpu": "RTX 5090 32 GB, physical GPU 1",
+    "async_decode": true,
+    "max_running_requests": 8,
+    "cuda_graph_bs": [
+      1,
+      2,
+      4,
+      8
+    ],
+    "requests_per_round": 16,
+    "rounds_per_point_per_arm": 3,
+    "max_new_tokens": 128,
+    "streaming_performance": false
+  },
+  "measured_successes": 864,
+  "measured_requests": 864,
+  "limitations": [
+    "This is an exploratory fixed-128-token non-streaming workload, not the canonical Seed-TTS serving sweep.",
+    "The first reference arm was faster than subsequent arms; all raw arms are retained, and the effect is not attributed to fusion.",
+    "The final reference3/fused3 pair has the same restart, correctness, EOS/reference/cancel probes, and performance warmup order.",
+    "Run-to-run and dynamic-batch numerical variation must not be mistaken for integer-state mismatch or a quality evaluation.",
+    "Full English/Chinese quality evaluation and concurrency 16/64 canonical sweeps require a reproducible incremental serving gain first."
+  ]
+}

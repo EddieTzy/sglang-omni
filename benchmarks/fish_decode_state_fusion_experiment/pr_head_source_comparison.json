@@ -1,0 +1,8 @@
+{
+  "measured_base_commit": "912c198e30ebe7a352b57b8184596a8d788fa404",
+  "downloaded_pr_head": "fa12815e1efbadc41e878d63960e4a04bcc514a7",
+  "baseline_model_sha256": "ed20762a90ae17c2f6d8e0b7ea2abf152b9c5de54a94f3f7c3a2382a0fae7f0a",
+  "downloaded_model_sha256": "ed20762a90ae17c2f6d8e0b7ea2abf152b9c5de54a94f3f7c3a2382a0fae7f0a",
+  "whole_model_identical": true,
+  "note": "Source comparison only. Serving measurements used the measured base commit."
+}

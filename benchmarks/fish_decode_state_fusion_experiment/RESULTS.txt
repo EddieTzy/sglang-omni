@@ -1,0 +1,52 @@
+Fish decode state fusion experiment
+Decision: retain the implementation as an experiment; do not open a new PR.
+The isolated state update is faster, but serving benefit is not reproducible.
+
+Hardware: physical GPU 1, NVIDIA RTX 5090 32 GB, PCI 00000000:62:00.0.
+Measured base: 912c198e30ebe7a352b57b8184596a8d788fa404.
+Implementation: one integer-only Triton kernel for VQ feedback, repetition
+history/count, and step count. Sampling and RNG remain in the original model.
+CPU execution retains the existing PyTorch update.
+
+Serving workload: non-streaming, fixed maximum 128 new tokens, 16 requests
+per round, 3 rounds per concurrency and arm, async decode enabled,
+max_running_requests=8, CUDA graph batch sizes [1,2,4,8].
+Exploratory ABBA: reference1, fused1, fused2, reference2.
+Controlled follow-up: fresh reference3 and fused3 with the same correctness,
+EOS/reference/cancel probes and performance warmup order.
+
+Controlled serving comparison (means over three rounds):
+  concurrency 1: reference 0.549391 rps, fused 0.549399 rps, change +0.0014%
+  concurrency 4: reference 1.777555 rps, fused 1.780054 rps, change +0.1406%
+  concurrency 8: reference 3.038173 rps, fused 3.019430 rps, change -0.6169%
+All measured throughput requests: 864/864 succeeded.
+
+Correctness: 2050 eager/CUDA graph state transitions; torch.compile checks;
+12 matched real-model semantic/codebook sequences bitwise equal, including
+natural EOS, reference audio and recovery after cancellation.
+Cancellation probes drained pending requests and accepted follow-up requests.
+See controlled_code_equivalence.json and regression logs for details.
+
+Validation exit codes: {"cpu_regressions_exit_code": 0, "diff_check_exit_code": 0, "final_kernel_exit_code": 0, "gpu_regressions_exit_code": 0, "precommit_exit_code": 0}
+See cpu_regressions.log, gpu_regressions.log, final_kernel.log and precommit.log.
+
+Interpretation and limits:
+The first reference arm was faster than all subsequent arms; reversal did
+not recover that speed. Its cause was not isolated, so this is not evidence
+of a fusion regression. All raw arms and GPU telemetry are retained.
+An initial extra-case comparison used different preceding request histories;
+matched ordering was therefore rerun, producing the 12 equal sequences above.
+The microbenchmark excludes sampling and measures only the state update.
+This is not a full Seed-TTS quality evaluation or canonical streaming sweep.
+Full EN/ZH quality and streaming concurrency 1/16/64 were not run, because
+the exploratory serving results did not establish a reproducible gain.
+No new PR was opened and no test files were committed.
+
+Artifacts: final_results.json, validation_results.json, micro_results.json,
+fish_decode_state_fusion.patch, measured_source/, results/, codes/,
+pr_head_source_comparison.json, and the isolated source checkout in src/.
+
+GitHub archive: experimental implementation and summarized evidence only.
+Raw request/audio artifacts and complete logs remain in the local experiment.
+No claim of reproducible end-to-end speedup or PR readiness is made.
+Regression results: 232 CPU and 3 GPU tests passed.
