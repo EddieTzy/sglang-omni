@@ -1,0 +1,1 @@
+Semantic-only output projection experiment. Complete evaluation: standard_eval_20261031/RESULTS.txt.

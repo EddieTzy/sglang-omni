@@ -1,0 +1,49 @@
+Fish semantic-only output projection: complete previous-PR evaluation
+
+Comparison: full vocabulary versus semantic and EOS projection; both arms use upstream default synchronous decode.
+Baseline commit: 7537f89baca54d19de2b7afe5465bb614c10b625. Semantic-head commit: 05ba25c7e443d05a934d7b74f3b47b220a8eab8f.
+Model: fishaudio/s2-pro@1de9996b6be38b745688de084d87a5633f714e4e. Dataset: zhaochenyang20/seed-tts-eval-arrow@27f4c1adee83b5b29b7c4b375f6b976324bda308.
+Generation hardware: one RTX 5090 32 GB, physical GPU 1; separate GPU 2 scores quality after all generation finishes.
+Both suites use ABBA order: reference r1, head r1, head r2, reference r2.
+BF16, 4 GiB KV cache, torch.compile disabled, engine random_seed=42, model sampling defaults, no request seed.
+Natural-length streaming voice cloning using each sample reference; max_new_tokens=2048 is a safety cap.
+
+Canonical serving sweep:
+Maximum running requests=64; graph batches=[1,2,4,8,16,32,64]; concurrency-matched warmup before each point.
+Concurrency 1: 64 measured requests per arm, one pass. Concurrency 16: 512 per pass, two passes per arm. Concurrency 64: 1088 per pass, two passes per arm.
+All 6528 measured requests succeeded. No length-limit hits; every final terminal outcome and completion count was observed.
+Missing usage metadata is recovered outside the fixed timed window with the identical previous-PR client; no model or benchmark-source instrumentation.
+Concurrency 1:
+  reference: frame/s=[60.4]; requests/s=[0.76]; audio seconds/s=[2.805]; TTFA p50 seconds=[0.8649]; TTFA p95 seconds=[0.921]; mean latency seconds=[1.316]; mean RTF=[0.3522].
+  head: frame/s=[62.2]; requests/s=[0.782]; audio seconds/s=[2.889]; TTFA p50 seconds=[0.8305]; TTFA p95 seconds=[0.8711]; mean latency seconds=[1.278]; mean RTF=[0.3418].
+  Two-pass mean changes (single pass for c1): frame/s=+2.980%; requests/s=+2.895%; TTFA p50=-3.977%; mean latency=-2.888%.
+Concurrency 16:
+  reference: frame/s=[422.8, 403.2]; requests/s=[4.946, 4.716]; audio seconds/s=[19.635, 18.724]; TTFA p50 seconds=[1.5855, 1.6501]; TTFA p95 seconds=[1.8556, 2.0166]; mean latency seconds=[3.21, 3.364]; mean RTF=[0.8138, 0.8535].
+  head: frame/s=[424.3, 410.8]; requests/s=[4.977, 4.824]; audio seconds/s=[19.702, 19.076]; TTFA p50 seconds=[1.5891, 1.6242]; TTFA p95 seconds=[1.8524, 1.9314]; mean latency seconds=[3.184, 3.288]; mean RTF=[0.8104, 0.8372].
+  Two-pass mean changes (single pass for c1): frame/s=+1.102%; requests/s=+1.439%; TTFA p50=-0.689%; mean latency=-1.552%.
+Concurrency 64:
+  reference: frame/s=[679.8, 676.9]; requests/s=[7.941, 7.924]; audio seconds/s=[31.571, 31.433]; TTFA p50 seconds=[3.6451, 3.6264]; TTFA p95 seconds=[7.9039, 8.4171]; mean latency seconds=[7.956, 7.976]; mean RTF=[2.0468, 2.0623].
+  head: frame/s=[687.8, 672.8]; requests/s=[8.042, 7.857]; audio seconds/s=[31.942, 31.246]; TTFA p50 seconds=[3.6298, 3.6946]; TTFA p95 seconds=[7.7647, 8.0938]; mean latency seconds=[7.863, 8.049]; mean RTF=[2.0275, 2.0754].
+  Two-pass mean changes (single pass for c1): frame/s=+0.287%; requests/s=+0.214%; TTFA p50=+0.727%; mean latency=-0.126%.
+
+Full English/Chinese quality:
+Streaming concurrency=16; maximum running requests=16; graph batches=[1,2,4,8,16]; 16 warmup requests before each language/pass.
+Full EN=1088 and ZH=2020 samples, two passes per arm; 12432 measured syntheses. All samples are retained, including error-rate outliers.
+English metric is raw corpus WER, Chinese metric is raw corpus CER; Qwen3-ASR-1.7B. Speaker similarity is WavLM cosine x 100.
+en/reference: error-rate percent=[0.9712802478439253, 1.0550113036925395]; SIM=[64.63191272055401, 64.71021069148007]; ASR evaluated=2176, skipped=0; SIM evaluated=2176, skipped=0.
+en/head: error-rate percent=[1.1136230427865694, 1.0717575148622625]; SIM=[64.7012123938869, 64.98400312486817]; ASR evaluated=2176, skipped=0; SIM evaluated=2176, skipped=0.
+en head-minus-reference: error rate=+0.0795 percentage points; SIM=+0.1715 points.
+en descriptive 95% paired-utterance bootstrap interval (2000 resamples, both passes retained): error-rate delta=[-0.0042098438844883485, 0.16257282527987105] percentage points; SIM delta=[-0.0212451863595668, 0.36155836928416674] points. This is not a formal non-inferiority test.
+zh/reference: error-rate percent=[0.664836984810486, 0.667202952727961]; SIM=[74.13065886733555, 74.07142033152061]; ASR evaluated=4040, skipped=0; SIM evaluated=4040, skipped=0.
+zh/head: error-rate percent=[0.7121563431599868, 0.6340794018833105]; SIM=[74.07085817167075, 74.1404316647218]; ASR evaluated=4040, skipped=0; SIM evaluated=4040, skipped=0.
+zh head-minus-reference: error rate=+0.0071 percentage points; SIM=+0.0046 points.
+zh descriptive 95% paired-utterance bootstrap interval (2000 resamples, both passes retained): error-rate delta=[-0.03092627790790777, 0.04475898954487761] percentage points; SIM delta=[-0.09860554603066775, 0.1062680919571678] points. This is not a formal non-inferiority test.
+
+Interpretation:
+The tied output head projects only semantic and EOS weight rows, then reconstructs vocabulary-shaped logits with negative infinity elsewhere. The existing sampler and original token IDs are unchanged. Live weight views preserve weight updates; the full shared input embedding remains resident. No async decode, fixed slots or state-update fusion is enabled.
+All per-pass results are disclosed. The shared host, stochastic sampling and dynamic batching limit interpretation of small throughput differences; two passes are descriptive evidence rather than a formal performance confidence interval.
+Evidence is archived on experiment/fish-semantic-head. The clean implementation branch perf/fish-semantic-head is reserved for upstream review.
+
+Validation: 183 CPU regressions; 60 projection checks including tied/untied output, live weight updates, CUDA Graph replay, full output shape and no-VQ fallback. Real-model semantic and all 10 codebooks match bitwise in 12/12 cases for dynamic graph buckets and 12/12 for fixed batch 8, including EOS, reference audio and cancellation recovery. Full-tree pre-commit passed. Formal serving runs use the uninstrumented CLI.
+Per-request WAVs, speed results, transcripts, SIM scores, source fingerprints, GPU telemetry and exact local runner/configuration files are retained in the local standard_eval_20261031 experiment directory.
+This GitHub archive includes aggregate results, per-pass CSVs, quality audits and provenance hashes. It does not upload generated audio or dataset audio.
