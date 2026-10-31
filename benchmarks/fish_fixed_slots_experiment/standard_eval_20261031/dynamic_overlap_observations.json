@@ -1,0 +1,38 @@
+{
+  "packed_dynamic": {
+    "decode_launches": 1051,
+    "dynamic_batch_changes": 12,
+    "dynamic_lookahead_launches": 0,
+    "lookahead_launches": 1038,
+    "fixed_decode_slots_enabled": false,
+    "fish_async_query_hit": 22,
+    "fish_async_query_miss": 1016
+  },
+  "slots_dynamic": {
+    "decode_launches": 1051,
+    "dynamic_batch_changes": 12,
+    "dynamic_lookahead_launches": 12,
+    "lookahead_launches": 1051,
+    "fixed_decode_slots_enabled": true,
+    "fish_async_query_hit": 25,
+    "fish_async_query_miss": 1026
+  },
+  "packed_full": {
+    "decode_launches": 1045,
+    "dynamic_batch_changes": 12,
+    "dynamic_lookahead_launches": 0,
+    "lookahead_launches": 1032,
+    "fixed_decode_slots_enabled": false,
+    "fish_async_query_hit": 22,
+    "fish_async_query_miss": 1010
+  },
+  "slots_full": {
+    "decode_launches": 1045,
+    "dynamic_batch_changes": 12,
+    "dynamic_lookahead_launches": 12,
+    "lookahead_launches": 1045,
+    "fixed_decode_slots_enabled": true,
+    "fish_async_query_hit": 24,
+    "fish_async_query_miss": 1021
+  }
+}

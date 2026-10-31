@@ -1,0 +1,49 @@
+Fish fixed request slots: complete previous-PR evaluation
+
+Comparison: packed-row GPU feedback versus fixed request state slots, with async decode enabled in both arms.
+Baseline commit: fa12815e1efbadc41e878d63960e4a04bcc514a7. Fixed-slot commit: 1eec61b941f4088117e2aea104b0dc2c27dbf9ce.
+Model: fishaudio/s2-pro@1de9996b6be38b745688de084d87a5633f714e4e. Dataset: zhaochenyang20/seed-tts-eval-arrow@27f4c1adee83b5b29b7c4b375f6b976324bda308.
+Generation hardware: one RTX 5090 32 GB, physical GPU 1; separate GPU 2 scores quality after all generation finishes.
+Both suites use ABBA order: reference r1, slots r1, slots r2, reference r2.
+BF16, 4 GiB KV cache, torch.compile disabled, engine random_seed=42, model sampling defaults, no request seed.
+Natural-length streaming voice cloning using each sample reference; max_new_tokens=2048 is a safety cap.
+
+Canonical serving sweep:
+Maximum running requests=64; graph batches=[1,2,4,8,16,32,64]; concurrency-matched warmup before each point.
+Concurrency 1: 64 measured requests per arm, one pass. Concurrency 16: 512 per pass, two passes per arm. Concurrency 64: 1088 per pass, two passes per arm.
+All 6528 measured requests succeeded. No length-limit hits; every final terminal outcome and completion count was observed.
+Missing usage metadata is recovered outside the fixed timed window with the identical previous-PR client; no model or benchmark-source instrumentation.
+Concurrency 1:
+  reference: frame/s=[65.1]; requests/s=[0.812]; audio seconds/s=[3.023]; TTFA p50 seconds=[0.6618]; TTFA p95 seconds=[0.6713]; mean latency seconds=[1.231]; mean RTF=[0.3276].
+  slots: frame/s=[64.8]; requests/s=[0.809]; audio seconds/s=[3.01]; TTFA p50 seconds=[0.669]; TTFA p95 seconds=[0.6846]; mean latency seconds=[1.237]; mean RTF=[0.3286].
+  Two-pass mean changes (single pass for c1): frame/s=-0.461%; requests/s=-0.369%; TTFA p50=+1.088%; mean latency=+0.487%.
+Concurrency 16:
+  reference: frame/s=[444.2, 439.9]; requests/s=[5.212, 5.163]; audio seconds/s=[20.628, 20.43]; TTFA p50 seconds=[1.4978, 1.4962]; TTFA p95 seconds=[1.6812, 1.7762]; mean latency seconds=[3.037, 3.065]; mean RTF=[0.7713, 0.7786].
+  slots: frame/s=[455.3, 453.1]; requests/s=[5.326, 5.303]; audio seconds/s=[21.144, 21.04]; TTFA p50 seconds=[1.4478, 1.4582]; TTFA p95 seconds=[1.6568, 1.7059]; mean latency seconds=[2.975, 2.978]; mean RTF=[0.7522, 0.7538].
+  Two-pass mean changes (single pass for c1): frame/s=+2.749%; requests/s=+2.448%; TTFA p50=-2.939%; mean latency=-2.442%.
+Concurrency 64:
+  reference: frame/s=[715.5, 711.2]; requests/s=[8.363, 8.302]; audio seconds/s=[33.229, 33.028]; TTFA p50 seconds=[3.6618, 3.6356]; TTFA p95 seconds=[7.1367, 7.4085]; mean latency seconds=[7.578, 7.617]; mean RTF=[1.9537, 1.959].
+  slots: frame/s=[717.1, 716.4]; requests/s=[8.376, 8.369]; audio seconds/s=[33.302, 33.272]; TTFA p50 seconds=[4.3126, 4.4409]; TTFA p95 seconds=[7.3887, 7.2773]; mean latency seconds=[7.571, 7.563]; mean RTF=[1.9805, 1.9762].
+  Two-pass mean changes (single pass for c1): frame/s=+0.477%; requests/s=+0.480%; TTFA p50=+19.954%; mean latency=-0.401%.
+
+Full English/Chinese quality:
+Streaming concurrency=16; maximum running requests=16; graph batches=[1,2,4,8,16]; 16 warmup requests before each language/pass.
+Full EN=1088 and ZH=2020 samples, two passes per arm; 12432 measured syntheses. All samples are retained, including error-rate outliers.
+English metric is raw corpus WER, Chinese metric is raw corpus CER; Qwen3-ASR-1.7B. Speaker similarity is WavLM cosine x 100.
+en/reference: error-rate percent=[1.0550113036925395, 1.0298919869379553]; SIM=[64.78772724376006, 64.76744183722664]; ASR evaluated=2176, skipped=0; SIM evaluated=2176, skipped=0.
+en/slots: error-rate percent=[1.0550113036925395, 1.004772670183371]; SIM=[64.60910703680095, 64.45729863994262]; ASR evaluated=2176, skipped=0; SIM evaluated=2176, skipped=0.
+en slots-minus-reference: error rate=-0.0126 percentage points; SIM=-0.2444 points.
+en descriptive 95% paired-utterance bootstrap interval (2000 resamples, both passes retained): error-rate delta=[-0.0916756440010205, 0.06207890412364088] percentage points; SIM delta=[-0.43955104706041953, -0.0417286110713202] points. This is not a formal non-inferiority test.
+zh/reference: error-rate percent=[0.6364453698007855, 0.6388113377182605]; SIM=[74.11257123852721, 74.0968084656366]; ASR evaluated=4040, skipped=0; SIM evaluated=4040, skipped=0.
+zh/slots: error-rate percent=[0.6837647281502863, 0.6624710168930109]; SIM=[74.01622983535918, 73.94907179162054]; ASR evaluated=4040, skipped=0; SIM evaluated=4040, skipped=0.
+zh slots-minus-reference: error rate=+0.0355 percentage points; SIM=-0.1220 points.
+zh descriptive 95% paired-utterance bootstrap interval (2000 resamples, both passes retained): error-rate delta=[-0.008316176292109635, 0.07940406746991759] percentage points; SIM delta=[-0.22247613371008693, -0.022084321409168866] points. This is not a formal non-inferiority test.
+
+Interpretation:
+Request state remains in its KV-pool slot when packed rows change; graph padding has disjoint slots. Prefill still drains pending decode and restores admitted or retracted requests. No state-update fusion is enabled in this comparison.
+All per-pass results are disclosed. The shared host, stochastic sampling and dynamic batching limit interpretation of small throughput differences; two passes are descriptive evidence rather than a formal performance confidence interval.
+No new PR is opened by this archive. The implementation and evidence remain on the experimental branch.
+
+Validation: 232 CPU and 3 GPU regressions; 1866 state-row comparisons, 384 delayed snapshot resolves, 366 row changes, 12 slot reuses, 6 retraction restores and 12 EOS checks; 12/12 real-model code arrays match in each of dynamic-bucket and fixed-batch-8 controls. All repository checks passed. In the instrumented correctness run, 12/12 dynamic row changes used lookahead with slots versus 0/12 in the baseline; formal performance runs use the uninstrumented CLI.
+Per-request WAVs, speed results, transcripts, SIM scores, source fingerprints, GPU telemetry and exact local runner/configuration files are retained in the local standard_eval_20261031 experiment directory.
+This GitHub archive includes aggregate results, per-pass CSVs, quality audits and provenance hashes. It does not upload generated audio or dataset audio.

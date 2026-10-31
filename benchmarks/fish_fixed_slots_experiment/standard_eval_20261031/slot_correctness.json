@@ -1,0 +1,16 @@
+{
+  "checked_state_rows": 1866,
+  "snapshot_resolves": 384,
+  "dynamic_row_changes": 366,
+  "slot_reuses": 12,
+  "eos_checks": 12,
+  "restored_retractions": 6,
+  "graph_buckets": [
+    1,
+    2,
+    4,
+    8
+  ],
+  "always_full_graph_control": true,
+  "state": "passed"
+}

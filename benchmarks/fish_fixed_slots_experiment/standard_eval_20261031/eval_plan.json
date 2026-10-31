@@ -1,0 +1,101 @@
+{
+  "base_commit": "fa12815e1efbadc41e878d63960e4a04bcc514a7",
+  "slots_commit": "1eec61b941f4088117e2aea104b0dc2c27dbf9ce",
+  "checkpoint": "fishaudio/s2-pro@1de9996b6be38b745688de084d87a5633f714e4e",
+  "dataset": "zhaochenyang20/seed-tts-eval-arrow@27f4c1adee83b5b29b7c4b375f6b976324bda308",
+  "comparison": "Packed request state versus fixed KV-pool state slots; async decode enabled in both arms; state fusion disabled",
+  "tts_physical_gpu": 1,
+  "score_physical_gpu": 2,
+  "arms": [
+    [
+      "reference",
+      1
+    ],
+    [
+      "slots",
+      1
+    ],
+    [
+      "slots",
+      2
+    ],
+    [
+      "reference",
+      2
+    ]
+  ],
+  "performance": {
+    "stream": true,
+    "workloads": [
+      [
+        1,
+        64
+      ],
+      [
+        16,
+        512
+      ],
+      [
+        64,
+        1088
+      ]
+    ],
+    "second_pass_concurrencies": [
+      16,
+      64
+    ],
+    "expected_measured_requests": 6528,
+    "max_running_requests": 64,
+    "cuda_graph_bs": [
+      1,
+      2,
+      4,
+      8,
+      16,
+      32,
+      64
+    ]
+  },
+  "quality": {
+    "stream": true,
+    "concurrency": 16,
+    "languages": {
+      "en": 1088,
+      "zh": 2020
+    },
+    "expected_measured_requests": 12432,
+    "max_running_requests": 16,
+    "cuda_graph_bs": [
+      1,
+      2,
+      4,
+      8,
+      16
+    ]
+  },
+  "sampling": {
+    "temperature": 0.8,
+    "top_p": 0.8,
+    "top_k": 30,
+    "repetition_penalty": 1.1,
+    "engine_random_seed": 42,
+    "request_seed": null,
+    "max_new_tokens": 2048
+  },
+  "warmup": "concurrency-matched before every measured point",
+  "scoring": "Qwen3-ASR-1.7B raw corpus EN WER/ZH CER and WavLM cosine x 100; all samples retained",
+  "timing": "All generation arms sequential on GPU 1; GPU scoring starts after generation finishes",
+  "usage_recovery": "Identical old-PR client; missing terminal usage recovered outside the timed window",
+  "preflight": "64 streaming samples at concurrency 64 for each arm",
+  "sha256": {
+    "client.py": "2ac7566f15fd5b6ae3fbd97c7e093e6596741d529c4c8fa7eb826aec1dc2e027",
+    "performance.yaml": "e1d96499cb50f0c7dd41b725050e60c58ca2d973490bbabc2414b9bf0b0723b2",
+    "quality.yaml": "c10953cb773e05872cafd4aec9eed33eeab4b3ca1714d58632e25a86d19f2899",
+    "asr.yaml": "85578af086248bed3ca679cb924cef2c031da7fd18fd7ed18831f06a40f19c25",
+    "run_standard.py": "68dca451a8e4ecb26ac87c362ba15af24b09beeb11dc8f4c8a1344c8b3bde65b",
+    "summarize_performance.py": "0754601403b8ffbf0f4068677058d2846dc8e8d26ca195a7a9422ff6416c7c62",
+    "summarize_quality.py": "9410f69d272b9d06a1f6169784c9bb228a107226d7399f2864337d77bf7d3b8d",
+    "audit_quality.py": "f069a004d704d63cfef8a5a0b386688e97db756c1e795f1702b79cabbd2ed790"
+  },
+  "fixed_slot_option": "tts_engine.factory.enable_fixed_decode_slots=true for the slots arm only"
+}
