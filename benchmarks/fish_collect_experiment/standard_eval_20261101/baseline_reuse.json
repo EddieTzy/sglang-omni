@@ -1,0 +1,10 @@
+{
+  "reference_id": "7537f89baca5-baaaaa3c378b",
+  "fresh_short_calibration_drift_percent": {
+    "1": 0.33057851239670644,
+    "16": -0.6003320986077365,
+    "64": -2.6482873851294997
+  },
+  "fresh_performance_reference_required": true,
+  "quality_reference_reused": true
+}

@@ -1,0 +1,5 @@
+{
+  "precommit_exit_code": 0,
+  "cpu_regressions_exit_code": 0,
+  "property_checks_exit_code": 0
+}

@@ -1,0 +1,25 @@
+{
+  "passed": true,
+  "request_state_comparisons": 15360,
+  "steps_per_device": 120,
+  "devices": [
+    "cpu",
+    "cuda"
+  ],
+  "batch_sizes": [
+    1,
+    2,
+    4,
+    8,
+    16,
+    64
+  ],
+  "covers": [
+    "row reorder",
+    "model output buffer reuse",
+    "EOS",
+    "inflight chunks",
+    "full history window",
+    "retained output lifetime"
+  ]
+}

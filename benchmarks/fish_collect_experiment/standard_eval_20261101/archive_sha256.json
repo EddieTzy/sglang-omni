@@ -1,0 +1,17 @@
+{
+  "RESULTS.txt": "758e54ae7b0b636af4dd4d71ff7d3726c8676bcb24eff9919eea00ce18ccd9a1",
+  "eval_plan.json": "65b063a684410472e1819a206b6565f1091895aa0285ff3938bcde5063b4a88e",
+  "baseline_reuse.json": "2d980691182c5962468534ee20662ad2d89cfc8b55aa3b507ac10b4910d11674",
+  "performance_summary.json": "36a6451b93c546fc9a720c20ab07f7aa174c3d01d9947490a40cb3d63a6a083b",
+  "performance_summary.csv": "39fadda2280e733b6e5c960c5b1d5ed83b5d0130dc47773debba4b3c7ae3f7e0",
+  "full_summary.json": "9fcdc1cb8b076b736602efccc5333951f9b48221c26365238fd2e7144ddb1c50",
+  "full_summary.csv": "9acb7f320afd02a3343a9db752b96d04f84d9bca4b7ff3df3d3810b1d585bc9a",
+  "quality_audit.json": "922e08f84267f670a95be39cdedae399e0ff23f14b16057f889371dc9b062e7d",
+  "runtime_versions.json": "91d362ac505fbd4fcdb219805576f3df76ca096e5fbd174bb2e5b1ccd3ba0d5a",
+  "model_manifest.json": "b8f9d06cc43f2232a74e06494f36be27d7f1cda5cc36f3fd844d01ec3d62e0a8",
+  "validation_results.json": "31fd6d68837b656e782d444fad906189565cafca0e11a79976c6d9a4c1141047",
+  "real_code_equivalence.json": "f797e0ab749a8eede2e77ac3677b09ac0b9d356352e4f6128ecfe383d787279b",
+  "property_checks.json": "ea1df76fbe1a4d3397c6e4b3ef285b56e4bb5b08aa2fe56a197bb5168eade9a1",
+  "pilot_summary.json": "7ad0ccc37b54761fe82879f8a55b78dd7848801046b90cac6d401265e245d9c5",
+  "dataset_manifest_sha256.json": "78a2ea5dddb0fe48345538f7398adc2a2adbb1502d1074da4d9f8195c96b996b"
+}

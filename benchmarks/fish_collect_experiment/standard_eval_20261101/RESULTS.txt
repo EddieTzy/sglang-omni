@@ -1,0 +1,65 @@
+Fish optimization evaluation: collect
+Baseline 7537f89baca54d19de2b7afe5465bb614c10b625; candidate aabc535aff64d6c872f3adb17244830c91de5ce6.
+UTC archived: 2026-11-01T13:02:37.159309+00:00
+One RTX5090 32GB generates on physical GPU1; quality scored separately on GPU2. No H100 claims.
+Upstream default synchronous decode. BF16, 4GiB KV cache, torch.compile disabled, engine random_seed42, model default sampling without per-request seeds.
+Natural-length streaming voice cloning with per-sample reference; max_new_tokens2048 safety cap; matching warmup.
+Performance c1=64 requests/arm; c16=512/pass and c64=1088/pass, two passes/arm. EN1088+ZH2020 quality samples, two passes/arm.
+Baseline reuse: {"fresh_performance_reference_required": true, "fresh_short_calibration_drift_percent": {"1": 0.33057851239670644, "16": -0.6003320986077365, "64": -2.6482873851294997}, "quality_reference_reused": true, "reference_id": "7537f89baca5-baaaaa3c378b"}
+Fresh ABBA performance reference and candidate; cached two-pass quality reference and two fresh candidate quality passes.
+
+Fresh short ABBA pilot (candidate change percent):
+{
+  "1": {
+    "output_throughput": -0.49423393739703725,
+    "throughput_qps": -0.4787961696306353,
+    "audio_throughput_s_per_s": -0.4787234042553212,
+    "audio_ttfp_median_s": 1.989498249708288,
+    "audio_ttfp_p95_s": 0.862212827501807,
+    "latency_mean_s": 0.47514619883040066,
+    "rtf_mean": 0.185953368616798
+  },
+  "16": {
+    "output_throughput": 1.2721665381649983,
+    "throughput_qps": 1.515595971448147,
+    "audio_throughput_s_per_s": 1.2812352990010156,
+    "audio_ttfp_median_s": 1.4216011083669766,
+    "audio_ttfp_p95_s": 2.651572709314709,
+    "latency_mean_s": -1.85215538436323,
+    "rtf_mean": -1.6386890487609773
+  },
+  "64": {
+    "output_throughput": 2.2740925083669428,
+    "throughput_qps": 1.9702032859927554,
+    "audio_throughput_s_per_s": 2.2765489587375454,
+    "audio_ttfp_median_s": -3.45552317228357,
+    "audio_ttfp_p95_s": -1.3444929213783152,
+    "latency_mean_s": -1.5630508872957916,
+    "rtf_mean": -1.737635655703751
+  }
+}
+
+Full performance (all per-pass values retained):
+Concurrency 1: {"audio_throughput_s_per_s_change_percent": 0.1786990707648206, "audio_ttfp_median_s_change_percent": -0.02309468822170313, "audio_ttfp_p95_s_change_percent": -3.8300611522368966, "latency_mean_s_change_percent": -0.2272727272727315, "max_playback_underrun_p95_s_change_percent": null, "output_throughput_change_percent": 0.16583747927032544, "rtf_mean_change_percent": -0.3114382785956882, "throughput_qps_change_percent": 0.13192612137202797}
+reference: {"audio_throughput_s_per_s_runs": [2.798], "audio_ttfp_median_s_runs": [0.866], "audio_ttfp_p95_s_runs": [0.9321], "completed_requests": 64, "failed_requests": 0, "latency_mean_s_runs": [1.32], "max_playback_underrun_p95_s_runs": [0.0], "max_token_hits": 0, "output_throughput_runs": [60.3], "rtf_mean_runs": [0.3532], "throughput_qps_runs": [0.758]}
+head: {"audio_throughput_s_per_s_runs": [2.803], "audio_ttfp_median_s_runs": [0.8658], "audio_ttfp_p95_s_runs": [0.8964], "completed_requests": 64, "failed_requests": 0, "latency_mean_s_runs": [1.317], "max_playback_underrun_p95_s_runs": [0.0], "max_token_hits": 0, "output_throughput_runs": [60.4], "rtf_mean_runs": [0.3521], "throughput_qps_runs": [0.759]}
+Concurrency 16: {"audio_throughput_s_per_s_change_percent": -0.6675184480196106, "audio_ttfp_median_s_change_percent": 0.3407834950263977, "audio_ttfp_p95_s_change_percent": -0.03656402622163046, "latency_mean_s_change_percent": 0.36490801277178075, "max_playback_underrun_p95_s_change_percent": null, "output_throughput_change_percent": -0.6660208282877167, "rtf_mean_change_percent": 0.8159347252219895, "throughput_qps_change_percent": -0.4144648222981995}
+reference: {"audio_throughput_s_per_s_runs": [19.408, 18.943], "audio_ttfp_median_s_runs": [1.6029, 1.6543], "audio_ttfp_p95_s_runs": [1.8853, 1.9436], "completed_requests": 1024, "failed_requests": 0, "latency_mean_s_runs": [3.246, 3.331], "max_playback_underrun_p95_s_runs": [0.0, 0.0], "max_token_hits": 0, "output_throughput_runs": [417.9, 407.9], "rtf_mean_runs": [0.8231, 0.8437], "throughput_qps_runs": [4.887, 4.764]}
+head: {"audio_throughput_s_per_s_runs": [19.394, 18.701], "audio_ttfp_median_s_runs": [1.6111, 1.6572], "audio_ttfp_p95_s_runs": [1.9009, 1.9266], "completed_requests": 1024, "failed_requests": 0, "latency_mean_s_runs": [3.241, 3.36], "max_playback_underrun_p95_s_runs": [0.0, 0.0], "max_token_hits": 0, "output_throughput_runs": [417.6, 402.7], "rtf_mean_runs": [0.8238, 0.8566], "throughput_qps_runs": [4.892, 4.719]}
+Concurrency 64: {"audio_throughput_s_per_s_change_percent": 0.3134448859408945, "audio_ttfp_median_s_change_percent": -0.5184323917652667, "audio_ttfp_p95_s_change_percent": 0.4290280104598754, "latency_mean_s_change_percent": -0.03145841197936816, "max_playback_underrun_p95_s_change_percent": -3.3745340396311496, "output_throughput_change_percent": 0.3087554215981614, "rtf_mean_change_percent": -0.25566106647184617, "throughput_qps_change_percent": 0.06913456099553184}
+reference: {"audio_throughput_s_per_s_runs": [31.633, 31.536], "audio_ttfp_median_s_runs": [3.6587, 3.6518], "audio_ttfp_p95_s_runs": [8.1574, 8.0187], "completed_requests": 2176, "failed_requests": 0, "latency_mean_s_runs": [7.928, 7.966], "max_playback_underrun_p95_s_runs": [2.3146, 2.2727], "max_token_hits": 0, "output_throughput_runs": [681.2, 679.1], "rtf_mean_runs": [2.0469, 2.0601], "throughput_qps_runs": [7.963, 7.948]}
+head: {"audio_throughput_s_per_s_runs": [31.522, 31.845], "audio_ttfp_median_s_runs": [3.656, 3.6166], "audio_ttfp_p95_s_runs": [8.0559, 8.1896], "completed_requests": 2176, "failed_requests": 0, "latency_mean_s_runs": [7.98, 7.909], "max_playback_underrun_p95_s_runs": [2.2576, 2.1749], "max_token_hits": 0, "output_throughput_runs": [678.8, 685.7], "rtf_mean_runs": [2.0592, 2.0373], "throughput_qps_runs": [7.921, 8.001]}
+
+Full quality (raw EN WER and ZH CER; no outlier filtering; Qwen3-ASR1.7B; WavLM cosine x100):
+en: {"audio_throughput_s_per_s_mean_change_percent": 0.20299284320104416, "audio_ttfp_median_s_mean_change_percent": 1.2394645513138292, "audio_ttfp_p95_s_mean_change_percent": 2.656115333385567, "latency_mean_s_mean_change_percent": -0.045495905368519995, "output_throughput_has_complete_token_coverage": true, "output_throughput_mean_change_percent": 0.2054628958182203, "rtf_mean_mean_change_percent": 0.0660026401055891, "similarity_delta_points": -0.04366524692844109, "throughput_qps_mean_change_percent": 0.08267024904411446, "wer_delta_percentage_points": -0.05023863350916841}
+reference: {"similarity_evaluated": 2176, "similarity_runs": [64.63191272055401, 64.71021069148007], "similarity_skipped": 0, "wer_corpus_runs": [0.009712802478439253, 0.010550113036925395], "wer_evaluated": 2176, "wer_skipped": 0}
+head: {"similarity_evaluated": 2176, "similarity_runs": [64.58589033344212, 64.66890258473508], "similarity_skipped": 0, "wer_corpus_runs": [0.009210416143347567, 0.01004772670183371], "wer_evaluated": 2176, "wer_skipped": 0}
+Descriptive paired-utterance bootstrap intervals: {"SIM_delta_points_95pct_interval": [-0.23815478590481423, 0.13968057623680893], "WER_delta_percentage_points_95pct_interval": [-0.11724778320338947, 0.017110306970015397]}
+zh: {"audio_throughput_s_per_s_mean_change_percent": 0.6377704507713355, "audio_ttfp_median_s_mean_change_percent": 0.8766538349561648, "audio_ttfp_p95_s_mean_change_percent": 0.36330608537693543, "latency_mean_s_mean_change_percent": -0.5910022916415292, "output_throughput_has_complete_token_coverage": true, "output_throughput_mean_change_percent": 0.6370850564434871, "rtf_mean_mean_change_percent": -0.6387693912136672, "similarity_delta_points": -0.06471555067760448, "throughput_qps_mean_change_percent": 0.610151888874455, "wer_delta_percentage_points": -0.02247669521601289}
+reference: {"similarity_evaluated": 4040, "similarity_runs": [74.13065886733555, 74.07142033152061], "similarity_skipped": 0, "wer_corpus_runs": [0.00664836984810486, 0.00667202952727961], "wer_evaluated": 4040, "wer_skipped": 0}
+head: {"similarity_evaluated": 4040, "similarity_runs": [74.05018178920935, 74.0224663082916], "similarity_skipped": 0, "wer_corpus_runs": [0.006530071452231108, 0.006340794018833105], "wer_evaluated": 4040, "wer_skipped": 0}
+Descriptive paired-utterance bootstrap intervals: {"SIM_delta_points_95pct_interval": [-0.16621917009353637, 0.030316480787673662], "WER_delta_percentage_points_95pct_interval": [-0.05732297736667166, 0.013014470943341593]}
+
+Full implementation and all diagnostics are retained locally. Separate experiment branch archives aggregates and provenance without WAVs or test source files.
+Two passes on a shared host and dynamic stochastic batching provide descriptive evidence, not a formal performance confidence interval or quality non-inferiority result.
+All outcomes and error-rate outliers retained. Do not present cached reference measurements as newly regenerated requests.

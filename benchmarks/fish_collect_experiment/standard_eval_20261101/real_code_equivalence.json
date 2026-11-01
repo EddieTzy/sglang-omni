@@ -1,0 +1,302 @@
+{
+  "dynamic": {
+    "cases": [
+      {
+        "seed": 101,
+        "baseline_shape": [
+          11,
+          128
+        ],
+        "candidate_shape": [
+          11,
+          128
+        ],
+        "bitwise_equal": true
+      },
+      {
+        "seed": 102,
+        "baseline_shape": [
+          11,
+          128
+        ],
+        "candidate_shape": [
+          11,
+          128
+        ],
+        "bitwise_equal": true
+      },
+      {
+        "seed": 103,
+        "baseline_shape": [
+          11,
+          128
+        ],
+        "candidate_shape": [
+          11,
+          128
+        ],
+        "bitwise_equal": true
+      },
+      {
+        "seed": 104,
+        "baseline_shape": [
+          11,
+          128
+        ],
+        "candidate_shape": [
+          11,
+          128
+        ],
+        "bitwise_equal": true
+      },
+      {
+        "seed": 201,
+        "baseline_shape": [
+          11,
+          32
+        ],
+        "candidate_shape": [
+          11,
+          32
+        ],
+        "bitwise_equal": true
+      },
+      {
+        "seed": 202,
+        "baseline_shape": [
+          11,
+          64
+        ],
+        "candidate_shape": [
+          11,
+          64
+        ],
+        "bitwise_equal": true
+      },
+      {
+        "seed": 203,
+        "baseline_shape": [
+          11,
+          96
+        ],
+        "candidate_shape": [
+          11,
+          96
+        ],
+        "bitwise_equal": true
+      },
+      {
+        "seed": 204,
+        "baseline_shape": [
+          11,
+          128
+        ],
+        "candidate_shape": [
+          11,
+          128
+        ],
+        "bitwise_equal": true
+      },
+      {
+        "seed": 301,
+        "baseline_shape": [
+          11,
+          128
+        ],
+        "candidate_shape": [
+          11,
+          128
+        ],
+        "bitwise_equal": true
+      },
+      {
+        "seed": 401,
+        "baseline_shape": [
+          11,
+          50
+        ],
+        "candidate_shape": [
+          11,
+          50
+        ],
+        "bitwise_equal": true
+      },
+      {
+        "seed": 501,
+        "baseline_shape": [
+          11,
+          59
+        ],
+        "candidate_shape": [
+          11,
+          59
+        ],
+        "bitwise_equal": true
+      },
+      {
+        "seed": 602,
+        "baseline_shape": [
+          11,
+          128
+        ],
+        "candidate_shape": [
+          11,
+          128
+        ],
+        "bitwise_equal": true
+      }
+    ],
+    "equal": 12,
+    "total": 12
+  },
+  "full": {
+    "cases": [
+      {
+        "seed": 101,
+        "baseline_shape": [
+          11,
+          128
+        ],
+        "candidate_shape": [
+          11,
+          128
+        ],
+        "bitwise_equal": true
+      },
+      {
+        "seed": 102,
+        "baseline_shape": [
+          11,
+          128
+        ],
+        "candidate_shape": [
+          11,
+          128
+        ],
+        "bitwise_equal": true
+      },
+      {
+        "seed": 103,
+        "baseline_shape": [
+          11,
+          128
+        ],
+        "candidate_shape": [
+          11,
+          128
+        ],
+        "bitwise_equal": true
+      },
+      {
+        "seed": 104,
+        "baseline_shape": [
+          11,
+          128
+        ],
+        "candidate_shape": [
+          11,
+          128
+        ],
+        "bitwise_equal": true
+      },
+      {
+        "seed": 201,
+        "baseline_shape": [
+          11,
+          32
+        ],
+        "candidate_shape": [
+          11,
+          32
+        ],
+        "bitwise_equal": true
+      },
+      {
+        "seed": 202,
+        "baseline_shape": [
+          11,
+          64
+        ],
+        "candidate_shape": [
+          11,
+          64
+        ],
+        "bitwise_equal": true
+      },
+      {
+        "seed": 203,
+        "baseline_shape": [
+          11,
+          96
+        ],
+        "candidate_shape": [
+          11,
+          96
+        ],
+        "bitwise_equal": true
+      },
+      {
+        "seed": 204,
+        "baseline_shape": [
+          11,
+          128
+        ],
+        "candidate_shape": [
+          11,
+          128
+        ],
+        "bitwise_equal": true
+      },
+      {
+        "seed": 301,
+        "baseline_shape": [
+          11,
+          128
+        ],
+        "candidate_shape": [
+          11,
+          128
+        ],
+        "bitwise_equal": true
+      },
+      {
+        "seed": 401,
+        "baseline_shape": [
+          11,
+          50
+        ],
+        "candidate_shape": [
+          11,
+          50
+        ],
+        "bitwise_equal": true
+      },
+      {
+        "seed": 501,
+        "baseline_shape": [
+          11,
+          54
+        ],
+        "candidate_shape": [
+          11,
+          54
+        ],
+        "bitwise_equal": true
+      },
+      {
+        "seed": 602,
+        "baseline_shape": [
+          11,
+          128
+        ],
+        "candidate_shape": [
+          11,
+          128
+        ],
+        "bitwise_equal": true
+      }
+    ],
+    "equal": 12,
+    "total": 12
+  }
+}
