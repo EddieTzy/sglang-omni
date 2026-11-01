@@ -47,6 +47,9 @@ def collect_s2pro_step_outputs(
     result.next_token_ids = output_semantic_ids[:batch_size].clone()
     semantic_tokens = output_semantic_ids[:batch_size].tolist()
 
+    # Note (EddieTzy): one immutable batch snapshot survives model-buffer reuse.
+    batch_codes_snapshot = output_codes[:batch_size].clone()
+
     for row_idx, sched_req in enumerate(requests):
         data = sched_req.data
         if data.req.inflight_middle_chunks > 0:
@@ -60,8 +63,8 @@ def collect_s2pro_step_outputs(
         else:
             pass
 
-        codes = output_codes[row_idx].unsqueeze(-1).clone()
-        data.last_codebook_values = codes[1:, 0].clone()
+        codes = batch_codes_snapshot[row_idx].unsqueeze(-1)
+        data.last_codebook_values = codes[1:, 0]
         data.previous_semantic_tokens.append(semantic_token)
         if rep_history_len is not None:
             append_semantic_history(data, output_semantic_ids[row_idx], rep_history_len)
