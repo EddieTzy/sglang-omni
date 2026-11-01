@@ -481,7 +481,7 @@ class S2ProSGLangTextModel(nn.Module):
         semantic_token = top_k_indices.gather(-1, choice).squeeze(-1)
 
         # Batched codebook loop
-        self.audio_decoder.reset_caches()
+        # Note (EddieTzy): each frame overwrites its KV prefix before attention reads it.
         fast_input = self.audio_decoder.project_in(hidden_states)
         fast_input = fast_input.unsqueeze(1)  # [bs, 1, fast_dim]
         self.audio_decoder.forward_kvcached(fast_input, codebook_idx=0)
