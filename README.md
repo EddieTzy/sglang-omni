@@ -2,7 +2,7 @@
 
 按框架、模型和优化位置记录实现、评测及上游贡献，保留未获得收益的实验。PR、已合并贡献与实验分支分别标注；实现完成不等于性能收益成立。
 
-最后核对时间：2026-11-02T09:44:12+00:00。
+最后核对时间：2026-11-03T04:33:01+00:00。
 
 ## 按框架和模型查找
 
@@ -15,7 +15,7 @@
 | SGLang / sglang-omni | Fish S2-Pro | FastAR KV 缓存清空 | 实现并测试，待复现收益 | [实现分支](https://github.com/EddieTzy/sglang-omni/tree/perf/fish-fast-ar-cache-reset) |
 | SGLang / sglang-omni | Fish S2-Pro | CPU 结果收集与 GPU 快照 | 实现并测试，未采用 | [实现分支](https://github.com/EddieTzy/sglang-omni/tree/perf/fish-batched-step-outputs) |
 | SGLang / sglang-omni | Fish S2-Pro | 语义头与 FastAR 清空及结果收集组合 | 仅完成短测 | [实现分支](https://github.com/EddieTzy/sglang-omni/tree/perf/fish-decode-combined) |
-| SGLang / sglang-omni | Fish S2-Pro | FastAR 短序列 attention 批处理 | 原型验证中 | 本地实验，结果待补 |
+| SGLang / sglang-omni | Fish S2-Pro | FastAR 短序列 attention 批处理 | 已实现并通过控制验证，完整评测进行中 | [实现分支](https://github.com/EddieTzy/sglang-omni/tree/perf/fish-batched-fast-ar-attention) |
 
 详细过程与评测见 [Fish S2-Pro 优化记录](records/fish-s2-pro.md)。结构化索引见 [entries.json](records/entries.json)。
 

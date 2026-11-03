@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-11-02T09:44:12+00:00",
+  "updated_at_utc": "2026-11-03T04:33:01+00:00",
   "entries": [
     {
       "id": "fish-async-decode",
@@ -105,13 +105,23 @@
       "project": "sglang-omni",
       "model": "Fish S2-Pro",
       "component": "FastAR 短序列 attention 批处理",
-      "status": "原型验证中",
+      "status": "已实现并通过控制验证，完整评测进行中",
       "branch": "perf/fish-batched-fast-ar-attention",
       "pr": null,
-      "result": "对比逐请求 FlashInfer、批量 SDPA 和批量 FlashInfer；尚无服务收益结论。",
-      "branch_url": null,
+      "result": "183 CPU、3 GPU 回归、721 次 attention 对比和 24 个真实模型码本对照通过。短测并发16/64 帧吞吐 +5.09%/+8.72%；并发16 首包 P95 +6.49%，尚待全量确认。",
+      "branch_url": "https://github.com/EddieTzy/sglang-omni/tree/perf/fish-batched-fast-ar-attention",
       "pr_url": null,
-      "branch_published": false
+      "branch_published": true,
+      "implementation": {
+        "commit": "5d52af12b1ac8b26bf82e2b2501ff94e81386cb5",
+        "branch": "perf/fish-batched-fast-ar-attention",
+        "base_commit": "3b394b4193a8b76a6b5f52bf99da2a2729d6161e",
+        "backup_commit": "55d5fc62e70dd4954caea65cf5e24b93a88f6ab8",
+        "backup_base_commit": "7537f89baca54d19de2b7afe5465bb614c10b625",
+        "model_tree_identical": true,
+        "patch_sha256": "00da284bf296508e0469c20626474dc64aab574a1d31f7023031256c6d42d87e",
+        "note": "GitHub OAuth lacks workflow scope for newer upstream history. Public backup cherry-picks the identical Fish model change onto the existing fork baseline. Measurements use the newer pinned base and measured commit; do not conflate the whole runtime revisions."
+      }
     }
   ]
 }

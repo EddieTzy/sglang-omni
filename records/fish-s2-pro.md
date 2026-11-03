@@ -66,9 +66,13 @@
 
 ## FastAR 短序列 attention 批处理
 
-状态：原型验证中。
+状态：已实现并通过控制验证，完整评测进行中。
 
-对比逐请求 FlashInfer、批量 SDPA 和批量 FlashInfer；尚无服务收益结论。
+183 CPU、3 GPU 回归、721 次 attention 对比和 24 个真实模型码本对照通过。短测并发16/64 帧吞吐 +5.09%/+8.72%；并发16 首包 P95 +6.49%，尚待全量确认。
+
+实现：[ perf/fish-batched-fast-ar-attention ](https://github.com/EddieTzy/sglang-omni/tree/perf/fish-batched-fast-ar-attention)。
+
+评测基线为 3b394b4193a8b76a6b5f52bf99da2a2729d6161e，本地被测提交为 5d52af12b1ac8b26bf82e2b2501ff94e81386cb5。GitHub 备份提交 55d5fc62e70dd4954caea65cf5e24b93a88f6ab8 基于 fork 已有基线 7537f89baca54d19de2b7afe5465bb614c10b625；Fish 模型子树逐字相同，但整个运行时基线不同。该备份方式用于避免提交与本次实现无关、且当前令牌无权更新的上游 workflow 历史。原始补丁 SHA256 为 00da284bf296508e0469c20626474dc64aab574a1d31f7023031256c6d42d87e，完整实测版本可按报告中的补丁或 bundle 恢复。
 
 ## 已保存的完整实验报告
 
