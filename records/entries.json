@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-11-03T08:14:10+00:00",
+  "updated_at_utc": "2026-11-03T11:07:41+00:00",
   "entries": [
     {
       "id": "fish-async-decode",
@@ -7,10 +7,75 @@
       "project": "sglang-omni",
       "model": "Fish S2-Pro",
       "component": "调度与 GPU 反馈状态",
-      "status": "开放，已获批准，等待合并",
+      "status": "开放，已获批准；最新 CI 为 action_required，等待维护者处理",
       "branch": "perf/fish-async-decode",
       "pr": 3283,
       "result": "固定 128-token 非流式小基准：并发 1/4/8 请求吞吐 +7.7%/+8.8%/+9.7%。不外推为所有自然长度流式请求的收益。",
+      "github_snapshot": {
+        "checked_at_utc": "2026-11-03T11:07:41+00:00",
+        "head_commit": "eca3f90e022fa451cddc01cf73cdee92d90573f4",
+        "mergeable": true,
+        "mergeable_state": "blocked",
+        "merged_at": null,
+        "latest_workflows": [
+          {
+            "name": "Lint",
+            "status": "completed",
+            "conclusion": "action_required",
+            "created_at": "2026-11-03T10:34:00Z",
+            "url": "https://github.com/sgl-project/sglang-omni/actions/runs/41620325016"
+          },
+          {
+            "name": "Test Layout",
+            "status": "completed",
+            "conclusion": "action_required",
+            "created_at": "2026-11-03T10:34:00Z",
+            "url": "https://github.com/sgl-project/sglang-omni/actions/runs/41620324998"
+          },
+          {
+            "name": "Release Docker Images Nightly (NPU)",
+            "status": "completed",
+            "conclusion": "action_required",
+            "created_at": "2026-11-03T10:34:00Z",
+            "url": "https://github.com/sgl-project/sglang-omni/actions/runs/41620325111"
+          },
+          {
+            "name": "XPU CI",
+            "status": "completed",
+            "conclusion": "action_required",
+            "created_at": "2026-11-03T10:33:59Z",
+            "url": "https://github.com/sgl-project/sglang-omni/actions/runs/41620324794"
+          },
+          {
+            "name": "Omni CI",
+            "status": "completed",
+            "conclusion": "action_required",
+            "created_at": "2026-11-03T10:33:59Z",
+            "url": "https://github.com/sgl-project/sglang-omni/actions/runs/41620324758"
+          },
+          {
+            "name": "Docs Check",
+            "status": "completed",
+            "conclusion": "action_required",
+            "created_at": "2026-11-03T10:33:59Z",
+            "url": "https://github.com/sgl-project/sglang-omni/actions/runs/41620324825"
+          },
+          {
+            "name": "Rust Router",
+            "status": "completed",
+            "conclusion": "action_required",
+            "created_at": "2026-11-03T10:33:59Z",
+            "url": "https://github.com/sgl-project/sglang-omni/actions/runs/41620324602"
+          },
+          {
+            "name": "CPU CI",
+            "status": "completed",
+            "conclusion": "action_required",
+            "created_at": "2026-11-03T10:33:59Z",
+            "url": "https://github.com/sgl-project/sglang-omni/actions/runs/41620324806"
+          }
+        ]
+      },
       "change": "将下一步依赖的码本、历史与采样计数更新提前到 GPU，并为延后结果收集保留独立快照，使下一步 GPU 推理可与上一步 CPU 收集重叠；prefill 和请求行变化后重新同步。",
       "code_locations": [
         {

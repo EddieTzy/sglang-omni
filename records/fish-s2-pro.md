@@ -6,7 +6,7 @@
 
 ## 调度与 GPU 反馈状态
 
-状态：开放，已获批准，等待合并。
+状态：开放，已获批准；最新 CI 为 action_required，等待维护者处理。
 
 将下一步依赖的码本、历史与采样计数更新提前到 GPU，并为延后结果收集保留独立快照，使下一步 GPU 推理可与上一步 CPU 收集重叠；prefill 和请求行变化后重新同步。
 
@@ -21,6 +21,19 @@
 代码位置：[engine_builder.py](https://github.com/EddieTzy/sglang-omni/blob/perf/fish-async-decode/sglang_omni/models/fishaudio_s2_pro/engine_builder.py)，FishS2ProEngineBuilder.setup_model。
 
 上游：[PR #3283](https://github.com/sgl-project/sglang-omni/pull/3283)。
+
+GitHub 状态核对：2026-11-03T11:07:41+00:00，当前提交 eca3f90e022fa451cddc01cf73cdee92d90573f4，合并状态 blocked。
+
+最新一轮 CI 标记为 action_required，尚无实际测试结果；需要维护者检查并批准运行。此前通过的 CI 不能替代这一轮结果。
+
+- [Lint](https://github.com/sgl-project/sglang-omni/actions/runs/41620325016)：action_required（2026-11-03T10:34:00Z）
+- [Test Layout](https://github.com/sgl-project/sglang-omni/actions/runs/41620324998)：action_required（2026-11-03T10:34:00Z）
+- [Release Docker Images Nightly (NPU)](https://github.com/sgl-project/sglang-omni/actions/runs/41620325111)：action_required（2026-11-03T10:34:00Z）
+- [XPU CI](https://github.com/sgl-project/sglang-omni/actions/runs/41620324794)：action_required（2026-11-03T10:33:59Z）
+- [Omni CI](https://github.com/sgl-project/sglang-omni/actions/runs/41620324758)：action_required（2026-11-03T10:33:59Z）
+- [Docs Check](https://github.com/sgl-project/sglang-omni/actions/runs/41620324825)：action_required（2026-11-03T10:33:59Z）
+- [Rust Router](https://github.com/sgl-project/sglang-omni/actions/runs/41620324602)：action_required（2026-11-03T10:33:59Z）
+- [CPU CI](https://github.com/sgl-project/sglang-omni/actions/runs/41620324806)：action_required（2026-11-03T10:33:59Z）
 
 ## 解码整数状态 Triton 融合
 

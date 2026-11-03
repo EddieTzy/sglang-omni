@@ -2,13 +2,13 @@
 
 按框架、模型和优化位置记录实现、评测及上游贡献，保留未获得收益的实验。PR、已合并贡献与实验分支分别标注；实现完成不等于性能收益成立。
 
-最后核对时间：2026-11-03T08:14:10+00:00。
+最后核对时间：2026-11-03T11:07:41+00:00。
 
 ## 按框架和模型查找
 
 | 框架 | 模型 | 优化位置 | 当前结论 | 记录 |
 | --- | --- | --- | --- | --- |
-| SGLang / sglang-omni | Fish S2-Pro | 调度与 GPU 反馈状态 | 开放，已获批准，等待合并 | [PR #3283](https://github.com/sgl-project/sglang-omni/pull/3283) · [实现分支](https://github.com/EddieTzy/sglang-omni/tree/perf/fish-async-decode) |
+| SGLang / sglang-omni | Fish S2-Pro | 调度与 GPU 反馈状态 | 开放，已获批准；最新 CI 为 action_required，等待维护者处理 | [PR #3283](https://github.com/sgl-project/sglang-omni/pull/3283) · [实现分支](https://github.com/EddieTzy/sglang-omni/tree/perf/fish-async-decode) |
 | SGLang / sglang-omni | Fish S2-Pro | 解码整数状态 Triton 融合 | 实现并测试，未采用 | [实现分支](https://github.com/EddieTzy/sglang-omni/tree/perf/fish-decode-state-fusion) |
 | SGLang / sglang-omni | Fish S2-Pro | 固定请求状态槽位 | 实现并测试，暂不采用 | [实现分支](https://github.com/EddieTzy/sglang-omni/tree/perf/fish-fixed-slot-overlap) |
 | SGLang / sglang-omni | Fish S2-Pro | SlowAR 输出投影 | PR 已主动关闭，保留实验 | [PR #3408](https://github.com/sgl-project/sglang-omni/pull/3408) · [实现分支](https://github.com/EddieTzy/sglang-omni/tree/perf/fish-semantic-head) |
