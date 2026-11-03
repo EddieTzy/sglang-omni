@@ -21,12 +21,19 @@ from sglang_omni.models.fishaudio_s2_pro.fish_speech.models.text2semantic.utils 
     apply_rotary_emb,
     precompute_freqs_cis,
 )
+from sglang_omni.platforms import current_platform
+
+if current_platform.is_cuda():
+    from flashinfer import BatchDecodeWithPagedKVCacheWrapper
+else:
+    pass
 
 FISH_BATCH_INVARIANT = os.getenv("FISH_BATCH_INVARIANT", "false").lower() in (
     "true",
     "1",
     "yes",
 )
+FAST_AR_ATTENTION_WORKSPACE_BYTES = 8 * 1024 * 1024
 
 
 @cache
@@ -45,6 +52,48 @@ def fast_ar_uses_fa3(device_index: int) -> bool:
         f"FishAudio S2-Pro Fast-AR does not support SM{sm_version}; "
         "supported architectures: SM89, SM90, SM100, SM120."
     )
+
+
+@cache
+def fast_ar_batch_decode_plan(
+    device: torch.device,
+    batch_size: int,
+    query_heads: int,
+    key_value_heads: int,
+    head_dimension: int,
+    cache_capacity: int,
+    dtype: torch.dtype,
+) -> tuple[BatchDecodeWithPagedKVCacheWrapper, Tensor]:
+    """Plan one KV page per request with persistent graph metadata."""
+    workspace = torch.empty(
+        FAST_AR_ATTENTION_WORKSPACE_BYTES, dtype=torch.uint8, device=device
+    )
+    page_offsets = torch.arange(batch_size + 1, dtype=torch.int32, device=device)
+    page_indices = torch.arange(batch_size, dtype=torch.int32, device=device)
+    page_lengths = torch.full(
+        (batch_size,), cache_capacity, dtype=torch.int32, device=device
+    )
+    decoder = BatchDecodeWithPagedKVCacheWrapper(
+        workspace,
+        kv_layout="NHD",
+        use_cuda_graph=True,
+        use_tensor_cores=True,
+        paged_kv_indptr_buffer=page_offsets,
+        paged_kv_indices_buffer=page_indices,
+        paged_kv_last_page_len_buffer=page_lengths,
+    )
+    decoder.plan(
+        page_offsets,
+        page_indices,
+        page_lengths,
+        query_heads,
+        key_value_heads,
+        head_dimension,
+        cache_capacity,
+        q_data_type=dtype,
+        kv_data_type=dtype,
+    )
+    return decoder, page_lengths
 
 
 def flashinfer_kvcache_attention(
@@ -74,6 +123,22 @@ def flashinfer_kvcache_attention(
     cache_end = cache_position + int(k.shape[1])
     k_cache[:, cache_position:cache_end].copy_(k)
     v_cache[:, cache_position:cache_end].copy_(v)
+
+    if q.is_cuda and q.shape[0] > 1 and q.shape[1] == 1 and k.shape[1] == 1:
+        decoder, page_lengths = fast_ar_batch_decode_plan(
+            q.device,
+            q.shape[0],
+            q.shape[2],
+            k_cache.shape[2],
+            q.shape[3],
+            k_cache.shape[1],
+            q.dtype,
+        )
+        # Note (EddieTzy): FastAR overwrites each valid prefix before it is read.
+        page_lengths.fill_(cache_end)
+        return decoder.run(q[:, 0], (k_cache, v_cache)).unsqueeze(1)
+    else:
+        pass
 
     import flashinfer
 
