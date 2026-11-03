@@ -16,9 +16,9 @@
 
 代码位置：[sglang_model.py](https://github.com/EddieTzy/sglang-omni/blob/perf/fish-async-decode/sglang_omni/models/fishaudio_s2_pro/sglang_model.py)，decode_codebooks。
 
-代码位置：[model_runner.py](https://github.com/EddieTzy/sglang-omni/blob/perf/fish-async-decode/sglang_omni/models/fishaudio_s2_pro/model_runner.py)，async decode launch and resolve。
+代码位置：[model_runner.py](https://github.com/EddieTzy/sglang-omni/blob/perf/fish-async-decode/sglang_omni/models/fishaudio_s2_pro/model_runner.py)，FishS2ProModelRunner.post_decode_launch, FishS2ProModelRunner.post_decode_resolve, lookahead_eligible。
 
-代码位置：[engine_builder.py](https://github.com/EddieTzy/sglang-omni/blob/perf/fish-async-decode/sglang_omni/models/fishaudio_s2_pro/engine_builder.py)，Fish engine setup。
+代码位置：[engine_builder.py](https://github.com/EddieTzy/sglang-omni/blob/perf/fish-async-decode/sglang_omni/models/fishaudio_s2_pro/engine_builder.py)，FishS2ProEngineBuilder.setup_model。
 
 上游：[PR #3283](https://github.com/sgl-project/sglang-omni/pull/3283)。
 
@@ -48,7 +48,7 @@
 
 代码位置：[sglang_model.py](https://github.com/EddieTzy/sglang-omni/blob/perf/fish-fixed-slot-overlap/sglang_omni/models/fishaudio_s2_pro/sglang_model.py)，select_decode_state。
 
-代码位置：[model_runner.py](https://github.com/EddieTzy/sglang-omni/blob/perf/fish-fixed-slot-overlap/sglang_omni/models/fishaudio_s2_pro/model_runner.py)，request-slot binding and prefill restore。
+代码位置：[model_runner.py](https://github.com/EddieTzy/sglang-omni/blob/perf/fish-fixed-slot-overlap/sglang_omni/models/fishaudio_s2_pro/model_runner.py)，FishS2ProModelRunner.bind_decode_slots, sync_decode_row_state, before_prefill。
 
 ## SlowAR 输出投影
 
@@ -104,17 +104,34 @@ FastAR 每帧按顺序覆盖当前有效 KV 前缀后，只读该前缀，因而
 
 ## FastAR 短序列 attention 批处理
 
-状态：完整性能扫描完成，全集质量评测进行中。
+状态：全量性能与质量评测完成，保留实验分支。
 
 将逐请求 single_prefill 调用改为一次批量 FlashInfer decode，把既有 KV 缓冲直接解释为每请求一页，缓存图兼容 plan，并在 GPU 更新有效页长度。保留单请求和 FA3 计算分支。
 
-完整扫描并发1/16/64 帧吞吐变化 -0.16%/+3.39%/+10.27%；首包 P95 变化 +0.10%/-8.20%/-5.24%。质量结论待全集评分。
+完整扫描并发1/16/64 帧吞吐变化 -0.16%/+3.39%/+10.27%；详细首包延迟和质量变化见实验报告，不据此自动提 PR。
 
 实现：[ perf/fish-batched-fast-ar-attention ](https://github.com/EddieTzy/sglang-omni/tree/perf/fish-batched-fast-ar-attention)。
 
 代码位置：[audio_decoder.py](https://github.com/EddieTzy/sglang-omni/blob/perf/fish-batched-fast-ar-attention/sglang_omni/models/fishaudio_s2_pro/fish_speech/models/text2semantic/audio_decoder.py)，flashinfer_kvcache_attention, fast_ar_batch_decode_plan。
 
+完整评测：[实验报告](https://github.com/EddieTzy/sglang-omni/blob/experiment/fish-batched-fast-ar-attention/benchmarks/fish_batched_attention_experiment/standard_eval_20261103/RESULTS.txt)。
+
+当前最值得继续推进的独立优化：高并发服务吞吐有收益，单请求基本持平。全量质量波动的配对区间跨零，未证明质量改善或统计意义上的不退化；尚无 H100 验证，按当前要求只保存分支。
+
+6528 条性能请求与 12432 条质量音频全部完成；无生成失败、截断或评分跳过。质量为每臂两轮全集，以下是两轮均值。
+
+| 指标 | 基线 | 批量 attention | 变化 | 配对 95% 描述区间 |
+| --- | --- | --- | --- | --- |
+| 英文 WER | 1.001% | 1.038% | +0.038 个百分点 | [-0.033, +0.104] 个百分点 |
+| EN 音色相似度 | 64.759 | 64.770 | +0.011 | [-0.194, +0.212] |
+| 中文 CER | 0.665% | 0.639% | -0.026 个百分点 | [-0.060, +0.012] 个百分点 |
+| ZH 音色相似度 | 74.052 | 74.157 | +0.104 | [-0.003, +0.206] |
+
+区间使用 2000 次按语句 ID 的配对 bootstrap，每个 ID 保留两轮生成；这是描述性评估，不是预先指定容忍阈值的非劣效检验。
+
 评测基线为 3b394b4193a8b76a6b5f52bf99da2a2729d6161e，本地被测提交为 5d52af12b1ac8b26bf82e2b2501ff94e81386cb5。GitHub 备份提交 55d5fc62e70dd4954caea65cf5e24b93a88f6ab8 基于 fork 已有基线 7537f89baca54d19de2b7afe5465bb614c10b625；Fish 模型子树逐字相同，但整个运行时基线不同。该备份方式用于避免提交与本次实现无关、且当前令牌无权更新的上游 workflow 历史。原始补丁 SHA256 为 00da284bf296508e0469c20626474dc64aab574a1d31f7023031256c6d42d87e，完整实测版本可按报告中的补丁或 bundle 恢复。
+
+恢复校验：备份补丁与实测补丁完全相同；将其应用到实测基线后，整个源码树 SHA 为 74223650ec61f67b3a1e759a25556ce02e8c42ff，与被测提交一致。
 
 ## 已保存的完整实验报告
 

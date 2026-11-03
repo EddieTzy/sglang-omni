@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-11-03T05:01:24+00:00",
+  "updated_at_utc": "2026-11-03T08:14:10+00:00",
   "entries": [
     {
       "id": "fish-async-decode",
@@ -22,13 +22,15 @@
         {
           "path": "sglang_omni/models/fishaudio_s2_pro/model_runner.py",
           "symbols": [
-            "async decode launch and resolve"
+            "FishS2ProModelRunner.post_decode_launch",
+            "FishS2ProModelRunner.post_decode_resolve",
+            "lookahead_eligible"
           ]
         },
         {
           "path": "sglang_omni/models/fishaudio_s2_pro/engine_builder.py",
           "symbols": [
-            "Fish engine setup"
+            "FishS2ProEngineBuilder.setup_model"
           ]
         }
       ],
@@ -86,7 +88,9 @@
         {
           "path": "sglang_omni/models/fishaudio_s2_pro/model_runner.py",
           "symbols": [
-            "request-slot binding and prefill restore"
+            "FishS2ProModelRunner.bind_decode_slots",
+            "sync_decode_row_state",
+            "before_prefill"
           ]
         }
       ],
@@ -199,10 +203,10 @@
       "project": "sglang-omni",
       "model": "Fish S2-Pro",
       "component": "FastAR 短序列 attention 批处理",
-      "status": "完整性能扫描完成，全集质量评测进行中",
+      "status": "全量性能与质量评测完成，保留实验分支",
       "branch": "perf/fish-batched-fast-ar-attention",
       "pr": null,
-      "result": "完整扫描并发1/16/64 帧吞吐变化 -0.16%/+3.39%/+10.27%；首包 P95 变化 +0.10%/-8.20%/-5.24%。质量结论待全集评分。",
+      "result": "完整扫描并发1/16/64 帧吞吐变化 -0.16%/+3.39%/+10.27%；详细首包延迟和质量变化见实验报告，不据此自动提 PR。",
       "change": "将逐请求 single_prefill 调用改为一次批量 FlashInfer decode，把既有 KV 缓冲直接解释为每请求一页，缓存图兼容 plan，并在 GPU 更新有效页长度。保留单请求和 FA3 计算分支。",
       "code_locations": [
         {
@@ -223,6 +227,9 @@
         "backup_commit": "55d5fc62e70dd4954caea65cf5e24b93a88f6ab8",
         "backup_base_commit": "7537f89baca54d19de2b7afe5465bb614c10b625",
         "model_tree_identical": true,
+        "backup_patch_identical": true,
+        "restored_tree": "74223650ec61f67b3a1e759a25556ce02e8c42ff",
+        "measured_tree": "74223650ec61f67b3a1e759a25556ce02e8c42ff",
         "patch_sha256": "00da284bf296508e0469c20626474dc64aab574a1d31f7023031256c6d42d87e",
         "note": "GitHub OAuth lacks workflow scope for newer upstream history. Public backup cherry-picks the identical Fish model change onto the existing fork baseline. Measurements use the newer pinned base and measured commit; do not conflate the whole runtime revisions."
       },
@@ -257,7 +264,99 @@
           "rtf_mean_change_percent": -9.156661362650087,
           "max_playback_underrun_p95_s_change_percent": -16.581389298412972
         }
-      }
+      },
+      "quality": {
+        "en": {
+          "throughput_qps_mean_change_percent": 5.28103767757877,
+          "output_throughput_mean_change_percent": 5.058880076904582,
+          "audio_throughput_s_per_s_mean_change_percent": 5.061325881074374,
+          "latency_mean_s_mean_change_percent": -4.995431008224194,
+          "rtf_mean_mean_change_percent": -4.893629843910075,
+          "audio_ttfp_median_s_mean_change_percent": -4.540527147148998,
+          "audio_ttfp_p95_s_mean_change_percent": -3.2402909434655958,
+          "wer_delta_percentage_points": 0.03767897513187648,
+          "similarity_delta_points": 0.01130485096399525,
+          "output_throughput_has_complete_token_coverage": true
+        },
+        "zh": {
+          "throughput_qps_mean_change_percent": 3.230355082681724,
+          "output_throughput_mean_change_percent": 3.397683397683382,
+          "audio_throughput_s_per_s_mean_change_percent": 3.404285646410421,
+          "latency_mean_s_mean_change_percent": -3.115455100794129,
+          "rtf_mean_mean_change_percent": -3.3210088472203747,
+          "audio_ttfp_median_s_mean_change_percent": -3.1792951686537285,
+          "audio_ttfp_p95_s_mean_change_percent": -3.7544207101428806,
+          "wer_delta_percentage_points": -0.02602564709222547,
+          "similarity_delta_points": 0.10427935194259419,
+          "output_throughput_has_complete_token_coverage": true
+        }
+      },
+      "quality_uncertainty": {
+        "en": {
+          "paired_complete_ids": 1088,
+          "expected_ids": 1088,
+          "WER_delta_percentage_points_95pct_interval": [
+            -0.03325677473170843,
+            0.10435457775939633
+          ],
+          "SIM_delta_points_95pct_interval": [
+            -0.19378467011539374,
+            0.21153529141755664
+          ]
+        },
+        "zh": {
+          "paired_complete_ids": 2020,
+          "expected_ids": 2020,
+          "WER_delta_percentage_points_95pct_interval": [
+            -0.06036660284119296,
+            0.011755094760396857
+          ],
+          "SIM_delta_points_95pct_interval": [
+            -0.0029919638019977224,
+            0.2061991745882695
+          ]
+        }
+      },
+      "quality_aggregates": {
+        "en": {
+          "reference": {
+            "wer_corpus_mean": 0.010005861173909402,
+            "similarity_mean": 64.75865803133038,
+            "wer_evaluated": 2176,
+            "wer_skipped": 0,
+            "similarity_evaluated": 2176,
+            "similarity_skipped": 0
+          },
+          "head": {
+            "wer_corpus_mean": 0.010382650925228167,
+            "similarity_mean": 64.76996288229438,
+            "wer_evaluated": 2176,
+            "wer_skipped": 0,
+            "similarity_evaluated": 2176,
+            "similarity_skipped": 0
+          }
+        },
+        "zh": {
+          "reference": {
+            "wer_corpus_mean": 0.00664836984810486,
+            "similarity_mean": 74.05231487255286,
+            "wer_evaluated": 4040,
+            "wer_skipped": 0,
+            "similarity_evaluated": 4040,
+            "similarity_skipped": 0
+          },
+          "head": {
+            "wer_corpus_mean": 0.006388113377182605,
+            "similarity_mean": 74.15659422449545,
+            "wer_evaluated": 4040,
+            "wer_skipped": 0,
+            "similarity_evaluated": 4040,
+            "similarity_skipped": 0
+          }
+        }
+      },
+      "assessment": "当前最值得继续推进的独立优化：高并发服务吞吐有收益，单请求基本持平。全量质量波动的配对区间跨零，未证明质量改善或统计意义上的不退化；尚无 H100 验证，按当前要求只保存分支。",
+      "report_url": "https://github.com/EddieTzy/sglang-omni/blob/experiment/fish-batched-fast-ar-attention/benchmarks/fish_batched_attention_experiment/standard_eval_20261103/RESULTS.txt"
     }
   ]
 }
