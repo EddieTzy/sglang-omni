@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-11-03T04:33:01+00:00",
+  "updated_at_utc": "2026-11-03T04:55:19+00:00",
   "entries": [
     {
       "id": "fish-async-decode",
@@ -105,10 +105,10 @@
       "project": "sglang-omni",
       "model": "Fish S2-Pro",
       "component": "FastAR 短序列 attention 批处理",
-      "status": "已实现并通过控制验证，完整评测进行中",
+      "status": "完整性能扫描完成，全集质量评测进行中",
       "branch": "perf/fish-batched-fast-ar-attention",
       "pr": null,
-      "result": "183 CPU、3 GPU 回归、721 次 attention 对比和 24 个真实模型码本对照通过。短测并发16/64 帧吞吐 +5.09%/+8.72%；并发16 首包 P95 +6.49%，尚待全量确认。",
+      "result": "完整扫描并发1/16/64 帧吞吐变化 -0.16%/+3.39%/+10.27%；首包 P95 变化 +0.10%/-8.20%/-5.24%。质量结论待全集评分。",
       "branch_url": "https://github.com/EddieTzy/sglang-omni/tree/perf/fish-batched-fast-ar-attention",
       "pr_url": null,
       "branch_published": true,
@@ -121,6 +121,38 @@
         "model_tree_identical": true,
         "patch_sha256": "00da284bf296508e0469c20626474dc64aab574a1d31f7023031256c6d42d87e",
         "note": "GitHub OAuth lacks workflow scope for newer upstream history. Public backup cherry-picks the identical Fish model change onto the existing fork baseline. Measurements use the newer pinned base and measured commit; do not conflate the whole runtime revisions."
+      },
+      "performance": {
+        "1": {
+          "output_throughput_change_percent": -0.1644736842105199,
+          "throughput_qps_change_percent": -0.13071895424836555,
+          "audio_throughput_s_per_s_change_percent": -0.1769911504424848,
+          "latency_mean_s_change_percent": 0.15302218821728886,
+          "audio_ttfp_median_s_change_percent": 1.7038777908343183,
+          "audio_ttfp_p95_s_change_percent": 0.09980039920158834,
+          "rtf_mean_change_percent": 0.11379800853486,
+          "max_playback_underrun_p95_s_change_percent": null
+        },
+        "16": {
+          "output_throughput_change_percent": 3.3896289248334988,
+          "throughput_qps_change_percent": 3.2169677288410803,
+          "audio_throughput_s_per_s_change_percent": 3.387964148527556,
+          "latency_mean_s_change_percent": -3.246349798073944,
+          "audio_ttfp_median_s_change_percent": -3.9097087984036882,
+          "audio_ttfp_p95_s_change_percent": -8.195744019076756,
+          "rtf_mean_change_percent": -3.681993039018139,
+          "max_playback_underrun_p95_s_change_percent": null
+        },
+        "64": {
+          "output_throughput_change_percent": 10.266329415265595,
+          "throughput_qps_change_percent": 10.364805500732155,
+          "audio_throughput_s_per_s_change_percent": 10.262078687684228,
+          "latency_mean_s_change_percent": -9.417318921605155,
+          "audio_ttfp_median_s_change_percent": -9.874136029906143,
+          "audio_ttfp_p95_s_change_percent": -5.240763338295329,
+          "rtf_mean_change_percent": -9.156661362650087,
+          "max_playback_underrun_p95_s_change_percent": -16.581389298412972
+        }
       }
     }
   ]

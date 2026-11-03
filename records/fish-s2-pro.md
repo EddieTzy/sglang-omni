@@ -66,9 +66,9 @@
 
 ## FastAR 短序列 attention 批处理
 
-状态：已实现并通过控制验证，完整评测进行中。
+状态：完整性能扫描完成，全集质量评测进行中。
 
-183 CPU、3 GPU 回归、721 次 attention 对比和 24 个真实模型码本对照通过。短测并发16/64 帧吞吐 +5.09%/+8.72%；并发16 首包 P95 +6.49%，尚待全量确认。
+完整扫描并发1/16/64 帧吞吐变化 -0.16%/+3.39%/+10.27%；首包 P95 变化 +0.10%/-8.20%/-5.24%。质量结论待全集评分。
 
 实现：[ perf/fish-batched-fast-ar-attention ](https://github.com/EddieTzy/sglang-omni/tree/perf/fish-batched-fast-ar-attention)。
 
