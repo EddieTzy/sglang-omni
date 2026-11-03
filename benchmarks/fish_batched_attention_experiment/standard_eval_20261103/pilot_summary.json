@@ -1,0 +1,26 @@
+{
+  "state": "complete",
+  "comparisons": {
+    "1": {
+      "output_throughput": 0.24691358024693244,
+      "throughput_qps": 0.3419972640218871,
+      "audio_ttfp_median_s": 0.14431680424868976,
+      "audio_ttfp_p95_s": 0.5334066538355886,
+      "latency_mean_s": -0.2925045703839113
+    },
+    "16": {
+      "output_throughput": 5.092475297694432,
+      "throughput_qps": 4.492656235000458,
+      "audio_ttfp_median_s": -5.949761642830953,
+      "audio_ttfp_p95_s": 6.486727520721836,
+      "latency_mean_s": -4.53328872532619
+    },
+    "64": {
+      "output_throughput": 8.720442730169387,
+      "throughput_qps": 9.044951496106023,
+      "audio_ttfp_median_s": -7.080679136106383,
+      "audio_ttfp_p95_s": -8.757376617469248,
+      "latency_mean_s": -8.58389622810688
+    }
+  }
+}

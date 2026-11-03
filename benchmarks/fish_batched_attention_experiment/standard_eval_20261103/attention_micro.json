@@ -1,0 +1,475 @@
+{
+  "torch": "2.14.1+cu130",
+  "flashinfer": "0.7.1",
+  "gpu": "NVIDIA GeForce RTX 5090",
+  "rows": [
+    {
+      "batch": 1,
+      "length": 1,
+      "us": {
+        "reference": 4.608000069856644,
+        "sdpa": 6.278400123119354,
+        "paged": 5.888000130653381
+      },
+      "errors": {
+        "reference": {
+          "maximum_absolute": 0.0,
+          "relative_rms": 0.0,
+          "bitwise_equal": true
+        },
+        "sdpa": {
+          "maximum_absolute": 0.0,
+          "relative_rms": 0.0,
+          "bitwise_equal": true
+        },
+        "paged": {
+          "maximum_absolute": 0.0,
+          "relative_rms": 0.0,
+          "bitwise_equal": true
+        }
+      }
+    },
+    {
+      "batch": 1,
+      "length": 4,
+      "us": {
+        "reference": 4.608000069856644,
+        "sdpa": 6.335999816656113,
+        "paged": 5.951999872922897
+      },
+      "errors": {
+        "reference": {
+          "maximum_absolute": 0.0,
+          "relative_rms": 0.0,
+          "bitwise_equal": true
+        },
+        "sdpa": {
+          "maximum_absolute": 0.015625,
+          "relative_rms": 0.0015106910141184926,
+          "bitwise_equal": false
+        },
+        "paged": {
+          "maximum_absolute": 0.0,
+          "relative_rms": 0.0,
+          "bitwise_equal": true
+        }
+      }
+    },
+    {
+      "batch": 1,
+      "length": 10,
+      "us": {
+        "reference": 4.608000069856644,
+        "sdpa": 6.335999816656113,
+        "paged": 5.888000130653381
+      },
+      "errors": {
+        "reference": {
+          "maximum_absolute": 0.0,
+          "relative_rms": 0.0,
+          "bitwise_equal": true
+        },
+        "sdpa": {
+          "maximum_absolute": 0.0078125,
+          "relative_rms": 0.0015221878420561552,
+          "bitwise_equal": false
+        },
+        "paged": {
+          "maximum_absolute": 0.0,
+          "relative_rms": 0.0,
+          "bitwise_equal": true
+        }
+      }
+    },
+    {
+      "batch": 4,
+      "length": 1,
+      "us": {
+        "reference": 14.076800644397736,
+        "sdpa": 7.872000336647034,
+        "paged": 8.70399996638298
+      },
+      "errors": {
+        "reference": {
+          "maximum_absolute": 0.0,
+          "relative_rms": 0.0,
+          "bitwise_equal": true
+        },
+        "sdpa": {
+          "maximum_absolute": 0.0,
+          "relative_rms": 0.0,
+          "bitwise_equal": true
+        },
+        "paged": {
+          "maximum_absolute": 0.0,
+          "relative_rms": 0.0,
+          "bitwise_equal": true
+        }
+      }
+    },
+    {
+      "batch": 4,
+      "length": 4,
+      "us": {
+        "reference": 14.083200693130493,
+        "sdpa": 7.872000336647034,
+        "paged": 8.62720012664795
+      },
+      "errors": {
+        "reference": {
+          "maximum_absolute": 0.0,
+          "relative_rms": 0.0,
+          "bitwise_equal": true
+        },
+        "sdpa": {
+          "maximum_absolute": 0.015625,
+          "relative_rms": 0.001506358152255416,
+          "bitwise_equal": false
+        },
+        "paged": {
+          "maximum_absolute": 0.0,
+          "relative_rms": 0.0,
+          "bitwise_equal": true
+        }
+      }
+    },
+    {
+      "batch": 4,
+      "length": 10,
+      "us": {
+        "reference": 14.083200693130493,
+        "sdpa": 7.872000336647034,
+        "paged": 8.70399996638298
+      },
+      "errors": {
+        "reference": {
+          "maximum_absolute": 0.0,
+          "relative_rms": 0.0,
+          "bitwise_equal": true
+        },
+        "sdpa": {
+          "maximum_absolute": 0.0078125,
+          "relative_rms": 0.0013089063577353954,
+          "bitwise_equal": false
+        },
+        "paged": {
+          "maximum_absolute": 0.0,
+          "relative_rms": 0.0,
+          "bitwise_equal": true
+        }
+      }
+    },
+    {
+      "batch": 8,
+      "length": 1,
+      "us": {
+        "reference": 24.43840056657791,
+        "sdpa": 7.872000336647034,
+        "paged": 8.70399996638298
+      },
+      "errors": {
+        "reference": {
+          "maximum_absolute": 0.0,
+          "relative_rms": 0.0,
+          "bitwise_equal": true
+        },
+        "sdpa": {
+          "maximum_absolute": 0.0,
+          "relative_rms": 0.0,
+          "bitwise_equal": true
+        },
+        "paged": {
+          "maximum_absolute": 0.0,
+          "relative_rms": 0.0,
+          "bitwise_equal": true
+        }
+      }
+    },
+    {
+      "batch": 8,
+      "length": 4,
+      "us": {
+        "reference": 24.52159970998764,
+        "sdpa": 7.93600007891655,
+        "paged": 8.832000195980072
+      },
+      "errors": {
+        "reference": {
+          "maximum_absolute": 0.0,
+          "relative_rms": 0.0,
+          "bitwise_equal": true
+        },
+        "sdpa": {
+          "maximum_absolute": 0.015625,
+          "relative_rms": 0.0015260728541761637,
+          "bitwise_equal": false
+        },
+        "paged": {
+          "maximum_absolute": 0.0,
+          "relative_rms": 0.0,
+          "bitwise_equal": true
+        }
+      }
+    },
+    {
+      "batch": 8,
+      "length": 10,
+      "us": {
+        "reference": 24.52159970998764,
+        "sdpa": 7.93600007891655,
+        "paged": 8.723200112581253
+      },
+      "errors": {
+        "reference": {
+          "maximum_absolute": 0.0,
+          "relative_rms": 0.0,
+          "bitwise_equal": true
+        },
+        "sdpa": {
+          "maximum_absolute": 0.0078125,
+          "relative_rms": 0.0013778801076114178,
+          "bitwise_equal": false
+        },
+        "paged": {
+          "maximum_absolute": 0.0,
+          "relative_rms": 0.0,
+          "bitwise_equal": true
+        }
+      }
+    },
+    {
+      "batch": 16,
+      "length": 1,
+      "us": {
+        "reference": 45.1775997877121,
+        "sdpa": 7.980799674987793,
+        "paged": 8.979199826717377
+      },
+      "errors": {
+        "reference": {
+          "maximum_absolute": 0.0,
+          "relative_rms": 0.0,
+          "bitwise_equal": true
+        },
+        "sdpa": {
+          "maximum_absolute": 0.0,
+          "relative_rms": 0.0,
+          "bitwise_equal": true
+        },
+        "paged": {
+          "maximum_absolute": 0.0,
+          "relative_rms": 0.0,
+          "bitwise_equal": true
+        }
+      }
+    },
+    {
+      "batch": 16,
+      "length": 4,
+      "us": {
+        "reference": 45.35680115222931,
+        "sdpa": 7.999999821186066,
+        "paged": 8.895999938249588
+      },
+      "errors": {
+        "reference": {
+          "maximum_absolute": 0.0,
+          "relative_rms": 0.0,
+          "bitwise_equal": true
+        },
+        "sdpa": {
+          "maximum_absolute": 0.015625,
+          "relative_rms": 0.0014323022915050387,
+          "bitwise_equal": false
+        },
+        "paged": {
+          "maximum_absolute": 0.0,
+          "relative_rms": 0.0,
+          "bitwise_equal": true
+        }
+      }
+    },
+    {
+      "batch": 16,
+      "length": 10,
+      "us": {
+        "reference": 45.41119933128357,
+        "sdpa": 7.999999821186066,
+        "paged": 8.96959975361824
+      },
+      "errors": {
+        "reference": {
+          "maximum_absolute": 0.0,
+          "relative_rms": 0.0,
+          "bitwise_equal": true
+        },
+        "sdpa": {
+          "maximum_absolute": 0.0078125,
+          "relative_rms": 0.0013847382506355643,
+          "bitwise_equal": false
+        },
+        "paged": {
+          "maximum_absolute": 0.0,
+          "relative_rms": 0.0,
+          "bitwise_equal": true
+        }
+      }
+    },
+    {
+      "batch": 32,
+      "length": 1,
+      "us": {
+        "reference": 86.57280206680298,
+        "sdpa": 12.323199957609177,
+        "paged": 9.36959981918335
+      },
+      "errors": {
+        "reference": {
+          "maximum_absolute": 0.0,
+          "relative_rms": 0.0,
+          "bitwise_equal": true
+        },
+        "sdpa": {
+          "maximum_absolute": 0.0,
+          "relative_rms": 0.0,
+          "bitwise_equal": true
+        },
+        "paged": {
+          "maximum_absolute": 0.0,
+          "relative_rms": 0.0,
+          "bitwise_equal": true
+        }
+      }
+    },
+    {
+      "batch": 32,
+      "length": 4,
+      "us": {
+        "reference": 86.96320056915283,
+        "sdpa": 12.310399860143661,
+        "paged": 9.408000111579895
+      },
+      "errors": {
+        "reference": {
+          "maximum_absolute": 0.0,
+          "relative_rms": 0.0,
+          "bitwise_equal": true
+        },
+        "sdpa": {
+          "maximum_absolute": 0.015625,
+          "relative_rms": 0.0014954040525481105,
+          "bitwise_equal": false
+        },
+        "paged": {
+          "maximum_absolute": 0.0,
+          "relative_rms": 0.0,
+          "bitwise_equal": true
+        }
+      }
+    },
+    {
+      "batch": 32,
+      "length": 10,
+      "us": {
+        "reference": 87.0848000049591,
+        "sdpa": 12.412799894809723,
+        "paged": 9.408000111579895
+      },
+      "errors": {
+        "reference": {
+          "maximum_absolute": 0.0,
+          "relative_rms": 0.0,
+          "bitwise_equal": true
+        },
+        "sdpa": {
+          "maximum_absolute": 0.0078125,
+          "relative_rms": 0.001393961487337947,
+          "bitwise_equal": false
+        },
+        "paged": {
+          "maximum_absolute": 0.0,
+          "relative_rms": 0.0,
+          "bitwise_equal": true
+        }
+      }
+    },
+    {
+      "batch": 64,
+      "length": 1,
+      "us": {
+        "reference": 169.48479413986206,
+        "sdpa": 21.027199923992157,
+        "paged": 13.9615997672081
+      },
+      "errors": {
+        "reference": {
+          "maximum_absolute": 0.0,
+          "relative_rms": 0.0,
+          "bitwise_equal": true
+        },
+        "sdpa": {
+          "maximum_absolute": 0.0,
+          "relative_rms": 0.0,
+          "bitwise_equal": true
+        },
+        "paged": {
+          "maximum_absolute": 0.0,
+          "relative_rms": 0.0,
+          "bitwise_equal": true
+        }
+      }
+    },
+    {
+      "batch": 64,
+      "length": 4,
+      "us": {
+        "reference": 170.3487992286682,
+        "sdpa": 21.09439969062805,
+        "paged": 13.967999815940857
+      },
+      "errors": {
+        "reference": {
+          "maximum_absolute": 0.0,
+          "relative_rms": 0.0,
+          "bitwise_equal": true
+        },
+        "sdpa": {
+          "maximum_absolute": 0.015625,
+          "relative_rms": 0.0014690825482830405,
+          "bitwise_equal": false
+        },
+        "paged": {
+          "maximum_absolute": 0.0,
+          "relative_rms": 0.0,
+          "bitwise_equal": true
+        }
+      }
+    },
+    {
+      "batch": 64,
+      "length": 10,
+      "us": {
+        "reference": 170.53439617156982,
+        "sdpa": 21.20639979839325,
+        "paged": 14.076800644397736
+      },
+      "errors": {
+        "reference": {
+          "maximum_absolute": 0.0,
+          "relative_rms": 0.0,
+          "bitwise_equal": true
+        },
+        "sdpa": {
+          "maximum_absolute": 0.015625,
+          "relative_rms": 0.0014060946414247155,
+          "bitwise_equal": false
+        },
+        "paged": {
+          "maximum_absolute": 0.0,
+          "relative_rms": 0.0,
+          "bitwise_equal": true
+        }
+      }
+    }
+  ]
+}

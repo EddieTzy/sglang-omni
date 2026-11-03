@@ -1,0 +1,28 @@
+{
+  "precommit_exit_code": 0,
+  "cpu_regressions_exit_code": 0,
+  "property_checks": {
+    "state": "passed",
+    "bitwise_comparisons": 721,
+    "cuda_graph_replays": 54,
+    "compiled_custom_op": true,
+    "dtype": [
+      "bfloat16",
+      "float16"
+    ],
+    "batches": [
+      1,
+      2,
+      3,
+      4,
+      7,
+      8,
+      16,
+      32,
+      64
+    ],
+    "nan_tail_and_padding_preserved": true,
+    "noncontiguous_query": true
+  },
+  "real_model_equal_cases": 24
+}

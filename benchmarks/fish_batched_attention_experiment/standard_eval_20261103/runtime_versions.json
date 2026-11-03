@@ -1,0 +1,23 @@
+{
+  "generation": {
+    "torch": "2.14.1+cu130",
+    "triton": "3.8.0",
+    "sglang": "0.5.22",
+    "flashinfer-python": "0.7.1",
+    "transformers": "5.19.0",
+    "torchaudio": "2.11.0+cu130"
+  },
+  "scoring": {
+    "torch": "2.14.1+cu130",
+    "triton": "3.8.0",
+    "sglang": "0.5.22",
+    "flashinfer-python": "0.7.1",
+    "transformers": "5.19.0",
+    "torchaudio": "2.11.0+cu130"
+  },
+  "gpu": [
+    "index, name, pci.bus_id, driver_version, memory.total [MiB]",
+    "2, NVIDIA GeForce RTX 5090, 00000000:63:00.0, 580.105.08, 32607 MiB",
+    "5, NVIDIA GeForce RTX 5090, 00000000:A2:00.0, 580.105.08, 32607 MiB"
+  ]
+}

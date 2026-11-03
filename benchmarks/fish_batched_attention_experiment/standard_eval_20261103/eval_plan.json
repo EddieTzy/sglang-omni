@@ -1,0 +1,113 @@
+{
+  "base_commit": "3b394b4193a8b76a6b5f52bf99da2a2729d6161e",
+  "head_commit": "5d52af12b1ac8b26bf82e2b2501ff94e81386cb5",
+  "checkpoint": "fishaudio/s2-pro@1de9996b6be38b745688de084d87a5633f714e4e",
+  "dataset": "zhaochenyang20/seed-tts-eval-arrow@27f4c1adee83b5b29b7c4b375f6b976324bda308",
+  "comparison": "Per-request versus batched FlashInfer short FastAR attention; upstream default synchronous decode in both arms",
+  "tts_physical_gpu": 5,
+  "score_physical_gpu": 2,
+  "arms": [
+    [
+      "reference",
+      1
+    ],
+    [
+      "head",
+      1
+    ],
+    [
+      "head",
+      2
+    ],
+    [
+      "reference",
+      2
+    ]
+  ],
+  "performance": {
+    "stream": true,
+    "workloads": [
+      [
+        1,
+        64
+      ],
+      [
+        16,
+        512
+      ],
+      [
+        64,
+        1088
+      ]
+    ],
+    "second_pass_concurrencies": [
+      16,
+      64
+    ],
+    "expected_measured_requests": 6528,
+    "max_running_requests": 64,
+    "cuda_graph_bs": [
+      1,
+      2,
+      4,
+      8,
+      16,
+      32,
+      64
+    ]
+  },
+  "quality": {
+    "stream": true,
+    "concurrency": 16,
+    "languages": {
+      "en": 1088,
+      "zh": 2020
+    },
+    "expected_measured_requests": 12432,
+    "max_running_requests": 16,
+    "cuda_graph_bs": [
+      1,
+      2,
+      4,
+      8,
+      16
+    ]
+  },
+  "sampling": {
+    "temperature": 0.8,
+    "top_p": 0.8,
+    "top_k": 30,
+    "repetition_penalty": 1.1,
+    "engine_random_seed": 42,
+    "request_seed": null,
+    "max_new_tokens": 2048
+  },
+  "warmup": "concurrency-matched before every measured point",
+  "scoring": "Qwen3-ASR-1.7B raw corpus EN WER/ZH CER and WavLM cosine x 100; all samples retained",
+  "timing": "All generation arms sequential on GPU 5; scoring on GPU 2 starts after generation finishes",
+  "usage_recovery": "Identical old-PR client; missing terminal usage recovered outside the timed window",
+  "preflight": "64 streaming samples at concurrency 64 for each arm",
+  "sha256": {
+    "client.py": "2ac7566f15fd5b6ae3fbd97c7e093e6596741d529c4c8fa7eb826aec1dc2e027",
+    "performance.yaml": "2268de9ca9e1fadf5b4b472d0b9cab35a35ee0680e00474ba1009718ad3b981c",
+    "quality.yaml": "13760f5549503b0a5c82aebf9f95786f74203dc01f27e30443fa752ca984935d",
+    "asr.yaml": "85578af086248bed3ca679cb924cef2c031da7fd18fd7ed18831f06a40f19c25",
+    "run_standard.py": "4881b7012039e1c6e8d618171a7af194641d9278243cb66bf7ad92b732431adf"
+  },
+  "async_decode": false,
+  "fixed_decode_slots": false,
+  "state_fusion": false,
+  "scoring_recovery": {
+    "failed_gpu": 6,
+    "replacement_gpu": 2,
+    "reason": "Other-task GPU memory increased before ASR startup; own scorer failed with OOM before any scores were produced.",
+    "all_generation_reused": true,
+    "all_final_scoring_same_gpu": true,
+    "utc": "2026-11-03T07:12:54.175480+00:00"
+  },
+  "candidate_label": "head is the legacy benchmark label for the batched-attention candidate",
+  "generation_physical_gpu": 5,
+  "scoring_physical_gpu": 2,
+  "cached_baseline_reused": false,
+  "baseline_reason": "New source revision and different physical GPU require a fresh paired reference."
+}
