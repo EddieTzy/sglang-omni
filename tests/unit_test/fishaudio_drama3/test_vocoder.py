@@ -535,8 +535,34 @@ def test_phase_projection_preserves_transposed_convolution_samples(
     torch.testing.assert_close(actual, expected, rtol=1e-12, atol=1e-12)
 
 
-def test_phase_projection_rejects_overlapping_taps() -> None:
-    convolution = torch.nn.ConvTranspose1d(4, 6, 4, stride=2)
+@pytest.mark.parametrize(
+    ("kernel_size", "stride_frames", "groups", "dilation", "padding", "output_padding"),
+    [
+        (4, 2, 1, 1, 0, 0),
+        (2, 2, 2, 1, 0, 0),
+        (2, 2, 1, 2, 0, 0),
+        (2, 2, 1, 1, 1, 0),
+        (2, 2, 1, 1, 0, 1),
+    ],
+)
+def test_phase_projection_rejects_unsupported_convolutions(
+    kernel_size: int,
+    stride_frames: int,
+    groups: int,
+    dilation: int,
+    padding: int,
+    output_padding: int,
+) -> None:
+    convolution = torch.nn.ConvTranspose1d(
+        4,
+        6,
+        kernel_size,
+        stride=stride_frames,
+        groups=groups,
+        dilation=dilation,
+        padding=padding,
+        output_padding=output_padding,
+    )
     with pytest.raises(ValueError, match="non-overlapping"):
         PhaseLinearUpsample(convolution)
 

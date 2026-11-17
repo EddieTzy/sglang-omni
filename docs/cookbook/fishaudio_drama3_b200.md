@@ -2,6 +2,29 @@
 
 This recipe targets the official block-FP8 Drama 3 checkpoint on a single NVIDIA B200 (SM100). It combines the existing asynchronous decode, CUDA graph, fused tower, sampler, and MPS paths with tuned expert GEMMs and a quantizer upsampling optimization. Measurements use SGLang 0.5.23, Triton 3.8.0, PyTorch 2.14.1+cu130, CUDA 13, and driver 580.173.02. They do not establish performance on SM120 or other software versions.
 
+## Current-main port and GPU validation
+
+This port starts from official main at a338eb0e6ac39c43bf1d08aad42dd8da9970198f, inspected on November 17, 2026, and retains its pinned SGLang 0.5.23 dependency. The sampler's newer 16-warp implementation and strided outputs, as well as the fused tower's tensor-parallel fallback, are preserved. The optimization patches originate from lamianlbe's commits 1f7e33177c17fb243262a3296b69147fd1450c60 and b82e2ad974fefa068e65583ba537e5f59062b4b7. The buffered GDN prototype is not included.
+
+The measurements below describe those original patches on their original baseline, not measurements of this port. GPU correctness, audio quality, throughput, and graph/eager parity must be revalidated against the current-main baseline before submitting a PR. B200 kernel enablement remains experimental.
+
+On the GPU development machine, install the current repository's CUDA dependencies and Fish Audio extra using the main cookbook, then run:
+
+```bash
+python -m pytest \
+  tests/unit_test/fishaudio_drama3/test_sampling_kernels.py \
+  tests/unit_test/fishaudio_drama3/test_tower_kernels.py \
+  tests/unit_test/fishaudio_drama3/test_vocoder.py \
+  tests/unit_test/utils/test_channels_last_conv.py -q
+
+python -m pytest tests/unit_test/fishaudio_drama3/test_graph_engine.py -q
+python -m pytest tests/unit_test/fishaudio_drama3 -q
+```
+
+The graph-engine tests create synthetic checkpoints; real-checkpoint serving and listening checks are also required. Preserve all numerical assertions and capture the names and logs of any failures on both the baseline and candidate. Previously reported strict parity failures are unresolved, not expected passes or xfails.
+
+For a fresh serving comparison, use a separate checkout of the baseline commit, keep engine capacity, client concurrency, prompts, sampling settings, MPS, and warmup identical, and alternate deployment order. Compare the baseline, this branch without SGLANG_MOE_CONFIG_DIR, and this branch with the optional tuning directory. This separates the incremental MoE configuration effect from the rest of the port; it does not isolate the quantizer effect from B200 kernel enablement. Record package and driver versions, errors, truncations, audio seconds/s, requests/s, first-audio latency, playback stalls, and fixed-codebook audio comparisons. Do not assume the original 23.9% combined gain survives the newer main branch.
+
 ## Start the measured configuration
 
 Install the Fish Audio dependencies using the [Drama 3 cookbook](fishaudio_drama3.md). From the repository root, set the two local checkpoint paths and launch:
