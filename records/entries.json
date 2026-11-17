@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-11-03T11:07:41+00:00",
+  "updated_at_utc": "2026-11-17T03:59:33+00:00",
   "entries": [
     {
       "id": "fish-async-decode",
@@ -422,6 +422,65 @@
       },
       "assessment": "当前最值得继续推进的独立优化：高并发服务吞吐有收益，单请求基本持平。全量质量波动的配对区间跨零，未证明质量改善或统计意义上的不退化；尚无 H100 验证，按当前要求只保存分支。",
       "report_url": "https://github.com/EddieTzy/sglang-omni/blob/experiment/fish-batched-fast-ar-attention/benchmarks/fish_batched_attention_experiment/standard_eval_20261103/RESULTS.txt"
+    },
+    {
+      "id": "drama3-quantizer-moe",
+      "framework": "SGLang",
+      "project": "sglang-omni",
+      "model": "Fish Audio Drama 3",
+      "component": "SM100 kernel 支持、quantizer 上采样与 MoE 调优",
+      "status": "移植最新官方 main，待 GPU 完整测试，尚未创建 PR",
+      "branch": "perf/drama3-quantizer-moe",
+      "branch_url": "https://github.com/EddieTzy/sglang-omni/tree/perf/drama3-quantizer-moe",
+      "branch_published": true,
+      "pr": null,
+      "pr_url": null,
+      "result": "17 项隔离 CPU 数值与条件检查通过；暂无本次移植的 GPU 性能或音质结果。源分支 23.9% 组合收益不作为当前分支实测结论。",
+      "change": "移植 SM100 sampler / fused tower 支持、FP16 quantizer phase projection 和可选 MoE up/down 配置，保留最新主线采样与张量并行限制。",
+      "contributor_role": "移植、主线适配与验证准备；原始优化作者为 lamianlbe，不计为本人原创",
+      "implementation": {
+        "commit": "a9d0aee81a71b65203ece956e92114fb9d1e4a41",
+        "base_commit": "a338eb0e6ac39c43bf1d08aad42dd8da9970198f",
+        "tree": "db016d49c93a029b2e8f1740c2956338ecc9492b",
+        "sglang_version": "0.5.23",
+        "original_author": "lamianlbe",
+        "source_commits": [
+          "1f7e33177c17fb243262a3296b69147fd1450c60",
+          "b82e2ad974fefa068e65583ba537e5f59062b4b7"
+        ]
+      },
+      "validation": {
+        "isolated_cpu_phase_projection_passed": 17,
+        "cpu_torch_version": "2.14.0",
+        "changed_file_pre_commit": "passed",
+        "full_repository_pre_commit": "Rust formatting unavailable: cargo missing; remaining hooks passed or passed after formatting",
+        "full_test_collection": "blocked by optional codec dependencies and bastion CPU SGLang environment",
+        "gpu_tests_run": false,
+        "serving_tests_run": false,
+        "unresolved_source_graph_eager_parity_failures": 2
+      },
+      "target_hardware": "NVIDIA B200 / SM100; quantizer replacement requires FP16; optional MoE configs target Triton 3.8.0",
+      "code_locations": [
+        {
+          "path": "sglang_omni/models/fishaudio_drama3/channels_last_decoder.py",
+          "symbols": [
+            "PhaseLinearUpsample",
+            "ChannelsLastDecoder"
+          ]
+        },
+        {
+          "path": "sglang_omni/models/fishaudio_drama3/sampling_kernels.py",
+          "symbols": [
+            "untested_gpu_reason"
+          ]
+        },
+        {
+          "path": "examples/configs/drama3_b200_moe",
+          "symbols": []
+        }
+      ],
+      "report_url": "https://github.com/EddieTzy/sglang-omni/blob/docs/contribution-log/records/drama3.md",
+      "gpu_test_instructions_url": "https://github.com/EddieTzy/sglang-omni/blob/perf/drama3-quantizer-moe/docs/cookbook/fishaudio_drama3_b200.md"
     }
   ]
 }
