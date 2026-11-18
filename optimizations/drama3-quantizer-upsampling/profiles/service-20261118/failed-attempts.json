@@ -1,0 +1,32 @@
+[
+  {
+    "run": "quantizer-service-profile-20261118T035502Z",
+    "state": "failed",
+    "arms": [
+      {
+        "variant": "baseline",
+        "label": "quantizer-service-profile-20261118T035502Z-baseline",
+        "state": "failed",
+        "exit_code": 1
+      }
+    ],
+    "original_service_restored": true,
+    "original_running": true,
+    "error": "baseline profile failed"
+  },
+  {
+    "run": "quantizer-service-profile-20261118T035948Z",
+    "state": "failed",
+    "arms": [
+      {
+        "variant": "baseline",
+        "label": "quantizer-service-profile-20261118T035948Z-baseline",
+        "state": "failed",
+        "exit_code": 1
+      }
+    ],
+    "original_service_restored": true,
+    "original_running": true,
+    "error": "baseline profile failed"
+  }
+]

@@ -1,0 +1,16 @@
+[
+  {
+    "variant": "baseline",
+    "file": "sglang_omni/profiler/torch_profiler.py",
+    "original_sha256": "261cc135a0e0aa874fc25f2cd8735e4e0ea00ad9d9669a04f731bdfeb84f43ca",
+    "diagnostic_sha256": "0377b684d4eb3220bf5ecc1d009e670897b3945d936631a3b0d8e2a7f3bf26df",
+    "changes": "CUDA activities only; profile_all_threads=False; identical diagnostic overlay in both arms; production model source unchanged"
+  },
+  {
+    "variant": "quantizer",
+    "file": "sglang_omni/profiler/torch_profiler.py",
+    "original_sha256": "261cc135a0e0aa874fc25f2cd8735e4e0ea00ad9d9669a04f731bdfeb84f43ca",
+    "diagnostic_sha256": "0377b684d4eb3220bf5ecc1d009e670897b3945d936631a3b0d8e2a7f3bf26df",
+    "changes": "CUDA activities only; profile_all_threads=False; identical diagnostic overlay in both arms; production model source unchanged"
+  }
+]

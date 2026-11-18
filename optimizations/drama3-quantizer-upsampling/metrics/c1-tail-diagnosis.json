@@ -1,0 +1,30 @@
+{
+  "scope": "Offline diagnosis; all measured requests retained; no retesting or GPU work",
+  "request_count": 64,
+  "equal_completion_tokens": 64,
+  "baseline_ttfa_median_s": 0.0725,
+  "candidate_ttfa_median_s": 0.0742,
+  "sum_latency_delta_s": 2.2540999999999993,
+  "sum_ttfa_delta_s": 2.5605,
+  "largest_ttfa_deltas": [
+    {
+      "id": "common_voice_en_10933823-common_voice_en_10933822",
+      "request_index": 4,
+      "ttfa_delta_s": 1.183,
+      "latency_delta_s": 1.1925
+    },
+    {
+      "id": "common_voice_en_103675-common_voice_en_103676",
+      "request_index": 2,
+      "ttfa_delta_s": 0.8072,
+      "latency_delta_s": 0.7985
+    },
+    {
+      "id": "common_voice_en_137148-common_voice_en_137152",
+      "request_index": 14,
+      "ttfa_delta_s": 0.40309999999999996,
+      "latency_delta_s": 0.37350000000000005
+    }
+  ],
+  "interpretation": "The measured c1 average regression is concentrated in three early first-audio outliers. Their root cause is not established; do not claim an inherent per-step GEMM slowdown or remove these samples."
+}

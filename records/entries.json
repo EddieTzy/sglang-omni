@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-11-18T03:40:21+00:00",
+  "updated_at_utc": "2026-11-18T04:17:24.252351+00:00",
   "entries": [
     {
       "id": "fish-async-decode",
@@ -114,7 +114,10 @@
           "GitHub PR page embedded MERGED state",
           "merge commit in upstream history"
         ]
-      }
+      },
+      "detailed_record": "optimizations/fish-async-decode/README.md",
+      "optimization_layer": "CPU/GPU 调度重叠",
+      "profiling_status": "not-reverified-in-this-update"
     },
     {
       "id": "fish-state-fusion",
@@ -144,7 +147,10 @@
       "branch_url": "https://github.com/EddieTzy/sglang-omni/tree/perf/fish-decode-state-fusion",
       "pr_url": null,
       "branch_published": true,
-      "workflow_category": "not_adopted"
+      "workflow_category": "not_adopted",
+      "detailed_record": "optimizations/fish-state-fusion/README.md",
+      "optimization_layer": "状态更新算子融合",
+      "profiling_status": "not-reverified-in-this-update"
     },
     {
       "id": "fish-fixed-slots",
@@ -176,7 +182,10 @@
       "branch_url": "https://github.com/EddieTzy/sglang-omni/tree/perf/fish-fixed-slot-overlap",
       "pr_url": null,
       "branch_published": true,
-      "workflow_category": "not_adopted"
+      "workflow_category": "not_adopted",
+      "detailed_record": "optimizations/fish-fixed-slots/README.md",
+      "optimization_layer": "状态布局与调度",
+      "profiling_status": "not-reverified-in-this-update"
     },
     {
       "id": "fish-semantic-head",
@@ -209,7 +218,10 @@
         "verification": [
           "GitHub PR page embedded CLOSED state with mergedTime null"
         ]
-      }
+      },
+      "detailed_record": "optimizations/fish-semantic-head/README.md",
+      "optimization_layer": "输出投影算子",
+      "profiling_status": "not-reverified-in-this-update"
     },
     {
       "id": "fish-fast-ar-cache-reset",
@@ -233,7 +245,10 @@
       "branch_url": "https://github.com/EddieTzy/sglang-omni/tree/perf/fish-fast-ar-cache-reset",
       "pr_url": null,
       "branch_published": true,
-      "workflow_category": "in_progress"
+      "workflow_category": "in_progress",
+      "detailed_record": "optimizations/fish-fast-ar-cache-reset/README.md",
+      "optimization_layer": "KV 缓存与内存操作",
+      "profiling_status": "not-reverified-in-this-update"
     },
     {
       "id": "fish-batched-outputs",
@@ -257,7 +272,10 @@
       "branch_url": "https://github.com/EddieTzy/sglang-omni/tree/perf/fish-batched-step-outputs",
       "pr_url": null,
       "branch_published": true,
-      "workflow_category": "not_adopted"
+      "workflow_category": "not_adopted",
+      "detailed_record": "optimizations/fish-batched-outputs/README.md",
+      "optimization_layer": "CPU 收集与张量拷贝",
+      "profiling_status": "not-reverified-in-this-update"
     },
     {
       "id": "fish-combined",
@@ -288,7 +306,10 @@
       "branch_url": "https://github.com/EddieTzy/sglang-omni/tree/perf/fish-decode-combined",
       "pr_url": null,
       "branch_published": true,
-      "workflow_category": "in_progress"
+      "workflow_category": "in_progress",
+      "detailed_record": "optimizations/fish-combined/README.md",
+      "optimization_layer": "组合优化",
+      "profiling_status": "not-reverified-in-this-update"
     },
     {
       "id": "fish-batched-attention",
@@ -450,7 +471,10 @@
       },
       "assessment": "当前最值得继续推进的独立优化：高并发服务吞吐有收益，单请求基本持平。全量质量波动的配对区间跨零，未证明质量改善或统计意义上的不退化；尚无 H100 验证，按当前要求只保存分支。",
       "report_url": "https://github.com/EddieTzy/sglang-omni/blob/experiment/fish-batched-fast-ar-attention/benchmarks/fish_batched_attention_experiment/standard_eval_20261103/RESULTS.txt",
-      "workflow_category": "measured_tradeoff"
+      "workflow_category": "measured_tradeoff",
+      "detailed_record": "optimizations/fish-batched-attention/README.md",
+      "optimization_layer": "attention 批处理与派发",
+      "profiling_status": "not-reverified-in-this-update"
     },
     {
       "id": "drama3-quantizer-moe",
@@ -516,7 +540,10 @@
         "drama3-quantizer-upsampling",
         "drama3-sm100-kernels",
         "drama3-b200-moe-configs"
-      ]
+      ],
+      "detailed_record": "optimizations/drama3-quantizer-moe/README.md",
+      "optimization_layer": "历史组合，已拆分",
+      "profiling_status": "not-reverified-in-this-update"
     },
     {
       "framework": "SGLang",
@@ -611,7 +638,31 @@
         "cause_established": false
       },
       "assessment": "保留为有取舍的候选。低并发额外耗时集中于三个早期首音长尾，不能据此认定 GEMM 每一步都慢；高并发更适合批量矩阵运算只是机制假设，尚无 profiler 证据。不得删除慢样本或宣称默认启用即可全面变快。",
-      "detailed_report": "records/drama3-quantizer-b200-20261118.md"
+      "detailed_report": "records/drama3-quantizer-b200-20261118.md",
+      "detailed_record": "optimizations/drama3-quantizer-upsampling/README.md",
+      "optimization_layer": "codec 上采样算子与数据布局",
+      "profiling_status": "operator-and-exclusive-service-traces-collected; original-first-audio-outliers-not-reproduced-or-root-caused",
+      "code_locations": [
+        {
+          "path": "sglang_omni/models/fishaudio_drama3/channels_last_decoder.py",
+          "symbols": [
+            "PhaseLinearUpsample",
+            "ChannelsLastDecoder.__init__",
+            "ChannelsLastDecoder.__call__"
+          ]
+        }
+      ],
+      "service_profile_report": "optimizations/drama3-quantizer-upsampling/profiles/service-20261118/README.md",
+      "metric_report": "optimizations/drama3-quantizer-upsampling/metrics/serving.json",
+      "profile_findings": {
+        "position": "quantizer convolution algorithm and activation layout",
+        "not_established": "scheduling-bubble reduction, root cause of original three outliers, stable universal speedup",
+        "profile_requests": 144,
+        "matched_requests": 144,
+        "unprofiled_control_requests": 384,
+        "failed_requests": 0,
+        "original_service_healthy": true
+      }
     },
     {
       "framework": "SGLang",
@@ -653,7 +704,24 @@
         "performance_run": false,
         "full_quality_evaluation_run": false
       },
-      "assessment": "两个严格 graph/eager 检查仍失败；禁用 sampler/tower 的控制也有 semantic-logit 差异，分析的输入帧与生成帧一致，但尚未完全解释。B200 的默认 FA3 增量 codec 等主线问题另记，不将全套测试描述为通过。"
+      "assessment": "两个严格 graph/eager 检查仍失败；禁用 sampler/tower 的控制也有 semantic-logit 差异，分析的输入帧与生成帧一致，但尚未完全解释。B200 的默认 FA3 增量 codec 等主线问题另记，不将全套测试描述为通过。",
+      "detailed_record": "optimizations/drama3-sm100-kernels/README.md",
+      "optimization_layer": "架构分派与 sampler/tower kernel",
+      "profiling_status": "not-reverified-in-this-update",
+      "code_locations": [
+        {
+          "path": "sglang_omni/models/fishaudio_drama3/sampling_kernels.py",
+          "symbols": [
+            "architecture dispatch"
+          ]
+        },
+        {
+          "path": "tests/unit_test/fishaudio_drama3/graph_recording_model.py",
+          "symbols": [
+            "attention instrumentation for SGLang 0.5.23"
+          ]
+        }
+      ]
     },
     {
       "framework": "SGLang",
@@ -690,7 +758,20 @@
         "current_runtime_expert_comparison_run": false,
         "performance_run": false,
         "full_quality_evaluation_run": false
-      }
+      },
+      "detailed_record": "optimizations/drama3-b200-moe-configs/README.md",
+      "optimization_layer": "MoE kernel 调优配置",
+      "profiling_status": "unmodified-base-service-hotspot-observed; candidate-not-profiled-or-benchmarked",
+      "code_locations": [
+        {
+          "path": "examples/configs/drama3_b200_moe/README.md",
+          "symbols": [
+            "SGLANG_MOE_CONFIG_DIR",
+            "up/down TMA configuration"
+          ]
+        }
+      ],
+      "baseline_hotspot_report": "optimizations/drama3-quantizer-upsampling/profiles/service-20261118/README.md"
     }
   ],
   "workflow_categories": [
@@ -724,5 +805,7 @@
       "label": "已关闭或归档",
       "meaning": "已关闭的 PR 或被替代的历史组合分支"
     }
-  ]
+  ],
+  "record_methodology": "records/performance-methodology.md",
+  "cost_definition": "Per-request inference elapsed time; currently client send-to-complete latency, not monetary cost or GPU-only kernel duration"
 }

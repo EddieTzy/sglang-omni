@@ -1,0 +1,16 @@
+[
+  {
+    "variant": "baseline",
+    "file": "benchmarks/metrics/performance.py",
+    "original_sha256": "b01df1c737a893a35af499ca5f21bef17fb3bb707a9945e625aae7f7c0d4fd46",
+    "diagnostic_sha256": "5b4522fd6bdc1e92b44a9391dd4af90bd74d0b88ca0d460edb8498f1d5643e5f",
+    "changes": "Serialize existing speech_outcome_id for direct client-to-stage event correlation; no timing or request-generation changes"
+  },
+  {
+    "variant": "quantizer",
+    "file": "benchmarks/metrics/performance.py",
+    "original_sha256": "b01df1c737a893a35af499ca5f21bef17fb3bb707a9945e625aae7f7c0d4fd46",
+    "diagnostic_sha256": "5b4522fd6bdc1e92b44a9391dd4af90bd74d0b88ca0d460edb8498f1d5643e5f",
+    "changes": "Serialize existing speech_outcome_id for direct client-to-stage event correlation; no timing or request-generation changes"
+  }
+]
