@@ -1,0 +1,26 @@
+[
+  {
+    "id": "drama3-quantizer-upsampling",
+    "title": "[Perf] Optimize eligible SM100 quantizer upsampling for Drama3",
+    "base": "sgl-project/sglang-omni:main",
+    "head": "EddieTzy:perf/drama3-b200-quantizer-upsample-pr",
+    "draft": true,
+    "state": "creation_blocked",
+    "error": "GraphQL: Resource not accessible by integration (createPullRequest)",
+    "pr_url": null,
+    "compare_url": "https://github.com/sgl-project/sglang-omni/compare/main...EddieTzy:sglang-omni:perf/drama3-b200-quantizer-upsample-pr?expand=1",
+    "body": "optimizations/drama3-quantizer-upsampling/PR.md"
+  },
+  {
+    "id": "drama3-b200-moe-configs",
+    "title": "[Perf] Add opt-in B200 MoE configurations for Drama3",
+    "base": "sgl-project/sglang-omni:main",
+    "head": "EddieTzy:perf/drama3-b200-moe-configs-pr",
+    "draft": true,
+    "state": "creation_blocked",
+    "error": "GraphQL: Resource not accessible by integration (createPullRequest)",
+    "pr_url": null,
+    "compare_url": "https://github.com/sgl-project/sglang-omni/compare/main...EddieTzy:sglang-omni:perf/drama3-b200-moe-configs-pr?expand=1",
+    "body": "optimizations/drama3-b200-moe-configs/PR.md"
+  }
+]

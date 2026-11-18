@@ -566,7 +566,7 @@
       "id": "drama3-quantizer-upsampling",
       "component": "Quantizer phase projection 上采样",
       "workflow_category": "measured_tradeoff",
-      "status": "独立分支已推送，PR尚未创建",
+      "status": "Draft正文与分支已准备；GitHub集成权限阻止创建PR",
       "branch": "perf/drama3-b200-quantizer-upsample-pr",
       "branch_url": "https://github.com/EddieTzy/sglang-omni/tree/perf/drama3-b200-quantizer-upsample-pr",
       "implementation_commit": "57c747e0",
@@ -663,7 +663,8 @@
         "failed_requests": 0,
         "original_service_healthy": true
       },
-      "final_report": "records/drama3-final-20261118/README.md"
+      "final_report": "records/drama3-final-20261118/README.md",
+      "submission_state": "creation_blocked"
     },
     {
       "framework": "SGLang",
@@ -746,7 +747,7 @@
       "id": "drama3-b200-moe-configs",
       "component": "B200 MoE up/down TMA 可选配置",
       "workflow_category": "in_progress",
-      "status": "独立分支已推送，PR尚未创建",
+      "status": "Draft正文与分支已准备；GitHub集成权限阻止创建PR",
       "branch": "perf/drama3-b200-moe-configs-pr",
       "branch_url": "https://github.com/EddieTzy/sglang-omni/tree/perf/drama3-b200-moe-configs-pr",
       "implementation_commit": "aa7aae97",
@@ -774,7 +775,8 @@
         }
       ],
       "baseline_hotspot_report": "optimizations/drama3-quantizer-upsampling/profiles/service-20261118/README.md",
-      "final_report": "records/drama3-final-20261118/README.md"
+      "final_report": "records/drama3-final-20261118/README.md",
+      "submission_state": "creation_blocked"
     }
   ],
   "workflow_categories": [

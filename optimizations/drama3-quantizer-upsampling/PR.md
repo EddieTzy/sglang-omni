@@ -16,6 +16,19 @@ None.
 
 ## Accuracy Test
 
+### Full Seed-TTS evaluation
+
+Streaming voice cloning, concurrency **64**, EN **1,088** and ZH **2,020** samples per pass, two passes per variant. Each cell below is **pass 1 / pass 2**.
+
+| Language | Variant | WER / CER | Speaker similarity | Evaluated per pass |
+|---|---|---:|---:|---:|
+| en | baseline | 0.9127 / 0.8875% | 62.2362 / 62.4994 | 1088 |
+| en | quantizer | 0.9043 / 0.8959% | 62.4651 / 62.8685 | 1088 |
+| zh | baseline | 0.6104 / 0.6104% | 73.5096 / 73.4863 | 2020 |
+| zh | quantizer | 0.6483 / 0.6341% | 73.4968 / 73.6026 | 2020 |
+
+### Targeted correctness and quality interpretation
+
 30 targeted tests passed, including 13 CUDA cases, actual optimized-path selection, shared-codec stateful reuse, and bitwise graph/eager replay. The same production implementation passed 16 EN/ZH fixed-codebook real-checkpoint reconstructions: max absolute waveform error 0.00323486328125 and min SNR 53.2953 dB, within the existing FP16 rtol=0.02/atol=0.02 tolerance. Reconstruction tolerances do not establish generated-audio equivalence.
 
 Two full generation passes per arm: EN 1088 and ZH 2020 utterances per pass, C64, scored with Qwen3-ASR 1.7B and WavLM. No skipped or high-error filtered samples. Raw corpus error rates and cosine similarity ×100 (two-pass means):
@@ -32,6 +45,21 @@ Paired utterance bootstrap, 2000 resamples retaining both passes:
 These intervals are conditional on two passes and do not prove noninferiority; no acceptance margin was predefined and no full human listening study was performed. Both languages and both rounds are retained in the linked evidence. Changed-file pre-commit and git diff --check passed.
 
 ## Benchmark & Profiling
+
+### Serving workload aligned with #3283
+
+The request counts, streaming/natural-EOS workload and metric layout follow [#3283](https://github.com/sgl-project/sglang-omni/pull/3283). This evaluation uses B200 rather than RTX 5090 and quality concurrency 64 rather than 16; absolute performance is not comparable. Each cell is **pass 1 / pass 2**.
+
+| Concurrency | Variant | Frames/s | TTFA p50 (s) | RTF mean | Playback underrun p95 (s) |
+|---:|---|---:|---:|---:|---:|
+| 1 | baseline | 148.9000 / 165.0000 | 0.0743 / 0.0724 | 0.1413 / 0.1314 | 0.0000 / 0.0000 |
+| 1 | quantizer | 150.9000 / 167.8000 | 0.0729 / 0.0724 | 0.1393 / 0.1293 | 0.0000 / 0.0000 |
+| 16 | baseline | 1108.3000 / 1108.2000 | 0.1901 / 0.1852 | 0.3113 / 0.3115 | 0.0000 / 0.0000 |
+| 16 | quantizer | 1171.3000 / 1169.4000 | 0.1841 / 0.1829 | 0.2955 / 0.2944 | 0.0000 / 0.0000 |
+| 64 | baseline | 2127.0000 / 2121.4000 | 0.2441 / 0.2424 | 0.6439 / 0.6459 | 0.3160 / 0.3149 |
+| 64 | quantizer | 2355.3000 / 2341.0000 | 0.2459 / 0.2598 | 0.5805 / 0.5853 | 0.1347 / 0.1415 |
+
+### Environment, mean gains and attribution
 
 Base `8848e5003ba79923af1e175364cef6a7cdb20109`; candidate `054d0b1c77f0e78d24d6aeb8667dbb031c31d009`. B200, PyTorch 2.14.1+cu130, SGLang 0.5.23, Triton 3.8.0, FlashInfer 0.7.2, driver 580.173.02.
 
@@ -50,6 +78,10 @@ The C64 service trace removes the targeted direct-dgrad/layout path. Controlled-
 C1 first-audio outliers occur in the baseline too. Per-request diagnostic boundaries locate the dominant delay in reference preprocessing, inside host-side cuDNN attention calls; they do not establish which internal initialization/planning/synchronization step is responsible. Do not attribute this tail to the candidate.
 
 [Full experiment report, exact manifests, both rounds, p50/p95/p99, continuity, quality intervals, and profile analysis](https://github.com/EddieTzy/sglang-omni/blob/docs/contribution-log/records/drama3-final-20261118/README.md). Earlier screening and invalid no-op selection measurements are retained as history, excluded from this result. No combined-optimization gain is claimed.
+
+## Validation
+
+The exact measured commits are stated above. No GPU test was run while preparing this submission. Public evidence includes per-request sanitized metrics, full manifest checks, and CPU analysis scripts. Targeted checks and changed-file pre-commit passed; no full-repository CI pass is claimed.
 
 ## Checklist
 
