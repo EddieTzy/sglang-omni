@@ -2,7 +2,11 @@
 
 按状态查看进展，再按框架、模型和优化位置定位证据。代码分支已推送、PR 已创建、PR 已合并是三个不同状态；实现完成也不等于性能收益成立。
 
-最后整理：2026-11-18 12:17（北京时间）。本次核实 #3283 已合并、#3408 已关闭，并更新 Drama3 拆分验证记录；其他历史实验不表示本次重新测试。
+最后整理：2026-11-18（北京时间）。本次核实 #3283 已合并、#3408 已关闭，并更新 Drama3 拆分验证记录；其他历史实验不表示本次重新测试。
+
+最新进展：三项 Drama3 独立候选已完成两轮流式性能和全量 EN/ZH 自动质量评分，38,176 条正式请求全部成功。C64 音频吞吐分别 +10.54% / +4.03% / +8.07%；SM100 中文错误率有上升风险。GPU 已释放。分支已推送，上游 PR 尚未创建。[最终验证总报告](records/drama3-final-20261118/README.md)。
+
+当前 Drama3 验证结论及完整限制见最终报告；其他模型条目保留其历史条件。
 
 ## 状态总览
 
@@ -31,15 +35,15 @@
 | --- | --- | --- | --- |
 | SGLang / Fish S2-Pro | FastAR KV 缓存清空 | 并发1/16/64 帧吞吐 +1.49%/+0.16%/+1.68%；复用历史基线并做短校准，仍需新基线配对复测。 | [分支](https://github.com/EddieTzy/sglang-omni/tree/perf/fish-fast-ar-cache-reset) · [详情](optimizations/fish-fast-ar-cache-reset/README.md) · [记录](records/fish-s2-pro.md) |
 | SGLang / Fish S2-Pro | 语义头与 FastAR 清空及结果收集组合 | 短测并发1/16/64 帧吞吐 +2.49%/+0.17%/+1.67%；未完成全量质量评测，不作为可合并结论。 | [分支](https://github.com/EddieTzy/sglang-omni/tree/perf/fish-decode-combined) · [详情](optimizations/fish-combined/README.md) · [记录](records/fish-s2-pro.md) |
-| SGLang / Fish Audio Drama 3 | SM100 sampler / fused tower 支持 | Sampler 38 项、tower 31 项通过；完整 Drama3 套件 833 通过、4 跳过、21 失败。无独立性能结论。 | [分支](https://github.com/EddieTzy/sglang-omni/tree/feat/drama3-sm100-kernels) · [详情](optimizations/drama3-sm100-kernels/README.md) · [记录](records/drama3.md) |
-| SGLang / Fish Audio Drama 3 | B200 MoE up/down TMA 可选配置 | 文档和静态检查通过；尚无当前版本的专家数值、独立吞吐或完整音质结论。旧 23.9% 是组合结果，不能计为本项收益。 | [分支](https://github.com/EddieTzy/sglang-omni/tree/perf/drama3-b200-moe-configs) · [详情](optimizations/drama3-b200-moe-configs/README.md) · [记录](records/drama3.md) |
+| SGLang / Fish Audio Drama 3 | SM100 sampler / fused tower 支持 | 两轮并发1/16/64吞吐 +14.67%/+12.33%/+4.03%；中文错误率上升，暂不建议直接合并；保留完整套件失败。 | [分支](https://github.com/EddieTzy/sglang-omni/tree/feat/drama3-sm100-kernels-pr) · [详情](optimizations/drama3-sm100-kernels/README.md) · [记录](records/drama3.md) |
+| SGLang / Fish Audio Drama 3 | B200 MoE up/down TMA 可选配置 | 真实专家形状数值检查通过；两轮并发1/16/64吞吐 +2.02%/+8.76%/+8.07%；全量自动质量评分完成，可准备可选配置 Draft。 | [分支](https://github.com/EddieTzy/sglang-omni/tree/perf/drama3-b200-moe-configs-pr) · [详情](optimizations/drama3-b200-moe-configs/README.md) · [记录](records/drama3.md) |
 
 ## 已测有收益或取舍
 
 | 框架 / 模型 | 改动 | 当前结果与决定 | 入口 |
 | --- | --- | --- | --- |
 | SGLang / Fish S2-Pro | FastAR 短序列 attention 批处理 | 完整扫描并发1/16/64 帧吞吐变化 -0.16%/+3.39%/+10.27%；详细首包延迟和质量变化见实验报告，不据此自动提 PR。 | [分支](https://github.com/EddieTzy/sglang-omni/tree/perf/fish-batched-fast-ar-attention) · [详情](optimizations/fish-batched-attention/README.md) · [记录](records/fish-s2-pro.md) |
-| SGLang / Fish Audio Drama 3 | Quantizer phase projection 上采样 | B200 单组 base→优化初筛：并发1/16/64 音频吞吐 -5.75%/+3.77%/+11.10%；首音 p95 在并发1/16 变慢、64 变快；后续短诊断 C64 +2.52%但首包尾部回退，见详情。 | [分支](https://github.com/EddieTzy/sglang-omni/tree/perf/drama3-b200-quantizer-upsample) · [详情](optimizations/drama3-quantizer-upsampling/README.md) · [记录](records/drama3.md) · [实测报告](records/drama3-quantizer-b200-20261118.md) |
+| SGLang / Fish Audio Drama 3 | Quantizer phase projection 上采样 | 两轮并发1/16/64吞吐 +1.53%/+5.61%/+10.54%；正确性与全量自动质量评分完成，可准备 Draft。早期初筛另存历史。 | [分支](https://github.com/EddieTzy/sglang-omni/tree/perf/drama3-b200-quantizer-upsample-pr) · [详情](optimizations/drama3-quantizer-upsampling/README.md) · [记录](records/drama3.md) · [实测报告](records/drama3-quantizer-b200-20261118.md) |
 
 ## 无稳定收益或暂不采用
 

@@ -1,0 +1,9 @@
+{
+  "run": "final-pr-post-20261118T054324Z",
+  "matrix": "final-pr-matrix-20261118T050852Z",
+  "state": "complete",
+  "original_service_restored": true,
+  "original_health_verified": true,
+  "original_running": true,
+  "exit_code": 0
+}

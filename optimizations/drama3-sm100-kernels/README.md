@@ -1,5 +1,9 @@
 # Fish Audio Drama 3：SM100 sampler / fused tower 支持
 
+## 2026-11-18 最终两轮验证更新
+
+最新完整性能、质量、归因与风险见 [三项独立验证总报告](../../records/drama3-final-20261118/README.md)。GPU 已释放，原服务已恢复。以下早期记录保留其原始实验条件；当前数据以该总报告为准。代码分支已推送，上游 PR 尚未创建。
+
 状态：GPU 相关检查已完成，严格一致性问题和独立收益待确认，未提 PR。主分类：in_progress。
 
 [总索引](../../README.md) · [指标与归因口径](../../records/performance-methodology.md) · [代码分支](https://github.com/EddieTzy/sglang-omni/tree/feat/drama3-sm100-kernels)

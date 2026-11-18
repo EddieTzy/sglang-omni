@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-11-18T04:17:24.252351+00:00",
+  "updated_at_utc": "2026-11-18T07:00:00+00:00",
   "entries": [
     {
       "id": "fish-async-decode",
@@ -566,15 +566,15 @@
       "id": "drama3-quantizer-upsampling",
       "component": "Quantizer phase projection 上采样",
       "workflow_category": "measured_tradeoff",
-      "status": "单组服务初筛有高并发收益及低并发/首音回退，待定位和决策，未提 PR",
-      "branch": "perf/drama3-b200-quantizer-upsample",
-      "branch_url": "https://github.com/EddieTzy/sglang-omni/tree/perf/drama3-b200-quantizer-upsample",
+      "status": "独立分支已推送，PR尚未创建",
+      "branch": "perf/drama3-b200-quantizer-upsample-pr",
+      "branch_url": "https://github.com/EddieTzy/sglang-omni/tree/perf/drama3-b200-quantizer-upsample-pr",
       "implementation_commit": "57c747e0",
       "source_commits": [
         "b82e2ad974fefa068e65583ba537e5f59062b4b7"
       ],
       "change": "仅在 B200 FP16、kernel=stride 等条件满足时以 phase-ordered dense projection 替代 quantizer 转置卷积；不改写共享 codec 模块。",
-      "result": "B200 单组 base→优化初筛：并发1/16/64 音频吞吐 -5.75%/+3.77%/+11.10%；首音 p95 在并发1/16 变慢、64 变快。不是全场景提升，也不是无收益。",
+      "result": "最新两轮流式验证并发1/16/64音频吞吐 +1.53%/5.61%/10.54%；完整EN/ZH自动评分已完成。可准备Draft；质量非劣效未证明。",
       "validation": {
         "targeted_correctness_passed": 30,
         "targeted_cuda_cases": 13,
@@ -662,7 +662,8 @@
         "unprofiled_control_requests": 384,
         "failed_requests": 0,
         "original_service_healthy": true
-      }
+      },
+      "final_report": "records/drama3-final-20261118/README.md"
     },
     {
       "framework": "SGLang",
@@ -685,15 +686,15 @@
       "id": "drama3-sm100-kernels",
       "component": "SM100 sampler / fused tower 支持",
       "workflow_category": "in_progress",
-      "status": "GPU 相关检查已完成，严格一致性问题和独立收益待确认，未提 PR",
-      "branch": "feat/drama3-sm100-kernels",
-      "branch_url": "https://github.com/EddieTzy/sglang-omni/tree/feat/drama3-sm100-kernels",
+      "status": "独立分支已推送，PR尚未创建",
+      "branch": "feat/drama3-sm100-kernels-pr",
+      "branch_url": "https://github.com/EddieTzy/sglang-omni/tree/feat/drama3-sm100-kernels-pr",
       "implementation_commit": "e34702b2",
       "source_commits": [
         "1f7e33177c17fb243262a3296b69147fd1450c60"
       ],
       "change": "开放既有 SM100 sampler 与 fused tower 路径，并适配 SGLang 0.5.23 的逐层 attention 测试 hook；未降低断言。",
-      "result": "Sampler 38 项、tower 31 项通过；完整 Drama3 套件 833 通过、4 跳过、21 失败。无独立性能结论。",
+      "result": "最新两轮流式验证并发1/16/64音频吞吐 +14.67%/12.33%/4.03%；完整EN/ZH自动评分已完成。中文错误率有上升风险，暂不建议直接合并。",
       "validation": {
         "sampler_passed": 38,
         "tower_passed": 31,
@@ -721,7 +722,8 @@
             "attention instrumentation for SGLang 0.5.23"
           ]
         }
-      ]
+      ],
+      "final_report": "records/drama3-final-20261118/README.md"
     },
     {
       "framework": "SGLang",
@@ -744,15 +746,15 @@
       "id": "drama3-b200-moe-configs",
       "component": "B200 MoE up/down TMA 可选配置",
       "workflow_category": "in_progress",
-      "status": "独立配置分支已保存，待当前依赖版本上的单项验证，未提 PR",
-      "branch": "perf/drama3-b200-moe-configs",
-      "branch_url": "https://github.com/EddieTzy/sglang-omni/tree/perf/drama3-b200-moe-configs",
+      "status": "独立分支已推送，PR尚未创建",
+      "branch": "perf/drama3-b200-moe-configs-pr",
+      "branch_url": "https://github.com/EddieTzy/sglang-omni/tree/perf/drama3-b200-moe-configs-pr",
       "implementation_commit": "aa7aae97",
       "source_commits": [
         "b82e2ad974fefa068e65583ba537e5f59062b4b7"
       ],
       "change": "分别提供 up/down 投影配置，显式选择；历史 non-TMA 配置明确标为历史对照，不作为当前上游默认。",
-      "result": "文档和静态检查通过；尚无当前版本的专家数值、独立吞吐或完整音质结论。旧 23.9% 是组合结果，不能计为本项收益。",
+      "result": "最新两轮流式验证并发1/16/64音频吞吐 +2.02%/8.76%/8.07%；完整EN/ZH自动评分已完成。可准备Draft；质量非劣效未证明。",
       "validation": {
         "pre_commit": "passed",
         "current_runtime_expert_comparison_run": false,
@@ -771,7 +773,8 @@
           ]
         }
       ],
-      "baseline_hotspot_report": "optimizations/drama3-quantizer-upsampling/profiles/service-20261118/README.md"
+      "baseline_hotspot_report": "optimizations/drama3-quantizer-upsampling/profiles/service-20261118/README.md",
+      "final_report": "records/drama3-final-20261118/README.md"
     }
   ],
   "workflow_categories": [

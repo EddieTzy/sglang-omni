@@ -1,0 +1,464 @@
+{
+  "scope": "Actual Drama3 E256/H2048/I512/top8 shape, fixed synthetic weights; no timing or quality claims",
+  "kernel_row_relative_tolerance": 0.071,
+  "kernel_median_relative_tolerance": 0.0055,
+  "cases": [
+    {
+      "rows": 1,
+      "selected_configs": {
+        "default": [
+          {
+            "BLOCK_SIZE_M": 64,
+            "BLOCK_SIZE_N": 128,
+            "BLOCK_SIZE_K": 128,
+            "GROUP_SIZE_M": 32,
+            "num_warps": 4,
+            "num_stages": 3
+          },
+          [
+            null,
+            null
+          ]
+        ],
+        "candidate": [
+          {
+            "BLOCK_SIZE_M": 16,
+            "BLOCK_SIZE_N": 64,
+            "BLOCK_SIZE_K": 128,
+            "GROUP_SIZE_M": 32,
+            "num_warps": 4,
+            "num_stages": 3
+          },
+          [
+            {
+              "BLOCK_SIZE_M": 16,
+              "BLOCK_SIZE_N": 64,
+              "BLOCK_SIZE_K": 128,
+              "GROUP_SIZE_M": 32,
+              "num_warps": 4,
+              "num_stages": 3
+            },
+            64
+          ]
+        ]
+      },
+      "variants": {
+        "default": {
+          "maximum_row_relative_error": 0.0,
+          "median_row_relative_error": 0.0,
+          "max_absolute_error": 0.0
+        },
+        "candidate": {
+          "maximum_row_relative_error": 0.0,
+          "median_row_relative_error": 0.0,
+          "max_absolute_error": 0.0
+        }
+      },
+      "candidate_vs_default": {
+        "maximum_row_relative_error": 0.0,
+        "median_row_relative_error": 0.0
+      }
+    },
+    {
+      "rows": 8,
+      "selected_configs": {
+        "default": [
+          {
+            "BLOCK_SIZE_M": 64,
+            "BLOCK_SIZE_N": 128,
+            "BLOCK_SIZE_K": 128,
+            "GROUP_SIZE_M": 32,
+            "num_warps": 4,
+            "num_stages": 3
+          },
+          [
+            null,
+            null
+          ]
+        ],
+        "candidate": [
+          {
+            "BLOCK_SIZE_M": 16,
+            "BLOCK_SIZE_N": 64,
+            "BLOCK_SIZE_K": 128,
+            "GROUP_SIZE_M": 1,
+            "num_warps": 4,
+            "num_stages": 3
+          },
+          [
+            {
+              "BLOCK_SIZE_M": 16,
+              "BLOCK_SIZE_N": 64,
+              "BLOCK_SIZE_K": 128,
+              "GROUP_SIZE_M": 1,
+              "num_warps": 4,
+              "num_stages": 3
+            },
+            64
+          ]
+        ]
+      },
+      "variants": {
+        "default": {
+          "maximum_row_relative_error": 0.0001292927481699735,
+          "median_row_relative_error": 0.0,
+          "max_absolute_error": 0.00048828125
+        },
+        "candidate": {
+          "maximum_row_relative_error": 0.0001292927481699735,
+          "median_row_relative_error": 0.0,
+          "max_absolute_error": 0.00048828125
+        }
+      },
+      "candidate_vs_default": {
+        "maximum_row_relative_error": 0.0,
+        "median_row_relative_error": 0.0
+      }
+    },
+    {
+      "rows": 16,
+      "selected_configs": {
+        "default": [
+          {
+            "BLOCK_SIZE_M": 64,
+            "BLOCK_SIZE_N": 128,
+            "BLOCK_SIZE_K": 128,
+            "GROUP_SIZE_M": 32,
+            "num_warps": 4,
+            "num_stages": 3
+          },
+          [
+            null,
+            null
+          ]
+        ],
+        "candidate": [
+          {
+            "BLOCK_SIZE_M": 16,
+            "BLOCK_SIZE_N": 64,
+            "BLOCK_SIZE_K": 128,
+            "GROUP_SIZE_M": 1,
+            "num_warps": 4,
+            "num_stages": 3
+          },
+          [
+            {
+              "BLOCK_SIZE_M": 16,
+              "BLOCK_SIZE_N": 64,
+              "BLOCK_SIZE_K": 128,
+              "GROUP_SIZE_M": 1,
+              "num_warps": 4,
+              "num_stages": 3
+            },
+            64
+          ]
+        ]
+      },
+      "variants": {
+        "default": {
+          "maximum_row_relative_error": 6.800861592637375e-05,
+          "median_row_relative_error": 0.0,
+          "max_absolute_error": 0.000244140625
+        },
+        "candidate": {
+          "maximum_row_relative_error": 6.800861592637375e-05,
+          "median_row_relative_error": 0.0,
+          "max_absolute_error": 0.000244140625
+        }
+      },
+      "candidate_vs_default": {
+        "maximum_row_relative_error": 0.0,
+        "median_row_relative_error": 0.0
+      }
+    },
+    {
+      "rows": 32,
+      "selected_configs": {
+        "default": [
+          {
+            "BLOCK_SIZE_M": 64,
+            "BLOCK_SIZE_N": 128,
+            "BLOCK_SIZE_K": 128,
+            "GROUP_SIZE_M": 32,
+            "num_warps": 4,
+            "num_stages": 3
+          },
+          [
+            null,
+            null
+          ]
+        ],
+        "candidate": [
+          {
+            "BLOCK_SIZE_M": 16,
+            "BLOCK_SIZE_N": 128,
+            "BLOCK_SIZE_K": 128,
+            "GROUP_SIZE_M": 1,
+            "num_warps": 4,
+            "num_stages": 3,
+            "USE_TMA": true
+          },
+          [
+            {
+              "BLOCK_SIZE_M": 16,
+              "BLOCK_SIZE_N": 128,
+              "BLOCK_SIZE_K": 128,
+              "GROUP_SIZE_M": 1,
+              "num_warps": 4,
+              "num_stages": 3,
+              "USE_TMA": false
+            },
+            64
+          ]
+        ]
+      },
+      "variants": {
+        "default": {
+          "maximum_row_relative_error": 0.00015193471335805953,
+          "median_row_relative_error": 0.0,
+          "max_absolute_error": 0.00048828125
+        },
+        "candidate": {
+          "maximum_row_relative_error": 0.00015193471335805953,
+          "median_row_relative_error": 0.0,
+          "max_absolute_error": 0.00048828125
+        }
+      },
+      "candidate_vs_default": {
+        "maximum_row_relative_error": 0.0,
+        "median_row_relative_error": 0.0
+      }
+    },
+    {
+      "rows": 64,
+      "selected_configs": {
+        "default": [
+          {
+            "BLOCK_SIZE_M": 64,
+            "BLOCK_SIZE_N": 128,
+            "BLOCK_SIZE_K": 128,
+            "GROUP_SIZE_M": 32,
+            "num_warps": 4,
+            "num_stages": 3
+          },
+          [
+            null,
+            null
+          ]
+        ],
+        "candidate": [
+          {
+            "BLOCK_SIZE_M": 16,
+            "BLOCK_SIZE_N": 128,
+            "BLOCK_SIZE_K": 128,
+            "GROUP_SIZE_M": 1,
+            "num_warps": 4,
+            "num_stages": 4,
+            "USE_TMA": true
+          },
+          [
+            {
+              "BLOCK_SIZE_M": 16,
+              "BLOCK_SIZE_N": 128,
+              "BLOCK_SIZE_K": 128,
+              "GROUP_SIZE_M": 1,
+              "num_warps": 4,
+              "num_stages": 3,
+              "USE_TMA": true
+            },
+            64
+          ]
+        ]
+      },
+      "variants": {
+        "default": {
+          "maximum_row_relative_error": 0.0031714593060314655,
+          "median_row_relative_error": 0.0,
+          "max_absolute_error": 0.001953125
+        },
+        "candidate": {
+          "maximum_row_relative_error": 0.0031714593060314655,
+          "median_row_relative_error": 0.0,
+          "max_absolute_error": 0.001953125
+        }
+      },
+      "candidate_vs_default": {
+        "maximum_row_relative_error": 0.0006915103294886649,
+        "median_row_relative_error": 0.0
+      }
+    },
+    {
+      "rows": 128,
+      "selected_configs": {
+        "default": [
+          {
+            "BLOCK_SIZE_M": 64,
+            "BLOCK_SIZE_N": 128,
+            "BLOCK_SIZE_K": 128,
+            "GROUP_SIZE_M": 32,
+            "num_warps": 4,
+            "num_stages": 3
+          },
+          [
+            null,
+            null
+          ]
+        ],
+        "candidate": [
+          {
+            "BLOCK_SIZE_M": 16,
+            "BLOCK_SIZE_N": 128,
+            "BLOCK_SIZE_K": 128,
+            "GROUP_SIZE_M": 1,
+            "num_warps": 4,
+            "num_stages": 3,
+            "USE_TMA": true
+          },
+          [
+            {
+              "BLOCK_SIZE_M": 16,
+              "BLOCK_SIZE_N": 128,
+              "BLOCK_SIZE_K": 128,
+              "GROUP_SIZE_M": 1,
+              "num_warps": 4,
+              "num_stages": 3,
+              "USE_TMA": true
+            },
+            64
+          ]
+        ]
+      },
+      "variants": {
+        "default": {
+          "maximum_row_relative_error": 0.00028837285935878754,
+          "median_row_relative_error": 0.0,
+          "max_absolute_error": 0.0009765625
+        },
+        "candidate": {
+          "maximum_row_relative_error": 0.00028837285935878754,
+          "median_row_relative_error": 0.0,
+          "max_absolute_error": 0.0009765625
+        }
+      },
+      "candidate_vs_default": {
+        "maximum_row_relative_error": 0.0,
+        "median_row_relative_error": 0.0
+      }
+    },
+    {
+      "rows": 256,
+      "selected_configs": {
+        "default": [
+          {
+            "BLOCK_SIZE_M": 64,
+            "BLOCK_SIZE_N": 128,
+            "BLOCK_SIZE_K": 128,
+            "GROUP_SIZE_M": 32,
+            "num_warps": 4,
+            "num_stages": 3
+          },
+          [
+            null,
+            null
+          ]
+        ],
+        "candidate": [
+          {
+            "BLOCK_SIZE_M": 16,
+            "BLOCK_SIZE_N": 128,
+            "BLOCK_SIZE_K": 128,
+            "GROUP_SIZE_M": 1,
+            "num_warps": 4,
+            "num_stages": 3,
+            "USE_TMA": true
+          },
+          [
+            {
+              "BLOCK_SIZE_M": 16,
+              "BLOCK_SIZE_N": 128,
+              "BLOCK_SIZE_K": 128,
+              "GROUP_SIZE_M": 1,
+              "num_warps": 4,
+              "num_stages": 3,
+              "USE_TMA": true
+            },
+            64
+          ]
+        ]
+      },
+      "variants": {
+        "default": {
+          "maximum_row_relative_error": 0.0007423285860568285,
+          "median_row_relative_error": 0.0,
+          "max_absolute_error": 0.0009765625
+        },
+        "candidate": {
+          "maximum_row_relative_error": 0.0007423285860568285,
+          "median_row_relative_error": 0.0,
+          "max_absolute_error": 0.0009765625
+        }
+      },
+      "candidate_vs_default": {
+        "maximum_row_relative_error": 6.262580427573994e-05,
+        "median_row_relative_error": 0.0
+      }
+    },
+    {
+      "rows": 512,
+      "selected_configs": {
+        "default": [
+          {
+            "BLOCK_SIZE_M": 64,
+            "BLOCK_SIZE_N": 128,
+            "BLOCK_SIZE_K": 128,
+            "GROUP_SIZE_M": 32,
+            "num_warps": 4,
+            "num_stages": 3
+          },
+          [
+            null,
+            null
+          ]
+        ],
+        "candidate": [
+          {
+            "BLOCK_SIZE_M": 16,
+            "BLOCK_SIZE_N": 128,
+            "BLOCK_SIZE_K": 128,
+            "GROUP_SIZE_M": 1,
+            "num_warps": 4,
+            "num_stages": 3
+          },
+          [
+            {
+              "BLOCK_SIZE_M": 16,
+              "BLOCK_SIZE_N": 128,
+              "BLOCK_SIZE_K": 128,
+              "GROUP_SIZE_M": 1,
+              "num_warps": 4,
+              "num_stages": 3
+            },
+            64
+          ]
+        ]
+      },
+      "variants": {
+        "default": {
+          "maximum_row_relative_error": 0.0017730796243995428,
+          "median_row_relative_error": 0.0,
+          "max_absolute_error": 0.0009765625
+        },
+        "candidate": {
+          "maximum_row_relative_error": 0.0017730796243995428,
+          "median_row_relative_error": 0.0,
+          "max_absolute_error": 0.0009765625
+        }
+      },
+      "candidate_vs_default": {
+        "maximum_row_relative_error": 0.0,
+        "median_row_relative_error": 0.0
+      }
+    }
+  ],
+  "state": "passed"
+}

@@ -1,0 +1,86 @@
+[
+  {
+    "variant": "baseline",
+    "file": "sglang_omni/profiler/torch_profiler.py",
+    "original_sha256": "261cc135a0e0aa874fc25f2cd8735e4e0ea00ad9d9669a04f731bdfeb84f43ca",
+    "diagnostic_sha256": "98ee7135b1a3f8a78f5b118988f2fdcc6173181f738c8a4c67325be9f3be988c",
+    "scope": "CPU+CUDA/all threads only for preprocessing; CUDA only on shared engine/vocoder process; no shapes/stacks"
+  },
+  {
+    "variant": "baseline",
+    "file": "benchmarks/metrics/performance.py",
+    "original_sha256": "b01df1c737a893a35af499ca5f21bef17fb3bb707a9945e625aae7f7c0d4fd46",
+    "diagnostic_sha256": "5b4522fd6bdc1e92b44a9391dd4af90bd74d0b88ca0d460edb8498f1d5643e5f",
+    "scope": "Serialize existing outcome identity for stage correlation only"
+  },
+  {
+    "variant": "baseline",
+    "file": "sglang_omni/models/fishaudio_drama3/codec_encoder.py",
+    "original_sha256": "ac9bf935b354e022227f164c6cea5e146e5ed85c4b449e39287f48bfb1447531",
+    "diagnostic_sha256": "06bbbe7ff72df5f466a0ab8c3b201f3e1f13ac8bcc3650d67bdcf65d653c127b",
+    "scope": "CPU record_function annotation around unchanged snake kernel launch, including scalar length/stride, to observe first-shape launch/setup cost. No tensor, math or Triton function identity changes. This is diagnostic-only and not in any PR."
+  },
+  {
+    "variant": "quantizer",
+    "file": "sglang_omni/profiler/torch_profiler.py",
+    "original_sha256": "261cc135a0e0aa874fc25f2cd8735e4e0ea00ad9d9669a04f731bdfeb84f43ca",
+    "diagnostic_sha256": "98ee7135b1a3f8a78f5b118988f2fdcc6173181f738c8a4c67325be9f3be988c",
+    "scope": "CPU+CUDA/all threads only for preprocessing; CUDA only on shared engine/vocoder process; no shapes/stacks"
+  },
+  {
+    "variant": "quantizer",
+    "file": "benchmarks/metrics/performance.py",
+    "original_sha256": "b01df1c737a893a35af499ca5f21bef17fb3bb707a9945e625aae7f7c0d4fd46",
+    "diagnostic_sha256": "5b4522fd6bdc1e92b44a9391dd4af90bd74d0b88ca0d460edb8498f1d5643e5f",
+    "scope": "Serialize existing outcome identity for stage correlation only"
+  },
+  {
+    "variant": "quantizer",
+    "file": "sglang_omni/models/fishaudio_drama3/codec_encoder.py",
+    "original_sha256": "ac9bf935b354e022227f164c6cea5e146e5ed85c4b449e39287f48bfb1447531",
+    "diagnostic_sha256": "06bbbe7ff72df5f466a0ab8c3b201f3e1f13ac8bcc3650d67bdcf65d653c127b",
+    "scope": "CPU record_function annotation around unchanged snake kernel launch, including scalar length/stride, to observe first-shape launch/setup cost. No tensor, math or Triton function identity changes. This is diagnostic-only and not in any PR."
+  },
+  {
+    "variant": "sm100",
+    "file": "sglang_omni/profiler/torch_profiler.py",
+    "original_sha256": "261cc135a0e0aa874fc25f2cd8735e4e0ea00ad9d9669a04f731bdfeb84f43ca",
+    "diagnostic_sha256": "98ee7135b1a3f8a78f5b118988f2fdcc6173181f738c8a4c67325be9f3be988c",
+    "scope": "CPU+CUDA/all threads only for preprocessing; CUDA only on shared engine/vocoder process; no shapes/stacks"
+  },
+  {
+    "variant": "sm100",
+    "file": "benchmarks/metrics/performance.py",
+    "original_sha256": "b01df1c737a893a35af499ca5f21bef17fb3bb707a9945e625aae7f7c0d4fd46",
+    "diagnostic_sha256": "5b4522fd6bdc1e92b44a9391dd4af90bd74d0b88ca0d460edb8498f1d5643e5f",
+    "scope": "Serialize existing outcome identity for stage correlation only"
+  },
+  {
+    "variant": "sm100",
+    "file": "sglang_omni/models/fishaudio_drama3/codec_encoder.py",
+    "original_sha256": "ac9bf935b354e022227f164c6cea5e146e5ed85c4b449e39287f48bfb1447531",
+    "diagnostic_sha256": "06bbbe7ff72df5f466a0ab8c3b201f3e1f13ac8bcc3650d67bdcf65d653c127b",
+    "scope": "CPU record_function annotation around unchanged snake kernel launch, including scalar length/stride, to observe first-shape launch/setup cost. No tensor, math or Triton function identity changes. This is diagnostic-only and not in any PR."
+  },
+  {
+    "variant": "moe",
+    "file": "sglang_omni/profiler/torch_profiler.py",
+    "original_sha256": "261cc135a0e0aa874fc25f2cd8735e4e0ea00ad9d9669a04f731bdfeb84f43ca",
+    "diagnostic_sha256": "98ee7135b1a3f8a78f5b118988f2fdcc6173181f738c8a4c67325be9f3be988c",
+    "scope": "CPU+CUDA/all threads only for preprocessing; CUDA only on shared engine/vocoder process; no shapes/stacks"
+  },
+  {
+    "variant": "moe",
+    "file": "benchmarks/metrics/performance.py",
+    "original_sha256": "b01df1c737a893a35af499ca5f21bef17fb3bb707a9945e625aae7f7c0d4fd46",
+    "diagnostic_sha256": "5b4522fd6bdc1e92b44a9391dd4af90bd74d0b88ca0d460edb8498f1d5643e5f",
+    "scope": "Serialize existing outcome identity for stage correlation only"
+  },
+  {
+    "variant": "moe",
+    "file": "sglang_omni/models/fishaudio_drama3/codec_encoder.py",
+    "original_sha256": "ac9bf935b354e022227f164c6cea5e146e5ed85c4b449e39287f48bfb1447531",
+    "diagnostic_sha256": "06bbbe7ff72df5f466a0ab8c3b201f3e1f13ac8bcc3650d67bdcf65d653c127b",
+    "scope": "CPU record_function annotation around unchanged snake kernel launch, including scalar length/stride, to observe first-shape launch/setup cost. No tensor, math or Triton function identity changes. This is diagnostic-only and not in any PR."
+  }
+]
