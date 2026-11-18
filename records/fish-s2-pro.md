@@ -6,7 +6,7 @@
 
 ## 调度与 GPU 反馈状态
 
-状态：开放，已获批准；最新 CI 为 action_required，等待维护者处理。
+状态：已合并。2026-11-18 核对 GitHub 页面与上游提交记录，PR #3283 于 2026-11-04 11:07（北京时间）合并；提交 8da1c6c0d20ce96f85b2e0a92a2be61b25a8e7e2。
 
 将下一步依赖的码本、历史与采样计数更新提前到 GPU，并为延后结果收集保留独立快照，使下一步 GPU 推理可与上一步 CPU 收集重叠；prefill 和请求行变化后重新同步。
 
@@ -22,9 +22,9 @@
 
 上游：[PR #3283](https://github.com/sgl-project/sglang-omni/pull/3283)。
 
-GitHub 状态核对：2026-11-03T11:07:41+00:00，当前提交 eca3f90e022fa451cddc01cf73cdee92d90573f4，合并状态 blocked。
+历史 GitHub 快照（已非当前状态）：2026-11-03T11:07:41+00:00，当前提交 eca3f90e022fa451cddc01cf73cdee92d90573f4，合并状态 blocked。
 
-最新一轮 CI 标记为 action_required，尚无实际测试结果；需要维护者检查并批准运行。此前通过的 CI 不能替代这一轮结果。
+当时最新一轮 CI 标记为 action_required；以下保留历史记录，不表示目前仍在等待批准。当前状态以本节顶部的已合并核对为准。
 
 - [Lint](https://github.com/sgl-project/sglang-omni/actions/runs/41620325016)：action_required（2026-11-03T10:34:00Z）
 - [Test Layout](https://github.com/sgl-project/sglang-omni/actions/runs/41620324998)：action_required（2026-11-03T10:34:00Z）

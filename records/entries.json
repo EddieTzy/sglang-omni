@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-11-17T03:59:33+00:00",
+  "updated_at_utc": "2026-11-18T03:40:21+00:00",
   "entries": [
     {
       "id": "fish-async-decode",
@@ -7,75 +7,10 @@
       "project": "sglang-omni",
       "model": "Fish S2-Pro",
       "component": "调度与 GPU 反馈状态",
-      "status": "开放，已获批准；最新 CI 为 action_required，等待维护者处理",
+      "status": "已合并，上游 PR #3283",
       "branch": "perf/fish-async-decode",
       "pr": 3283,
       "result": "固定 128-token 非流式小基准：并发 1/4/8 请求吞吐 +7.7%/+8.8%/+9.7%。不外推为所有自然长度流式请求的收益。",
-      "github_snapshot": {
-        "checked_at_utc": "2026-11-03T11:07:41+00:00",
-        "head_commit": "eca3f90e022fa451cddc01cf73cdee92d90573f4",
-        "mergeable": true,
-        "mergeable_state": "blocked",
-        "merged_at": null,
-        "latest_workflows": [
-          {
-            "name": "Lint",
-            "status": "completed",
-            "conclusion": "action_required",
-            "created_at": "2026-11-03T10:34:00Z",
-            "url": "https://github.com/sgl-project/sglang-omni/actions/runs/41620325016"
-          },
-          {
-            "name": "Test Layout",
-            "status": "completed",
-            "conclusion": "action_required",
-            "created_at": "2026-11-03T10:34:00Z",
-            "url": "https://github.com/sgl-project/sglang-omni/actions/runs/41620324998"
-          },
-          {
-            "name": "Release Docker Images Nightly (NPU)",
-            "status": "completed",
-            "conclusion": "action_required",
-            "created_at": "2026-11-03T10:34:00Z",
-            "url": "https://github.com/sgl-project/sglang-omni/actions/runs/41620325111"
-          },
-          {
-            "name": "XPU CI",
-            "status": "completed",
-            "conclusion": "action_required",
-            "created_at": "2026-11-03T10:33:59Z",
-            "url": "https://github.com/sgl-project/sglang-omni/actions/runs/41620324794"
-          },
-          {
-            "name": "Omni CI",
-            "status": "completed",
-            "conclusion": "action_required",
-            "created_at": "2026-11-03T10:33:59Z",
-            "url": "https://github.com/sgl-project/sglang-omni/actions/runs/41620324758"
-          },
-          {
-            "name": "Docs Check",
-            "status": "completed",
-            "conclusion": "action_required",
-            "created_at": "2026-11-03T10:33:59Z",
-            "url": "https://github.com/sgl-project/sglang-omni/actions/runs/41620324825"
-          },
-          {
-            "name": "Rust Router",
-            "status": "completed",
-            "conclusion": "action_required",
-            "created_at": "2026-11-03T10:33:59Z",
-            "url": "https://github.com/sgl-project/sglang-omni/actions/runs/41620324602"
-          },
-          {
-            "name": "CPU CI",
-            "status": "completed",
-            "conclusion": "action_required",
-            "created_at": "2026-11-03T10:33:59Z",
-            "url": "https://github.com/sgl-project/sglang-omni/actions/runs/41620324806"
-          }
-        ]
-      },
       "change": "将下一步依赖的码本、历史与采样计数更新提前到 GPU，并为延后结果收集保留独立快照，使下一步 GPU 推理可与上一步 CPU 收集重叠；prefill 和请求行变化后重新同步。",
       "code_locations": [
         {
@@ -101,7 +36,85 @@
       ],
       "branch_url": "https://github.com/EddieTzy/sglang-omni/tree/perf/fish-async-decode",
       "pr_url": "https://github.com/sgl-project/sglang-omni/pull/3283",
-      "branch_published": true
+      "branch_published": true,
+      "workflow_category": "merged",
+      "historical_github_snapshots": [
+        {
+          "checked_at_utc": "2026-11-03T11:07:41+00:00",
+          "head_commit": "eca3f90e022fa451cddc01cf73cdee92d90573f4",
+          "mergeable": true,
+          "mergeable_state": "blocked",
+          "merged_at": null,
+          "latest_workflows": [
+            {
+              "name": "Lint",
+              "status": "completed",
+              "conclusion": "action_required",
+              "created_at": "2026-11-03T10:34:00Z",
+              "url": "https://github.com/sgl-project/sglang-omni/actions/runs/41620325016"
+            },
+            {
+              "name": "Test Layout",
+              "status": "completed",
+              "conclusion": "action_required",
+              "created_at": "2026-11-03T10:34:00Z",
+              "url": "https://github.com/sgl-project/sglang-omni/actions/runs/41620324998"
+            },
+            {
+              "name": "Release Docker Images Nightly (NPU)",
+              "status": "completed",
+              "conclusion": "action_required",
+              "created_at": "2026-11-03T10:34:00Z",
+              "url": "https://github.com/sgl-project/sglang-omni/actions/runs/41620325111"
+            },
+            {
+              "name": "XPU CI",
+              "status": "completed",
+              "conclusion": "action_required",
+              "created_at": "2026-11-03T10:33:59Z",
+              "url": "https://github.com/sgl-project/sglang-omni/actions/runs/41620324794"
+            },
+            {
+              "name": "Omni CI",
+              "status": "completed",
+              "conclusion": "action_required",
+              "created_at": "2026-11-03T10:33:59Z",
+              "url": "https://github.com/sgl-project/sglang-omni/actions/runs/41620324758"
+            },
+            {
+              "name": "Docs Check",
+              "status": "completed",
+              "conclusion": "action_required",
+              "created_at": "2026-11-03T10:33:59Z",
+              "url": "https://github.com/sgl-project/sglang-omni/actions/runs/41620324825"
+            },
+            {
+              "name": "Rust Router",
+              "status": "completed",
+              "conclusion": "action_required",
+              "created_at": "2026-11-03T10:33:59Z",
+              "url": "https://github.com/sgl-project/sglang-omni/actions/runs/41620324602"
+            },
+            {
+              "name": "CPU CI",
+              "status": "completed",
+              "conclusion": "action_required",
+              "created_at": "2026-11-03T10:33:59Z",
+              "url": "https://github.com/sgl-project/sglang-omni/actions/runs/41620324806"
+            }
+          ]
+        }
+      ],
+      "github_snapshot": {
+        "checked_at_utc": "2026-11-18T03:40:21+00:00",
+        "state": "MERGED",
+        "merged_at": "2026-11-04T03:07:32Z",
+        "merge_commit": "8da1c6c0d20ce96f85b2e0a92a2be61b25a8e7e2",
+        "verification": [
+          "GitHub PR page embedded MERGED state",
+          "merge commit in upstream history"
+        ]
+      }
     },
     {
       "id": "fish-state-fusion",
@@ -130,7 +143,8 @@
       ],
       "branch_url": "https://github.com/EddieTzy/sglang-omni/tree/perf/fish-decode-state-fusion",
       "pr_url": null,
-      "branch_published": true
+      "branch_published": true,
+      "workflow_category": "not_adopted"
     },
     {
       "id": "fish-fixed-slots",
@@ -161,7 +175,8 @@
       ],
       "branch_url": "https://github.com/EddieTzy/sglang-omni/tree/perf/fish-fixed-slot-overlap",
       "pr_url": null,
-      "branch_published": true
+      "branch_published": true,
+      "workflow_category": "not_adopted"
     },
     {
       "id": "fish-semantic-head",
@@ -184,7 +199,17 @@
       ],
       "branch_url": "https://github.com/EddieTzy/sglang-omni/tree/perf/fish-semantic-head",
       "pr_url": "https://github.com/sgl-project/sglang-omni/pull/3408",
-      "branch_published": true
+      "branch_published": true,
+      "workflow_category": "archived",
+      "github_snapshot": {
+        "checked_at_utc": "2026-11-18T03:40:21+00:00",
+        "state": "CLOSED",
+        "closed_at": "2026-11-02T08:45:09Z",
+        "merged_at": null,
+        "verification": [
+          "GitHub PR page embedded CLOSED state with mergedTime null"
+        ]
+      }
     },
     {
       "id": "fish-fast-ar-cache-reset",
@@ -207,7 +232,8 @@
       ],
       "branch_url": "https://github.com/EddieTzy/sglang-omni/tree/perf/fish-fast-ar-cache-reset",
       "pr_url": null,
-      "branch_published": true
+      "branch_published": true,
+      "workflow_category": "in_progress"
     },
     {
       "id": "fish-batched-outputs",
@@ -230,7 +256,8 @@
       ],
       "branch_url": "https://github.com/EddieTzy/sglang-omni/tree/perf/fish-batched-step-outputs",
       "pr_url": null,
-      "branch_published": true
+      "branch_published": true,
+      "workflow_category": "not_adopted"
     },
     {
       "id": "fish-combined",
@@ -260,7 +287,8 @@
       ],
       "branch_url": "https://github.com/EddieTzy/sglang-omni/tree/perf/fish-decode-combined",
       "pr_url": null,
-      "branch_published": true
+      "branch_published": true,
+      "workflow_category": "in_progress"
     },
     {
       "id": "fish-batched-attention",
@@ -421,7 +449,8 @@
         }
       },
       "assessment": "当前最值得继续推进的独立优化：高并发服务吞吐有收益，单请求基本持平。全量质量波动的配对区间跨零，未证明质量改善或统计意义上的不退化；尚无 H100 验证，按当前要求只保存分支。",
-      "report_url": "https://github.com/EddieTzy/sglang-omni/blob/experiment/fish-batched-fast-ar-attention/benchmarks/fish_batched_attention_experiment/standard_eval_20261103/RESULTS.txt"
+      "report_url": "https://github.com/EddieTzy/sglang-omni/blob/experiment/fish-batched-fast-ar-attention/benchmarks/fish_batched_attention_experiment/standard_eval_20261103/RESULTS.txt",
+      "workflow_category": "measured_tradeoff"
     },
     {
       "id": "drama3-quantizer-moe",
@@ -429,13 +458,13 @@
       "project": "sglang-omni",
       "model": "Fish Audio Drama 3",
       "component": "SM100 kernel 支持、quantizer 上采样与 MoE 调优",
-      "status": "移植最新官方 main，待 GPU 完整测试，尚未创建 PR",
+      "status": "历史组合移植已拆分；分支仅作备份，未提 PR",
       "branch": "perf/drama3-quantizer-moe",
       "branch_url": "https://github.com/EddieTzy/sglang-omni/tree/perf/drama3-quantizer-moe",
       "branch_published": true,
       "pr": null,
       "pr_url": null,
-      "result": "17 项隔离 CPU 数值与条件检查通过；暂无本次移植的 GPU 性能或音质结果。源分支 23.9% 组合收益不作为当前分支实测结论。",
+      "result": "历史组合记录，不代表当前三个独立候选的验证状态。17 项隔离 CPU 检查与原始 23.9% 组合收益保留为历史；当前结果见拆分条目。",
       "change": "移植 SM100 sampler / fused tower 支持、FP16 quantizer phase projection 和可选 MoE up/down 配置，保留最新主线采样与张量并行限制。",
       "contributor_role": "移植、主线适配与验证准备；原始优化作者为 lamianlbe，不计为本人原创",
       "implementation": {
@@ -480,7 +509,220 @@
         }
       ],
       "report_url": "https://github.com/EddieTzy/sglang-omni/blob/docs/contribution-log/records/drama3.md",
-      "gpu_test_instructions_url": "https://github.com/EddieTzy/sglang-omni/blob/perf/drama3-quantizer-moe/docs/cookbook/fishaudio_drama3_b200.md"
+      "gpu_test_instructions_url": "https://github.com/EddieTzy/sglang-omni/blob/perf/drama3-quantizer-moe/docs/cookbook/fishaudio_drama3_b200.md",
+      "workflow_category": "archived",
+      "snapshot_as_of_utc": "2026-11-17T03:59:33+00:00",
+      "superseded_by": [
+        "drama3-quantizer-upsampling",
+        "drama3-sm100-kernels",
+        "drama3-b200-moe-configs"
+      ]
+    },
+    {
+      "framework": "SGLang",
+      "project": "sglang-omni",
+      "model": "Fish Audio Drama 3",
+      "pr": null,
+      "pr_url": null,
+      "branch_published": true,
+      "target_hardware": "NVIDIA B200 / SM100",
+      "contributor_role": "移植、主线适配与验证；原始优化来自 lamianlbe，保留归属，不计为本人原创",
+      "base_commit": "f17a438cd753248d70916700aa4dccd9e7feb098",
+      "runtime": {
+        "torch": "2.14.1+cu130",
+        "sglang": "0.5.23",
+        "triton": "3.8.0",
+        "flashinfer-python": "0.7.2",
+        "driver": "580.173.02"
+      },
+      "report_url": "https://github.com/EddieTzy/sglang-omni/blob/docs/contribution-log/records/drama3.md",
+      "id": "drama3-quantizer-upsampling",
+      "component": "Quantizer phase projection 上采样",
+      "workflow_category": "measured_tradeoff",
+      "status": "单组服务初筛有高并发收益及低并发/首音回退，待定位和决策，未提 PR",
+      "branch": "perf/drama3-b200-quantizer-upsample",
+      "branch_url": "https://github.com/EddieTzy/sglang-omni/tree/perf/drama3-b200-quantizer-upsample",
+      "implementation_commit": "57c747e0",
+      "source_commits": [
+        "b82e2ad974fefa068e65583ba537e5f59062b4b7"
+      ],
+      "change": "仅在 B200 FP16、kernel=stride 等条件满足时以 phase-ordered dense projection 替代 quantizer 转置卷积；不改写共享 codec 模块。",
+      "result": "B200 单组 base→优化初筛：并发1/16/64 音频吞吐 -5.75%/+3.77%/+11.10%；首音 p95 在并发1/16 变慢、64 变快。不是全场景提升，也不是无收益。",
+      "validation": {
+        "targeted_correctness_passed": 30,
+        "targeted_cuda_cases": 13,
+        "fixed_codebook_cases_passed": 16,
+        "actual_phase_projections": 2,
+        "maximum_waveform_absolute_error": 0.00323486328125,
+        "minimum_waveform_snr_db": 53.29527282714844,
+        "full_quality_evaluation_run": false
+      },
+      "performance": {
+        "design": "one sequential baseline/candidate screening pair",
+        "measured_requests_total": 3328,
+        "request_failures": 0,
+        "generation_budget_truncations": 0,
+        "all_terminal_outcomes_observed": true,
+        "repeated_run_variability_estimated": false,
+        "concurrency": [
+          1,
+          16,
+          64
+        ],
+        "requests_per_variant": [
+          64,
+          512,
+          1088
+        ],
+        "baseline_audio_seconds_per_second": [
+          7.388,
+          51.993,
+          98.214
+        ],
+        "candidate_audio_seconds_per_second": [
+          6.963,
+          53.952,
+          109.111
+        ],
+        "baseline_first_audio_p95_seconds": [
+          0.1689,
+          0.3057,
+          0.9233
+        ],
+        "candidate_first_audio_p95_seconds": [
+          0.4945,
+          0.4137,
+          0.7898
+        ]
+      },
+      "diagnosis": {
+        "scope": "offline analysis, no new GPU work",
+        "c1_matching_completion_token_counts": 64,
+        "c1_requests": 64,
+        "c1_baseline_first_audio_median_seconds": 0.0725,
+        "c1_candidate_first_audio_median_seconds": 0.0742,
+        "largest_paired_first_audio_deltas_seconds": [
+          1.183,
+          0.8072,
+          0.4031
+        ],
+        "sum_first_audio_deltas_seconds": 2.5605,
+        "sum_top_three_first_audio_deltas_seconds": 2.3933,
+        "cause_established": false
+      },
+      "assessment": "保留为有取舍的候选。低并发额外耗时集中于三个早期首音长尾，不能据此认定 GEMM 每一步都慢；高并发更适合批量矩阵运算只是机制假设，尚无 profiler 证据。不得删除慢样本或宣称默认启用即可全面变快。",
+      "detailed_report": "records/drama3-quantizer-b200-20261118.md"
+    },
+    {
+      "framework": "SGLang",
+      "project": "sglang-omni",
+      "model": "Fish Audio Drama 3",
+      "pr": null,
+      "pr_url": null,
+      "branch_published": true,
+      "target_hardware": "NVIDIA B200 / SM100",
+      "contributor_role": "移植、主线适配与验证；原始优化来自 lamianlbe，保留归属，不计为本人原创",
+      "base_commit": "f17a438cd753248d70916700aa4dccd9e7feb098",
+      "runtime": {
+        "torch": "2.14.1+cu130",
+        "sglang": "0.5.23",
+        "triton": "3.8.0",
+        "flashinfer-python": "0.7.2",
+        "driver": "580.173.02"
+      },
+      "report_url": "https://github.com/EddieTzy/sglang-omni/blob/docs/contribution-log/records/drama3.md",
+      "id": "drama3-sm100-kernels",
+      "component": "SM100 sampler / fused tower 支持",
+      "workflow_category": "in_progress",
+      "status": "GPU 相关检查已完成，严格一致性问题和独立收益待确认，未提 PR",
+      "branch": "feat/drama3-sm100-kernels",
+      "branch_url": "https://github.com/EddieTzy/sglang-omni/tree/feat/drama3-sm100-kernels",
+      "implementation_commit": "e34702b2",
+      "source_commits": [
+        "1f7e33177c17fb243262a3296b69147fd1450c60"
+      ],
+      "change": "开放既有 SM100 sampler 与 fused tower 路径，并适配 SGLang 0.5.23 的逐层 attention 测试 hook；未降低断言。",
+      "result": "Sampler 38 项、tower 31 项通过；完整 Drama3 套件 833 通过、4 跳过、21 失败。无独立性能结论。",
+      "validation": {
+        "sampler_passed": 38,
+        "tower_passed": 31,
+        "full_suite_passed": 833,
+        "full_suite_skipped": 4,
+        "full_suite_failed": 21,
+        "full_suite_setup_errors": 0,
+        "performance_run": false,
+        "full_quality_evaluation_run": false
+      },
+      "assessment": "两个严格 graph/eager 检查仍失败；禁用 sampler/tower 的控制也有 semantic-logit 差异，分析的输入帧与生成帧一致，但尚未完全解释。B200 的默认 FA3 增量 codec 等主线问题另记，不将全套测试描述为通过。"
+    },
+    {
+      "framework": "SGLang",
+      "project": "sglang-omni",
+      "model": "Fish Audio Drama 3",
+      "pr": null,
+      "pr_url": null,
+      "branch_published": true,
+      "target_hardware": "NVIDIA B200 / SM100",
+      "contributor_role": "移植、主线适配与验证；原始优化来自 lamianlbe，保留归属，不计为本人原创",
+      "base_commit": "f17a438cd753248d70916700aa4dccd9e7feb098",
+      "runtime": {
+        "torch": "2.14.1+cu130",
+        "sglang": "0.5.23",
+        "triton": "3.8.0",
+        "flashinfer-python": "0.7.2",
+        "driver": "580.173.02"
+      },
+      "report_url": "https://github.com/EddieTzy/sglang-omni/blob/docs/contribution-log/records/drama3.md",
+      "id": "drama3-b200-moe-configs",
+      "component": "B200 MoE up/down TMA 可选配置",
+      "workflow_category": "in_progress",
+      "status": "独立配置分支已保存，待当前依赖版本上的单项验证，未提 PR",
+      "branch": "perf/drama3-b200-moe-configs",
+      "branch_url": "https://github.com/EddieTzy/sglang-omni/tree/perf/drama3-b200-moe-configs",
+      "implementation_commit": "aa7aae97",
+      "source_commits": [
+        "b82e2ad974fefa068e65583ba537e5f59062b4b7"
+      ],
+      "change": "分别提供 up/down 投影配置，显式选择；历史 non-TMA 配置明确标为历史对照，不作为当前上游默认。",
+      "result": "文档和静态检查通过；尚无当前版本的专家数值、独立吞吐或完整音质结论。旧 23.9% 是组合结果，不能计为本项收益。",
+      "validation": {
+        "pre_commit": "passed",
+        "current_runtime_expert_comparison_run": false,
+        "performance_run": false,
+        "full_quality_evaluation_run": false
+      }
+    }
+  ],
+  "workflow_categories": [
+    {
+      "id": "merged",
+      "label": "已合并",
+      "meaning": "已核实进入上游，不再列为待审核"
+    },
+    {
+      "id": "submitted",
+      "label": "已提PR",
+      "meaning": "PR 已创建但未合并；草稿、审核和 CI 状态在条目中说明"
+    },
+    {
+      "id": "in_progress",
+      "label": "进行中或待验证",
+      "meaning": "尚缺正确性、单项性能、质量或问题定位证据"
+    },
+    {
+      "id": "measured_tradeoff",
+      "label": "已测有收益或取舍",
+      "meaning": "已有实测信号，仍需决定是否推进；注明初筛与完整评测的区别"
+    },
+    {
+      "id": "not_adopted",
+      "label": "无稳定收益或暂不采用",
+      "meaning": "无稳定端到端收益，或收益伴随不可接受的回退；保留具体原因"
+    },
+    {
+      "id": "archived",
+      "label": "已关闭或归档",
+      "meaning": "已关闭的 PR 或被替代的历史组合分支"
     }
   ]
 }
