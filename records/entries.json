@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-11-18T07:00:00+00:00",
+  "updated_at_utc": "2026-11-25T08:44:35.435427+00:00",
   "entries": [
     {
       "id": "fish-async-decode",
@@ -777,6 +777,19 @@
       "baseline_hotspot_report": "optimizations/drama3-quantizer-upsampling/profiles/service-20261118/README.md",
       "final_report": "records/drama3-final-20261118/README.md",
       "submission_state": "creation_blocked"
+    },
+    {
+      "id": "drama3-sm120-first-audio",
+      "framework": "SGLang",
+      "project": "sglang-omni",
+      "model": "Drama 3",
+      "component": "vocoder 进程布局和首窗解码",
+      "status": "配置对照已完成",
+      "branch": "perf/drama3-sm120-first-audio",
+      "pr": null,
+      "result": "RTX PRO 6000，FP8，C16。保持 overlap，把 vocoder 移到独立进程后吞吐 26.50 → 28.22 音频秒/秒（+6.48%），首包 P99 508.4 → 458.1 ms。相同独立进程布局下 stateful 吞吐 −1.05%，首包 P95 +12.37%。",
+      "archive_url": "https://github.com/EddieTzy/sglang-omni/tree/baeb84306054aca240062996bdfc38d82786e327/benchmarks/drama3_sm120_first_audio",
+      "head_commit": "baeb84306054aca240062996bdfc38d82786e327"
     }
   ],
   "workflow_categories": [

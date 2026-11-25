@@ -8,6 +8,10 @@
 
 当前 Drama3 验证结论及完整限制见最终报告；其他模型条目保留其历史条件。
 
+## Drama 3 在 RTX PRO 6000 上的流式首包
+
+RTX PRO 6000，FP8，C16。保持 overlap，把 vocoder 移到独立进程后吞吐 26.50 → 28.22 音频秒/秒（+6.48%），首包 P99 508.4 → 458.1 ms。相同独立进程布局下 stateful 吞吐 −1.05%，首包 P95 +12.37%。 两种模式各保留逐请求时间线，并另存 6 份 torch trace。此项为已有部署选项的对照。[详细数据与归档](https://github.com/EddieTzy/sglang-omni/tree/baeb84306054aca240062996bdfc38d82786e327/benchmarks/drama3_sm120_first_audio)
+
 ## 状态总览
 
 | 分类 | 数量 | 归类规则 |

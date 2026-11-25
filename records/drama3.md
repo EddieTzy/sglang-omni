@@ -57,3 +57,7 @@ B200 的默认 FA3 增量 codec 路径报不支持，另有 stage/memory、CPU-w
 运行环境为 PyTorch 2.14.1+cu130、SGLang 0.5.23、Triton 3.8.0、FlashInfer 0.7.2、驱动 580.173.02。相关分支的全仓库 pre-commit 已通过，后续 graph 回归测试的文件检查也通过。原始 JUnit、逐请求记录、源码指纹和音频已保留，但不将权重、音频或凭据加入公开记录。
 
 上采样保留为“有初步收益但有取舍”；SM100 与 MoE 保留为“进行中”，不能归成无收益。完整配对 EN/ZH ASR、音色相似度、听感和长生成质量评测尚未完成，也未创建新的 PR。后续性能测量必须等用户明确允许，并暂停其他 GPU 操作后进行。
+
+## RTX PRO 6000，C16，2026-11-25
+
+RTX PRO 6000，FP8，C16。保持 overlap，把 vocoder 移到独立进程后吞吐 26.50 → 28.22 音频秒/秒（+6.48%），首包 P99 508.4 → 458.1 ms。相同独立进程布局下 stateful 吞吐 −1.05%，首包 P95 +12.37%。 [服务对照](https://github.com/EddieTzy/sglang-omni/tree/baeb84306054aca240062996bdfc38d82786e327/benchmarks/drama3_sm120_first_audio/RESULTS.md) · [原始 trace](https://github.com/EddieTzy/sglang-omni/tree/baeb84306054aca240062996bdfc38d82786e327/benchmarks/drama3_sm120_first_audio/traces)
