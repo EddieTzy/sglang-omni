@@ -1,0 +1,70 @@
+[
+  {
+    "arm": "b1",
+    "kind": "raw request events and recorder status",
+    "file": "b1-raw-request-events.tar.gz",
+    "bytes": 118349,
+    "sha256": "55d4733e923a46b5d6b3f135a3eba98d35bf8cf39fc7202663590856856f9de1"
+  },
+  {
+    "arm": "a2",
+    "kind": "raw request events and recorder status",
+    "file": "a2-raw-request-events.tar.gz",
+    "bytes": 118004,
+    "sha256": "c014710e89e0a595b4bc8629242bdcce91bbbcd3cfec1633242a72bd37286b72"
+  },
+  {
+    "arm": "a2",
+    "kind": "torch CPU/CUDA Chrome trace",
+    "file": "a2-trace_pid75_rank0.trace.json.gz",
+    "events": 2446,
+    "device_events": 0,
+    "bytes": 49307,
+    "sha256": "780871a9757972b643604e6a358da904b1a70f5edd991b04094d2ad5cc09b42b"
+  },
+  {
+    "arm": "a2",
+    "kind": "torch CPU/CUDA Chrome trace",
+    "file": "a2-trace_pid76_rank0.trace.json.gz",
+    "events": 41087,
+    "device_events": 12401,
+    "bytes": 1035966,
+    "sha256": "35b3b1e5845bbbaf8ac7c7b6f7d34077a82a4267aefe9be0cbbd8c59c4cd221d"
+  },
+  {
+    "arm": "a2",
+    "kind": "torch CPU/CUDA Chrome trace",
+    "file": "a2-trace_pid77_rank0.trace.json.gz",
+    "events": 767,
+    "device_events": 286,
+    "bytes": 17445,
+    "sha256": "b8389ac280e790f141cc20e6a49edca0efca38235eda3036efa6e3d4d84383e4"
+  },
+  {
+    "arm": "b2",
+    "kind": "torch CPU/CUDA Chrome trace",
+    "file": "b2-trace_pid77_rank0.trace.json.gz",
+    "events": 2446,
+    "device_events": 0,
+    "bytes": 48940,
+    "sha256": "11bcdf902669546f9b7654817ebeb98a71daffcb7b1e8cc88f787fd3b6ff5d58"
+  },
+  {
+    "arm": "b2",
+    "kind": "torch CPU/CUDA Chrome trace",
+    "file": "b2-trace_pid78_rank0.trace.json.gz",
+    "events": 41528,
+    "device_events": 12600,
+    "bytes": 1047570,
+    "sha256": "554ef07f272293cb8efbcecbd6a6c6b2c93474be61d77a4c696cb902c959d673"
+  },
+  {
+    "arm": "b2",
+    "kind": "torch CPU/CUDA Chrome trace",
+    "file": "b2-trace_pid79_rank0.trace.json.gz",
+    "events": 911,
+    "device_events": 364,
+    "bytes": 20992,
+    "sha256": "9e4068895b48a6c93231c6ebb8b5c09598e40d8676029ac26601eb7e1bdbd314"
+  }
+]

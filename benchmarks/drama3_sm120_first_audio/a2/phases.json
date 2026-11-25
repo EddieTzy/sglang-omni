@@ -1,0 +1,2855 @@
+{
+  "rows": [
+    {
+      "request_id": "speech-c6d8cb95-cd8c-4c65-afdf-a1eaa819c335",
+      "ttfa_ms": 367.552046,
+      "first_window_chunk_id": 3,
+      "phases_ms": [
+        340.273916,
+        2.298854,
+        22.173188,
+        2.806088
+      ],
+      "later_windows": 4,
+      "later_windows_redecoded_history": 4,
+      "pre_code_ms": {
+        "client start": 0.0,
+        "admission": 22.922313,
+        "preprocessing done": 111.772142,
+        "engine queue": 153.844861,
+        "prefill starts": 214.823939,
+        "prefill ends": 284.709462,
+        "first engine chunk": 286.192184
+      }
+    },
+    {
+      "request_id": "speech-45bb57e3-7ffa-4abf-9da5-c60587b2130d",
+      "ttfa_ms": 365.999445,
+      "first_window_chunk_id": 3,
+      "phases_ms": [
+        341.792514,
+        2.314877,
+        19.498099,
+        2.393955
+      ],
+      "later_windows": 6,
+      "later_windows_redecoded_history": 6,
+      "pre_code_ms": {
+        "client start": 0.0,
+        "admission": 18.259623,
+        "preprocessing done": 110.53598,
+        "engine queue": 154.858847,
+        "prefill starts": 216.354293,
+        "prefill ends": 286.246457,
+        "first engine chunk": 287.71006
+      }
+    },
+    {
+      "request_id": "speech-9dc379cb-caf4-42b9-b9ba-dbba0558f109",
+      "ttfa_ms": 365.686064,
+      "first_window_chunk_id": 3,
+      "phases_ms": [
+        341.936609,
+        2.359787,
+        18.269235,
+        3.120433
+      ],
+      "later_windows": 4,
+      "later_windows_redecoded_history": 4,
+      "pre_code_ms": {
+        "client start": 0.0,
+        "admission": 14.013131,
+        "preprocessing done": 105.352469,
+        "engine queue": 154.651249,
+        "prefill starts": 216.540209,
+        "prefill ends": 286.437949,
+        "first engine chunk": 287.870521
+      }
+    },
+    {
+      "request_id": "speech-64c9e04b-1719-4a41-85c5-b31760353bc9",
+      "ttfa_ms": 364.753222,
+      "first_window_chunk_id": 3,
+      "phases_ms": [
+        340.338647,
+        2.307741,
+        19.913607,
+        2.193227
+      ],
+      "later_windows": 4,
+      "later_windows_redecoded_history": 4,
+      "pre_code_ms": {
+        "client start": 0.0,
+        "admission": 22.058978,
+        "preprocessing done": 110.982333,
+        "engine queue": 153.805885,
+        "prefill starts": 214.894817,
+        "prefill ends": 284.783977,
+        "first engine chunk": 286.257232
+      }
+    },
+    {
+      "request_id": "speech-5ba5a63e-3602-4d05-aa27-dfc632d33583",
+      "ttfa_ms": 364.06175,
+      "first_window_chunk_id": 3,
+      "phases_ms": [
+        340.64016,
+        2.367164,
+        18.072271,
+        2.982155
+      ],
+      "later_windows": 4,
+      "later_windows_redecoded_history": 4,
+      "pre_code_ms": {
+        "client start": 0.0,
+        "admission": 17.101499,
+        "preprocessing done": 100.196082,
+        "engine queue": 153.146498,
+        "prefill starts": 215.249393,
+        "prefill ends": 285.150664,
+        "first engine chunk": 286.571383
+      }
+    },
+    {
+      "request_id": "speech-0ae59922-675a-4222-950d-5051377b82ed",
+      "ttfa_ms": 363.988885,
+      "first_window_chunk_id": 3,
+      "phases_ms": [
+        340.093294,
+        2.326036,
+        18.91187,
+        2.657685
+      ],
+      "later_windows": 4,
+      "later_windows_redecoded_history": 4,
+      "pre_code_ms": {
+        "client start": 0.0,
+        "admission": 24.033639,
+        "preprocessing done": 107.773698,
+        "engine queue": 152.965233,
+        "prefill starts": 214.664907,
+        "prefill ends": 284.559515,
+        "first engine chunk": 286.009858
+      }
+    },
+    {
+      "request_id": "speech-9323919b-b62e-476e-9f9c-48656c37be03",
+      "ttfa_ms": 361.506626,
+      "first_window_chunk_id": 3,
+      "phases_ms": [
+        340.857962,
+        2.373266,
+        15.82811,
+        2.447288
+      ],
+      "later_windows": 4,
+      "later_windows_redecoded_history": 4,
+      "pre_code_ms": {
+        "client start": 0.0,
+        "admission": 17.210607,
+        "preprocessing done": 94.405202,
+        "engine queue": 152.622522,
+        "prefill starts": 215.472538,
+        "prefill ends": 285.377342,
+        "first engine chunk": 286.784428
+      }
+    },
+    {
+      "request_id": "speech-fba6f0e9-c9fd-49ac-8817-a21957d87407",
+      "ttfa_ms": 359.119331,
+      "first_window_chunk_id": 3,
+      "phases_ms": [
+        340.338059,
+        2.385469,
+        13.55774,
+        2.838063
+      ],
+      "later_windows": 5,
+      "later_windows_redecoded_history": 5,
+      "pre_code_ms": {
+        "client start": 0.0,
+        "admission": 20.36441,
+        "preprocessing done": 91.028582,
+        "engine queue": 151.807847,
+        "prefill starts": 214.96478,
+        "prefill ends": 284.87197,
+        "first engine chunk": 286.264049
+      }
+    },
+    {
+      "request_id": "speech-945e9f0d-c050-47f5-b5ee-f92f6dadd0e1",
+      "ttfa_ms": 356.577848,
+      "first_window_chunk_id": 3,
+      "phases_ms": [
+        340.043255,
+        2.418515,
+        11.195789,
+        2.920289
+      ],
+      "later_windows": 4,
+      "later_windows_redecoded_history": 4,
+      "pre_code_ms": {
+        "client start": 0.0,
+        "admission": 23.702175,
+        "preprocessing done": 81.22001,
+        "engine queue": 151.371826,
+        "prefill starts": 214.705213,
+        "prefill ends": 284.611616,
+        "first engine chunk": 285.963619
+      }
+    },
+    {
+      "request_id": "speech-a7914d32-9974-4452-b00e-340397c02b54",
+      "ttfa_ms": 239.284379,
+      "first_window_chunk_id": 3,
+      "phases_ms": [
+        230.521071,
+        1.93124,
+        3.957003,
+        2.875065
+      ],
+      "later_windows": 4,
+      "later_windows_redecoded_history": 4,
+      "pre_code_ms": {
+        "client start": 0.0,
+        "admission": 2.342559,
+        "preprocessing done": 5.179982,
+        "engine queue": 47.241049,
+        "prefill starts": 130.717809,
+        "prefill ends": 174.384168,
+        "first engine chunk": 176.84854
+      }
+    },
+    {
+      "request_id": "speech-2366d126-eb37-46c6-95d7-db89a0b3e469",
+      "ttfa_ms": 235.432734,
+      "first_window_chunk_id": 3,
+      "phases_ms": [
+        227.060939,
+        2.344841,
+        3.129827,
+        2.897127
+      ],
+      "later_windows": 4,
+      "later_windows_redecoded_history": 4,
+      "pre_code_ms": {
+        "client start": 0.0,
+        "admission": 2.104187,
+        "preprocessing done": 4.36184,
+        "engine queue": 41.187281,
+        "prefill starts": 127.266454,
+        "prefill ends": 165.466894,
+        "first engine chunk": 168.116229
+      }
+    },
+    {
+      "request_id": "speech-4d9abe4d-14de-46e4-bf07-78235949fe62",
+      "ttfa_ms": 233.119962,
+      "first_window_chunk_id": 3,
+      "phases_ms": [
+        223.279641,
+        3.669703,
+        2.714397,
+        3.456221
+      ],
+      "later_windows": 4,
+      "later_windows_redecoded_history": 4,
+      "pre_code_ms": {
+        "client start": 0.0,
+        "admission": 2.809889,
+        "preprocessing done": 5.882646,
+        "engine queue": 45.737537,
+        "prefill starts": 131.006521,
+        "prefill ends": 165.135064,
+        "first engine chunk": 166.72882
+      }
+    },
+    {
+      "request_id": "speech-a669ceb4-e9c4-4db4-944c-140b2634f087",
+      "ttfa_ms": 228.396722,
+      "first_window_chunk_id": 3,
+      "phases_ms": [
+        218.462114,
+        2.712398,
+        3.740834,
+        3.481376
+      ],
+      "later_windows": 4,
+      "later_windows_redecoded_history": 4,
+      "pre_code_ms": {
+        "client start": 0.0,
+        "admission": 2.128315,
+        "preprocessing done": 5.570295,
+        "engine queue": 47.93296,
+        "prefill starts": 128.201597,
+        "prefill ends": 164.477008,
+        "first engine chunk": 166.801521
+      }
+    },
+    {
+      "request_id": "speech-cc6c856e-553e-4a55-836b-a9dd18067727",
+      "ttfa_ms": 223.778266,
+      "first_window_chunk_id": 3,
+      "phases_ms": [
+        214.749087,
+        2.350309,
+        3.041924,
+        3.636946
+      ],
+      "later_windows": 5,
+      "later_windows_redecoded_history": 5,
+      "pre_code_ms": {
+        "client start": 0.0,
+        "admission": 2.702522,
+        "preprocessing done": 5.983105,
+        "engine queue": 29.494254,
+        "prefill starts": 113.175199,
+        "prefill ends": 156.641924,
+        "first engine chunk": 158.082597
+      }
+    },
+    {
+      "request_id": "speech-a33771ad-f588-4b31-9c68-c53e218c47e1",
+      "ttfa_ms": 222.757475,
+      "first_window_chunk_id": 3,
+      "phases_ms": [
+        214.835722,
+        1.740706,
+        3.265242,
+        2.915805
+      ],
+      "later_windows": 3,
+      "later_windows_redecoded_history": 3,
+      "pre_code_ms": {
+        "client start": 0.0,
+        "admission": 2.060967,
+        "preprocessing done": 4.676944,
+        "engine queue": 41.995925,
+        "prefill starts": 117.719533,
+        "prefill ends": 153.408016,
+        "first engine chunk": 155.572436
+      }
+    },
+    {
+      "request_id": "speech-260e8ea7-6b02-47c5-b9a3-eca9dfbfce03",
+      "ttfa_ms": 218.448125,
+      "first_window_chunk_id": 3,
+      "phases_ms": [
+        210.183024,
+        1.724817,
+        3.64,
+        2.900284
+      ],
+      "later_windows": 5,
+      "later_windows_redecoded_history": 5,
+      "pre_code_ms": {
+        "client start": 0.0,
+        "admission": 2.872035,
+        "preprocessing done": 6.414423,
+        "engine queue": 28.954482,
+        "prefill starts": 115.170825,
+        "prefill ends": 153.192306,
+        "first engine chunk": 154.738917
+      }
+    },
+    {
+      "request_id": "speech-20370f72-7f9d-43e0-817e-a3bbad2e690c",
+      "ttfa_ms": 217.376238,
+      "first_window_chunk_id": 3,
+      "phases_ms": [
+        198.523428,
+        2.079338,
+        13.878591,
+        2.894881
+      ],
+      "later_windows": 4,
+      "later_windows_redecoded_history": 4,
+      "pre_code_ms": {
+        "client start": 0.0,
+        "admission": 18.988171,
+        "preprocessing done": 53.778315,
+        "engine queue": 69.643861,
+        "prefill starts": 91.300869,
+        "prefill ends": 152.028438,
+        "first engine chunk": 153.96103
+      }
+    },
+    {
+      "request_id": "speech-638e60e7-9991-4e52-a9f4-998f8c676382",
+      "ttfa_ms": 216.647844,
+      "first_window_chunk_id": 3,
+      "phases_ms": [
+        197.269124,
+        2.064515,
+        14.500666,
+        2.813539
+      ],
+      "later_windows": 4,
+      "later_windows_redecoded_history": 4,
+      "pre_code_ms": {
+        "client start": 0.0,
+        "admission": 23.07904,
+        "preprocessing done": 72.948547,
+        "engine queue": 88.506652,
+        "prefill starts": 90.037421,
+        "prefill ends": 150.757025,
+        "first engine chunk": 152.716699
+      }
+    },
+    {
+      "request_id": "speech-4a97bc6c-3768-40f2-bbf3-08832a197300",
+      "ttfa_ms": 216.314196,
+      "first_window_chunk_id": 3,
+      "phases_ms": [
+        197.171816,
+        2.071572,
+        14.091495,
+        2.979313
+      ],
+      "later_windows": 4,
+      "later_windows_redecoded_history": 4,
+      "pre_code_ms": {
+        "client start": 0.0,
+        "admission": 20.300265,
+        "preprocessing done": 58.9463,
+        "engine queue": 68.675244,
+        "prefill starts": 89.945001,
+        "prefill ends": 150.668208,
+        "first engine chunk": 152.613478
+      }
+    },
+    {
+      "request_id": "speech-e7273d02-fc54-476c-8679-230e7f79e85c",
+      "ttfa_ms": 216.217967,
+      "first_window_chunk_id": 3,
+      "phases_ms": [
+        206.104658,
+        2.782251,
+        3.830714,
+        3.500344
+      ],
+      "later_windows": 4,
+      "later_windows_redecoded_history": 4,
+      "pre_code_ms": {
+        "client start": 0.0,
+        "admission": 2.226396,
+        "preprocessing done": 4.960253,
+        "engine queue": 28.397266,
+        "prefill starts": 112.864445,
+        "prefill ends": 149.954211,
+        "first engine chunk": 151.111596
+      }
+    },
+    {
+      "request_id": "speech-ce692b16-43ea-410d-b9de-a94a154086a0",
+      "ttfa_ms": 215.942947,
+      "first_window_chunk_id": 3,
+      "phases_ms": [
+        198.721433,
+        2.103259,
+        12.591142,
+        2.527113
+      ],
+      "later_windows": 4,
+      "later_windows_redecoded_history": 4,
+      "pre_code_ms": {
+        "client start": 0.0,
+        "admission": 13.330892,
+        "preprocessing done": 47.972316,
+        "engine queue": 59.545726,
+        "prefill starts": 91.519956,
+        "prefill ends": 152.253276,
+        "first engine chunk": 154.171973
+      }
+    },
+    {
+      "request_id": "speech-7cc38abf-db89-46df-a82a-dd3ca76f9a0d",
+      "ttfa_ms": 215.606045,
+      "first_window_chunk_id": 3,
+      "phases_ms": [
+        205.703273,
+        4.767908,
+        2.843737,
+        2.291127
+      ],
+      "later_windows": 3,
+      "later_windows_redecoded_history": 3,
+      "pre_code_ms": {
+        "client start": 0.0,
+        "admission": 2.261117,
+        "preprocessing done": 5.370552,
+        "engine queue": 23.720957,
+        "prefill starts": 106.237186,
+        "prefill ends": 151.379647,
+        "first engine chunk": 152.491971
+      }
+    },
+    {
+      "request_id": "speech-5c44de2d-0404-4d29-99ca-71a8b75d017d",
+      "ttfa_ms": 214.693686,
+      "first_window_chunk_id": 3,
+      "phases_ms": [
+        206.773118,
+        1.81197,
+        3.324991,
+        2.783607
+      ],
+      "later_windows": 4,
+      "later_windows_redecoded_history": 4,
+      "pre_code_ms": {
+        "client start": 0.0,
+        "admission": 1.974339,
+        "preprocessing done": 4.843146,
+        "engine queue": 39.232383,
+        "prefill starts": 113.778615,
+        "prefill ends": 144.995748,
+        "first engine chunk": 146.749501
+      }
+    },
+    {
+      "request_id": "speech-dfe389bc-2060-489d-b766-7624fb6a8008",
+      "ttfa_ms": 213.735568,
+      "first_window_chunk_id": 3,
+      "phases_ms": [
+        198.811047,
+        2.113218,
+        10.279747,
+        2.531556
+      ],
+      "later_windows": 5,
+      "later_windows_redecoded_history": 5,
+      "pre_code_ms": {
+        "client start": 0.0,
+        "admission": 12.078974,
+        "preprocessing done": 20.585465,
+        "engine queue": 49.0796,
+        "prefill starts": 91.618504,
+        "prefill ends": 152.355242,
+        "first engine chunk": 154.255908
+      }
+    },
+    {
+      "request_id": "speech-267abe92-8d2e-42bf-ad02-24b4efaea4af",
+      "ttfa_ms": 213.685312,
+      "first_window_chunk_id": 3,
+      "phases_ms": [
+        206.963291,
+        1.662087,
+        2.350704,
+        2.70923
+      ],
+      "later_windows": 3,
+      "later_windows_redecoded_history": 3,
+      "pre_code_ms": {
+        "client start": 0.0,
+        "admission": 2.381138,
+        "preprocessing done": 4.986205,
+        "engine queue": 39.607722,
+        "prefill starts": 116.554985,
+        "prefill ends": 151.075805,
+        "first engine chunk": 152.670717
+      }
+    },
+    {
+      "request_id": "speech-44f74b13-c51e-42b5-8408-2932ad5160e3",
+      "ttfa_ms": 211.872964,
+      "first_window_chunk_id": 3,
+      "phases_ms": [
+        198.900331,
+        2.14443,
+        7.968573,
+        2.85963
+      ],
+      "later_windows": 4,
+      "later_windows_redecoded_history": 4,
+      "pre_code_ms": {
+        "client start": 0.0,
+        "admission": 10.395317,
+        "preprocessing done": 16.658701,
+        "engine queue": 48.533589,
+        "prefill starts": 91.740962,
+        "prefill ends": 152.478471,
+        "first engine chunk": 154.336705
+      }
+    },
+    {
+      "request_id": "speech-78a52e34-204b-4070-a814-b1ccea88655b",
+      "ttfa_ms": 211.860882,
+      "first_window_chunk_id": 3,
+      "phases_ms": [
+        205.573025,
+        1.791694,
+        1.855313,
+        2.64085
+      ],
+      "later_windows": 3,
+      "later_windows_redecoded_history": 3,
+      "pre_code_ms": {
+        "client start": 0.0,
+        "admission": 2.206976,
+        "preprocessing done": 5.328008,
+        "engine queue": 28.709159,
+        "prefill starts": 110.390736,
+        "prefill ends": 149.128478,
+        "first engine chunk": 150.329764
+      }
+    },
+    {
+      "request_id": "speech-c94c635e-57e2-42de-ae9d-59cb4b681f89",
+      "ttfa_ms": 209.750947,
+      "first_window_chunk_id": 3,
+      "phases_ms": [
+        203.762675,
+        1.80211,
+        1.446229,
+        2.739933
+      ],
+      "later_windows": 4,
+      "later_windows_redecoded_history": 4,
+      "pre_code_ms": {
+        "client start": 0.0,
+        "admission": 2.139272,
+        "preprocessing done": 5.18646,
+        "engine queue": 28.22633,
+        "prefill starts": 107.738903,
+        "prefill ends": 142.138698,
+        "first engine chunk": 143.420504
+      }
+    },
+    {
+      "request_id": "speech-c88a49aa-79a4-4845-9ff2-d4df2401c6e7",
+      "ttfa_ms": 207.123133,
+      "first_window_chunk_id": 3,
+      "phases_ms": [
+        201.328702,
+        1.550397,
+        1.654319,
+        2.589715
+      ],
+      "later_windows": 4,
+      "later_windows_redecoded_history": 4,
+      "pre_code_ms": {
+        "client start": 0.0,
+        "admission": 2.118764,
+        "preprocessing done": 5.514235,
+        "engine queue": 27.88817,
+        "prefill starts": 104.308582,
+        "prefill ends": 137.655882,
+        "first engine chunk": 139.120997
+      }
+    },
+    {
+      "request_id": "speech-87d93885-f744-4ad8-a60a-56dac35d5e98",
+      "ttfa_ms": 206.757611,
+      "first_window_chunk_id": 3,
+      "phases_ms": [
+        198.271234,
+        2.14479,
+        3.818139,
+        2.523448
+      ],
+      "later_windows": 3,
+      "later_windows_redecoded_history": 3,
+      "pre_code_ms": {
+        "client start": 0.0,
+        "admission": 2.262423,
+        "preprocessing done": 5.118519,
+        "engine queue": 25.373177,
+        "prefill starts": 104.819567,
+        "prefill ends": 142.830831,
+        "first engine chunk": 143.932482
+      }
+    },
+    {
+      "request_id": "speech-4840ac23-4971-4f60-9b06-b05c74f49ece",
+      "ttfa_ms": 206.364388,
+      "first_window_chunk_id": 3,
+      "phases_ms": [
+        198.587435,
+        1.91893,
+        2.937392,
+        2.920631
+      ],
+      "later_windows": 3,
+      "later_windows_redecoded_history": 3,
+      "pre_code_ms": {
+        "client start": 0.0,
+        "admission": 2.006901,
+        "preprocessing done": 5.033161,
+        "engine queue": 28.596605,
+        "prefill starts": 105.69411,
+        "prefill ends": 136.87622,
+        "first engine chunk": 138.642498
+      }
+    },
+    {
+      "request_id": "speech-f7c0a62c-6144-4c37-9d47-a21e57009bc3",
+      "ttfa_ms": 205.694192,
+      "first_window_chunk_id": 3,
+      "phases_ms": [
+        199.056038,
+        1.665526,
+        2.494936,
+        2.477692
+      ],
+      "later_windows": 4,
+      "later_windows_redecoded_history": 4,
+      "pre_code_ms": {
+        "client start": 0.0,
+        "admission": 2.337011,
+        "preprocessing done": 5.410462,
+        "engine queue": 26.022091,
+        "prefill starts": 106.207178,
+        "prefill ends": 138.208694,
+        "first engine chunk": 139.230246
+      }
+    },
+    {
+      "request_id": "speech-74b1f7c3-4be5-408b-9e8c-e7ceeba82b9e",
+      "ttfa_ms": 203.527064,
+      "first_window_chunk_id": 3,
+      "phases_ms": [
+        196.457703,
+        2.319582,
+        2.146043,
+        2.603736
+      ],
+      "later_windows": 3,
+      "later_windows_redecoded_history": 3,
+      "pre_code_ms": {
+        "client start": 0.0,
+        "admission": 2.409887,
+        "preprocessing done": 5.456623,
+        "engine queue": 28.343637,
+        "prefill starts": 104.748539,
+        "prefill ends": 135.280742,
+        "first engine chunk": 136.124449
+      }
+    },
+    {
+      "request_id": "speech-127bb561-1c4e-4fba-ac5f-95e4572ef848",
+      "ttfa_ms": 203.250831,
+      "first_window_chunk_id": 3,
+      "phases_ms": [
+        195.104223,
+        2.243833,
+        3.346094,
+        2.556681
+      ],
+      "later_windows": 4,
+      "later_windows_redecoded_history": 4,
+      "pre_code_ms": {
+        "client start": 0.0,
+        "admission": 1.701288,
+        "preprocessing done": 4.497387,
+        "engine queue": 28.000281,
+        "prefill starts": 105.109932,
+        "prefill ends": 137.783119,
+        "first engine chunk": 139.325498
+      }
+    },
+    {
+      "request_id": "speech-b7cf5c66-2520-4906-8938-846b9c18eec4",
+      "ttfa_ms": 201.180619,
+      "first_window_chunk_id": 3,
+      "phases_ms": [
+        194.240566,
+        1.93841,
+        2.118955,
+        2.882688
+      ],
+      "later_windows": 4,
+      "later_windows_redecoded_history": 4,
+      "pre_code_ms": {
+        "client start": 0.0,
+        "admission": 1.924702,
+        "preprocessing done": 4.903166,
+        "engine queue": 26.185311,
+        "prefill starts": 101.198477,
+        "prefill ends": 135.0542,
+        "first engine chunk": 137.678755
+      }
+    },
+    {
+      "request_id": "speech-d2ffc74e-3b4a-4560-825d-a406f6edcbc9",
+      "ttfa_ms": 197.562696,
+      "first_window_chunk_id": 3,
+      "phases_ms": [
+        190.466132,
+        1.483886,
+        1.810427,
+        3.802251
+      ],
+      "later_windows": 3,
+      "later_windows_redecoded_history": 3,
+      "pre_code_ms": {
+        "client start": 0.0,
+        "admission": 1.752873,
+        "preprocessing done": 4.520822,
+        "engine queue": 25.107111,
+        "prefill starts": 100.063648,
+        "prefill ends": 132.046779,
+        "first engine chunk": 133.095141
+      }
+    },
+    {
+      "request_id": "speech-a32b862c-7643-4c56-8523-ffa81e9ae5e5",
+      "ttfa_ms": 167.478056,
+      "first_window_chunk_id": 3,
+      "phases_ms": [
+        157.03348,
+        2.311863,
+        5.296529,
+        2.836184
+      ],
+      "later_windows": 4,
+      "later_windows_redecoded_history": 4,
+      "pre_code_ms": {
+        "client start": 0.0,
+        "admission": 1.759305,
+        "preprocessing done": 5.019791,
+        "engine queue": 12.219106,
+        "prefill starts": 55.418188,
+        "prefill ends": 98.888366,
+        "first engine chunk": 100.378842
+      }
+    },
+    {
+      "request_id": "speech-eadda359-cc6a-47da-aa8e-103bf4ebc480",
+      "ttfa_ms": 165.348548,
+      "first_window_chunk_id": 3,
+      "phases_ms": [
+        154.310908,
+        1.925232,
+        6.223211,
+        2.889197
+      ],
+      "later_windows": 4,
+      "later_windows_redecoded_history": 4,
+      "pre_code_ms": {
+        "client start": 0.0,
+        "admission": 2.186452,
+        "preprocessing done": 5.150021,
+        "engine queue": 12.457892,
+        "prefill starts": 54.524128,
+        "prefill ends": 98.165971,
+        "first engine chunk": 100.669426
+      }
+    },
+    {
+      "request_id": "speech-8c21eeab-c15f-41df-ad4e-3f597c3e4590",
+      "ttfa_ms": 165.148034,
+      "first_window_chunk_id": 3,
+      "phases_ms": [
+        159.292086,
+        1.758998,
+        1.586435,
+        2.510515
+      ],
+      "later_windows": 4,
+      "later_windows_redecoded_history": 4,
+      "pre_code_ms": {
+        "client start": 0.0,
+        "admission": 2.277614,
+        "preprocessing done": 5.090995,
+        "engine queue": 12.394664,
+        "prefill starts": 52.812485,
+        "prefill ends": 94.143316,
+        "first engine chunk": 95.221228
+      }
+    },
+    {
+      "request_id": "speech-cb263532-319a-4afc-97eb-87e3865af0fc",
+      "ttfa_ms": 163.957255,
+      "first_window_chunk_id": 3,
+      "phases_ms": [
+        156.388521,
+        1.790218,
+        3.164859,
+        2.613657
+      ],
+      "later_windows": 5,
+      "later_windows_redecoded_history": 5,
+      "pre_code_ms": {
+        "client start": 0.0,
+        "admission": 2.851431,
+        "preprocessing done": 6.801729,
+        "engine queue": 31.363804,
+        "prefill starts": 55.819021,
+        "prefill ends": 91.763631,
+        "first engine chunk": 92.944735
+      }
+    },
+    {
+      "request_id": "speech-2591b185-a9d9-49ca-8f9e-667d1baf75d4",
+      "ttfa_ms": 161.576723,
+      "first_window_chunk_id": 3,
+      "phases_ms": [
+        149.307329,
+        4.761615,
+        5.172258,
+        2.335521
+      ],
+      "later_windows": 4,
+      "later_windows_redecoded_history": 4,
+      "pre_code_ms": {
+        "client start": 0.0,
+        "admission": 2.215729,
+        "preprocessing done": 4.708213,
+        "engine queue": 11.748687,
+        "prefill starts": 49.837204,
+        "prefill ends": 94.977968,
+        "first engine chunk": 96.137679
+      }
+    },
+    {
+      "request_id": "speech-b2a824b0-ad4e-483e-bb27-167f90e704df",
+      "ttfa_ms": 160.626053,
+      "first_window_chunk_id": 3,
+      "phases_ms": [
+        152.810546,
+        1.744788,
+        3.473241,
+        2.597478
+      ],
+      "later_windows": 4,
+      "later_windows_redecoded_history": 4,
+      "pre_code_ms": {
+        "client start": 0.0,
+        "admission": 1.884462,
+        "preprocessing done": 4.568815,
+        "engine queue": 12.232889,
+        "prefill starts": 53.462806,
+        "prefill ends": 85.290412,
+        "first engine chunk": 86.117697
+      }
+    },
+    {
+      "request_id": "speech-ed8071be-8f7a-437e-b137-58da202c1b29",
+      "ttfa_ms": 160.064649,
+      "first_window_chunk_id": 3,
+      "phases_ms": [
+        152.806615,
+        2.205357,
+        2.471911,
+        2.580766
+      ],
+      "later_windows": 3,
+      "later_windows_redecoded_history": 3,
+      "pre_code_ms": {
+        "client start": 0.0,
+        "admission": 2.0022,
+        "preprocessing done": 5.048101,
+        "engine queue": 11.502487,
+        "prefill starts": 57.916141,
+        "prefill ends": 94.04972,
+        "first engine chunk": 96.10206
+      }
+    },
+    {
+      "request_id": "speech-71a859a3-45e5-495c-ae7a-5457b74df129",
+      "ttfa_ms": 159.945334,
+      "first_window_chunk_id": 3,
+      "phases_ms": [
+        151.920267,
+        1.608345,
+        3.384263,
+        3.032459
+      ],
+      "later_windows": 4,
+      "later_windows_redecoded_history": 4,
+      "pre_code_ms": {
+        "client start": 0.0,
+        "admission": 2.485623,
+        "preprocessing done": 5.738777,
+        "engine queue": 29.375182,
+        "prefill starts": 54.077525,
+        "prefill ends": 87.128809,
+        "first engine chunk": 88.370672
+      }
+    },
+    {
+      "request_id": "speech-2d0f3f04-860a-4420-92a9-c7e7d140d85b",
+      "ttfa_ms": 158.039012,
+      "first_window_chunk_id": 3,
+      "phases_ms": [
+        149.859321,
+        2.864739,
+        2.754342,
+        2.56061
+      ],
+      "later_windows": 4,
+      "later_windows_redecoded_history": 4,
+      "pre_code_ms": {
+        "client start": 0.0,
+        "admission": 2.294734,
+        "preprocessing done": 4.830325,
+        "engine queue": 10.07861,
+        "prefill starts": 48.594682,
+        "prefill ends": 90.147566,
+        "first engine chunk": 92.059938
+      }
+    },
+    {
+      "request_id": "speech-9b9cf956-0ff5-4e24-9c81-d97d76d112ba",
+      "ttfa_ms": 157.238789,
+      "first_window_chunk_id": 3,
+      "phases_ms": [
+        147.11015,
+        1.694564,
+        5.919687,
+        2.514388
+      ],
+      "later_windows": 4,
+      "later_windows_redecoded_history": 4,
+      "pre_code_ms": {
+        "client start": 0.0,
+        "admission": 2.570366,
+        "preprocessing done": 6.316086,
+        "engine queue": 30.930098,
+        "prefill starts": 52.065705,
+        "prefill ends": 90.088485,
+        "first engine chunk": 91.692138
+      }
+    },
+    {
+      "request_id": "speech-3609993b-aeec-411e-98e2-1824bb58ac6f",
+      "ttfa_ms": 157.066081,
+      "first_window_chunk_id": 3,
+      "phases_ms": [
+        142.727524,
+        4.752994,
+        7.470888,
+        2.114675
+      ],
+      "later_windows": 4,
+      "later_windows_redecoded_history": 4,
+      "pre_code_ms": {
+        "client start": 0.0,
+        "admission": 2.039431,
+        "preprocessing done": 4.486837,
+        "engine queue": 23.004369,
+        "prefill starts": 43.251476,
+        "prefill ends": 88.388326,
+        "first engine chunk": 89.56383
+      }
+    },
+    {
+      "request_id": "speech-2785c0a6-f160-4e89-b2b6-fd2d1acb839f",
+      "ttfa_ms": 155.953936,
+      "first_window_chunk_id": 3,
+      "phases_ms": [
+        145.747899,
+        2.835103,
+        5.039797,
+        2.331137
+      ],
+      "later_windows": 3,
+      "later_windows_redecoded_history": 3,
+      "pre_code_ms": {
+        "client start": 0.0,
+        "admission": 2.369747,
+        "preprocessing done": 4.961452,
+        "engine queue": 24.145287,
+        "prefill starts": 44.452106,
+        "prefill ends": 86.003959,
+        "first engine chunk": 87.959706
+      }
+    },
+    {
+      "request_id": "speech-acd176f5-931c-4ce0-8ea4-320288ebc3a7",
+      "ttfa_ms": 154.563395,
+      "first_window_chunk_id": 3,
+      "phases_ms": [
+        146.133696,
+        1.795874,
+        3.653802,
+        2.980023
+      ],
+      "later_windows": 5,
+      "later_windows_redecoded_history": 5,
+      "pre_code_ms": {
+        "client start": 0.0,
+        "admission": 2.113363,
+        "preprocessing done": 5.039309,
+        "engine queue": 12.172313,
+        "prefill starts": 55.406746,
+        "prefill ends": 88.714464,
+        "first engine chunk": 90.158955
+      }
+    },
+    {
+      "request_id": "speech-d4234f14-12b4-4660-a13d-2f698e76a105",
+      "ttfa_ms": 154.123778,
+      "first_window_chunk_id": 3,
+      "phases_ms": [
+        145.754672,
+        1.895771,
+        2.854246,
+        3.619089
+      ],
+      "later_windows": 4,
+      "later_windows_redecoded_history": 4,
+      "pre_code_ms": {
+        "client start": 0.0,
+        "admission": 1.890889,
+        "preprocessing done": 5.113695,
+        "engine queue": 9.718623,
+        "prefill starts": 47.737335,
+        "prefill ends": 84.311272,
+        "first engine chunk": 85.753236
+      }
+    },
+    {
+      "request_id": "speech-a86ced58-5741-4fc3-b583-7df60a64e481",
+      "ttfa_ms": 153.854111,
+      "first_window_chunk_id": 3,
+      "phases_ms": [
+        146.19807,
+        2.138754,
+        2.780994,
+        2.736293
+      ],
+      "later_windows": 4,
+      "later_windows_redecoded_history": 4,
+      "pre_code_ms": {
+        "client start": 0.0,
+        "admission": 2.220513,
+        "preprocessing done": 5.37148,
+        "engine queue": 12.195673,
+        "prefill starts": 50.624285,
+        "prefill ends": 89.545657,
+        "first engine chunk": 90.468992
+      }
+    },
+    {
+      "request_id": "speech-65daab2a-6d17-4248-a12a-98f0fedcfa2f",
+      "ttfa_ms": 153.381518,
+      "first_window_chunk_id": 3,
+      "phases_ms": [
+        142.35947,
+        2.68487,
+        6.046751,
+        2.290427
+      ],
+      "later_windows": 3,
+      "later_windows_redecoded_history": 3,
+      "pre_code_ms": {
+        "client start": 0.0,
+        "admission": 1.98806,
+        "preprocessing done": 5.168752,
+        "engine queue": 12.237022,
+        "prefill starts": 52.069552,
+        "prefill ends": 88.344939,
+        "first engine chunk": 90.709746
+      }
+    },
+    {
+      "request_id": "speech-fe1820bb-9ec9-4753-8ec7-b0340587fac1",
+      "ttfa_ms": 152.896215,
+      "first_window_chunk_id": 3,
+      "phases_ms": [
+        145.049773,
+        1.972437,
+        3.175363,
+        2.698642
+      ],
+      "later_windows": 5,
+      "later_windows_redecoded_history": 5,
+      "pre_code_ms": {
+        "client start": 0.0,
+        "admission": 2.272137,
+        "preprocessing done": 5.51742,
+        "engine queue": 9.643292,
+        "prefill starts": 49.417224,
+        "prefill ends": 82.489058,
+        "first engine chunk": 84.999814
+      }
+    },
+    {
+      "request_id": "speech-3afce278-62a6-4765-b1c9-aef0853a4560",
+      "ttfa_ms": 152.214376,
+      "first_window_chunk_id": 3,
+      "phases_ms": [
+        144.459397,
+        1.639866,
+        3.27261,
+        2.842503
+      ],
+      "later_windows": 4,
+      "later_windows_redecoded_history": 4,
+      "pre_code_ms": {
+        "client start": 0.0,
+        "admission": 2.509995,
+        "preprocessing done": 5.42757,
+        "engine queue": 10.460647,
+        "prefill starts": 47.534976,
+        "prefill ends": 79.720858,
+        "first engine chunk": 81.913349
+      }
+    },
+    {
+      "request_id": "speech-20f0b7f8-e638-473a-93f4-ae944dbe9570",
+      "ttfa_ms": 151.80296,
+      "first_window_chunk_id": 3,
+      "phases_ms": [
+        140.786064,
+        2.141788,
+        6.120332,
+        2.754776
+      ],
+      "later_windows": 4,
+      "later_windows_redecoded_history": 4,
+      "pre_code_ms": {
+        "client start": 0.0,
+        "admission": 1.559953,
+        "preprocessing done": 3.981621,
+        "engine queue": 8.912283,
+        "prefill starts": 47.330201,
+        "prefill ends": 85.339858,
+        "first engine chunk": 86.483473
+      }
+    },
+    {
+      "request_id": "speech-c69943eb-2bcb-450b-8ffb-82087e2f61be",
+      "ttfa_ms": 149.238816,
+      "first_window_chunk_id": 3,
+      "phases_ms": [
+        139.323902,
+        2.10036,
+        5.127502,
+        2.687052
+      ],
+      "later_windows": 4,
+      "later_windows_redecoded_history": 4,
+      "pre_code_ms": {
+        "client start": 0.0,
+        "admission": 2.265009,
+        "preprocessing done": 4.947064,
+        "engine queue": 23.325737,
+        "prefill starts": 43.710811,
+        "prefill ends": 82.631874,
+        "first engine chunk": 83.59667
+      }
+    },
+    {
+      "request_id": "speech-8c1d3a55-18cb-4906-9dc8-648c6b4e1aa5",
+      "ttfa_ms": 148.979109,
+      "first_window_chunk_id": 3,
+      "phases_ms": [
+        142.822123,
+        1.809166,
+        1.492051,
+        2.855769
+      ],
+      "later_windows": 5,
+      "later_windows_redecoded_history": 5,
+      "pre_code_ms": {
+        "client start": 0.0,
+        "admission": 2.118736,
+        "preprocessing done": 5.249513,
+        "engine queue": 12.277898,
+        "prefill starts": 49.753279,
+        "prefill ends": 87.933591,
+        "first engine chunk": 89.901792
+      }
+    },
+    {
+      "request_id": "speech-7a4f603a-697d-45d4-96db-f8d90130fd4e",
+      "ttfa_ms": 148.480513,
+      "first_window_chunk_id": 3,
+      "phases_ms": [
+        139.430498,
+        2.532372,
+        2.765371,
+        3.752272
+      ],
+      "later_windows": 5,
+      "later_windows_redecoded_history": 5,
+      "pre_code_ms": {
+        "client start": 0.0,
+        "admission": 2.868242,
+        "preprocessing done": 7.232057,
+        "engine queue": 31.474702,
+        "prefill starts": 33.171516,
+        "prefill ends": 75.693454,
+        "first engine chunk": 76.856135
+      }
+    },
+    {
+      "request_id": "speech-99f01230-336c-4d26-8724-8bcd75d93158",
+      "ttfa_ms": 148.291301,
+      "first_window_chunk_id": 3,
+      "phases_ms": [
+        140.382593,
+        2.341496,
+        2.069103,
+        3.498109
+      ],
+      "later_windows": 4,
+      "later_windows_redecoded_history": 4,
+      "pre_code_ms": {
+        "client start": 0.0,
+        "admission": 2.845398,
+        "preprocessing done": 6.689082,
+        "engine queue": 29.286581,
+        "prefill starts": 32.90793,
+        "prefill ends": 70.888877,
+        "first engine chunk": 73.745546
+      }
+    },
+    {
+      "request_id": "speech-c7bbb5d5-b293-476f-b7f2-40803329ca59",
+      "ttfa_ms": 147.71617,
+      "first_window_chunk_id": 3,
+      "phases_ms": [
+        139.897427,
+        1.667026,
+        3.420496,
+        2.731221
+      ],
+      "later_windows": 4,
+      "later_windows_redecoded_history": 4,
+      "pre_code_ms": {
+        "client start": 0.0,
+        "admission": 1.747958,
+        "preprocessing done": 5.024291,
+        "engine queue": 11.983973,
+        "prefill starts": 54.471445,
+        "prefill ends": 85.917876,
+        "first engine chunk": 87.922661
+      }
+    },
+    {
+      "request_id": "speech-d04fd26d-1b55-4516-97f0-3ec796e6653d",
+      "ttfa_ms": 145.466103,
+      "first_window_chunk_id": 3,
+      "phases_ms": [
+        138.56634,
+        1.828047,
+        2.251872,
+        2.819844
+      ],
+      "later_windows": 4,
+      "later_windows_redecoded_history": 4,
+      "pre_code_ms": {
+        "client start": 0.0,
+        "admission": 2.278267,
+        "preprocessing done": 5.163029,
+        "engine queue": 10.02691,
+        "prefill starts": 47.400468,
+        "prefill ends": 81.773629,
+        "first engine chunk": 83.023365
+      }
+    },
+    {
+      "request_id": "speech-6b36c18c-5ba8-4396-b691-752053baea9f",
+      "ttfa_ms": 145.398876,
+      "first_window_chunk_id": 3,
+      "phases_ms": [
+        137.79111,
+        1.734691,
+        3.901575,
+        1.9715
+      ],
+      "later_windows": 3,
+      "later_windows_redecoded_history": 3,
+      "pre_code_ms": {
+        "client start": 0.0,
+        "admission": 2.199628,
+        "preprocessing done": 5.344138,
+        "engine queue": 11.314445,
+        "prefill starts": 31.286356,
+        "prefill ends": 72.617317,
+        "first engine chunk": 73.734279
+      }
+    },
+    {
+      "request_id": "speech-d5e0329e-bf28-44a7-8b91-b5c3bd30bfaf",
+      "ttfa_ms": 144.486047,
+      "first_window_chunk_id": 3,
+      "phases_ms": [
+        132.001975,
+        2.300827,
+        7.550035,
+        2.63321
+      ],
+      "later_windows": 4,
+      "later_windows_redecoded_history": 4,
+      "pre_code_ms": {
+        "client start": 0.0,
+        "admission": 2.210284,
+        "preprocessing done": 5.214219,
+        "engine queue": 8.49403,
+        "prefill starts": 30.377796,
+        "prefill ends": 73.845607,
+        "first engine chunk": 75.354194
+      }
+    },
+    {
+      "request_id": "speech-7b1a4f5b-2c0a-4f23-85c2-2d79bb94c5fd",
+      "ttfa_ms": 143.496557,
+      "first_window_chunk_id": 3,
+      "phases_ms": [
+        136.032376,
+        2.1084,
+        2.004799,
+        3.350982
+      ],
+      "later_windows": 4,
+      "later_windows_redecoded_history": 4,
+      "pre_code_ms": {
+        "client start": 0.0,
+        "admission": 2.311549,
+        "preprocessing done": 5.382148,
+        "engine queue": 34.450931,
+        "prefill starts": 36.22347,
+        "prefill ends": 68.728503,
+        "first engine chunk": 69.828173
+      }
+    },
+    {
+      "request_id": "speech-1956925d-bfcd-40d5-a23c-b1f3a2375bfd",
+      "ttfa_ms": 142.000741,
+      "first_window_chunk_id": 3,
+      "phases_ms": [
+        128.839111,
+        1.91777,
+        8.512458,
+        2.731402
+      ],
+      "later_windows": 4,
+      "later_windows_redecoded_history": 4,
+      "pre_code_ms": {
+        "client start": 0.0,
+        "admission": 1.859143,
+        "preprocessing done": 4.500131,
+        "engine queue": 9.06128,
+        "prefill starts": 29.047137,
+        "prefill ends": 72.684969,
+        "first engine chunk": 75.203078
+      }
+    },
+    {
+      "request_id": "speech-70591be4-52b6-45b2-bf98-e8f7530766de",
+      "ttfa_ms": 139.189031,
+      "first_window_chunk_id": 3,
+      "phases_ms": [
+        126.613523,
+        2.778054,
+        6.177923,
+        3.619531
+      ],
+      "later_windows": 4,
+      "later_windows_redecoded_history": 4,
+      "pre_code_ms": {
+        "client start": 0.0,
+        "admission": 2.181864,
+        "preprocessing done": 5.193804,
+        "engine queue": 32.324611,
+        "prefill starts": 33.365552,
+        "prefill ends": 70.45601,
+        "first engine chunk": 71.653902
+      }
+    },
+    {
+      "request_id": "speech-2d85171e-feb2-4076-9682-2c05ee6c5ea8",
+      "ttfa_ms": 139.129271,
+      "first_window_chunk_id": 3,
+      "phases_ms": [
+        131.364787,
+        2.134766,
+        2.767332,
+        2.862386
+      ],
+      "later_windows": 4,
+      "later_windows_redecoded_history": 4,
+      "pre_code_ms": {
+        "client start": 0.0,
+        "admission": 2.786563,
+        "preprocessing done": 6.418268,
+        "engine queue": 28.776775,
+        "prefill starts": 31.125805,
+        "prefill ends": 76.244387,
+        "first engine chunk": 77.284329
+      }
+    },
+    {
+      "request_id": "speech-2ef61bd5-bb49-4abc-a8f6-847dca982d0b",
+      "ttfa_ms": 138.327515,
+      "first_window_chunk_id": 3,
+      "phases_ms": [
+        129.417084,
+        2.410541,
+        3.177131,
+        3.322759
+      ],
+      "later_windows": 4,
+      "later_windows_redecoded_history": 4,
+      "pre_code_ms": {
+        "client start": 0.0,
+        "admission": 2.909862,
+        "preprocessing done": 6.838093,
+        "engine queue": 32.760018,
+        "prefill starts": 35.09434,
+        "prefill ends": 67.957309,
+        "first engine chunk": 69.112132
+      }
+    },
+    {
+      "request_id": "speech-16153009-0a5d-41ec-832e-b67332e082cd",
+      "ttfa_ms": 137.52188,
+      "first_window_chunk_id": 3,
+      "phases_ms": [
+        127.551093,
+        2.105475,
+        5.050863,
+        2.814449
+      ],
+      "later_windows": 4,
+      "later_windows_redecoded_history": 4,
+      "pre_code_ms": {
+        "client start": 0.0,
+        "admission": 2.75575,
+        "preprocessing done": 6.328611,
+        "engine queue": 25.123438,
+        "prefill starts": 27.280007,
+        "prefill ends": 72.398322,
+        "first engine chunk": 73.472878
+      }
+    },
+    {
+      "request_id": "speech-164f1887-954e-4f33-bacf-f77df2c4b66d",
+      "ttfa_ms": 134.722033,
+      "first_window_chunk_id": 3,
+      "phases_ms": [
+        128.937751,
+        1.655615,
+        1.482467,
+        2.6462
+      ],
+      "later_windows": 4,
+      "later_windows_redecoded_history": 4,
+      "pre_code_ms": {
+        "client start": 0.0,
+        "admission": 1.808104,
+        "preprocessing done": 4.421605,
+        "engine queue": 30.989323,
+        "prefill starts": 32.029924,
+        "prefill ends": 65.8753,
+        "first engine chunk": 66.906216
+      }
+    },
+    {
+      "request_id": "speech-e3bccf30-3253-4131-83e0-83599fcbab00",
+      "ttfa_ms": 134.408319,
+      "first_window_chunk_id": 3,
+      "phases_ms": [
+        126.684967,
+        1.909002,
+        2.886544,
+        2.927806
+      ],
+      "later_windows": 4,
+      "later_windows_redecoded_history": 4,
+      "pre_code_ms": {
+        "client start": 0.0,
+        "admission": 2.052447,
+        "preprocessing done": 4.940151,
+        "engine queue": 27.347452,
+        "prefill starts": 28.362359,
+        "prefill ends": 60.858172,
+        "first engine chunk": 61.882831
+      }
+    },
+    {
+      "request_id": "speech-ee336508-26d0-4200-80c9-407cdbec55df",
+      "ttfa_ms": 134.288812,
+      "first_window_chunk_id": 3,
+      "phases_ms": [
+        125.998041,
+        1.945545,
+        3.379585,
+        2.965641
+      ],
+      "later_windows": 4,
+      "later_windows_redecoded_history": 4,
+      "pre_code_ms": {
+        "client start": 0.0,
+        "admission": 2.198605,
+        "preprocessing done": 5.043163,
+        "engine queue": 24.726688,
+        "prefill starts": 26.418516,
+        "prefill ends": 62.293397,
+        "first engine chunk": 63.353932
+      }
+    },
+    {
+      "request_id": "speech-5a1e73bb-a7b4-4f9e-b95c-976ab604628b",
+      "ttfa_ms": 133.713181,
+      "first_window_chunk_id": 3,
+      "phases_ms": [
+        126.569795,
+        1.783539,
+        2.669453,
+        2.690394
+      ],
+      "later_windows": 3,
+      "later_windows_redecoded_history": 3,
+      "pre_code_ms": {
+        "client start": 0.0,
+        "admission": 2.230795,
+        "preprocessing done": 5.333285,
+        "engine queue": 32.87831,
+        "prefill starts": 35.105091,
+        "prefill ends": 67.880666,
+        "first engine chunk": 69.755846
+      }
+    },
+    {
+      "request_id": "speech-6e948872-2b04-4d98-9fcb-cffd6da7084d",
+      "ttfa_ms": 132.114859,
+      "first_window_chunk_id": 3,
+      "phases_ms": [
+        121.097556,
+        2.710161,
+        4.877207,
+        3.429935
+      ],
+      "later_windows": 4,
+      "later_windows_redecoded_history": 4,
+      "pre_code_ms": {
+        "client start": 0.0,
+        "admission": 2.848606,
+        "preprocessing done": 6.763602,
+        "engine queue": 13.3472,
+        "prefill starts": 14.835789,
+        "prefill ends": 57.358073,
+        "first engine chunk": 58.58411
+      }
+    },
+    {
+      "request_id": "speech-c4a9d3ee-be01-4f9b-bb77-773c995f59f3",
+      "ttfa_ms": 131.814213,
+      "first_window_chunk_id": 3,
+      "phases_ms": [
+        123.759905,
+        1.762978,
+        4.200084,
+        2.091246
+      ],
+      "later_windows": 3,
+      "later_windows_redecoded_history": 3,
+      "pre_code_ms": {
+        "client start": 0.0,
+        "admission": 2.023176,
+        "preprocessing done": 5.070146,
+        "engine queue": 26.716973,
+        "prefill starts": 28.547775,
+        "prefill ends": 67.29086,
+        "first engine chunk": 68.528386
+      }
+    },
+    {
+      "request_id": "speech-7990d06e-afe8-4614-807a-fa4b088c53b2",
+      "ttfa_ms": 130.838038,
+      "first_window_chunk_id": 3,
+      "phases_ms": [
+        121.038644,
+        1.938041,
+        3.328979,
+        4.532374
+      ],
+      "later_windows": 5,
+      "later_windows_redecoded_history": 5,
+      "pre_code_ms": {
+        "client start": 0.0,
+        "admission": 2.144378,
+        "preprocessing done": 5.425675,
+        "engine queue": 30.40687,
+        "prefill starts": 31.616128,
+        "prefill ends": 64.955428,
+        "first engine chunk": 66.090742
+      }
+    },
+    {
+      "request_id": "speech-6c865f4d-643c-4b03-bce4-500c616ccc59",
+      "ttfa_ms": 130.334876,
+      "first_window_chunk_id": 3,
+      "phases_ms": [
+        121.821981,
+        2.014479,
+        3.951632,
+        2.546784
+      ],
+      "later_windows": 4,
+      "later_windows_redecoded_history": 4,
+      "pre_code_ms": {
+        "client start": 0.0,
+        "admission": 2.139375,
+        "preprocessing done": 5.410008,
+        "engine queue": 29.705394,
+        "prefill starts": 31.085436,
+        "prefill ends": 67.096517,
+        "first engine chunk": 68.367745
+      }
+    },
+    {
+      "request_id": "speech-4dc2dd9b-fb4e-4cd8-9f94-c027b6b2c1fc",
+      "ttfa_ms": 129.569885,
+      "first_window_chunk_id": 3,
+      "phases_ms": [
+        121.589681,
+        1.711827,
+        3.634039,
+        2.634338
+      ],
+      "later_windows": 5,
+      "later_windows_redecoded_history": 5,
+      "pre_code_ms": {
+        "client start": 0.0,
+        "admission": 2.372554,
+        "preprocessing done": 5.576831,
+        "engine queue": 25.217067,
+        "prefill starts": 26.276736,
+        "prefill ends": 58.582288,
+        "first engine chunk": 60.302427
+      }
+    },
+    {
+      "request_id": "speech-2a8d690c-14ee-4e7a-8880-a3f55d78f997",
+      "ttfa_ms": 128.290174,
+      "first_window_chunk_id": 3,
+      "phases_ms": [
+        119.968971,
+        1.662554,
+        4.201841,
+        2.456808
+      ],
+      "later_windows": 4,
+      "later_windows_redecoded_history": 4,
+      "pre_code_ms": {
+        "client start": 0.0,
+        "admission": 2.107609,
+        "preprocessing done": 5.296757,
+        "engine queue": 29.843323,
+        "prefill starts": 30.938563,
+        "prefill ends": 65.137229,
+        "first engine chunk": 67.313768
+      }
+    },
+    {
+      "request_id": "speech-1af714dc-b97b-4f48-a502-3b61c2cbf589",
+      "ttfa_ms": 127.658461,
+      "first_window_chunk_id": 3,
+      "phases_ms": [
+        119.180605,
+        1.900548,
+        3.629821,
+        2.947487
+      ],
+      "later_windows": 4,
+      "later_windows_redecoded_history": 4,
+      "pre_code_ms": {
+        "client start": 0.0,
+        "admission": 2.073444,
+        "preprocessing done": 4.560698,
+        "engine queue": 24.691265,
+        "prefill starts": 25.686281,
+        "prefill ends": 59.356373,
+        "first engine chunk": 60.200967
+      }
+    },
+    {
+      "request_id": "speech-85432068-9c54-4b64-aefd-b4e1610455d3",
+      "ttfa_ms": 127.303999,
+      "first_window_chunk_id": 3,
+      "phases_ms": [
+        120.898069,
+        1.833209,
+        1.880888,
+        2.691833
+      ],
+      "later_windows": 4,
+      "later_windows_redecoded_history": 4,
+      "pre_code_ms": {
+        "client start": 0.0,
+        "admission": 2.275014,
+        "preprocessing done": 5.649551,
+        "engine queue": 25.194974,
+        "prefill starts": 27.602094,
+        "prefill ends": 62.923719,
+        "first engine chunk": 64.348729
+      }
+    },
+    {
+      "request_id": "speech-06d0ac6a-a3c2-4888-b025-597e99f9d195",
+      "ttfa_ms": 127.288902,
+      "first_window_chunk_id": 3,
+      "phases_ms": [
+        120.644842,
+        1.808745,
+        1.930035,
+        2.90528
+      ],
+      "later_windows": 4,
+      "later_windows_redecoded_history": 4,
+      "pre_code_ms": {
+        "client start": 0.0,
+        "admission": 2.822396,
+        "preprocessing done": 6.744941,
+        "engine queue": 28.388011,
+        "prefill starts": 29.577512,
+        "prefill ends": 61.167526,
+        "first engine chunk": 63.333812
+      }
+    },
+    {
+      "request_id": "speech-02302a3f-cc3c-4f2c-ba2e-0908d7547527",
+      "ttfa_ms": 126.895577,
+      "first_window_chunk_id": 3,
+      "phases_ms": [
+        120.250954,
+        1.401166,
+        2.531383,
+        2.712074
+      ],
+      "later_windows": 4,
+      "later_windows_redecoded_history": 4,
+      "pre_code_ms": {
+        "client start": 0.0,
+        "admission": 2.165226,
+        "preprocessing done": 5.24259,
+        "engine queue": 9.63437,
+        "prefill starts": 28.976872,
+        "prefill ends": 63.056965,
+        "first engine chunk": 64.240839
+      }
+    },
+    {
+      "request_id": "speech-7b3253f0-5ed5-486c-92f8-b7e65741035b",
+      "ttfa_ms": 126.601038,
+      "first_window_chunk_id": 3,
+      "phases_ms": [
+        113.962191,
+        2.09642,
+        7.360139,
+        3.182288
+      ],
+      "later_windows": 4,
+      "later_windows_redecoded_history": 4,
+      "pre_code_ms": {
+        "client start": 0.0,
+        "admission": 2.834712,
+        "preprocessing done": 6.025616,
+        "engine queue": 11.923493,
+        "prefill starts": 13.682862,
+        "prefill ends": 58.798173,
+        "first engine chunk": 59.888577
+      }
+    },
+    {
+      "request_id": "speech-dbad7000-3c13-4b28-8933-66c429dfc9ea",
+      "ttfa_ms": 126.599485,
+      "first_window_chunk_id": 3,
+      "phases_ms": [
+        117.035328,
+        2.794435,
+        2.734325,
+        4.035397
+      ],
+      "later_windows": 4,
+      "later_windows_redecoded_history": 4,
+      "pre_code_ms": {
+        "client start": 0.0,
+        "admission": 2.80552,
+        "preprocessing done": 6.892491,
+        "engine queue": 12.617847,
+        "prefill starts": 14.887237,
+        "prefill ends": 51.070613,
+        "first engine chunk": 52.690286
+      }
+    },
+    {
+      "request_id": "speech-e3dcb9a3-f89c-4594-bddf-eef8167bf8d8",
+      "ttfa_ms": 125.23795,
+      "first_window_chunk_id": 3,
+      "phases_ms": [
+        118.918948,
+        1.601554,
+        1.79168,
+        2.925768
+      ],
+      "later_windows": 5,
+      "later_windows_redecoded_history": 5,
+      "pre_code_ms": {
+        "client start": 0.0,
+        "admission": 2.133118,
+        "preprocessing done": 5.635415,
+        "engine queue": 28.981179,
+        "prefill starts": 30.529202,
+        "prefill ends": 64.60914,
+        "first engine chunk": 65.697613
+      }
+    },
+    {
+      "request_id": "speech-0ab4d1ed-df14-4127-b5b1-c7684e200f9a",
+      "ttfa_ms": 124.960992,
+      "first_window_chunk_id": 3,
+      "phases_ms": [
+        113.745591,
+        2.319073,
+        5.488434,
+        3.407894
+      ],
+      "later_windows": 3,
+      "later_windows_redecoded_history": 3,
+      "pre_code_ms": {
+        "client start": 0.0,
+        "admission": 2.060159,
+        "preprocessing done": 5.39484,
+        "engine queue": 11.835946,
+        "prefill starts": 13.9226,
+        "prefill ends": 52.1227,
+        "first engine chunk": 54.826469
+      }
+    },
+    {
+      "request_id": "speech-28b5a592-7266-4ec9-ab67-2a99080c4d37",
+      "ttfa_ms": 124.121213,
+      "first_window_chunk_id": 3,
+      "phases_ms": [
+        115.856005,
+        2.352196,
+        1.603162,
+        4.30985
+      ],
+      "later_windows": 5,
+      "later_windows_redecoded_history": 5,
+      "pre_code_ms": {
+        "client start": 0.0,
+        "admission": 2.316943,
+        "preprocessing done": 5.671749,
+        "engine queue": 27.105808,
+        "prefill starts": 28.100871,
+        "prefill ends": 59.78338,
+        "first engine chunk": 60.786202
+      }
+    },
+    {
+      "request_id": "speech-3977bb5f-799b-43c8-af13-c0d2a58d790d",
+      "ttfa_ms": 123.429975,
+      "first_window_chunk_id": 3,
+      "phases_ms": [
+        117.186973,
+        1.885685,
+        1.608522,
+        2.748795
+      ],
+      "later_windows": 4,
+      "later_windows_redecoded_history": 4,
+      "pre_code_ms": {
+        "client start": 0.0,
+        "admission": 2.112323,
+        "preprocessing done": 5.022801,
+        "engine queue": 9.761125,
+        "prefill starts": 30.292263,
+        "prefill ends": 61.940155,
+        "first engine chunk": 63.718711
+      }
+    },
+    {
+      "request_id": "speech-df371699-314e-4b3a-90e7-1745c164e227",
+      "ttfa_ms": 123.395708,
+      "first_window_chunk_id": 3,
+      "phases_ms": [
+        116.292861,
+        2.434727,
+        3.080589,
+        1.587531
+      ],
+      "later_windows": 4,
+      "later_windows_redecoded_history": 4,
+      "pre_code_ms": {
+        "client start": 0.0,
+        "admission": 2.285267,
+        "preprocessing done": 5.176682,
+        "engine queue": 9.790426,
+        "prefill starts": 29.249802,
+        "prefill ends": 60.971982,
+        "first engine chunk": 61.796265
+      }
+    },
+    {
+      "request_id": "speech-d7ed56c4-d0c4-48f6-a132-319297130c73",
+      "ttfa_ms": 122.961852,
+      "first_window_chunk_id": 3,
+      "phases_ms": [
+        114.750071,
+        2.342318,
+        3.122828,
+        2.746635
+      ],
+      "later_windows": 4,
+      "later_windows_redecoded_history": 4,
+      "pre_code_ms": {
+        "client start": 0.0,
+        "admission": 2.233424,
+        "preprocessing done": 5.357823,
+        "engine queue": 24.551384,
+        "prefill starts": 25.55474,
+        "prefill ends": 57.887502,
+        "first engine chunk": 59.8129
+      }
+    },
+    {
+      "request_id": "speech-dee70085-73a1-41ee-9214-c59c6b8b10d4",
+      "ttfa_ms": 122.445285,
+      "first_window_chunk_id": 3,
+      "phases_ms": [
+        113.686218,
+        1.37199,
+        4.825235,
+        2.561842
+      ],
+      "later_windows": 4,
+      "later_windows_redecoded_history": 4,
+      "pre_code_ms": {
+        "client start": 0.0,
+        "admission": 1.665817,
+        "preprocessing done": 4.394417,
+        "engine queue": 21.475966,
+        "prefill starts": 22.382872,
+        "prefill ends": 56.463961,
+        "first engine chunk": 57.690321
+      }
+    },
+    {
+      "request_id": "speech-43d4a119-51d2-4828-a769-171218c3b0ae",
+      "ttfa_ms": 122.435789,
+      "first_window_chunk_id": 3,
+      "phases_ms": [
+        114.535914,
+        1.789761,
+        3.393629,
+        2.716485
+      ],
+      "later_windows": 5,
+      "later_windows_redecoded_history": 5,
+      "pre_code_ms": {
+        "client start": 0.0,
+        "admission": 2.22518,
+        "preprocessing done": 5.465932,
+        "engine queue": 21.622492,
+        "prefill starts": 22.704572,
+        "prefill ends": 54.858006,
+        "first engine chunk": 56.583501
+      }
+    },
+    {
+      "request_id": "speech-72e8be83-d73c-4d90-8bba-f406d393e1d9",
+      "ttfa_ms": 121.405553,
+      "first_window_chunk_id": 3,
+      "phases_ms": [
+        110.881662,
+        1.91704,
+        5.727198,
+        2.879653
+      ],
+      "later_windows": 4,
+      "later_windows_redecoded_history": 4,
+      "pre_code_ms": {
+        "client start": 0.0,
+        "admission": 2.284093,
+        "preprocessing done": 5.361179,
+        "engine queue": 9.970017,
+        "prefill starts": 11.273497,
+        "prefill ends": 47.147247,
+        "first engine chunk": 48.244536
+      }
+    },
+    {
+      "request_id": "speech-f3b6306a-d914-4f0a-9d76-4c312c3a7c1a",
+      "ttfa_ms": 121.033255,
+      "first_window_chunk_id": 3,
+      "phases_ms": [
+        115.095904,
+        1.531794,
+        1.578871,
+        2.826686
+      ],
+      "later_windows": 4,
+      "later_windows_redecoded_history": 4,
+      "pre_code_ms": {
+        "client start": 0.0,
+        "admission": 2.21245,
+        "preprocessing done": 5.353749,
+        "engine queue": 22.45011,
+        "prefill starts": 24.144817,
+        "prefill ends": 60.223898,
+        "first engine chunk": 62.023846
+      }
+    },
+    {
+      "request_id": "speech-fb3418a1-fdd4-43e4-a75b-52dc4d94ece6",
+      "ttfa_ms": 119.837502,
+      "first_window_chunk_id": 3,
+      "phases_ms": [
+        113.070683,
+        2.222637,
+        1.953431,
+        2.590751
+      ],
+      "later_windows": 4,
+      "later_windows_redecoded_history": 4,
+      "pre_code_ms": {
+        "client start": 0.0,
+        "admission": 2.335634,
+        "preprocessing done": 5.723475,
+        "engine queue": 12.277145,
+        "prefill starts": 14.012463,
+        "prefill ends": 54.36671,
+        "first engine chunk": 55.360244
+      }
+    },
+    {
+      "request_id": "speech-7e8064bd-56ce-43c2-9eec-06ce7399a188",
+      "ttfa_ms": 119.72475,
+      "first_window_chunk_id": 3,
+      "phases_ms": [
+        112.157876,
+        2.339103,
+        2.226283,
+        3.001488
+      ],
+      "later_windows": 3,
+      "later_windows_redecoded_history": 3,
+      "pre_code_ms": {
+        "client start": 0.0,
+        "admission": 2.190833,
+        "preprocessing done": 5.656366,
+        "engine queue": 22.17408,
+        "prefill starts": 23.227585,
+        "prefill ends": 54.051514,
+        "first engine chunk": 56.454049
+      }
+    },
+    {
+      "request_id": "speech-dace154e-bf7e-4f18-9d18-0743ec582b2c",
+      "ttfa_ms": 118.75318,
+      "first_window_chunk_id": 3,
+      "phases_ms": [
+        110.363878,
+        2.183418,
+        3.367999,
+        2.837885
+      ],
+      "later_windows": 4,
+      "later_windows_redecoded_history": 4,
+      "pre_code_ms": {
+        "client start": 0.0,
+        "admission": 2.316106,
+        "preprocessing done": 5.270038,
+        "engine queue": 9.835637,
+        "prefill starts": 11.356203,
+        "prefill ends": 49.539928,
+        "first engine chunk": 50.615916
+      }
+    },
+    {
+      "request_id": "speech-bba050f2-0dab-453b-86e9-954fc44d5e50",
+      "ttfa_ms": 118.615589,
+      "first_window_chunk_id": 3,
+      "phases_ms": [
+        111.537773,
+        1.813132,
+        2.345845,
+        2.918839
+      ],
+      "later_windows": 4,
+      "later_windows_redecoded_history": 4,
+      "pre_code_ms": {
+        "client start": 0.0,
+        "admission": 2.359487,
+        "preprocessing done": 5.465015,
+        "engine queue": 21.732642,
+        "prefill starts": 22.821515,
+        "prefill ends": 55.470592,
+        "first engine chunk": 57.517034
+      }
+    },
+    {
+      "request_id": "speech-fca91a06-275a-4ad2-a3ec-c32009fa98a9",
+      "ttfa_ms": 118.291748,
+      "first_window_chunk_id": 3,
+      "phases_ms": [
+        111.076088,
+        2.125645,
+        2.281691,
+        2.808324
+      ],
+      "later_windows": 4,
+      "later_windows_redecoded_history": 4,
+      "pre_code_ms": {
+        "client start": 0.0,
+        "admission": 1.783113,
+        "preprocessing done": 4.121755,
+        "engine queue": 17.498642,
+        "prefill starts": 18.353965,
+        "prefill ends": 49.801574,
+        "first engine chunk": 51.267203
+      }
+    },
+    {
+      "request_id": "speech-ce97ebb9-fe7a-4f2d-8a5e-e2db93086294",
+      "ttfa_ms": 116.995829,
+      "first_window_chunk_id": 3,
+      "phases_ms": [
+        109.058983,
+        1.699674,
+        3.37769,
+        2.859482
+      ],
+      "later_windows": 4,
+      "later_windows_redecoded_history": 4,
+      "pre_code_ms": {
+        "client start": 0.0,
+        "admission": 2.38992,
+        "preprocessing done": 5.789745,
+        "engine queue": 22.728611,
+        "prefill starts": 23.732838,
+        "prefill ends": 55.718708,
+        "first engine chunk": 58.056051
+      }
+    },
+    {
+      "request_id": "speech-b4eba108-1c77-4a36-ae43-046db303d8e6",
+      "ttfa_ms": 116.736951,
+      "first_window_chunk_id": 3,
+      "phases_ms": [
+        107.985615,
+        2.053497,
+        3.788829,
+        2.90901
+      ],
+      "later_windows": 3,
+      "later_windows_redecoded_history": 3,
+      "pre_code_ms": {
+        "client start": 0.0,
+        "admission": 2.335922,
+        "preprocessing done": 5.389606,
+        "engine queue": 10.03302,
+        "prefill starts": 11.031241,
+        "prefill ends": 42.5,
+        "first engine chunk": 44.833763
+      }
+    },
+    {
+      "request_id": "speech-440c0b11-8ce6-44e9-ae3a-7d8cb7328f69",
+      "ttfa_ms": 115.659344,
+      "first_window_chunk_id": 3,
+      "phases_ms": [
+        109.136659,
+        1.51713,
+        2.218938,
+        2.786617
+      ],
+      "later_windows": 4,
+      "later_windows_redecoded_history": 4,
+      "pre_code_ms": {
+        "client start": 0.0,
+        "admission": 2.386317,
+        "preprocessing done": 5.571735,
+        "engine queue": 13.464835,
+        "prefill starts": 15.342976,
+        "prefill ends": 52.372983,
+        "first engine chunk": 53.56955
+      }
+    },
+    {
+      "request_id": "speech-b9aeb0db-492f-49c7-8020-7a51a4d88ec5",
+      "ttfa_ms": 115.468863,
+      "first_window_chunk_id": 3,
+      "phases_ms": [
+        109.31667,
+        1.697823,
+        1.496256,
+        2.958114
+      ],
+      "later_windows": 4,
+      "later_windows_redecoded_history": 4,
+      "pre_code_ms": {
+        "client start": 0.0,
+        "admission": 2.434989,
+        "preprocessing done": 5.319031,
+        "engine queue": 12.039617,
+        "prefill starts": 13.551017,
+        "prefill ends": 46.049364,
+        "first engine chunk": 48.759213
+      }
+    },
+    {
+      "request_id": "speech-875b2791-783e-41a7-b9c6-5daf10d48657",
+      "ttfa_ms": 115.285433,
+      "first_window_chunk_id": 3,
+      "phases_ms": [
+        109.085018,
+        1.865882,
+        1.60825,
+        2.726283
+      ],
+      "later_windows": 4,
+      "later_windows_redecoded_history": 4,
+      "pre_code_ms": {
+        "client start": 0.0,
+        "admission": 2.173258,
+        "preprocessing done": 4.802459,
+        "engine queue": 12.721439,
+        "prefill starts": 14.607589,
+        "prefill ends": 47.058909,
+        "first engine chunk": 48.496887
+      }
+    },
+    {
+      "request_id": "speech-41442caf-c824-44fc-8c30-2034ac227417",
+      "ttfa_ms": 114.5617,
+      "first_window_chunk_id": 3,
+      "phases_ms": [
+        107.036847,
+        2.269635,
+        2.506445,
+        2.748773
+      ],
+      "later_windows": 4,
+      "later_windows_redecoded_history": 4,
+      "pre_code_ms": {
+        "client start": 0.0,
+        "admission": 2.2868,
+        "preprocessing done": 5.477884,
+        "engine queue": 21.211396,
+        "prefill starts": 22.253345,
+        "prefill ends": 54.376133,
+        "first engine chunk": 55.667259
+      }
+    },
+    {
+      "request_id": "speech-bc0d5ec3-6bad-496c-96dd-19f5b012bb08",
+      "ttfa_ms": 114.315369,
+      "first_window_chunk_id": 3,
+      "phases_ms": [
+        106.899078,
+        2.09408,
+        2.508388,
+        2.813823
+      ],
+      "later_windows": 4,
+      "later_windows_redecoded_history": 4,
+      "pre_code_ms": {
+        "client start": 0.0,
+        "admission": 2.095199,
+        "preprocessing done": 5.03635,
+        "engine queue": 9.246849,
+        "prefill starts": 11.55989,
+        "prefill ends": 46.626635,
+        "first engine chunk": 47.71646
+      }
+    },
+    {
+      "request_id": "speech-5fc68a16-1762-4e74-805e-9072c0419a60",
+      "ttfa_ms": 113.915952,
+      "first_window_chunk_id": 3,
+      "phases_ms": [
+        103.193536,
+        2.008457,
+        6.177393,
+        2.536566
+      ],
+      "later_windows": 4,
+      "later_windows_redecoded_history": 4,
+      "pre_code_ms": {
+        "client start": 0.0,
+        "admission": 1.998643,
+        "preprocessing done": 5.306878,
+        "engine queue": 11.26962,
+        "prefill starts": 12.449603,
+        "prefill ends": 48.459997,
+        "first engine chunk": 49.773321
+      }
+    },
+    {
+      "request_id": "speech-5b9fd84e-2dd4-4c74-8bde-d2032165ad9f",
+      "ttfa_ms": 112.946476,
+      "first_window_chunk_id": 3,
+      "phases_ms": [
+        106.028964,
+        1.612101,
+        2.107419,
+        3.197992
+      ],
+      "later_windows": 4,
+      "later_windows_redecoded_history": 4,
+      "pre_code_ms": {
+        "client start": 0.0,
+        "admission": 2.344344,
+        "preprocessing done": 5.678295,
+        "engine queue": 14.864051,
+        "prefill starts": 16.229458,
+        "prefill ends": 48.931263,
+        "first engine chunk": 51.241484
+      }
+    },
+    {
+      "request_id": "speech-f92b975c-488c-41bc-8a16-a026f9d151ee",
+      "ttfa_ms": 112.848256,
+      "first_window_chunk_id": 3,
+      "phases_ms": [
+        106.221085,
+        1.865511,
+        1.893571,
+        2.868089
+      ],
+      "later_windows": 4,
+      "later_windows_redecoded_history": 4,
+      "pre_code_ms": {
+        "client start": 0.0,
+        "admission": 1.726642,
+        "preprocessing done": 5.039578,
+        "engine queue": 12.019514,
+        "prefill starts": 13.735041,
+        "prefill ends": 45.853546,
+        "first engine chunk": 46.799787
+      }
+    },
+    {
+      "request_id": "speech-68ccb451-fb94-471d-9470-70a824e9aaa7",
+      "ttfa_ms": 112.838152,
+      "first_window_chunk_id": 3,
+      "phases_ms": [
+        107.589221,
+        1.269937,
+        1.446746,
+        2.532248
+      ],
+      "later_windows": 3,
+      "later_windows_redecoded_history": 3,
+      "pre_code_ms": {
+        "client start": 0.0,
+        "admission": 2.068023,
+        "preprocessing done": 5.016601,
+        "engine queue": 10.124215,
+        "prefill starts": 11.641456,
+        "prefill ends": 44.066048,
+        "first engine chunk": 45.419436
+      }
+    },
+    {
+      "request_id": "speech-d0a09b51-fda9-4405-a580-218373812bea",
+      "ttfa_ms": 112.698486,
+      "first_window_chunk_id": 3,
+      "phases_ms": [
+        105.406792,
+        1.746906,
+        2.701742,
+        2.843046
+      ],
+      "later_windows": 4,
+      "later_windows_redecoded_history": 4,
+      "pre_code_ms": {
+        "client start": 0.0,
+        "admission": 2.167064,
+        "preprocessing done": 5.268294,
+        "engine queue": 9.807586,
+        "prefill starts": 10.897017,
+        "prefill ends": 45.149079,
+        "first engine chunk": 46.987227
+      }
+    },
+    {
+      "request_id": "speech-ae072a23-1902-44bc-a2b0-2e098c7ff0e3",
+      "ttfa_ms": 111.680864,
+      "first_window_chunk_id": 3,
+      "phases_ms": [
+        104.119586,
+        1.873342,
+        2.825501,
+        2.862435
+      ],
+      "later_windows": 3,
+      "later_windows_redecoded_history": 3,
+      "pre_code_ms": {
+        "client start": 0.0,
+        "admission": 2.199262,
+        "preprocessing done": 4.848357,
+        "engine queue": 9.495536,
+        "prefill starts": 10.996381,
+        "prefill ends": 46.096674,
+        "first engine chunk": 48.383972
+      }
+    },
+    {
+      "request_id": "speech-312bcb72-68a4-4d2e-88b4-135143423d67",
+      "ttfa_ms": 111.267174,
+      "first_window_chunk_id": 3,
+      "phases_ms": [
+        103.447068,
+        1.773287,
+        3.246722,
+        2.800097
+      ],
+      "later_windows": 4,
+      "later_windows_redecoded_history": 4,
+      "pre_code_ms": {
+        "client start": 0.0,
+        "admission": 2.255047,
+        "preprocessing done": 5.44474,
+        "engine queue": 10.58336,
+        "prefill starts": 11.897113,
+        "prefill ends": 46.728595,
+        "first engine chunk": 48.915682
+      }
+    },
+    {
+      "request_id": "speech-ed6c828e-80c3-4e01-bf31-03bb8194b33b",
+      "ttfa_ms": 110.583204,
+      "first_window_chunk_id": 3,
+      "phases_ms": [
+        104.652331,
+        1.808729,
+        1.454743,
+        2.667401
+      ],
+      "later_windows": 3,
+      "later_windows_redecoded_history": 3,
+      "pre_code_ms": {
+        "client start": 0.0,
+        "admission": 2.215134,
+        "preprocessing done": 5.475102,
+        "engine queue": 9.729399,
+        "prefill starts": 10.797494,
+        "prefill ends": 43.195818,
+        "first engine chunk": 44.916936
+      }
+    },
+    {
+      "request_id": "speech-99c7206f-ab9b-40a2-8869-2d3b21263407",
+      "ttfa_ms": 110.323576,
+      "first_window_chunk_id": 3,
+      "phases_ms": [
+        104.310453,
+        1.562752,
+        1.65234,
+        2.798031
+      ],
+      "later_windows": 4,
+      "later_windows_redecoded_history": 4,
+      "pre_code_ms": {
+        "client start": 0.0,
+        "admission": 2.08406,
+        "preprocessing done": 5.458592,
+        "engine queue": 10.923351,
+        "prefill starts": 12.330476,
+        "prefill ends": 47.048386,
+        "first engine chunk": 49.514457
+      }
+    },
+    {
+      "request_id": "speech-1b8aed80-0fe3-4a33-85b6-b52068adc244",
+      "ttfa_ms": 109.630261,
+      "first_window_chunk_id": 3,
+      "phases_ms": [
+        103.068974,
+        1.737142,
+        1.972844,
+        2.851301
+      ],
+      "later_windows": 4,
+      "later_windows_redecoded_history": 4,
+      "pre_code_ms": {
+        "client start": 0.0,
+        "admission": 1.871893,
+        "preprocessing done": 4.572546,
+        "engine queue": 7.815483,
+        "prefill starts": 9.579703,
+        "prefill ends": 48.88947,
+        "first engine chunk": 51.066579
+      }
+    },
+    {
+      "request_id": "speech-98cd489a-4575-4a92-88f2-7a0fbd3ea0e3",
+      "ttfa_ms": 108.93283,
+      "first_window_chunk_id": 3,
+      "phases_ms": [
+        100.016061,
+        1.878215,
+        3.708387,
+        3.330167
+      ],
+      "later_windows": 3,
+      "later_windows_redecoded_history": 3,
+      "pre_code_ms": {
+        "client start": 0.0,
+        "admission": 2.179512,
+        "preprocessing done": 4.880037,
+        "engine queue": 9.404157,
+        "prefill starts": 10.543487,
+        "prefill ends": 41.444069,
+        "first engine chunk": 43.357978
+      }
+    },
+    {
+      "request_id": "speech-fe5f07ba-10ab-4aaf-843a-d16fdc7b7661",
+      "ttfa_ms": 108.85919,
+      "first_window_chunk_id": 3,
+      "phases_ms": [
+        102.837659,
+        1.508623,
+        1.704222,
+        2.808686
+      ],
+      "later_windows": 4,
+      "later_windows_redecoded_history": 4,
+      "pre_code_ms": {
+        "client start": 0.0,
+        "admission": 2.013642,
+        "preprocessing done": 5.518338,
+        "engine queue": 8.893071,
+        "prefill starts": 9.961262,
+        "prefill ends": 42.397891,
+        "first engine chunk": 43.670052
+      }
+    },
+    {
+      "request_id": "speech-5b0705b4-3f6d-483c-b485-65d92477a2dd",
+      "ttfa_ms": 108.685112,
+      "first_window_chunk_id": 3,
+      "phases_ms": [
+        101.716083,
+        1.868071,
+        2.216195,
+        2.884763
+      ],
+      "later_windows": 4,
+      "later_windows_redecoded_history": 4,
+      "pre_code_ms": {
+        "client start": 0.0,
+        "admission": 2.16992,
+        "preprocessing done": 5.263617,
+        "engine queue": 10.000436,
+        "prefill starts": 12.207838,
+        "prefill ends": 46.756314,
+        "first engine chunk": 47.84896
+      }
+    },
+    {
+      "request_id": "speech-a9f391a2-d899-48d8-b9c1-f9ee060f07cb",
+      "ttfa_ms": 108.282546,
+      "first_window_chunk_id": 3,
+      "phases_ms": [
+        101.580767,
+        2.396364,
+        1.747448,
+        2.557967
+      ],
+      "later_windows": 4,
+      "later_windows_redecoded_history": 4,
+      "pre_code_ms": {
+        "client start": 0.0,
+        "admission": 2.105365,
+        "preprocessing done": 5.463317,
+        "engine queue": 10.234875,
+        "prefill starts": 11.831134,
+        "prefill ends": 46.224322,
+        "first engine chunk": 47.071574
+      }
+    },
+    {
+      "request_id": "speech-80627e8d-86d4-434d-a987-1e49f37a5908",
+      "ttfa_ms": 107.627675,
+      "first_window_chunk_id": 3,
+      "phases_ms": [
+        99.545444,
+        2.049325,
+        3.172807,
+        2.860099
+      ],
+      "later_windows": 4,
+      "later_windows_redecoded_history": 4,
+      "pre_code_ms": {
+        "client start": 0.0,
+        "admission": 2.525169,
+        "preprocessing done": 5.330771,
+        "engine queue": 11.191529,
+        "prefill starts": 12.235302,
+        "prefill ends": 44.554618,
+        "first engine chunk": 46.295113
+      }
+    },
+    {
+      "request_id": "speech-72770bc1-0098-4cfa-9cb2-190f8ce3c4af",
+      "ttfa_ms": 107.406676,
+      "first_window_chunk_id": 3,
+      "phases_ms": [
+        97.020212,
+        3.47873,
+        3.142916,
+        3.764818
+      ],
+      "later_windows": 4,
+      "later_windows_redecoded_history": 4,
+      "pre_code_ms": {
+        "client start": 0.0,
+        "admission": 2.309667,
+        "preprocessing done": 5.346724,
+        "engine queue": 8.700183,
+        "prefill starts": 9.859084,
+        "prefill ends": 40.980827,
+        "first engine chunk": 43.277317
+      }
+    },
+    {
+      "request_id": "speech-ccdd08c0-3dcb-472d-82d1-97409c6fee02",
+      "ttfa_ms": 106.973891,
+      "first_window_chunk_id": 3,
+      "phases_ms": [
+        100.015081,
+        1.820425,
+        2.428262,
+        2.710123
+      ],
+      "later_windows": 3,
+      "later_windows_redecoded_history": 3,
+      "pre_code_ms": {
+        "client start": 0.0,
+        "admission": 1.435278,
+        "preprocessing done": 3.64121,
+        "engine queue": 10.521166,
+        "prefill starts": 11.358069,
+        "prefill ends": 42.428137,
+        "first engine chunk": 43.660275
+      }
+    },
+    {
+      "request_id": "speech-5bcf6fd7-4581-4ce2-9a71-4ad378f09a7e",
+      "ttfa_ms": 106.96816,
+      "first_window_chunk_id": 3,
+      "phases_ms": [
+        99.366565,
+        1.678389,
+        3.247412,
+        2.675794
+      ],
+      "later_windows": 4,
+      "later_windows_redecoded_history": 4,
+      "pre_code_ms": {
+        "client start": 0.0,
+        "admission": 1.956083,
+        "preprocessing done": 4.197699,
+        "engine queue": 10.177957,
+        "prefill starts": 11.430836,
+        "prefill ends": 44.903452,
+        "first engine chunk": 46.982826
+      }
+    },
+    {
+      "request_id": "speech-7c812767-2b23-4fc7-a2eb-cc04499ad373",
+      "ttfa_ms": 106.025073,
+      "first_window_chunk_id": 3,
+      "phases_ms": [
+        99.624663,
+        1.788951,
+        1.934299,
+        2.67716
+      ],
+      "later_windows": 4,
+      "later_windows_redecoded_history": 4,
+      "pre_code_ms": {
+        "client start": 0.0,
+        "admission": 1.851362,
+        "preprocessing done": 4.208501,
+        "engine queue": 7.967396,
+        "prefill starts": 9.833253,
+        "prefill ends": 43.971961,
+        "first engine chunk": 45.513734
+      }
+    },
+    {
+      "request_id": "speech-ceee7408-65f0-421c-b6bb-c5468359fa01",
+      "ttfa_ms": 103.922856,
+      "first_window_chunk_id": 3,
+      "phases_ms": [
+        95.3509,
+        1.839205,
+        3.755686,
+        2.977065
+      ],
+      "later_windows": 4,
+      "later_windows_redecoded_history": 4,
+      "pre_code_ms": {
+        "client start": 0.0,
+        "admission": 2.318791,
+        "preprocessing done": 5.648822,
+        "engine queue": 8.995027,
+        "prefill starts": 10.058643,
+        "prefill ends": 42.444327,
+        "first engine chunk": 43.262463
+      }
+    },
+    {
+      "request_id": "speech-67114a14-b465-4085-aa47-7974ff682dbd",
+      "ttfa_ms": 87.66312,
+      "first_window_chunk_id": 3,
+      "phases_ms": [
+        79.88948,
+        1.926755,
+        3.221544,
+        2.625341
+      ],
+      "later_windows": 3,
+      "later_windows_redecoded_history": 3,
+      "pre_code_ms": {
+        "client start": 0.0,
+        "admission": 4.714939,
+        "preprocessing done": 8.746074,
+        "engine queue": 12.417636,
+        "prefill starts": 14.284959,
+        "prefill ends": 47.655472,
+        "first engine chunk": 49.939591
+      }
+    }
+  ],
+  "matched": 128,
+  "event_counts": {
+    "tts_engine/stage_input_received": 128,
+    "tts_engine/stage_aggregate_ready": 128,
+    "tts_engine/stage_dispatch": 128,
+    "tts_engine/stage_first_stream_chunk_sent": 128,
+    "tts_engine/stage_stream_chunk_sent": 889,
+    "tts_engine/stage_complete": 128,
+    "tts_engine/stage_hop_sent": 128,
+    "tts_engine/scheduler_request_build_start": 128,
+    "tts_engine/scheduler_request_build_end": 128,
+    "tts_engine/scheduler_queue_enter": 128,
+    "tts_engine/model_path_start": 128,
+    "tts_engine/scheduler_prefill_start": 128,
+    "tts_engine/scheduler_prefill_end": 128,
+    "tts_engine/scheduler_first_emit": 128,
+    "tts_engine/model_path_end": 128,
+    "coordinator/request_admission": 128,
+    "coordinator/coordinator_stream_received": 633,
+    "coordinator/stage_stream_chunk_received": 633,
+    "coordinator/terminal_response": 128,
+    "preprocessing/stage_input_received": 128,
+    "preprocessing/stage_dispatch": 128,
+    "preprocessing/stage_complete": 128,
+    "preprocessing/stage_hop_sent": 128,
+    "vocoder/stage_stream_chunk_received": 889,
+    "vocoder/stage_first_stream_chunk_sent": 128,
+    "vocoder/stage_stream_chunk_sent": 633,
+    "vocoder/stage_input_received": 128,
+    "vocoder/stage_aggregate_ready": 128,
+    "vocoder/stage_dispatch": 128,
+    "vocoder/stage_complete": 128,
+    "vocoder/drama3_vocoder_window_decode_started": 633,
+    "vocoder/drama3_vocoder_window_decode_finished": 633
+  }
+}

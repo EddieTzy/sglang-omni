@@ -1,0 +1,3 @@
+2026-11-25 08:18:25,612 [INFO] sglang_omni.pipeline.mp_runner: CPU thread fallback plan: budget=24 processes=2 fallback_threads_per_process=12 fallback_overcommitted=false allocations={'preprocessing': {'fallback_threads': 12, 'cpus': 24, 'stages': ['preprocessing']}, 'pipeline': {'fallback_threads': 12, 'cpus': 24, 'stages': ['tts_engine', 'vocoder']}}
+2026-11-25 08:19:16,567 [INFO] sglang.srt.layers.quantization.fp8: Detected fp8 checkpoint.
+2026-11-25 08:26:48,900 [INFO] sglang_omni.models.fishaudio_drama3.stages: Drama 3 codec selection: stateful=False, device=cuda:0, dtype=float16, graphs=True, capacity=16, gemm=False, folded=False, snake_history=False, attention=False
