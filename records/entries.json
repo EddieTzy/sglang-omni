@@ -784,7 +784,7 @@
       "project": "sglang-omni",
       "model": "Drama 3",
       "component": "vocoder 进程布局和首窗解码",
-      "status": "配置对照已完成",
+      "status": "部署配置对照已完成，暂缓提交上游 PR",
       "branch": "perf/drama3-sm120-first-audio",
       "pr": null,
       "result": "RTX PRO 6000，FP8，C16。保持 overlap，把 vocoder 移到独立进程后吞吐 26.50 → 28.22 音频秒/秒（+6.48%），首包 P99 508.4 → 458.1 ms。相同独立进程布局下 stateful 吞吐 −1.05%，首包 P95 +12.37%。",

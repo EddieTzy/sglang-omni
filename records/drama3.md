@@ -61,3 +61,5 @@ B200 的默认 FA3 增量 codec 路径报不支持，另有 stage/memory、CPU-w
 ## RTX PRO 6000，C16，2026-11-25
 
 RTX PRO 6000，FP8，C16。保持 overlap，把 vocoder 移到独立进程后吞吐 26.50 → 28.22 音频秒/秒（+6.48%），首包 P99 508.4 → 458.1 ms。相同独立进程布局下 stateful 吞吐 −1.05%，首包 P95 +12.37%。 [服务对照](https://github.com/EddieTzy/sglang-omni/tree/baeb84306054aca240062996bdfc38d82786e327/benchmarks/drama3_sm120_first_audio/RESULTS.md) · [原始 trace](https://github.com/EddieTzy/sglang-omni/tree/baeb84306054aca240062996bdfc38d82786e327/benchmarks/drama3_sm120_first_audio/traces)
+
+此项作为已有部署配置的实测记录保留，暂缓提交上游 PR。CPU 竞争对首包的影响尚未单独量化。
