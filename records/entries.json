@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-11-27T03:18:46.933769+00:00",
+  "updated_at_utc": "2026-11-27T05:04:34.341222+00:00",
   "entries": [
     {
       "id": "fish-async-decode",
@@ -817,6 +817,32 @@
       "pr": null,
       "archive_url": "https://github.com/EddieTzy/sglang-omni/tree/d78def4264b9adad95bbb2d3fb6c8e8c47ab63f7/benchmarks/drama3_sm120_gdn",
       "result": "真实六层权重，1/4/8/16 行单层改善 0.12–0.40 µs。"
+    },
+    {
+      "id": "drama3-sm120-prefill-redrain",
+      "framework": "SGLang",
+      "project": "sglang-omni",
+      "model": "Fish Audio Drama 3",
+      "component": "调度器组批前二次读取",
+      "status": "实验已记录，未提交上游 PR",
+      "workflow_category": "measured_tradeoff",
+      "branch": "perf/drama3-sm120-prefill-redrain",
+      "pr": null,
+      "archive_url": "https://github.com/EddieTzy/sglang-omni/tree/b73da218fc93f47a211f15e5461d1c3f461b3657/benchmarks/drama3_prefill_redrain",
+      "result": "C4 吞吐 +2.99%，首包 P95 196.1 → 220.7 ms。"
+    },
+    {
+      "id": "drama3-sm120-codebook-sampler",
+      "framework": "SGLang",
+      "project": "sglang-omni",
+      "model": "Fish Audio Drama 3",
+      "component": "SM120 码本 Triton 采样",
+      "status": "实验已记录，未提交上游 PR",
+      "workflow_category": "measured_tradeoff",
+      "branch": "perf/drama3-sm120-codebook-sampler",
+      "pr": null,
+      "archive_url": "https://github.com/EddieTzy/sglang-omni/tree/20d4259f2ead6206f3cdfa40de554c014d09229d/benchmarks/drama3_sm120_codebook_sampler",
+      "result": "C4 吞吐 +5.75%，RTF −5.44%；C16 吞吐 +2.83%，首包 P95 两轮均值 327 → 588 ms。英文 WER 接近，音色相似度点估计两档均下降。"
     }
   ],
   "workflow_categories": [

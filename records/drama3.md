@@ -70,3 +70,8 @@ RTX PRO 6000，FP8，C16。保持 overlap，把 vocoder 移到独立进程后吞
 
 - 小批量专家计算从默认 64 行分块切到 16 行，单独比较 A/B/B/A 四次服务启动。C4 吞吐 13.054 → 13.313 音频秒/秒，平均 RTF 0.2980 → 0.2905。C16 吞吐 27.363 → 27.716，平均 RTF 0.5651 → 0.5587。C16 首包 P95 波动较大，英文 WER 均为 0.44%，音色相似度 60.70 → 60.14。端到端吞吐提升较小，实验保留归档。[已关闭的 MoE PR](https://github.com/sgl-project/sglang-omni/pull/4715) · [全部请求、质量与九份 trace](https://github.com/EddieTzy/sglang-omni/tree/f49fbbea8e2aa09c07f495c476b8d6455f12fcd6/benchmarks/drama3_sm120_moe)
 - 线性注意力的两个 BF16 输入投影实际在两个 CUDA 流上重叠。合并后，4 行输入每层 36.62 → 36.49 µs。四个行数的改善都小于 0.40 µs/层，单独归档。[微基准及两份 trace](https://github.com/EddieTzy/sglang-omni/tree/d78def4264b9adad95bbb2d3fb6c8e8c47ab63f7/benchmarks/drama3_sm120_gdn)
+
+## 首批组批与码本采样（2026-11-27）
+
+- 调度器组批前二次读取。C4 吞吐 +2.99%，首包 P95 196.1 → 220.7 ms。 仅保留实验分支。[数据和 trace](https://github.com/EddieTzy/sglang-omni/tree/b73da218fc93f47a211f15e5461d1c3f461b3657/benchmarks/drama3_prefill_redrain)
+- SM120 码本 Triton 采样。C4 吞吐 +5.75%，RTF −5.44%；C16 吞吐 +2.83%，首包 P95 两轮均值 327 → 588 ms。英文 WER 接近，音色相似度点估计两档均下降。 仅保留实验分支。[数据和 trace](https://github.com/EddieTzy/sglang-omni/tree/20d4259f2ead6206f3cdfa40de554c014d09229d/benchmarks/drama3_sm120_codebook_sampler)
