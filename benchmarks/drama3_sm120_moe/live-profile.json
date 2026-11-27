@@ -1,0 +1,219 @@
+{
+  "unprofiled_ttfa_p50": 195.0144305,
+  "unprofiled_ttfa_p95": 200.41969925,
+  "timed_requests": 16,
+  "diagnostic_requests": [
+    {
+      "request": "speech-7906363e-f1d4-45a9-a46c-838472750a2e",
+      "ttfa_ms": 200.591684,
+      "admission_to_preprocessing_done_ms": 16.280683,
+      "preprocessing_done_to_first_window_codes_ms": 166.068073,
+      "codes_to_vocoder_start_ms": 2.629236,
+      "first_window_compute_ms": 6.750524
+    },
+    {
+      "request": "speech-0c9c23c7-69b2-408a-81ff-ea29ab050c07",
+      "ttfa_ms": 198.543832,
+      "admission_to_preprocessing_done_ms": 12.223078,
+      "preprocessing_done_to_first_window_codes_ms": 167.578433,
+      "codes_to_vocoder_start_ms": 2.638184,
+      "first_window_compute_ms": 4.49636
+    },
+    {
+      "request": "speech-94cc6f70-a63f-4716-9a9b-113b22543bd5",
+      "ttfa_ms": 100.084789,
+      "admission_to_preprocessing_done_ms": 12.409264,
+      "preprocessing_done_to_first_window_codes_ms": 74.7586,
+      "codes_to_vocoder_start_ms": 1.995788,
+      "first_window_compute_ms": 2.067461
+    },
+    {
+      "request": "speech-f1f9f2a3-72c8-40d0-b2e1-e93f4784a882",
+      "ttfa_ms": 195.674378,
+      "admission_to_preprocessing_done_ms": 10.596087,
+      "preprocessing_done_to_first_window_codes_ms": 168.814768,
+      "codes_to_vocoder_start_ms": 2.664632,
+      "first_window_compute_ms": 2.255704
+    },
+    {
+      "request": "speech-28820bac-c269-43b5-b077-7d0e8fa41f98",
+      "ttfa_ms": 201.629949,
+      "admission_to_preprocessing_done_ms": 26.001827,
+      "preprocessing_done_to_first_window_codes_ms": 159.769593,
+      "codes_to_vocoder_start_ms": 2.248801,
+      "first_window_compute_ms": 6.639241
+    },
+    {
+      "request": "speech-66122714-0000-442c-8327-773ce22bc7f0",
+      "ttfa_ms": 196.465949,
+      "admission_to_preprocessing_done_ms": 21.623517,
+      "preprocessing_done_to_first_window_codes_ms": 163.975662,
+      "codes_to_vocoder_start_ms": 2.283411,
+      "first_window_compute_ms": 2.107075
+    },
+    {
+      "request": "speech-bd144f67-d5fc-4b2a-90f2-f9169b5eaad8",
+      "ttfa_ms": 198.805203,
+      "admission_to_preprocessing_done_ms": 25.187498,
+      "preprocessing_done_to_first_window_codes_ms": 160.394498,
+      "codes_to_vocoder_start_ms": 2.258107,
+      "first_window_compute_ms": 4.358842
+    },
+    {
+      "request": "speech-52254c12-3842-4023-abe8-b8a2adac391b",
+      "ttfa_ms": 102.284924,
+      "admission_to_preprocessing_done_ms": 12.124633,
+      "preprocessing_done_to_first_window_codes_ms": 79.670444,
+      "codes_to_vocoder_start_ms": 2.113174,
+      "first_window_compute_ms": 1.823947
+    }
+  ],
+  "torch": [
+    {
+      "file": "live-preprocessing.json.gz",
+      "events": 662,
+      "kernel_events": 0,
+      "kernel_sum_ms": 0.0,
+      "kernels": [],
+      "sha256": "141511cf60d3c84db28f56a3d107b749077e543db976f77cdf13f8544a9aaeeb"
+    },
+    {
+      "file": "live-tts_engine.json.gz",
+      "events": 548525,
+      "kernel_events": 252936,
+      "kernel_sum_ms": 2053.055495000003,
+      "kernels": [
+        {
+          "name": "void cutlass::Kernel2<cutlass_80_wmma_tensorop_bf16_s161616gemm_bf16_16x16_128x2_tn_align8>(cutlass_80_wmma_tensorop_bf16_s161616gemm_bf16_16x16_128x2_tn_align8::Params)",
+          "count": 25802,
+          "sum_ms": 595.6611390000022
+        },
+        {
+          "name": "fused_moe_kernel",
+          "count": 11600,
+          "sum_ms": 438.69978800000007
+        },
+        {
+          "name": "void sglang::act_and_mul_kernel<__nv_bfloat16, (sglang::ActivationKind)0, true, false, false, false, false, false>(sglang::ActivationParams)",
+          "count": 13511,
+          "sum_ms": 267.82954200000324
+        },
+        {
+          "name": "void cutlass::Kernel2<cutlass_80_wmma_tensorop_s161616gemm_bf16_32x32_64x1_tn_align8>(cutlass_80_wmma_tensorop_s161616gemm_bf16_32x32_64x1_tn_align8::Params)",
+          "count": 14548,
+          "sum_ms": 166.09956599999867
+        },
+        {
+          "name": "_moe_sum_reduce_kernel",
+          "count": 5720,
+          "sum_ms": 68.91973800000027
+        },
+        {
+          "name": "void flashinfer::norm::FusedAddRMSNormKernel<8u, __nv_bfloat16>(__nv_bfloat16*, __nv_bfloat16*, __nv_bfloat16*, unsigned int, unsigned int, unsigned int, float, float)",
+          "count": 15422,
+          "sum_ms": 44.03414499999797
+        },
+        {
+          "name": "fused_recurrent_gated_delta_rule_packed_decode_kernel",
+          "count": 4290,
+          "sum_ms": 40.25628300000003
+        },
+        {
+          "name": "void cutlass::Kernel2<cutlass_80_wmma_tensorop_bf16_s161616gemm_bf16_32x32_64x2_tn_align8>(cutlass_80_wmma_tensorop_bf16_s161616gemm_bf16_32x32_64x2_tn_align8::Params)",
+          "count": 1794,
+          "sum_ms": 36.05115699999991
+        },
+        {
+          "name": "_fwd_grouped_kernel_stage1",
+          "count": 3315,
+          "sum_ms": 28.44733799999997
+        },
+        {
+          "name": "void cublasLt::splitKreduce_kernel<32, 16, int, float, __nv_bfloat16, float, __nv_bfloat16, false, __nv_bfloat16, __nv_bfloat16, __nv_bfloat16, true, false, false, false>(cublasLt::cublasSplitKParams<float>, float const*, __nv_bfloat16 const*, __nv_bfloat16*, __nv_bfloat16*, float const*, float const*, __nv_bfloat16 const*, float const*, __nv_bfloat16*, void*, long, float*, int*, float*, float*, float const*, float const*, float const*, float const*, float const*)",
+          "count": 14699,
+          "sum_ms": 26.469665000001473
+        },
+        {
+          "name": "void cublasLt::splitKreduce_kernel<32, 16, int, __nv_bfloat16, __nv_bfloat16, float, __nv_bfloat16, false, __nv_bfloat16, __nv_bfloat16, __nv_bfloat16, true, false, false, false>(cublasLt::cublasSplitKParams<float>, __nv_bfloat16 const*, __nv_bfloat16 const*, __nv_bfloat16*, __nv_bfloat16*, float const*, float const*, __nv_bfloat16 const*, __nv_bfloat16 const*, __nv_bfloat16*, void*, long, float*, int*, float*, float*, float const*, float const*, float const*, float const*, float const*)",
+          "count": 7331,
+          "sum_ms": 21.784842999999885
+        },
+        {
+          "name": "void at::native::radixSortKVInPlace<2, -1, 128, 32, float, long, unsigned int>(at::cuda::detail::TensorInfo<float, unsigned int>, unsigned int, unsigned int, unsigned int, at::cuda::detail::TensorInfo<long, unsigned int>, unsigned int, bool)",
+          "count": 1242,
+          "sum_ms": 21.309918999999987
+        }
+      ],
+      "sha256": "9dc12a6e6cc8c6a04b226a8926474af3662b2e8f50799ff1216addd79cc548d8"
+    },
+    {
+      "file": "live-vocoder.json.gz",
+      "events": 10222,
+      "kernel_events": 3973,
+      "kernel_sum_ms": 64.41321099999999,
+      "kernels": [
+        {
+          "name": "void cutlass__5x_cudnn::Kernel<cutlass_tensorop_f16_s16816fprop_optimized_f16_128x128_32x3_nhwc_align8>(cutlass_tensorop_f16_s16816fprop_optimized_f16_128x128_32x3_nhwc_align8::Params)",
+          "count": 126,
+          "sum_ms": 12.655926999999998
+        },
+        {
+          "name": "sm80_xmma_fprop_implicit_gemm_f16f16_f16f32_f32_nhwckrsc_nhwc_tilesize128x128x64_stage3_warpsize2x2x1_g1_tensor16x8x16_execute_kernel__5x_cudnn",
+          "count": 61,
+          "sum_ms": 11.057555
+        },
+        {
+          "name": "void cutlass__5x_cudnn::Kernel<cutlass_tensorop_f16_s16816fprop_optimized_f16_128x64_64x3_nhwc_align8>(cutlass_tensorop_f16_s16816fprop_optimized_f16_128x64_64x3_nhwc_align8::Params)",
+          "count": 35,
+          "sum_ms": 7.488906
+        },
+        {
+          "name": "residual_bias_add_kernel",
+          "count": 168,
+          "sum_ms": 6.596562999999999
+        },
+        {
+          "name": "snake_channels_last_kernel",
+          "count": 406,
+          "sum_ms": 3.5281309999999992
+        },
+        {
+          "name": "sm80_xmma_dgrad_implicit_gemm_f16f16_f16f32_f32_nhwckrsc_nhwc_tilesize256x64x32_stage3_warpsize4x1x1_g1_tensor16x8x16_execute_kernel__5x_cudnn",
+          "count": 7,
+          "sum_ms": 3.2485180000000002
+        },
+        {
+          "name": "sm80_xmma_fprop_implicit_gemm_f16f16_f16f32_f32_nhwckrsc_nhwc_tilesize64x64x64_stage4_warpsize2x2x1_g1_tensor16x8x16_execute_kernel__5x_cudnn",
+          "count": 59,
+          "sum_ms": 2.1738269999999993
+        },
+        {
+          "name": "sm80_xmma_fprop_implicit_gemm_indexed_wo_smem_f16f16_f16f32_f32_nhwckrsc_nhwc_tilesize128x32x64_stage1_warpsize4x1x1_g1_tensor16x8x16_alignc4_execute_kernel__5x_cudnn",
+          "count": 28,
+          "sum_ms": 1.76477
+        },
+        {
+          "name": "void cudnn::engines_precompiled::nchwToNhwcKernel<__half, __half, float, false, true, (cudnnKernelDataType_t)0>(cudnn::engines_precompiled::nchw2nhwc_params_t<float>, __half const*, __half*)",
+          "count": 196,
+          "sum_ms": 1.2395319999999996
+        },
+        {
+          "name": "void cutlass__5x_cudnn::Kernel<cutlass_tensorop_f16_s16816dgrad_optimized_f16_128x128_32x3_nhwc_align8>(cutlass_tensorop_f16_s16816dgrad_optimized_f16_128x128_32x3_nhwc_align8::Params)",
+          "count": 16,
+          "sum_ms": 1.1956140000000002
+        },
+        {
+          "name": "void cutlass::Kernel2<cutlass_80_tensorop_f16_s16816gemm_relu_f16_64x64_32x6_tn_align8>(cutlass_80_tensorop_f16_s16816gemm_relu_f16_64x64_32x6_tn_align8::Params)",
+          "count": 104,
+          "sum_ms": 0.9542759999999997
+        },
+        {
+          "name": "void at::native::elementwise_kernel<128, 4, at::native::gpu_kernel_impl_nocast<at::native::direct_copy_kernel_cuda(at::TensorIteratorBase&)::{lambda()#3}::operator()() const::{lambda()#10}::operator()() const::{lambda(c10::Half)#1}>(at::TensorIteratorBase&, at::native::direct_copy_kernel_cuda(at::TensorIteratorBase&)::{lambda()#3}::operator()() const::{lambda()#10}::operator()() const::{lambda(c10::Half)#1} const&)::{lambda(int)#1}>(int, at::native::gpu_kernel_impl_nocast<at::native::direct_copy_kernel_cuda(at::TensorIteratorBase&)::{lambda()#3}::operator()() const::{lambda()#10}::operator()() const::{lambda(c10::Half)#1}>(at::TensorIteratorBase&, at::native::direct_copy_kernel_cuda(at::TensorIteratorBase&)::{lambda()#3}::operator()() const::{lambda()#10}::operator()() const::{lambda(c10::Half)#1} const&)::{lambda(int)#1})",
+          "count": 286,
+          "sum_ms": 0.9116579999999994
+        }
+      ],
+      "sha256": "48ebc1011409a95f7b78d1a24f5f12db64e085e96747dad601141f20f6165dc5"
+    }
+  ]
+}
