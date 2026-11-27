@@ -8,6 +8,10 @@
 
 当前 Drama3 验证结论及完整限制见最终报告；其他模型条目保留其历史条件。
 
+## 2026-11-27 · Drama 3 在 RTX PRO 6000 上的实测
+
+英文 SeedTTS 共 704 次合成，小批量 FP8 MoE 配置让 C4/C16 的音频吞吐提高 1.98%/1.29%。C16 首包 P95 的两轮均值从 434 降到 312 ms，音色相似度从 60.70 到 60.14。另一个候选合并线性注意力双流投影，单层最多只省 0.40 µs，已归档。[MoE 草稿 PR](https://github.com/sgl-project/sglang-omni/pull/4715) · [MoE 数据和 trace](https://github.com/EddieTzy/sglang-omni/tree/f49fbbea8e2aa09c07f495c476b8d6455f12fcd6/benchmarks/drama3_sm120_moe) · [双流投影对照](https://github.com/EddieTzy/sglang-omni/tree/d78def4264b9adad95bbb2d3fb6c8e8c47ab63f7/benchmarks/drama3_sm120_gdn)
+
 ## Drama 3 在 RTX PRO 6000 上的流式首包
 
 RTX PRO 6000，FP8，C16。保持 overlap，把 vocoder 移到独立进程后吞吐 26.50 → 28.22 音频秒/秒（+6.48%），首包 P99 508.4 → 458.1 ms。相同独立进程布局下 stateful 吞吐 −1.05%，首包 P95 +12.37%。 两种模式各保留逐请求时间线，并另存 6 份 torch trace。此项为已有部署选项的对照，暂缓提交上游 PR。[详细数据与归档](https://github.com/EddieTzy/sglang-omni/tree/baeb84306054aca240062996bdfc38d82786e327/benchmarks/drama3_sm120_first_audio)

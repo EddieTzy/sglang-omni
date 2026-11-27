@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-11-25T08:44:35.435427+00:00",
+  "updated_at_utc": "2026-11-27T03:09:59.822729+00:00",
   "entries": [
     {
       "id": "fish-async-decode",
@@ -790,6 +790,33 @@
       "result": "RTX PRO 6000，FP8，C16。保持 overlap，把 vocoder 移到独立进程后吞吐 26.50 → 28.22 音频秒/秒（+6.48%），首包 P99 508.4 → 458.1 ms。相同独立进程布局下 stateful 吞吐 −1.05%，首包 P95 +12.37%。",
       "archive_url": "https://github.com/EddieTzy/sglang-omni/tree/baeb84306054aca240062996bdfc38d82786e327/benchmarks/drama3_sm120_first_audio",
       "head_commit": "baeb84306054aca240062996bdfc38d82786e327"
+    },
+    {
+      "framework": "SGLang",
+      "project": "sglang-omni",
+      "model": "Fish Audio Drama 3",
+      "id": "drama3-sm120-small-batch-moe",
+      "component": "小批量 FP8 专家计算",
+      "status": "草稿 PR #4715 已提交",
+      "workflow_category": "submitted",
+      "branch": "perf/drama3-sm120-moe-config-pr",
+      "pr": 4715,
+      "pr_url": "https://github.com/sgl-project/sglang-omni/pull/4715",
+      "archive_url": "https://github.com/EddieTzy/sglang-omni/tree/f49fbbea8e2aa09c07f495c476b8d6455f12fcd6/benchmarks/drama3_sm120_moe",
+      "result": "C4/C16 吞吐 +1.98%/+1.29%；C16 WER 相同，音色相似度下降 0.56。"
+    },
+    {
+      "framework": "SGLang",
+      "project": "sglang-omni",
+      "model": "Fish Audio Drama 3",
+      "id": "drama3-sm120-gdn-projection",
+      "component": "线性注意力双流输入投影",
+      "status": "微基准已完成，归档",
+      "workflow_category": "archived",
+      "branch": "perf/drama3-sm120-gdn-projection",
+      "pr": null,
+      "archive_url": "https://github.com/EddieTzy/sglang-omni/tree/d78def4264b9adad95bbb2d3fb6c8e8c47ab63f7/benchmarks/drama3_sm120_gdn",
+      "result": "真实六层权重，1/4/8/16 行单层改善 0.12–0.40 µs。"
     }
   ],
   "workflow_categories": [

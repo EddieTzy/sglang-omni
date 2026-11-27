@@ -63,3 +63,10 @@ B200 的默认 FA3 增量 codec 路径报不支持，另有 stage/memory、CPU-w
 RTX PRO 6000，FP8，C16。保持 overlap，把 vocoder 移到独立进程后吞吐 26.50 → 28.22 音频秒/秒（+6.48%），首包 P99 508.4 → 458.1 ms。相同独立进程布局下 stateful 吞吐 −1.05%，首包 P95 +12.37%。 [服务对照](https://github.com/EddieTzy/sglang-omni/tree/baeb84306054aca240062996bdfc38d82786e327/benchmarks/drama3_sm120_first_audio/RESULTS.md) · [原始 trace](https://github.com/EddieTzy/sglang-omni/tree/baeb84306054aca240062996bdfc38d82786e327/benchmarks/drama3_sm120_first_audio/traces)
 
 此项作为已有部署配置的实测记录保留，暂缓提交上游 PR。CPU 竞争对首包的影响尚未单独量化。
+
+## RTX PRO 6000 的 MoE 与线性注意力投影（2026-11-27）
+
+线上 C4 首窗，预处理完成到 TTS 引擎交付音频码的中位时间为 162.2 ms，声码器计算为 3.3 ms。引擎累计 GPU kernel 时间中，两种 BF16 GEMM 共占 37.1%，FP8 专家 GEMM 占 21.4%。
+
+- 小批量专家计算从默认 64 行分块切到 16 行，单独比较 A/B/B/A 四次服务启动。C4 吞吐 13.054 → 13.313 音频秒/秒，平均 RTF 0.2980 → 0.2905。C16 吞吐 27.363 → 27.716，平均 RTF 0.5651 → 0.5587。C16 首包 P95 波动较大，英文 WER 均为 0.44%，音色相似度 60.70 → 60.14。[草稿 PR](https://github.com/sgl-project/sglang-omni/pull/4715) · [全部请求、质量与九份 trace](https://github.com/EddieTzy/sglang-omni/tree/f49fbbea8e2aa09c07f495c476b8d6455f12fcd6/benchmarks/drama3_sm120_moe)
+- 线性注意力的两个 BF16 输入投影实际在两个 CUDA 流上重叠。合并后，4 行输入每层 36.62 → 36.49 µs。四个行数的改善都小于 0.40 µs/层，单独归档。[微基准及两份 trace](https://github.com/EddieTzy/sglang-omni/tree/d78def4264b9adad95bbb2d3fb6c8e8c47ab63f7/benchmarks/drama3_sm120_gdn)
