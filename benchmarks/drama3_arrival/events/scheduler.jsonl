@@ -1,0 +1,240 @@
+{"stage": "tts_engine", "event_name": "stage_dispatch", "timestamp_ns": 1795751196394332817, "request_id": "speech-6e269dba-6b0a-4434-a7f7-66ab6ba4ab60", "metadata": {}}
+{"stage": "tts_engine", "event_name": "stage_dispatch", "timestamp_ns": 1795751196401613698, "request_id": "speech-2c5a29be-dcc1-47cc-925f-b0d506076779", "metadata": {}}
+{"stage": "tts_engine", "event_name": "stage_dispatch", "timestamp_ns": 1795751196403986468, "request_id": "speech-e59b9f5c-37e0-4fc5-b0d8-0c922a7b001b", "metadata": {}}
+{"stage": "tts_engine", "event_name": "stage_dispatch", "timestamp_ns": 1795751196405220488, "request_id": "speech-89b06f48-67a1-4baf-9457-8d6f9306b089", "metadata": {}}
+{"stage": "tts_engine", "event_name": "stage_dispatch", "timestamp_ns": 1795751198189908111, "request_id": "speech-f2073e6a-92dd-47d2-818a-5e03818e16b5", "metadata": {}}
+{"stage": "tts_engine", "event_name": "stage_dispatch", "timestamp_ns": 1795751198198790021, "request_id": "speech-ddbdc63a-e0fc-4831-8e79-22866d38c3c2", "metadata": {}}
+{"stage": "tts_engine", "event_name": "stage_dispatch", "timestamp_ns": 1795751198207916850, "request_id": "speech-b0af3c23-1fe8-4fba-aa8f-d609fab06c0c", "metadata": {}}
+{"stage": "tts_engine", "event_name": "stage_dispatch", "timestamp_ns": 1795751198218910531, "request_id": "speech-ef0833b4-3e91-4860-b47f-178fb49b6e17", "metadata": {}}
+{"stage": "tts_engine", "event_name": "stage_dispatch", "timestamp_ns": 1795751199998033058, "request_id": "speech-43a31ff9-99a4-4366-8db8-991c90266777", "metadata": {}}
+{"stage": "tts_engine", "event_name": "stage_dispatch", "timestamp_ns": 1795751200028170555, "request_id": "speech-16135cd5-f0c0-4fc6-989a-b6a21878f45c", "metadata": {}}
+{"stage": "tts_engine", "event_name": "stage_dispatch", "timestamp_ns": 1795751200057513129, "request_id": "speech-c0ffffe8-c862-4ae0-a981-04dfd56565da", "metadata": {}}
+{"stage": "tts_engine", "event_name": "stage_dispatch", "timestamp_ns": 1795751200089291884, "request_id": "speech-7b25cc07-51e3-4ea0-aa87-736871d51b22", "metadata": {}}
+{"stage": "tts_engine", "event_name": "stage_dispatch", "timestamp_ns": 1795751201733402698, "request_id": "speech-7a55b672-d7e3-47cf-b078-2ec52eb20296", "metadata": {}}
+{"stage": "tts_engine", "event_name": "stage_dispatch", "timestamp_ns": 1795751201764246261, "request_id": "speech-d9442691-ba89-41da-8e15-dd5c8063a32f", "metadata": {}}
+{"stage": "tts_engine", "event_name": "stage_dispatch", "timestamp_ns": 1795751201795036939, "request_id": "speech-a9fc7529-07c2-43bb-9349-5d02d0927810", "metadata": {}}
+{"stage": "tts_engine", "event_name": "stage_dispatch", "timestamp_ns": 1795751201825401950, "request_id": "speech-28c19923-3333-4a6a-ad06-2494958d3ec4", "metadata": {}}
+{"stage": "tts_engine", "event_name": "stage_dispatch", "timestamp_ns": 1795751203606964564, "request_id": "speech-ae46559b-713e-43c4-8a9c-aebdc994c0a2", "metadata": {}}
+{"stage": "tts_engine", "event_name": "stage_dispatch", "timestamp_ns": 1795751203617641981, "request_id": "speech-ce9a131d-4603-4f09-9df3-844774c8d92b", "metadata": {}}
+{"stage": "tts_engine", "event_name": "stage_dispatch", "timestamp_ns": 1795751203625155899, "request_id": "speech-9000d874-e7d6-4fc3-8df6-2da69bda0f71", "metadata": {}}
+{"stage": "tts_engine", "event_name": "stage_dispatch", "timestamp_ns": 1795751203637427773, "request_id": "speech-b918f1cd-7a86-4b07-8f4f-ed77f8a710ad", "metadata": {}}
+{"stage": "tts_engine", "event_name": "stage_dispatch", "timestamp_ns": 1795751205407331436, "request_id": "speech-fa8e2f65-7685-4ba4-b656-c1ee3a75e159", "metadata": {}}
+{"stage": "tts_engine", "event_name": "stage_dispatch", "timestamp_ns": 1795751205409468616, "request_id": "speech-41da5fd0-9905-4d7f-9e38-3247f5c266df", "metadata": {}}
+{"stage": "tts_engine", "event_name": "stage_dispatch", "timestamp_ns": 1795751205411015620, "request_id": "speech-aece319e-cf20-41d9-a13c-c2fab21c8faa", "metadata": {}}
+{"stage": "tts_engine", "event_name": "stage_dispatch", "timestamp_ns": 1795751205412208121, "request_id": "speech-a5168973-529d-4655-94d4-efa537a43f79", "metadata": {}}
+{"stage": "tts_engine", "event_name": "stage_dispatch", "timestamp_ns": 1795751207222020572, "request_id": "speech-93fd2074-e0df-4295-af20-7af11dd8e4b5", "metadata": {}}
+{"stage": "tts_engine", "event_name": "stage_dispatch", "timestamp_ns": 1795751207224812637, "request_id": "speech-c290a459-dec5-47e1-86c6-54392cb22faa", "metadata": {}}
+{"stage": "tts_engine", "event_name": "stage_dispatch", "timestamp_ns": 1795751207230011639, "request_id": "speech-9358ab7f-d465-4d3b-862e-cfec8eca2afd", "metadata": {}}
+{"stage": "tts_engine", "event_name": "stage_dispatch", "timestamp_ns": 1795751207231753861, "request_id": "speech-b239daea-7e1b-47da-bf71-b53b9559e0ee", "metadata": {}}
+{"stage": "tts_engine", "event_name": "stage_dispatch", "timestamp_ns": 1795751208963284379, "request_id": "speech-ec91aed2-9133-4440-a437-29b285a367ea", "metadata": {}}
+{"stage": "tts_engine", "event_name": "stage_dispatch", "timestamp_ns": 1795751208972711495, "request_id": "speech-af8574fe-fe53-4f09-8cf3-ca48ff1f878e", "metadata": {}}
+{"stage": "tts_engine", "event_name": "stage_dispatch", "timestamp_ns": 1795751208980882064, "request_id": "speech-50cc5712-b984-46dc-945b-75764aef1bac", "metadata": {}}
+{"stage": "tts_engine", "event_name": "stage_dispatch", "timestamp_ns": 1795751208991880823, "request_id": "speech-72a68f34-1924-44e4-9d52-a51246449a89", "metadata": {}}
+{"stage": "tts_engine", "event_name": "stage_dispatch", "timestamp_ns": 1795751210727575369, "request_id": "speech-ff871e74-6373-4a82-9788-cebfadb43f25", "metadata": {}}
+{"stage": "tts_engine", "event_name": "stage_dispatch", "timestamp_ns": 1795751210752599326, "request_id": "speech-64d0a90c-0d81-46ab-a1ac-64ff454f81f6", "metadata": {}}
+{"stage": "tts_engine", "event_name": "stage_dispatch", "timestamp_ns": 1795751210781986694, "request_id": "speech-afd71227-87b9-4c84-9a27-0512a5d77c09", "metadata": {}}
+{"stage": "tts_engine", "event_name": "stage_dispatch", "timestamp_ns": 1795751210811955502, "request_id": "speech-c76d512e-af68-4c5e-8350-bb6406798f63", "metadata": {}}
+{"stage": "tts_engine", "event_name": "stage_dispatch", "timestamp_ns": 1795751212523534958, "request_id": "speech-3500408f-e1b5-4855-b6ba-1ec13d184c02", "metadata": {}}
+{"stage": "tts_engine", "event_name": "stage_dispatch", "timestamp_ns": 1795751212553897904, "request_id": "speech-d61645b9-127c-40b8-9985-a7f28aba0ccd", "metadata": {}}
+{"stage": "tts_engine", "event_name": "stage_dispatch", "timestamp_ns": 1795751212582371084, "request_id": "speech-a44b8474-a1f5-48af-9b97-45b4f2c49fb8", "metadata": {}}
+{"stage": "tts_engine", "event_name": "stage_dispatch", "timestamp_ns": 1795751212613985111, "request_id": "speech-1ec562d9-0ffa-4b54-be68-2d72641f9c84", "metadata": {}}
+{"stage": "tts_engine", "event_name": "stage_dispatch", "timestamp_ns": 1795751214354743704, "request_id": "speech-da429f8b-7826-485c-a4cd-f14f5cba2d18", "metadata": {}}
+{"stage": "tts_engine", "event_name": "stage_dispatch", "timestamp_ns": 1795751214364876465, "request_id": "speech-d3b946c3-e169-4906-ad3e-89384f4800f2", "metadata": {}}
+{"stage": "tts_engine", "event_name": "stage_dispatch", "timestamp_ns": 1795751214373201835, "request_id": "speech-12969170-fc0d-439b-8c1f-9b97282446e6", "metadata": {}}
+{"stage": "tts_engine", "event_name": "stage_dispatch", "timestamp_ns": 1795751214384660161, "request_id": "speech-515306f0-9721-4bc8-8527-23f622fb1259", "metadata": {}}
+{"stage": "tts_engine", "event_name": "stage_dispatch", "timestamp_ns": 1795751216192995051, "request_id": "speech-f808c48b-e89f-4379-944a-b8710a132cde", "metadata": {}}
+{"stage": "tts_engine", "event_name": "stage_dispatch", "timestamp_ns": 1795751216196624352, "request_id": "speech-12594150-e2e8-4761-b7ee-520c0258bf89", "metadata": {}}
+{"stage": "tts_engine", "event_name": "stage_dispatch", "timestamp_ns": 1795751216197618837, "request_id": "speech-9de973f8-6c6b-48a0-99fa-06958032631f", "metadata": {}}
+{"stage": "tts_engine", "event_name": "stage_dispatch", "timestamp_ns": 1795751216199434343, "request_id": "speech-fcc92816-77ab-4428-b584-e34fa84f7192", "metadata": {}}
+{"stage": "tts_engine", "event_name": "scheduler_request_build_start", "timestamp_ns": 1795751196394869140, "request_id": "speech-6e269dba-6b0a-4434-a7f7-66ab6ba4ab60", "metadata": {}}
+{"stage": "tts_engine", "event_name": "scheduler_queue_enter", "timestamp_ns": 1795751196395550095, "request_id": "speech-6e269dba-6b0a-4434-a7f7-66ab6ba4ab60", "metadata": {}}
+{"stage": "tts_engine", "event_name": "scheduler_prefill_start", "timestamp_ns": 1795751196397625840, "request_id": "speech-6e269dba-6b0a-4434-a7f7-66ab6ba4ab60", "metadata": {}}
+{"stage": "tts_engine", "event_name": "scheduler_prefill_end", "timestamp_ns": 1795751196439210720, "request_id": "speech-6e269dba-6b0a-4434-a7f7-66ab6ba4ab60", "metadata": {"batch_size": 1}}
+{"stage": "tts_engine", "event_name": "scheduler_request_build_start", "timestamp_ns": 1795751196439730536, "request_id": "speech-2c5a29be-dcc1-47cc-925f-b0d506076779", "metadata": {}}
+{"stage": "tts_engine", "event_name": "scheduler_queue_enter", "timestamp_ns": 1795751196440445865, "request_id": "speech-2c5a29be-dcc1-47cc-925f-b0d506076779", "metadata": {}}
+{"stage": "tts_engine", "event_name": "scheduler_request_build_start", "timestamp_ns": 1795751196440454479, "request_id": "speech-e59b9f5c-37e0-4fc5-b0d8-0c922a7b001b", "metadata": {}}
+{"stage": "tts_engine", "event_name": "scheduler_queue_enter", "timestamp_ns": 1795751196440676900, "request_id": "speech-e59b9f5c-37e0-4fc5-b0d8-0c922a7b001b", "metadata": {}}
+{"stage": "tts_engine", "event_name": "scheduler_request_build_start", "timestamp_ns": 1795751196440682836, "request_id": "speech-89b06f48-67a1-4baf-9457-8d6f9306b089", "metadata": {}}
+{"stage": "tts_engine", "event_name": "scheduler_queue_enter", "timestamp_ns": 1795751196440858262, "request_id": "speech-89b06f48-67a1-4baf-9457-8d6f9306b089", "metadata": {}}
+{"stage": "tts_engine", "event_name": "scheduler_prefill_start", "timestamp_ns": 1795751196482014215, "request_id": "speech-2c5a29be-dcc1-47cc-925f-b0d506076779", "metadata": {}}
+{"stage": "tts_engine", "event_name": "scheduler_prefill_start", "timestamp_ns": 1795751196482024871, "request_id": "speech-e59b9f5c-37e0-4fc5-b0d8-0c922a7b001b", "metadata": {}}
+{"stage": "tts_engine", "event_name": "scheduler_prefill_start", "timestamp_ns": 1795751196482032817, "request_id": "speech-89b06f48-67a1-4baf-9457-8d6f9306b089", "metadata": {}}
+{"stage": "tts_engine", "event_name": "scheduler_prefill_end", "timestamp_ns": 1795751196531220309, "request_id": "speech-2c5a29be-dcc1-47cc-925f-b0d506076779", "metadata": {"batch_size": 3}}
+{"stage": "tts_engine", "event_name": "scheduler_prefill_end", "timestamp_ns": 1795751196531233222, "request_id": "speech-e59b9f5c-37e0-4fc5-b0d8-0c922a7b001b", "metadata": {"batch_size": 3}}
+{"stage": "tts_engine", "event_name": "scheduler_prefill_end", "timestamp_ns": 1795751196531237661, "request_id": "speech-89b06f48-67a1-4baf-9457-8d6f9306b089", "metadata": {"batch_size": 3}}
+{"stage": "tts_engine", "event_name": "scheduler_request_build_start", "timestamp_ns": 1795751198190152243, "request_id": "speech-f2073e6a-92dd-47d2-818a-5e03818e16b5", "metadata": {}}
+{"stage": "tts_engine", "event_name": "scheduler_queue_enter", "timestamp_ns": 1795751198190778809, "request_id": "speech-f2073e6a-92dd-47d2-818a-5e03818e16b5", "metadata": {}}
+{"stage": "tts_engine", "event_name": "scheduler_prefill_start", "timestamp_ns": 1795751198192473794, "request_id": "speech-f2073e6a-92dd-47d2-818a-5e03818e16b5", "metadata": {}}
+{"stage": "tts_engine", "event_name": "scheduler_prefill_end", "timestamp_ns": 1795751198229735119, "request_id": "speech-f2073e6a-92dd-47d2-818a-5e03818e16b5", "metadata": {"batch_size": 1}}
+{"stage": "tts_engine", "event_name": "scheduler_request_build_start", "timestamp_ns": 1795751198230325686, "request_id": "speech-ddbdc63a-e0fc-4831-8e79-22866d38c3c2", "metadata": {}}
+{"stage": "tts_engine", "event_name": "scheduler_queue_enter", "timestamp_ns": 1795751198231045825, "request_id": "speech-ddbdc63a-e0fc-4831-8e79-22866d38c3c2", "metadata": {}}
+{"stage": "tts_engine", "event_name": "scheduler_request_build_start", "timestamp_ns": 1795751198231055288, "request_id": "speech-b0af3c23-1fe8-4fba-aa8f-d609fab06c0c", "metadata": {}}
+{"stage": "tts_engine", "event_name": "scheduler_queue_enter", "timestamp_ns": 1795751198231592116, "request_id": "speech-b0af3c23-1fe8-4fba-aa8f-d609fab06c0c", "metadata": {}}
+{"stage": "tts_engine", "event_name": "scheduler_request_build_start", "timestamp_ns": 1795751198231600691, "request_id": "speech-ef0833b4-3e91-4860-b47f-178fb49b6e17", "metadata": {}}
+{"stage": "tts_engine", "event_name": "scheduler_queue_enter", "timestamp_ns": 1795751198232354751, "request_id": "speech-ef0833b4-3e91-4860-b47f-178fb49b6e17", "metadata": {}}
+{"stage": "tts_engine", "event_name": "scheduler_prefill_start", "timestamp_ns": 1795751198271913684, "request_id": "speech-ddbdc63a-e0fc-4831-8e79-22866d38c3c2", "metadata": {}}
+{"stage": "tts_engine", "event_name": "scheduler_prefill_start", "timestamp_ns": 1795751198271924500, "request_id": "speech-b0af3c23-1fe8-4fba-aa8f-d609fab06c0c", "metadata": {}}
+{"stage": "tts_engine", "event_name": "scheduler_prefill_start", "timestamp_ns": 1795751198271934207, "request_id": "speech-ef0833b4-3e91-4860-b47f-178fb49b6e17", "metadata": {}}
+{"stage": "tts_engine", "event_name": "scheduler_prefill_end", "timestamp_ns": 1795751198320904000, "request_id": "speech-ddbdc63a-e0fc-4831-8e79-22866d38c3c2", "metadata": {"batch_size": 3}}
+{"stage": "tts_engine", "event_name": "scheduler_prefill_end", "timestamp_ns": 1795751198320913837, "request_id": "speech-b0af3c23-1fe8-4fba-aa8f-d609fab06c0c", "metadata": {"batch_size": 3}}
+{"stage": "tts_engine", "event_name": "scheduler_prefill_end", "timestamp_ns": 1795751198320919098, "request_id": "speech-ef0833b4-3e91-4860-b47f-178fb49b6e17", "metadata": {"batch_size": 3}}
+{"stage": "tts_engine", "event_name": "scheduler_request_build_start", "timestamp_ns": 1795751199998370838, "request_id": "speech-43a31ff9-99a4-4366-8db8-991c90266777", "metadata": {}}
+{"stage": "tts_engine", "event_name": "scheduler_queue_enter", "timestamp_ns": 1795751199999025591, "request_id": "speech-43a31ff9-99a4-4366-8db8-991c90266777", "metadata": {}}
+{"stage": "tts_engine", "event_name": "scheduler_prefill_start", "timestamp_ns": 1795751200000696215, "request_id": "speech-43a31ff9-99a4-4366-8db8-991c90266777", "metadata": {}}
+{"stage": "tts_engine", "event_name": "scheduler_prefill_end", "timestamp_ns": 1795751200037256310, "request_id": "speech-43a31ff9-99a4-4366-8db8-991c90266777", "metadata": {"batch_size": 1}}
+{"stage": "tts_engine", "event_name": "scheduler_request_build_start", "timestamp_ns": 1795751200037768056, "request_id": "speech-16135cd5-f0c0-4fc6-989a-b6a21878f45c", "metadata": {}}
+{"stage": "tts_engine", "event_name": "scheduler_queue_enter", "timestamp_ns": 1795751200039233889, "request_id": "speech-16135cd5-f0c0-4fc6-989a-b6a21878f45c", "metadata": {}}
+{"stage": "tts_engine", "event_name": "scheduler_request_build_start", "timestamp_ns": 1795751200058871066, "request_id": "speech-c0ffffe8-c862-4ae0-a981-04dfd56565da", "metadata": {}}
+{"stage": "tts_engine", "event_name": "scheduler_queue_enter", "timestamp_ns": 1795751200059862763, "request_id": "speech-c0ffffe8-c862-4ae0-a981-04dfd56565da", "metadata": {}}
+{"stage": "tts_engine", "event_name": "scheduler_prefill_start", "timestamp_ns": 1795751200081640713, "request_id": "speech-16135cd5-f0c0-4fc6-989a-b6a21878f45c", "metadata": {}}
+{"stage": "tts_engine", "event_name": "scheduler_prefill_start", "timestamp_ns": 1795751200081650880, "request_id": "speech-c0ffffe8-c862-4ae0-a981-04dfd56565da", "metadata": {}}
+{"stage": "tts_engine", "event_name": "scheduler_prefill_end", "timestamp_ns": 1795751200125107833, "request_id": "speech-16135cd5-f0c0-4fc6-989a-b6a21878f45c", "metadata": {"batch_size": 2}}
+{"stage": "tts_engine", "event_name": "scheduler_prefill_end", "timestamp_ns": 1795751200125121259, "request_id": "speech-c0ffffe8-c862-4ae0-a981-04dfd56565da", "metadata": {"batch_size": 2}}
+{"stage": "tts_engine", "event_name": "scheduler_request_build_start", "timestamp_ns": 1795751200125615620, "request_id": "speech-7b25cc07-51e3-4ea0-aa87-736871d51b22", "metadata": {}}
+{"stage": "tts_engine", "event_name": "scheduler_queue_enter", "timestamp_ns": 1795751200126158589, "request_id": "speech-7b25cc07-51e3-4ea0-aa87-736871d51b22", "metadata": {}}
+{"stage": "tts_engine", "event_name": "scheduler_prefill_start", "timestamp_ns": 1795751200178360051, "request_id": "speech-7b25cc07-51e3-4ea0-aa87-736871d51b22", "metadata": {}}
+{"stage": "tts_engine", "event_name": "scheduler_prefill_end", "timestamp_ns": 1795751200214451433, "request_id": "speech-7b25cc07-51e3-4ea0-aa87-736871d51b22", "metadata": {"batch_size": 1}}
+{"stage": "tts_engine", "event_name": "scheduler_request_build_start", "timestamp_ns": 1795751201733872393, "request_id": "speech-7a55b672-d7e3-47cf-b078-2ec52eb20296", "metadata": {}}
+{"stage": "tts_engine", "event_name": "scheduler_queue_enter", "timestamp_ns": 1795751201734616089, "request_id": "speech-7a55b672-d7e3-47cf-b078-2ec52eb20296", "metadata": {}}
+{"stage": "tts_engine", "event_name": "scheduler_prefill_start", "timestamp_ns": 1795751201736248335, "request_id": "speech-7a55b672-d7e3-47cf-b078-2ec52eb20296", "metadata": {}}
+{"stage": "tts_engine", "event_name": "scheduler_prefill_end", "timestamp_ns": 1795751201772806342, "request_id": "speech-7a55b672-d7e3-47cf-b078-2ec52eb20296", "metadata": {"batch_size": 1}}
+{"stage": "tts_engine", "event_name": "scheduler_request_build_start", "timestamp_ns": 1795751201773511654, "request_id": "speech-d9442691-ba89-41da-8e15-dd5c8063a32f", "metadata": {}}
+{"stage": "tts_engine", "event_name": "scheduler_queue_enter", "timestamp_ns": 1795751201774791261, "request_id": "speech-d9442691-ba89-41da-8e15-dd5c8063a32f", "metadata": {}}
+{"stage": "tts_engine", "event_name": "scheduler_request_build_start", "timestamp_ns": 1795751201806129974, "request_id": "speech-a9fc7529-07c2-43bb-9349-5d02d0927810", "metadata": {}}
+{"stage": "tts_engine", "event_name": "scheduler_queue_enter", "timestamp_ns": 1795751201807372770, "request_id": "speech-a9fc7529-07c2-43bb-9349-5d02d0927810", "metadata": {}}
+{"stage": "tts_engine", "event_name": "scheduler_prefill_start", "timestamp_ns": 1795751201818999277, "request_id": "speech-d9442691-ba89-41da-8e15-dd5c8063a32f", "metadata": {}}
+{"stage": "tts_engine", "event_name": "scheduler_prefill_start", "timestamp_ns": 1795751201819009433, "request_id": "speech-a9fc7529-07c2-43bb-9349-5d02d0927810", "metadata": {}}
+{"stage": "tts_engine", "event_name": "scheduler_prefill_end", "timestamp_ns": 1795751201862615580, "request_id": "speech-d9442691-ba89-41da-8e15-dd5c8063a32f", "metadata": {"batch_size": 2}}
+{"stage": "tts_engine", "event_name": "scheduler_prefill_end", "timestamp_ns": 1795751201862627116, "request_id": "speech-a9fc7529-07c2-43bb-9349-5d02d0927810", "metadata": {"batch_size": 2}}
+{"stage": "tts_engine", "event_name": "scheduler_request_build_start", "timestamp_ns": 1795751201863187556, "request_id": "speech-28c19923-3333-4a6a-ad06-2494958d3ec4", "metadata": {}}
+{"stage": "tts_engine", "event_name": "scheduler_queue_enter", "timestamp_ns": 1795751201863724170, "request_id": "speech-28c19923-3333-4a6a-ad06-2494958d3ec4", "metadata": {}}
+{"stage": "tts_engine", "event_name": "scheduler_prefill_start", "timestamp_ns": 1795751201915663193, "request_id": "speech-28c19923-3333-4a6a-ad06-2494958d3ec4", "metadata": {}}
+{"stage": "tts_engine", "event_name": "scheduler_prefill_end", "timestamp_ns": 1795751201951784805, "request_id": "speech-28c19923-3333-4a6a-ad06-2494958d3ec4", "metadata": {"batch_size": 1}}
+{"stage": "tts_engine", "event_name": "scheduler_request_build_start", "timestamp_ns": 1795751203607367796, "request_id": "speech-ae46559b-713e-43c4-8a9c-aebdc994c0a2", "metadata": {}}
+{"stage": "tts_engine", "event_name": "scheduler_queue_enter", "timestamp_ns": 1795751203608016519, "request_id": "speech-ae46559b-713e-43c4-8a9c-aebdc994c0a2", "metadata": {}}
+{"stage": "tts_engine", "event_name": "scheduler_prefill_start", "timestamp_ns": 1795751203609640217, "request_id": "speech-ae46559b-713e-43c4-8a9c-aebdc994c0a2", "metadata": {}}
+{"stage": "tts_engine", "event_name": "scheduler_prefill_end", "timestamp_ns": 1795751203646184052, "request_id": "speech-ae46559b-713e-43c4-8a9c-aebdc994c0a2", "metadata": {"batch_size": 1}}
+{"stage": "tts_engine", "event_name": "scheduler_request_build_start", "timestamp_ns": 1795751203646695805, "request_id": "speech-ce9a131d-4603-4f09-9df3-844774c8d92b", "metadata": {}}
+{"stage": "tts_engine", "event_name": "scheduler_queue_enter", "timestamp_ns": 1795751203647388279, "request_id": "speech-ce9a131d-4603-4f09-9df3-844774c8d92b", "metadata": {}}
+{"stage": "tts_engine", "event_name": "scheduler_request_build_start", "timestamp_ns": 1795751203647397416, "request_id": "speech-9000d874-e7d6-4fc3-8df6-2da69bda0f71", "metadata": {}}
+{"stage": "tts_engine", "event_name": "scheduler_queue_enter", "timestamp_ns": 1795751203647645994, "request_id": "speech-9000d874-e7d6-4fc3-8df6-2da69bda0f71", "metadata": {}}
+{"stage": "tts_engine", "event_name": "scheduler_request_build_start", "timestamp_ns": 1795751203647651154, "request_id": "speech-b918f1cd-7a86-4b07-8f4f-ed77f8a710ad", "metadata": {}}
+{"stage": "tts_engine", "event_name": "scheduler_queue_enter", "timestamp_ns": 1795751203647815243, "request_id": "speech-b918f1cd-7a86-4b07-8f4f-ed77f8a710ad", "metadata": {}}
+{"stage": "tts_engine", "event_name": "scheduler_prefill_start", "timestamp_ns": 1795751203688713494, "request_id": "speech-ce9a131d-4603-4f09-9df3-844774c8d92b", "metadata": {}}
+{"stage": "tts_engine", "event_name": "scheduler_prefill_start", "timestamp_ns": 1795751203688723899, "request_id": "speech-9000d874-e7d6-4fc3-8df6-2da69bda0f71", "metadata": {}}
+{"stage": "tts_engine", "event_name": "scheduler_prefill_start", "timestamp_ns": 1795751203688733406, "request_id": "speech-b918f1cd-7a86-4b07-8f4f-ed77f8a710ad", "metadata": {}}
+{"stage": "tts_engine", "event_name": "scheduler_prefill_end", "timestamp_ns": 1795751203737635903, "request_id": "speech-ce9a131d-4603-4f09-9df3-844774c8d92b", "metadata": {"batch_size": 3}}
+{"stage": "tts_engine", "event_name": "scheduler_prefill_end", "timestamp_ns": 1795751203737647950, "request_id": "speech-9000d874-e7d6-4fc3-8df6-2da69bda0f71", "metadata": {"batch_size": 3}}
+{"stage": "tts_engine", "event_name": "scheduler_prefill_end", "timestamp_ns": 1795751203737652146, "request_id": "speech-b918f1cd-7a86-4b07-8f4f-ed77f8a710ad", "metadata": {"batch_size": 3}}
+{"stage": "tts_engine", "event_name": "scheduler_request_build_start", "timestamp_ns": 1795751205407982708, "request_id": "speech-fa8e2f65-7685-4ba4-b656-c1ee3a75e159", "metadata": {}}
+{"stage": "tts_engine", "event_name": "scheduler_queue_enter", "timestamp_ns": 1795751205409122932, "request_id": "speech-fa8e2f65-7685-4ba4-b656-c1ee3a75e159", "metadata": {}}
+{"stage": "tts_engine", "event_name": "scheduler_prefill_start", "timestamp_ns": 1795751205412871916, "request_id": "speech-fa8e2f65-7685-4ba4-b656-c1ee3a75e159", "metadata": {}}
+{"stage": "tts_engine", "event_name": "scheduler_prefill_end", "timestamp_ns": 1795751205449573326, "request_id": "speech-fa8e2f65-7685-4ba4-b656-c1ee3a75e159", "metadata": {"batch_size": 1}}
+{"stage": "tts_engine", "event_name": "scheduler_request_build_start", "timestamp_ns": 1795751205450122399, "request_id": "speech-41da5fd0-9905-4d7f-9e38-3247f5c266df", "metadata": {}}
+{"stage": "tts_engine", "event_name": "scheduler_queue_enter", "timestamp_ns": 1795751205450755961, "request_id": "speech-41da5fd0-9905-4d7f-9e38-3247f5c266df", "metadata": {}}
+{"stage": "tts_engine", "event_name": "scheduler_request_build_start", "timestamp_ns": 1795751205450765184, "request_id": "speech-aece319e-cf20-41d9-a13c-c2fab21c8faa", "metadata": {}}
+{"stage": "tts_engine", "event_name": "scheduler_queue_enter", "timestamp_ns": 1795751205450986308, "request_id": "speech-aece319e-cf20-41d9-a13c-c2fab21c8faa", "metadata": {}}
+{"stage": "tts_engine", "event_name": "scheduler_request_build_start", "timestamp_ns": 1795751205450992926, "request_id": "speech-a5168973-529d-4655-94d4-efa537a43f79", "metadata": {}}
+{"stage": "tts_engine", "event_name": "scheduler_queue_enter", "timestamp_ns": 1795751205451239470, "request_id": "speech-a5168973-529d-4655-94d4-efa537a43f79", "metadata": {}}
+{"stage": "tts_engine", "event_name": "scheduler_prefill_start", "timestamp_ns": 1795751205492270426, "request_id": "speech-41da5fd0-9905-4d7f-9e38-3247f5c266df", "metadata": {}}
+{"stage": "tts_engine", "event_name": "scheduler_prefill_start", "timestamp_ns": 1795751205492280532, "request_id": "speech-aece319e-cf20-41d9-a13c-c2fab21c8faa", "metadata": {}}
+{"stage": "tts_engine", "event_name": "scheduler_prefill_start", "timestamp_ns": 1795751205492289180, "request_id": "speech-a5168973-529d-4655-94d4-efa537a43f79", "metadata": {}}
+{"stage": "tts_engine", "event_name": "scheduler_prefill_end", "timestamp_ns": 1795751205541271323, "request_id": "speech-41da5fd0-9905-4d7f-9e38-3247f5c266df", "metadata": {"batch_size": 3}}
+{"stage": "tts_engine", "event_name": "scheduler_prefill_end", "timestamp_ns": 1795751205541283915, "request_id": "speech-aece319e-cf20-41d9-a13c-c2fab21c8faa", "metadata": {"batch_size": 3}}
+{"stage": "tts_engine", "event_name": "scheduler_prefill_end", "timestamp_ns": 1795751205541288030, "request_id": "speech-a5168973-529d-4655-94d4-efa537a43f79", "metadata": {"batch_size": 3}}
+{"stage": "tts_engine", "event_name": "scheduler_request_build_start", "timestamp_ns": 1795751207222475186, "request_id": "speech-93fd2074-e0df-4295-af20-7af11dd8e4b5", "metadata": {}}
+{"stage": "tts_engine", "event_name": "scheduler_queue_enter", "timestamp_ns": 1795751207223742525, "request_id": "speech-93fd2074-e0df-4295-af20-7af11dd8e4b5", "metadata": {}}
+{"stage": "tts_engine", "event_name": "scheduler_prefill_start", "timestamp_ns": 1795751207225751273, "request_id": "speech-93fd2074-e0df-4295-af20-7af11dd8e4b5", "metadata": {}}
+{"stage": "tts_engine", "event_name": "scheduler_prefill_end", "timestamp_ns": 1795751207263981213, "request_id": "speech-93fd2074-e0df-4295-af20-7af11dd8e4b5", "metadata": {"batch_size": 1}}
+{"stage": "tts_engine", "event_name": "scheduler_request_build_start", "timestamp_ns": 1795751207264531468, "request_id": "speech-c290a459-dec5-47e1-86c6-54392cb22faa", "metadata": {}}
+{"stage": "tts_engine", "event_name": "scheduler_queue_enter", "timestamp_ns": 1795751207265214052, "request_id": "speech-c290a459-dec5-47e1-86c6-54392cb22faa", "metadata": {}}
+{"stage": "tts_engine", "event_name": "scheduler_request_build_start", "timestamp_ns": 1795751207265224127, "request_id": "speech-9358ab7f-d465-4d3b-862e-cfec8eca2afd", "metadata": {}}
+{"stage": "tts_engine", "event_name": "scheduler_queue_enter", "timestamp_ns": 1795751207265486782, "request_id": "speech-9358ab7f-d465-4d3b-862e-cfec8eca2afd", "metadata": {}}
+{"stage": "tts_engine", "event_name": "scheduler_request_build_start", "timestamp_ns": 1795751207265492835, "request_id": "speech-b239daea-7e1b-47da-bf71-b53b9559e0ee", "metadata": {}}
+{"stage": "tts_engine", "event_name": "scheduler_queue_enter", "timestamp_ns": 1795751207265817593, "request_id": "speech-b239daea-7e1b-47da-bf71-b53b9559e0ee", "metadata": {}}
+{"stage": "tts_engine", "event_name": "scheduler_prefill_start", "timestamp_ns": 1795751207306607793, "request_id": "speech-c290a459-dec5-47e1-86c6-54392cb22faa", "metadata": {}}
+{"stage": "tts_engine", "event_name": "scheduler_prefill_start", "timestamp_ns": 1795751207306617629, "request_id": "speech-9358ab7f-d465-4d3b-862e-cfec8eca2afd", "metadata": {}}
+{"stage": "tts_engine", "event_name": "scheduler_prefill_start", "timestamp_ns": 1795751207306626290, "request_id": "speech-b239daea-7e1b-47da-bf71-b53b9559e0ee", "metadata": {}}
+{"stage": "tts_engine", "event_name": "scheduler_prefill_end", "timestamp_ns": 1795751207355616753, "request_id": "speech-c290a459-dec5-47e1-86c6-54392cb22faa", "metadata": {"batch_size": 3}}
+{"stage": "tts_engine", "event_name": "scheduler_prefill_end", "timestamp_ns": 1795751207355628155, "request_id": "speech-9358ab7f-d465-4d3b-862e-cfec8eca2afd", "metadata": {"batch_size": 3}}
+{"stage": "tts_engine", "event_name": "scheduler_prefill_end", "timestamp_ns": 1795751207355632293, "request_id": "speech-b239daea-7e1b-47da-bf71-b53b9559e0ee", "metadata": {"batch_size": 3}}
+{"stage": "tts_engine", "event_name": "scheduler_request_build_start", "timestamp_ns": 1795751208963769534, "request_id": "speech-ec91aed2-9133-4440-a437-29b285a367ea", "metadata": {}}
+{"stage": "tts_engine", "event_name": "scheduler_queue_enter", "timestamp_ns": 1795751208964535708, "request_id": "speech-ec91aed2-9133-4440-a437-29b285a367ea", "metadata": {}}
+{"stage": "tts_engine", "event_name": "scheduler_prefill_start", "timestamp_ns": 1795751208966173442, "request_id": "speech-ec91aed2-9133-4440-a437-29b285a367ea", "metadata": {}}
+{"stage": "tts_engine", "event_name": "scheduler_prefill_end", "timestamp_ns": 1795751209002760569, "request_id": "speech-ec91aed2-9133-4440-a437-29b285a367ea", "metadata": {"batch_size": 1}}
+{"stage": "tts_engine", "event_name": "scheduler_request_build_start", "timestamp_ns": 1795751209003300648, "request_id": "speech-af8574fe-fe53-4f09-8cf3-ca48ff1f878e", "metadata": {}}
+{"stage": "tts_engine", "event_name": "scheduler_queue_enter", "timestamp_ns": 1795751209004277701, "request_id": "speech-af8574fe-fe53-4f09-8cf3-ca48ff1f878e", "metadata": {}}
+{"stage": "tts_engine", "event_name": "scheduler_request_build_start", "timestamp_ns": 1795751209004288399, "request_id": "speech-50cc5712-b984-46dc-945b-75764aef1bac", "metadata": {}}
+{"stage": "tts_engine", "event_name": "scheduler_queue_enter", "timestamp_ns": 1795751209006491685, "request_id": "speech-50cc5712-b984-46dc-945b-75764aef1bac", "metadata": {}}
+{"stage": "tts_engine", "event_name": "scheduler_request_build_start", "timestamp_ns": 1795751209006503626, "request_id": "speech-72a68f34-1924-44e4-9d52-a51246449a89", "metadata": {}}
+{"stage": "tts_engine", "event_name": "scheduler_queue_enter", "timestamp_ns": 1795751209006712182, "request_id": "speech-72a68f34-1924-44e4-9d52-a51246449a89", "metadata": {}}
+{"stage": "tts_engine", "event_name": "scheduler_prefill_start", "timestamp_ns": 1795751209047178489, "request_id": "speech-af8574fe-fe53-4f09-8cf3-ca48ff1f878e", "metadata": {}}
+{"stage": "tts_engine", "event_name": "scheduler_prefill_start", "timestamp_ns": 1795751209047188117, "request_id": "speech-50cc5712-b984-46dc-945b-75764aef1bac", "metadata": {}}
+{"stage": "tts_engine", "event_name": "scheduler_prefill_start", "timestamp_ns": 1795751209047196106, "request_id": "speech-72a68f34-1924-44e4-9d52-a51246449a89", "metadata": {}}
+{"stage": "tts_engine", "event_name": "scheduler_prefill_end", "timestamp_ns": 1795751209096098723, "request_id": "speech-af8574fe-fe53-4f09-8cf3-ca48ff1f878e", "metadata": {"batch_size": 3}}
+{"stage": "tts_engine", "event_name": "scheduler_prefill_end", "timestamp_ns": 1795751209096132102, "request_id": "speech-50cc5712-b984-46dc-945b-75764aef1bac", "metadata": {"batch_size": 3}}
+{"stage": "tts_engine", "event_name": "scheduler_prefill_end", "timestamp_ns": 1795751209096136749, "request_id": "speech-72a68f34-1924-44e4-9d52-a51246449a89", "metadata": {"batch_size": 3}}
+{"stage": "tts_engine", "event_name": "scheduler_request_build_start", "timestamp_ns": 1795751210727924528, "request_id": "speech-ff871e74-6373-4a82-9788-cebfadb43f25", "metadata": {}}
+{"stage": "tts_engine", "event_name": "scheduler_queue_enter", "timestamp_ns": 1795751210728455498, "request_id": "speech-ff871e74-6373-4a82-9788-cebfadb43f25", "metadata": {}}
+{"stage": "tts_engine", "event_name": "scheduler_prefill_start", "timestamp_ns": 1795751210729592779, "request_id": "speech-ff871e74-6373-4a82-9788-cebfadb43f25", "metadata": {}}
+{"stage": "tts_engine", "event_name": "scheduler_prefill_end", "timestamp_ns": 1795751210765072296, "request_id": "speech-ff871e74-6373-4a82-9788-cebfadb43f25", "metadata": {"batch_size": 1}}
+{"stage": "tts_engine", "event_name": "scheduler_request_build_start", "timestamp_ns": 1795751210765458687, "request_id": "speech-64d0a90c-0d81-46ab-a1ac-64ff454f81f6", "metadata": {}}
+{"stage": "tts_engine", "event_name": "scheduler_queue_enter", "timestamp_ns": 1795751210765902005, "request_id": "speech-64d0a90c-0d81-46ab-a1ac-64ff454f81f6", "metadata": {}}
+{"stage": "tts_engine", "event_name": "scheduler_request_build_start", "timestamp_ns": 1795751210783646879, "request_id": "speech-afd71227-87b9-4c84-9a27-0512a5d77c09", "metadata": {}}
+{"stage": "tts_engine", "event_name": "scheduler_queue_enter", "timestamp_ns": 1795751210783949990, "request_id": "speech-afd71227-87b9-4c84-9a27-0512a5d77c09", "metadata": {}}
+{"stage": "tts_engine", "event_name": "scheduler_prefill_start", "timestamp_ns": 1795751210803570774, "request_id": "speech-64d0a90c-0d81-46ab-a1ac-64ff454f81f6", "metadata": {}}
+{"stage": "tts_engine", "event_name": "scheduler_prefill_start", "timestamp_ns": 1795751210803580445, "request_id": "speech-afd71227-87b9-4c84-9a27-0512a5d77c09", "metadata": {}}
+{"stage": "tts_engine", "event_name": "scheduler_prefill_end", "timestamp_ns": 1795751210845914414, "request_id": "speech-64d0a90c-0d81-46ab-a1ac-64ff454f81f6", "metadata": {"batch_size": 2}}
+{"stage": "tts_engine", "event_name": "scheduler_prefill_end", "timestamp_ns": 1795751210845925304, "request_id": "speech-afd71227-87b9-4c84-9a27-0512a5d77c09", "metadata": {"batch_size": 2}}
+{"stage": "tts_engine", "event_name": "scheduler_request_build_start", "timestamp_ns": 1795751210846455542, "request_id": "speech-c76d512e-af68-4c5e-8350-bb6406798f63", "metadata": {}}
+{"stage": "tts_engine", "event_name": "scheduler_queue_enter", "timestamp_ns": 1795751210848013043, "request_id": "speech-c76d512e-af68-4c5e-8350-bb6406798f63", "metadata": {}}
+{"stage": "tts_engine", "event_name": "scheduler_prefill_start", "timestamp_ns": 1795751210901740694, "request_id": "speech-c76d512e-af68-4c5e-8350-bb6406798f63", "metadata": {}}
+{"stage": "tts_engine", "event_name": "scheduler_prefill_end", "timestamp_ns": 1795751210937613487, "request_id": "speech-c76d512e-af68-4c5e-8350-bb6406798f63", "metadata": {"batch_size": 1}}
+{"stage": "tts_engine", "event_name": "scheduler_request_build_start", "timestamp_ns": 1795751212523922800, "request_id": "speech-3500408f-e1b5-4855-b6ba-1ec13d184c02", "metadata": {}}
+{"stage": "tts_engine", "event_name": "scheduler_queue_enter", "timestamp_ns": 1795751212524669418, "request_id": "speech-3500408f-e1b5-4855-b6ba-1ec13d184c02", "metadata": {}}
+{"stage": "tts_engine", "event_name": "scheduler_prefill_start", "timestamp_ns": 1795751212526297306, "request_id": "speech-3500408f-e1b5-4855-b6ba-1ec13d184c02", "metadata": {}}
+{"stage": "tts_engine", "event_name": "scheduler_prefill_end", "timestamp_ns": 1795751212562906394, "request_id": "speech-3500408f-e1b5-4855-b6ba-1ec13d184c02", "metadata": {"batch_size": 1}}
+{"stage": "tts_engine", "event_name": "scheduler_request_build_start", "timestamp_ns": 1795751212563469044, "request_id": "speech-d61645b9-127c-40b8-9985-a7f28aba0ccd", "metadata": {}}
+{"stage": "tts_engine", "event_name": "scheduler_queue_enter", "timestamp_ns": 1795751212564062689, "request_id": "speech-d61645b9-127c-40b8-9985-a7f28aba0ccd", "metadata": {}}
+{"stage": "tts_engine", "event_name": "scheduler_request_build_start", "timestamp_ns": 1795751212583145908, "request_id": "speech-a44b8474-a1f5-48af-9b97-45b4f2c49fb8", "metadata": {}}
+{"stage": "tts_engine", "event_name": "scheduler_queue_enter", "timestamp_ns": 1795751212583669578, "request_id": "speech-a44b8474-a1f5-48af-9b97-45b4f2c49fb8", "metadata": {}}
+{"stage": "tts_engine", "event_name": "scheduler_prefill_start", "timestamp_ns": 1795751212605918360, "request_id": "speech-d61645b9-127c-40b8-9985-a7f28aba0ccd", "metadata": {}}
+{"stage": "tts_engine", "event_name": "scheduler_prefill_start", "timestamp_ns": 1795751212605928703, "request_id": "speech-a44b8474-a1f5-48af-9b97-45b4f2c49fb8", "metadata": {}}
+{"stage": "tts_engine", "event_name": "scheduler_prefill_end", "timestamp_ns": 1795751212649379394, "request_id": "speech-d61645b9-127c-40b8-9985-a7f28aba0ccd", "metadata": {"batch_size": 2}}
+{"stage": "tts_engine", "event_name": "scheduler_prefill_end", "timestamp_ns": 1795751212649392083, "request_id": "speech-a44b8474-a1f5-48af-9b97-45b4f2c49fb8", "metadata": {"batch_size": 2}}
+{"stage": "tts_engine", "event_name": "scheduler_request_build_start", "timestamp_ns": 1795751212649921026, "request_id": "speech-1ec562d9-0ffa-4b54-be68-2d72641f9c84", "metadata": {}}
+{"stage": "tts_engine", "event_name": "scheduler_queue_enter", "timestamp_ns": 1795751212650523157, "request_id": "speech-1ec562d9-0ffa-4b54-be68-2d72641f9c84", "metadata": {}}
+{"stage": "tts_engine", "event_name": "scheduler_prefill_start", "timestamp_ns": 1795751212704634957, "request_id": "speech-1ec562d9-0ffa-4b54-be68-2d72641f9c84", "metadata": {}}
+{"stage": "tts_engine", "event_name": "scheduler_prefill_end", "timestamp_ns": 1795751212740788269, "request_id": "speech-1ec562d9-0ffa-4b54-be68-2d72641f9c84", "metadata": {"batch_size": 1}}
+{"stage": "tts_engine", "event_name": "scheduler_request_build_start", "timestamp_ns": 1795751214355210293, "request_id": "speech-da429f8b-7826-485c-a4cd-f14f5cba2d18", "metadata": {}}
+{"stage": "tts_engine", "event_name": "scheduler_queue_enter", "timestamp_ns": 1795751214355874848, "request_id": "speech-da429f8b-7826-485c-a4cd-f14f5cba2d18", "metadata": {}}
+{"stage": "tts_engine", "event_name": "scheduler_prefill_start", "timestamp_ns": 1795751214357529443, "request_id": "speech-da429f8b-7826-485c-a4cd-f14f5cba2d18", "metadata": {}}
+{"stage": "tts_engine", "event_name": "scheduler_prefill_end", "timestamp_ns": 1795751214393882785, "request_id": "speech-da429f8b-7826-485c-a4cd-f14f5cba2d18", "metadata": {"batch_size": 1}}
+{"stage": "tts_engine", "event_name": "scheduler_request_build_start", "timestamp_ns": 1795751214394519966, "request_id": "speech-d3b946c3-e169-4906-ad3e-89384f4800f2", "metadata": {}}
+{"stage": "tts_engine", "event_name": "scheduler_queue_enter", "timestamp_ns": 1795751214396783405, "request_id": "speech-d3b946c3-e169-4906-ad3e-89384f4800f2", "metadata": {}}
+{"stage": "tts_engine", "event_name": "scheduler_request_build_start", "timestamp_ns": 1795751214396796442, "request_id": "speech-12969170-fc0d-439b-8c1f-9b97282446e6", "metadata": {}}
+{"stage": "tts_engine", "event_name": "scheduler_queue_enter", "timestamp_ns": 1795751214397076520, "request_id": "speech-12969170-fc0d-439b-8c1f-9b97282446e6", "metadata": {}}
+{"stage": "tts_engine", "event_name": "scheduler_request_build_start", "timestamp_ns": 1795751214397128065, "request_id": "speech-515306f0-9721-4bc8-8527-23f622fb1259", "metadata": {}}
+{"stage": "tts_engine", "event_name": "scheduler_queue_enter", "timestamp_ns": 1795751214397466483, "request_id": "speech-515306f0-9721-4bc8-8527-23f622fb1259", "metadata": {}}
+{"stage": "tts_engine", "event_name": "scheduler_prefill_start", "timestamp_ns": 1795751214437797634, "request_id": "speech-d3b946c3-e169-4906-ad3e-89384f4800f2", "metadata": {}}
+{"stage": "tts_engine", "event_name": "scheduler_prefill_start", "timestamp_ns": 1795751214437808572, "request_id": "speech-12969170-fc0d-439b-8c1f-9b97282446e6", "metadata": {}}
+{"stage": "tts_engine", "event_name": "scheduler_prefill_start", "timestamp_ns": 1795751214437817099, "request_id": "speech-515306f0-9721-4bc8-8527-23f622fb1259", "metadata": {}}
+{"stage": "tts_engine", "event_name": "scheduler_prefill_end", "timestamp_ns": 1795751214486675024, "request_id": "speech-d3b946c3-e169-4906-ad3e-89384f4800f2", "metadata": {"batch_size": 3}}
+{"stage": "tts_engine", "event_name": "scheduler_prefill_end", "timestamp_ns": 1795751214486686540, "request_id": "speech-12969170-fc0d-439b-8c1f-9b97282446e6", "metadata": {"batch_size": 3}}
+{"stage": "tts_engine", "event_name": "scheduler_prefill_end", "timestamp_ns": 1795751214486691110, "request_id": "speech-515306f0-9721-4bc8-8527-23f622fb1259", "metadata": {"batch_size": 3}}
+{"stage": "tts_engine", "event_name": "scheduler_request_build_start", "timestamp_ns": 1795751216193474682, "request_id": "speech-f808c48b-e89f-4379-944a-b8710a132cde", "metadata": {}}
+{"stage": "tts_engine", "event_name": "scheduler_queue_enter", "timestamp_ns": 1795751216194866601, "request_id": "speech-f808c48b-e89f-4379-944a-b8710a132cde", "metadata": {}}
+{"stage": "tts_engine", "event_name": "scheduler_prefill_start", "timestamp_ns": 1795751216200042504, "request_id": "speech-f808c48b-e89f-4379-944a-b8710a132cde", "metadata": {}}
+{"stage": "tts_engine", "event_name": "scheduler_prefill_end", "timestamp_ns": 1795751216236735958, "request_id": "speech-f808c48b-e89f-4379-944a-b8710a132cde", "metadata": {"batch_size": 1}}
+{"stage": "tts_engine", "event_name": "scheduler_request_build_start", "timestamp_ns": 1795751216237252078, "request_id": "speech-12594150-e2e8-4761-b7ee-520c0258bf89", "metadata": {}}
+{"stage": "tts_engine", "event_name": "scheduler_queue_enter", "timestamp_ns": 1795751216237846584, "request_id": "speech-12594150-e2e8-4761-b7ee-520c0258bf89", "metadata": {}}
+{"stage": "tts_engine", "event_name": "scheduler_request_build_start", "timestamp_ns": 1795751216237854942, "request_id": "speech-9de973f8-6c6b-48a0-99fa-06958032631f", "metadata": {}}
+{"stage": "tts_engine", "event_name": "scheduler_queue_enter", "timestamp_ns": 1795751216238060945, "request_id": "speech-9de973f8-6c6b-48a0-99fa-06958032631f", "metadata": {}}
+{"stage": "tts_engine", "event_name": "scheduler_request_build_start", "timestamp_ns": 1795751216238066972, "request_id": "speech-fcc92816-77ab-4428-b584-e34fa84f7192", "metadata": {}}
+{"stage": "tts_engine", "event_name": "scheduler_queue_enter", "timestamp_ns": 1795751216238302011, "request_id": "speech-fcc92816-77ab-4428-b584-e34fa84f7192", "metadata": {}}
+{"stage": "tts_engine", "event_name": "scheduler_prefill_start", "timestamp_ns": 1795751216278858777, "request_id": "speech-12594150-e2e8-4761-b7ee-520c0258bf89", "metadata": {}}
+{"stage": "tts_engine", "event_name": "scheduler_prefill_start", "timestamp_ns": 1795751216278869359, "request_id": "speech-9de973f8-6c6b-48a0-99fa-06958032631f", "metadata": {}}
+{"stage": "tts_engine", "event_name": "scheduler_prefill_start", "timestamp_ns": 1795751216278877348, "request_id": "speech-fcc92816-77ab-4428-b584-e34fa84f7192", "metadata": {}}
+{"stage": "tts_engine", "event_name": "scheduler_prefill_end", "timestamp_ns": 1795751216327815844, "request_id": "speech-12594150-e2e8-4761-b7ee-520c0258bf89", "metadata": {"batch_size": 3}}
+{"stage": "tts_engine", "event_name": "scheduler_prefill_end", "timestamp_ns": 1795751216327828531, "request_id": "speech-9de973f8-6c6b-48a0-99fa-06958032631f", "metadata": {"batch_size": 3}}
+{"stage": "tts_engine", "event_name": "scheduler_prefill_end", "timestamp_ns": 1795751216327832974, "request_id": "speech-fcc92816-77ab-4428-b584-e34fa84f7192", "metadata": {"batch_size": 3}}
