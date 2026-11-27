@@ -1,0 +1,12 @@
+--- a/sglang_omni/models/fishaudio_drama3/engine_builder.py
++++ b/sglang_omni/models/fishaudio_drama3/engine_builder.py
+@@ -493,6 +493,9 @@
+             )
+         return {
+             "stream_output_builder": self.frame_streamer,
++            "early_request_builds": True,
++            "request_build_max_workers": 2,
++            "request_build_max_pending": 4,
+             "enable_async_decode": self.enable_async_decode,
+             "async_decode_min_batch_size": self.async_decode_min_batch_size,
+             "async_decode_resolve_before_prefill": True,

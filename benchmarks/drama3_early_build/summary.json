@@ -1,0 +1,219 @@
+{
+  "A1": {
+    "requests": 48,
+    "throughput": 13.530594471340995,
+    "rtf": 0.26844031283091574,
+    "latency": 1.6438835495833333,
+    "ttfa50": 209.341999,
+    "ttfa95": 224.83066795,
+    "underrun95_ms": 0.0,
+    "batch_requests": {
+      "1": 4,
+      "3": 12
+    },
+    "later_built_to_queue_and_queue_to_prefill": [
+      0.016769,
+      40.295319
+    ],
+    "first_build_prefill": [
+      0.43235749999999995,
+      4.2177945
+    ],
+    "later_build_prefill": [
+      38.9218185,
+      85.206365
+    ],
+    "diagnostic_first_ttfa": 116.014689,
+    "diagnostic_later_ttfa": 215.16599250000002
+  },
+  "B1": {
+    "requests": 48,
+    "throughput": 14.24811603213622,
+    "rtf": 0.2588243012178082,
+    "latency": 1.5942630851666666,
+    "ttfa50": 187.40432900000002,
+    "ttfa95": 220.55529095,
+    "underrun95_ms": 0.0,
+    "batch_requests": {
+      "1": 4,
+      "3": 12
+    },
+    "later_built_to_queue_and_queue_to_prefill": [
+      0.020712500000000002,
+      36.644441
+    ],
+    "first_build_prefill": [
+      0.4172145,
+      2.7402575000000002
+    ],
+    "later_build_prefill": [
+      34.8423805,
+      76.7941935
+    ],
+    "diagnostic_first_ttfa": 92.5300545,
+    "diagnostic_later_ttfa": 186.9148085
+  },
+  "A2": {
+    "requests": 48,
+    "throughput": 14.268473767513973,
+    "rtf": 0.2557536637112347,
+    "latency": 1.5460041336458334,
+    "ttfa50": 186.9668995,
+    "ttfa95": 212.52275914999998,
+    "underrun95_ms": 0.0,
+    "batch_requests": {
+      "1": 4,
+      "3": 12
+    },
+    "later_built_to_queue_and_queue_to_prefill": [
+      0.0137455,
+      36.9377055
+    ],
+    "first_build_prefill": [
+      0.22231049999999997,
+      1.9038810000000002
+    ],
+    "later_build_prefill": [
+      35.518391,
+      76.8025845
+    ],
+    "diagnostic_first_ttfa": 90.308571,
+    "diagnostic_later_ttfa": 184.6435755
+  },
+  "A3": {
+    "requests": 48,
+    "throughput": 13.814737809902109,
+    "rtf": 0.26887536963238423,
+    "latency": 1.6588897581875,
+    "ttfa50": 208.8131965,
+    "ttfa95": 222.96804835,
+    "underrun95_ms": 0.0,
+    "batch_requests": {
+      "1": 4,
+      "3": 12
+    },
+    "later_built_to_queue_and_queue_to_prefill": [
+      0.015274,
+      41.061034
+    ],
+    "first_build_prefill": [
+      0.534449,
+      3.7367595
+    ],
+    "later_build_prefill": [
+      34.004580000000004,
+      84.974087
+    ],
+    "diagnostic_first_ttfa": 109.810055,
+    "diagnostic_later_ttfa": 210.7182645
+  },
+  "C1": {
+    "requests": 48,
+    "throughput": 13.576921664205358,
+    "rtf": 0.26976990761467134,
+    "latency": 1.6525905454166667,
+    "ttfa50": 212.809908,
+    "ttfa95": 233.54939815,
+    "underrun95_ms": 0.0,
+    "batch_requests": {
+      "1": 4,
+      "3": 12
+    },
+    "later_built_to_queue_and_queue_to_prefill": [
+      39.0899475,
+      41.030744999999996
+    ],
+    "first_build_prefill": [
+      0.939113,
+      11.0253025
+    ],
+    "later_build_prefill": [
+      1.430658,
+      94.893317
+    ],
+    "diagnostic_first_ttfa": 125.6014385,
+    "diagnostic_later_ttfa": 225.60824300000002
+  },
+  "C2": {
+    "requests": 48,
+    "throughput": 13.351284260548375,
+    "rtf": 0.2677806598190873,
+    "latency": 1.6201799804166668,
+    "ttfa50": 210.79591,
+    "ttfa95": 226.4288957,
+    "underrun95_ms": 0.0,
+    "batch_requests": {
+      "1": 3,
+      "3": 9,
+      "2": 4
+    },
+    "later_built_to_queue_and_queue_to_prefill": [
+      37.323722000000004,
+      40.2900615
+    ],
+    "first_build_prefill": [
+      0.6095775,
+      7.1866185
+    ],
+    "later_build_prefill": [
+      0.7372635000000001,
+      85.671666
+    ],
+    "diagnostic_first_ttfa": 117.1160635,
+    "diagnostic_later_ttfa": 205.30978249999998
+  },
+  "A4": {
+    "requests": 48,
+    "throughput": 13.75792274042811,
+    "rtf": 0.26795278653655236,
+    "latency": 1.5993228067708334,
+    "ttfa50": 207.398902,
+    "ttfa95": 221.41898534999999,
+    "underrun95_ms": 0.0,
+    "batch_requests": {
+      "1": 4,
+      "3": 12
+    },
+    "later_built_to_queue_and_queue_to_prefill": [
+      0.027013,
+      41.034171
+    ],
+    "first_build_prefill": [
+      0.8162075,
+      5.7833255
+    ],
+    "later_build_prefill": [
+      40.7067535,
+      86.9035485
+    ],
+    "diagnostic_first_ttfa": 116.0710945,
+    "diagnostic_later_ttfa": 220.116388
+  },
+  "A5": {
+    "requests": 48,
+    "throughput": 13.550441446610149,
+    "rtf": 0.26851171053710343,
+    "latency": 1.6614958884583333,
+    "ttfa50": 209.2255915,
+    "ttfa95": 229.64686765,
+    "underrun95_ms": 0.0,
+    "batch_requests": {
+      "1": 4,
+      "3": 12
+    },
+    "later_built_to_queue_and_queue_to_prefill": [
+      0.0208525,
+      40.1075505
+    ],
+    "first_build_prefill": [
+      0.6649355,
+      4.619594
+    ],
+    "later_build_prefill": [
+      38.751351,
+      84.794206
+    ],
+    "diagnostic_first_ttfa": 114.4422825,
+    "diagnostic_later_ttfa": 213.665652
+  }
+}
