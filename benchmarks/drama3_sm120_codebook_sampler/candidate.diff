@@ -1,0 +1,11 @@
+--- a/sglang_omni/models/fishaudio_drama3/sampling_kernels.py
++++ b/sglang_omni/models/fishaudio_drama3/sampling_kernels.py
+@@ -339,7 +339,7 @@
+         return "Triton is not installed"
+     elif device.type != "cuda" or not current_platform.is_cuda():
+         return f"device {device} is not a CUDA device of the CUDA platform"
+-    elif (gpu_reason := untested_gpu_reason(device)) is not None:
++    elif (gpu_reason := untested_gpu_reason(device)) is not None and torch.cuda.get_device_capability(device) != (12, 0):
+         return gpu_reason
+     elif not SELECTED_CANDIDATES <= codebook_size <= MAX_BLOCK_WIDTH:
+         return (

@@ -1,0 +1,7142 @@
+{
+  "groups": {
+    "A": {
+      "4": {
+        "n": 96,
+        "ref_words": 1084,
+        "word_errors": 4,
+        "wer": 0.0036900369003690036,
+        "speaker_similarity": 62.667166312535606
+      },
+      "16": {
+        "n": 256,
+        "ref_words": 2732,
+        "word_errors": 12,
+        "wer": 0.004392386530014641,
+        "speaker_similarity": 60.64640324562788
+      }
+    },
+    "B": {
+      "4": {
+        "n": 96,
+        "ref_words": 1084,
+        "word_errors": 4,
+        "wer": 0.0036900369003690036,
+        "speaker_similarity": 61.6219599644343
+      },
+      "16": {
+        "n": 256,
+        "ref_words": 2732,
+        "word_errors": 11,
+        "wer": 0.004026354319180088,
+        "speaker_similarity": 59.958200328052044
+      }
+    },
+    "A1": {
+      "4": {
+        "n": 48,
+        "ref_words": 542,
+        "word_errors": 2,
+        "wer": 0.0036900369003690036,
+        "speaker_similarity": 62.7220815817515
+      },
+      "16": {
+        "n": 128,
+        "ref_words": 1366,
+        "word_errors": 6,
+        "wer": 0.004392386530014641,
+        "speaker_similarity": 60.93990010023117
+      }
+    },
+    "B1": {
+      "4": {
+        "n": 48,
+        "ref_words": 542,
+        "word_errors": 2,
+        "wer": 0.0036900369003690036,
+        "speaker_similarity": 61.78670541445414
+      },
+      "16": {
+        "n": 128,
+        "ref_words": 1366,
+        "word_errors": 5,
+        "wer": 0.0036603221083455345,
+        "speaker_similarity": 60.452492102980614
+      }
+    },
+    "B2": {
+      "4": {
+        "n": 48,
+        "ref_words": 542,
+        "word_errors": 2,
+        "wer": 0.0036900369003690036,
+        "speaker_similarity": 61.45721451441447
+      },
+      "16": {
+        "n": 128,
+        "ref_words": 1366,
+        "word_errors": 6,
+        "wer": 0.004392386530014641,
+        "speaker_similarity": 59.463908553123474
+      }
+    },
+    "A2": {
+      "4": {
+        "n": 48,
+        "ref_words": 542,
+        "word_errors": 2,
+        "wer": 0.0036900369003690036,
+        "speaker_similarity": 62.6122510433197
+      },
+      "16": {
+        "n": 128,
+        "ref_words": 1366,
+        "word_errors": 6,
+        "wer": 0.004392386530014641,
+        "speaker_similarity": 60.35290639102459
+      }
+    }
+  },
+  "rows": [
+    {
+      "arm": "A1",
+      "concurrency": 4,
+      "sample": "common_voice_en_10119832-common_voice_en_10119840",
+      "hits": 8,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 65.01940155029297
+    },
+    {
+      "arm": "A1",
+      "concurrency": 4,
+      "sample": "common_voice_en_10119832-common_voice_en_10119847",
+      "hits": 7,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 68.67982482910156
+    },
+    {
+      "arm": "A1",
+      "concurrency": 4,
+      "sample": "common_voice_en_103675-common_voice_en_103676",
+      "hits": 16,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 39.975650787353516
+    },
+    {
+      "arm": "A1",
+      "concurrency": 4,
+      "sample": "common_voice_en_103675-common_voice_en_103677",
+      "hits": 8,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 46.98481750488281
+    },
+    {
+      "arm": "A1",
+      "concurrency": 4,
+      "sample": "common_voice_en_10933823-common_voice_en_10933822",
+      "hits": 11,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 70.94232940673828
+    },
+    {
+      "arm": "A1",
+      "concurrency": 4,
+      "sample": "common_voice_en_10933823-common_voice_en_10933825",
+      "hits": 6,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 51.412384033203125
+    },
+    {
+      "arm": "A1",
+      "concurrency": 4,
+      "sample": "common_voice_en_120405-common_voice_en_120402",
+      "hits": 25,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 65.27576446533203
+    },
+    {
+      "arm": "A1",
+      "concurrency": 4,
+      "sample": "common_voice_en_120405-common_voice_en_120406",
+      "hits": 11,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 65.81214904785156
+    },
+    {
+      "arm": "A1",
+      "concurrency": 4,
+      "sample": "common_voice_en_1205005-common_voice_en_1205007",
+      "hits": 10,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 58.3078727722168
+    },
+    {
+      "arm": "A1",
+      "concurrency": 4,
+      "sample": "common_voice_en_1205005-common_voice_en_1205008",
+      "hits": 7,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 60.48185348510742
+    },
+    {
+      "arm": "A1",
+      "concurrency": 4,
+      "sample": "common_voice_en_123125-common_voice_en_123126",
+      "hits": 12,
+      "sub": 2,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 77.95850372314453
+    },
+    {
+      "arm": "A1",
+      "concurrency": 4,
+      "sample": "common_voice_en_123125-common_voice_en_123127",
+      "hits": 14,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 76.23809814453125
+    },
+    {
+      "arm": "A1",
+      "concurrency": 4,
+      "sample": "common_voice_en_125386-common_voice_en_125388",
+      "hits": 15,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 72.89002990722656
+    },
+    {
+      "arm": "A1",
+      "concurrency": 4,
+      "sample": "common_voice_en_125386-common_voice_en_125389",
+      "hits": 10,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 61.21955108642578
+    },
+    {
+      "arm": "A1",
+      "concurrency": 4,
+      "sample": "common_voice_en_137148-common_voice_en_137152",
+      "hits": 11,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 48.271453857421875
+    },
+    {
+      "arm": "A1",
+      "concurrency": 4,
+      "sample": "common_voice_en_13900-common_voice_en_13901",
+      "hits": 12,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 62.17644119262695
+    },
+    {
+      "arm": "A1",
+      "concurrency": 4,
+      "sample": "common_voice_en_1416089-common_voice_en_1416090",
+      "hits": 10,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 58.66309356689453
+    },
+    {
+      "arm": "A1",
+      "concurrency": 4,
+      "sample": "common_voice_en_1416089-common_voice_en_1416093",
+      "hits": 13,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 68.64944458007812
+    },
+    {
+      "arm": "A1",
+      "concurrency": 4,
+      "sample": "common_voice_en_15265-common_voice_en_15266",
+      "hits": 8,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 69.0152359008789
+    },
+    {
+      "arm": "A1",
+      "concurrency": 4,
+      "sample": "common_voice_en_15265-common_voice_en_15268",
+      "hits": 10,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 71.2982406616211
+    },
+    {
+      "arm": "A1",
+      "concurrency": 4,
+      "sample": "common_voice_en_153872-common_voice_en_153873",
+      "hits": 8,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 62.746368408203125
+    },
+    {
+      "arm": "A1",
+      "concurrency": 4,
+      "sample": "common_voice_en_153872-common_voice_en_153874",
+      "hits": 16,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 61.94728469848633
+    },
+    {
+      "arm": "A1",
+      "concurrency": 4,
+      "sample": "common_voice_en_155313-common_voice_en_155315",
+      "hits": 18,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 57.38437271118164
+    },
+    {
+      "arm": "A1",
+      "concurrency": 4,
+      "sample": "common_voice_en_15734837-common_voice_en_15734838",
+      "hits": 8,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 44.54413986206055
+    },
+    {
+      "arm": "A1",
+      "concurrency": 4,
+      "sample": "common_voice_en_15735839-common_voice_en_15735837",
+      "hits": 4,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 51.28145217895508
+    },
+    {
+      "arm": "A1",
+      "concurrency": 4,
+      "sample": "common_voice_en_15903802-common_voice_en_15903807",
+      "hits": 12,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 67.3625259399414
+    },
+    {
+      "arm": "A1",
+      "concurrency": 4,
+      "sample": "common_voice_en_15903802-common_voice_en_15903815",
+      "hits": 10,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 61.45604705810547
+    },
+    {
+      "arm": "A1",
+      "concurrency": 4,
+      "sample": "common_voice_en_16666041-common_voice_en_16666040",
+      "hits": 12,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 68.07508850097656
+    },
+    {
+      "arm": "A1",
+      "concurrency": 4,
+      "sample": "common_voice_en_167249-common_voice_en_167246",
+      "hits": 8,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 57.090736389160156
+    },
+    {
+      "arm": "A1",
+      "concurrency": 4,
+      "sample": "common_voice_en_167249-common_voice_en_167247",
+      "hits": 9,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 60.73099899291992
+    },
+    {
+      "arm": "A1",
+      "concurrency": 4,
+      "sample": "common_voice_en_17147545-common_voice_en_17147546",
+      "hits": 13,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 70.64615631103516
+    },
+    {
+      "arm": "A1",
+      "concurrency": 4,
+      "sample": "common_voice_en_17161-common_voice_en_17159",
+      "hits": 9,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 62.8619384765625
+    },
+    {
+      "arm": "A1",
+      "concurrency": 4,
+      "sample": "common_voice_en_17161-common_voice_en_17160",
+      "hits": 15,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 63.201637268066406
+    },
+    {
+      "arm": "A1",
+      "concurrency": 4,
+      "sample": "common_voice_en_17249419-common_voice_en_17249428",
+      "hits": 17,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 66.94355773925781
+    },
+    {
+      "arm": "A1",
+      "concurrency": 4,
+      "sample": "common_voice_en_17255102-common_voice_en_17255101",
+      "hits": 9,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 58.57065963745117
+    },
+    {
+      "arm": "A1",
+      "concurrency": 4,
+      "sample": "common_voice_en_17256676-common_voice_en_17256678",
+      "hits": 12,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 72.36258697509766
+    },
+    {
+      "arm": "A1",
+      "concurrency": 4,
+      "sample": "common_voice_en_17259121-common_voice_en_17259122",
+      "hits": 6,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 65.18965148925781
+    },
+    {
+      "arm": "A1",
+      "concurrency": 4,
+      "sample": "common_voice_en_17263752-common_voice_en_17263750",
+      "hits": 19,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 70.5518798828125
+    },
+    {
+      "arm": "A1",
+      "concurrency": 4,
+      "sample": "common_voice_en_17263752-common_voice_en_17263755",
+      "hits": 9,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 65.77625274658203
+    },
+    {
+      "arm": "A1",
+      "concurrency": 4,
+      "sample": "common_voice_en_17263780-common_voice_en_17263781",
+      "hits": 10,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 56.67144012451172
+    },
+    {
+      "arm": "A1",
+      "concurrency": 4,
+      "sample": "common_voice_en_17263780-common_voice_en_17263782",
+      "hits": 13,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 54.2348518371582
+    },
+    {
+      "arm": "A1",
+      "concurrency": 4,
+      "sample": "common_voice_en_17267923-common_voice_en_17267922",
+      "hits": 5,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 64.49803924560547
+    },
+    {
+      "arm": "A1",
+      "concurrency": 4,
+      "sample": "common_voice_en_17268075-common_voice_en_17268076",
+      "hits": 19,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 64.84854888916016
+    },
+    {
+      "arm": "A1",
+      "concurrency": 4,
+      "sample": "common_voice_en_17271507-common_voice_en_17271509",
+      "hits": 10,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 54.192535400390625
+    },
+    {
+      "arm": "A1",
+      "concurrency": 4,
+      "sample": "common_voice_en_17271507-common_voice_en_17271510",
+      "hits": 12,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 56.71015930175781
+    },
+    {
+      "arm": "A1",
+      "concurrency": 4,
+      "sample": "common_voice_en_17274522-common_voice_en_17274523",
+      "hits": 8,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 79.19694519042969
+    },
+    {
+      "arm": "A1",
+      "concurrency": 4,
+      "sample": "common_voice_en_17274522-common_voice_en_17274525",
+      "hits": 8,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 71.78333282470703
+    },
+    {
+      "arm": "A1",
+      "concurrency": 4,
+      "sample": "common_voice_en_17274533-common_voice_en_17274531",
+      "hits": 17,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 60.528587341308594
+    },
+    {
+      "arm": "A1",
+      "concurrency": 16,
+      "sample": "common_voice_en_10119832-common_voice_en_10119840",
+      "hits": 8,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 65.25099182128906
+    },
+    {
+      "arm": "A1",
+      "concurrency": 16,
+      "sample": "common_voice_en_10119832-common_voice_en_10119847",
+      "hits": 7,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 74.04105377197266
+    },
+    {
+      "arm": "A1",
+      "concurrency": 16,
+      "sample": "common_voice_en_103675-common_voice_en_103676",
+      "hits": 16,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 44.38737869262695
+    },
+    {
+      "arm": "A1",
+      "concurrency": 16,
+      "sample": "common_voice_en_103675-common_voice_en_103677",
+      "hits": 8,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 31.374300003051758
+    },
+    {
+      "arm": "A1",
+      "concurrency": 16,
+      "sample": "common_voice_en_10933823-common_voice_en_10933822",
+      "hits": 11,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 71.30812072753906
+    },
+    {
+      "arm": "A1",
+      "concurrency": 16,
+      "sample": "common_voice_en_10933823-common_voice_en_10933825",
+      "hits": 6,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 55.96887969970703
+    },
+    {
+      "arm": "A1",
+      "concurrency": 16,
+      "sample": "common_voice_en_120405-common_voice_en_120402",
+      "hits": 25,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 65.51793670654297
+    },
+    {
+      "arm": "A1",
+      "concurrency": 16,
+      "sample": "common_voice_en_120405-common_voice_en_120406",
+      "hits": 11,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 60.72796630859375
+    },
+    {
+      "arm": "A1",
+      "concurrency": 16,
+      "sample": "common_voice_en_1205005-common_voice_en_1205007",
+      "hits": 10,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 65.05838775634766
+    },
+    {
+      "arm": "A1",
+      "concurrency": 16,
+      "sample": "common_voice_en_1205005-common_voice_en_1205008",
+      "hits": 7,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 57.57117462158203
+    },
+    {
+      "arm": "A1",
+      "concurrency": 16,
+      "sample": "common_voice_en_123125-common_voice_en_123126",
+      "hits": 12,
+      "sub": 2,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 75.37224578857422
+    },
+    {
+      "arm": "A1",
+      "concurrency": 16,
+      "sample": "common_voice_en_123125-common_voice_en_123127",
+      "hits": 14,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 75.51583099365234
+    },
+    {
+      "arm": "A1",
+      "concurrency": 16,
+      "sample": "common_voice_en_125386-common_voice_en_125388",
+      "hits": 15,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 68.26808166503906
+    },
+    {
+      "arm": "A1",
+      "concurrency": 16,
+      "sample": "common_voice_en_125386-common_voice_en_125389",
+      "hits": 10,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 52.90226745605469
+    },
+    {
+      "arm": "A1",
+      "concurrency": 16,
+      "sample": "common_voice_en_137148-common_voice_en_137152",
+      "hits": 11,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 62.943153381347656
+    },
+    {
+      "arm": "A1",
+      "concurrency": 16,
+      "sample": "common_voice_en_13900-common_voice_en_13901",
+      "hits": 12,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 61.316646575927734
+    },
+    {
+      "arm": "A1",
+      "concurrency": 16,
+      "sample": "common_voice_en_1416089-common_voice_en_1416090",
+      "hits": 10,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 60.47700119018555
+    },
+    {
+      "arm": "A1",
+      "concurrency": 16,
+      "sample": "common_voice_en_1416089-common_voice_en_1416093",
+      "hits": 13,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 57.903587341308594
+    },
+    {
+      "arm": "A1",
+      "concurrency": 16,
+      "sample": "common_voice_en_15265-common_voice_en_15266",
+      "hits": 8,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 64.66974639892578
+    },
+    {
+      "arm": "A1",
+      "concurrency": 16,
+      "sample": "common_voice_en_15265-common_voice_en_15268",
+      "hits": 10,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 72.16397094726562
+    },
+    {
+      "arm": "A1",
+      "concurrency": 16,
+      "sample": "common_voice_en_153872-common_voice_en_153873",
+      "hits": 8,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 71.05048370361328
+    },
+    {
+      "arm": "A1",
+      "concurrency": 16,
+      "sample": "common_voice_en_153872-common_voice_en_153874",
+      "hits": 16,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 66.64756774902344
+    },
+    {
+      "arm": "A1",
+      "concurrency": 16,
+      "sample": "common_voice_en_155313-common_voice_en_155315",
+      "hits": 18,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 61.68507385253906
+    },
+    {
+      "arm": "A1",
+      "concurrency": 16,
+      "sample": "common_voice_en_15734837-common_voice_en_15734838",
+      "hits": 8,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 38.222618103027344
+    },
+    {
+      "arm": "A1",
+      "concurrency": 16,
+      "sample": "common_voice_en_15735839-common_voice_en_15735837",
+      "hits": 4,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 44.66555404663086
+    },
+    {
+      "arm": "A1",
+      "concurrency": 16,
+      "sample": "common_voice_en_15903802-common_voice_en_15903807",
+      "hits": 12,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 67.80706787109375
+    },
+    {
+      "arm": "A1",
+      "concurrency": 16,
+      "sample": "common_voice_en_15903802-common_voice_en_15903815",
+      "hits": 10,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 64.8473892211914
+    },
+    {
+      "arm": "A1",
+      "concurrency": 16,
+      "sample": "common_voice_en_16666041-common_voice_en_16666040",
+      "hits": 12,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 68.32144165039062
+    },
+    {
+      "arm": "A1",
+      "concurrency": 16,
+      "sample": "common_voice_en_167249-common_voice_en_167246",
+      "hits": 8,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 62.80702209472656
+    },
+    {
+      "arm": "A1",
+      "concurrency": 16,
+      "sample": "common_voice_en_167249-common_voice_en_167247",
+      "hits": 9,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 60.58372116088867
+    },
+    {
+      "arm": "A1",
+      "concurrency": 16,
+      "sample": "common_voice_en_17147545-common_voice_en_17147546",
+      "hits": 13,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 66.40916442871094
+    },
+    {
+      "arm": "A1",
+      "concurrency": 16,
+      "sample": "common_voice_en_17161-common_voice_en_17159",
+      "hits": 9,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 71.38313293457031
+    },
+    {
+      "arm": "A1",
+      "concurrency": 16,
+      "sample": "common_voice_en_17161-common_voice_en_17160",
+      "hits": 15,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 62.709163665771484
+    },
+    {
+      "arm": "A1",
+      "concurrency": 16,
+      "sample": "common_voice_en_17249419-common_voice_en_17249428",
+      "hits": 17,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 61.205078125
+    },
+    {
+      "arm": "A1",
+      "concurrency": 16,
+      "sample": "common_voice_en_17255102-common_voice_en_17255101",
+      "hits": 9,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 60.53223419189453
+    },
+    {
+      "arm": "A1",
+      "concurrency": 16,
+      "sample": "common_voice_en_17256676-common_voice_en_17256678",
+      "hits": 12,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 67.84329223632812
+    },
+    {
+      "arm": "A1",
+      "concurrency": 16,
+      "sample": "common_voice_en_17259121-common_voice_en_17259122",
+      "hits": 6,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 69.15105438232422
+    },
+    {
+      "arm": "A1",
+      "concurrency": 16,
+      "sample": "common_voice_en_17263752-common_voice_en_17263750",
+      "hits": 19,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 69.118408203125
+    },
+    {
+      "arm": "A1",
+      "concurrency": 16,
+      "sample": "common_voice_en_17263752-common_voice_en_17263755",
+      "hits": 9,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 64.16941833496094
+    },
+    {
+      "arm": "A1",
+      "concurrency": 16,
+      "sample": "common_voice_en_17263780-common_voice_en_17263781",
+      "hits": 10,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 48.77769470214844
+    },
+    {
+      "arm": "A1",
+      "concurrency": 16,
+      "sample": "common_voice_en_17263780-common_voice_en_17263782",
+      "hits": 13,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 52.005489349365234
+    },
+    {
+      "arm": "A1",
+      "concurrency": 16,
+      "sample": "common_voice_en_17267923-common_voice_en_17267922",
+      "hits": 5,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 63.2894401550293
+    },
+    {
+      "arm": "A1",
+      "concurrency": 16,
+      "sample": "common_voice_en_17268075-common_voice_en_17268076",
+      "hits": 19,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 58.12353515625
+    },
+    {
+      "arm": "A1",
+      "concurrency": 16,
+      "sample": "common_voice_en_17271507-common_voice_en_17271509",
+      "hits": 9,
+      "sub": 1,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 60.75722122192383
+    },
+    {
+      "arm": "A1",
+      "concurrency": 16,
+      "sample": "common_voice_en_17271507-common_voice_en_17271510",
+      "hits": 12,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 55.9410514831543
+    },
+    {
+      "arm": "A1",
+      "concurrency": 16,
+      "sample": "common_voice_en_17274522-common_voice_en_17274523",
+      "hits": 8,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 72.13239288330078
+    },
+    {
+      "arm": "A1",
+      "concurrency": 16,
+      "sample": "common_voice_en_17274522-common_voice_en_17274525",
+      "hits": 8,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 74.09635925292969
+    },
+    {
+      "arm": "A1",
+      "concurrency": 16,
+      "sample": "common_voice_en_17274533-common_voice_en_17274531",
+      "hits": 17,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 54.95640563964844
+    },
+    {
+      "arm": "A1",
+      "concurrency": 16,
+      "sample": "common_voice_en_17275818-common_voice_en_17275816",
+      "hits": 12,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 64.87242889404297
+    },
+    {
+      "arm": "A1",
+      "concurrency": 16,
+      "sample": "common_voice_en_17275818-common_voice_en_17275817",
+      "hits": 10,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 58.1937255859375
+    },
+    {
+      "arm": "A1",
+      "concurrency": 16,
+      "sample": "common_voice_en_17277080-common_voice_en_17277082",
+      "hits": 9,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 53.0501708984375
+    },
+    {
+      "arm": "A1",
+      "concurrency": 16,
+      "sample": "common_voice_en_17277080-common_voice_en_17277083",
+      "hits": 8,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 61.1211051940918
+    },
+    {
+      "arm": "A1",
+      "concurrency": 16,
+      "sample": "common_voice_en_17278904-common_voice_en_17278905",
+      "hits": 9,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 47.587799072265625
+    },
+    {
+      "arm": "A1",
+      "concurrency": 16,
+      "sample": "common_voice_en_17278904-common_voice_en_17278909",
+      "hits": 10,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 46.99205017089844
+    },
+    {
+      "arm": "A1",
+      "concurrency": 16,
+      "sample": "common_voice_en_17281385-common_voice_en_17281386",
+      "hits": 17,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 61.96532440185547
+    },
+    {
+      "arm": "A1",
+      "concurrency": 16,
+      "sample": "common_voice_en_17281385-common_voice_en_17281393",
+      "hits": 9,
+      "sub": 1,
+      "ins": 1,
+      "deleted": 0,
+      "sim": 61.80720901489258
+    },
+    {
+      "arm": "A1",
+      "concurrency": 16,
+      "sample": "common_voice_en_17288057-common_voice_en_17288056",
+      "hits": 5,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 55.592559814453125
+    },
+    {
+      "arm": "A1",
+      "concurrency": 16,
+      "sample": "common_voice_en_17288057-common_voice_en_17288059",
+      "hits": 6,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 56.62276077270508
+    },
+    {
+      "arm": "A1",
+      "concurrency": 16,
+      "sample": "common_voice_en_17324784-common_voice_en_17324785",
+      "hits": 8,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 55.12870407104492
+    },
+    {
+      "arm": "A1",
+      "concurrency": 16,
+      "sample": "common_voice_en_17324784-common_voice_en_17324786",
+      "hits": 12,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 71.55602264404297
+    },
+    {
+      "arm": "A1",
+      "concurrency": 16,
+      "sample": "common_voice_en_17347410-common_voice_en_17347409",
+      "hits": 6,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 49.84877395629883
+    },
+    {
+      "arm": "A1",
+      "concurrency": 16,
+      "sample": "common_voice_en_17352169-common_voice_en_17352173",
+      "hits": 13,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 63.746620178222656
+    },
+    {
+      "arm": "A1",
+      "concurrency": 16,
+      "sample": "common_voice_en_173534-common_voice_en_173537",
+      "hits": 13,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 66.87060546875
+    },
+    {
+      "arm": "A1",
+      "concurrency": 16,
+      "sample": "common_voice_en_173534-common_voice_en_173540",
+      "hits": 13,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 69.02041625976562
+    },
+    {
+      "arm": "A1",
+      "concurrency": 16,
+      "sample": "common_voice_en_17369337-common_voice_en_17369336",
+      "hits": 11,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 30.38460350036621
+    },
+    {
+      "arm": "A1",
+      "concurrency": 16,
+      "sample": "common_voice_en_17369851-common_voice_en_17369849",
+      "hits": 8,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 64.1745376586914
+    },
+    {
+      "arm": "A1",
+      "concurrency": 16,
+      "sample": "common_voice_en_17375252-common_voice_en_17375256",
+      "hits": 9,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 48.826744079589844
+    },
+    {
+      "arm": "A1",
+      "concurrency": 16,
+      "sample": "common_voice_en_17380945-common_voice_en_17380947",
+      "hits": 12,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 66.87808990478516
+    },
+    {
+      "arm": "A1",
+      "concurrency": 16,
+      "sample": "common_voice_en_17389076-common_voice_en_17389120",
+      "hits": 9,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 53.62607192993164
+    },
+    {
+      "arm": "A1",
+      "concurrency": 16,
+      "sample": "common_voice_en_17389984-common_voice_en_17389987",
+      "hits": 14,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 62.88081359863281
+    },
+    {
+      "arm": "A1",
+      "concurrency": 16,
+      "sample": "common_voice_en_17389984-common_voice_en_17389988",
+      "hits": 14,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 67.12876892089844
+    },
+    {
+      "arm": "A1",
+      "concurrency": 16,
+      "sample": "common_voice_en_17401431-common_voice_en_17401433",
+      "hits": 9,
+      "sub": 1,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 73.77201080322266
+    },
+    {
+      "arm": "A1",
+      "concurrency": 16,
+      "sample": "common_voice_en_17406452-common_voice_en_17406455",
+      "hits": 18,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 53.004634857177734
+    },
+    {
+      "arm": "A1",
+      "concurrency": 16,
+      "sample": "common_voice_en_17406452-common_voice_en_17406466",
+      "hits": 17,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 64.933349609375
+    },
+    {
+      "arm": "A1",
+      "concurrency": 16,
+      "sample": "common_voice_en_17406732-common_voice_en_17406734",
+      "hits": 15,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 49.25312423706055
+    },
+    {
+      "arm": "A1",
+      "concurrency": 16,
+      "sample": "common_voice_en_17406732-common_voice_en_17406735",
+      "hits": 17,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 51.338722229003906
+    },
+    {
+      "arm": "A1",
+      "concurrency": 16,
+      "sample": "common_voice_en_17429166-common_voice_en_17429168",
+      "hits": 4,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 49.79536437988281
+    },
+    {
+      "arm": "A1",
+      "concurrency": 16,
+      "sample": "common_voice_en_17429166-common_voice_en_17429171",
+      "hits": 10,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 72.994384765625
+    },
+    {
+      "arm": "A1",
+      "concurrency": 16,
+      "sample": "common_voice_en_17442686-common_voice_en_17442688",
+      "hits": 7,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 54.40679931640625
+    },
+    {
+      "arm": "A1",
+      "concurrency": 16,
+      "sample": "common_voice_en_17444666-common_voice_en_17444667",
+      "hits": 21,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 64.64754486083984
+    },
+    {
+      "arm": "A1",
+      "concurrency": 16,
+      "sample": "common_voice_en_17444666-common_voice_en_17444668",
+      "hits": 12,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 46.53195571899414
+    },
+    {
+      "arm": "A1",
+      "concurrency": 16,
+      "sample": "common_voice_en_17451108-common_voice_en_17451109",
+      "hits": 14,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 66.06886291503906
+    },
+    {
+      "arm": "A1",
+      "concurrency": 16,
+      "sample": "common_voice_en_17502-common_voice_en_17503",
+      "hits": 7,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 39.846466064453125
+    },
+    {
+      "arm": "A1",
+      "concurrency": 16,
+      "sample": "common_voice_en_17519982-common_voice_en_17519985",
+      "hits": 9,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 69.34674072265625
+    },
+    {
+      "arm": "A1",
+      "concurrency": 16,
+      "sample": "common_voice_en_17519982-common_voice_en_17519988",
+      "hits": 8,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 56.57943344116211
+    },
+    {
+      "arm": "A1",
+      "concurrency": 16,
+      "sample": "common_voice_en_175348-common_voice_en_175349",
+      "hits": 10,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 57.16859817504883
+    },
+    {
+      "arm": "A1",
+      "concurrency": 16,
+      "sample": "common_voice_en_175348-common_voice_en_175350",
+      "hits": 16,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 62.68730163574219
+    },
+    {
+      "arm": "A1",
+      "concurrency": 16,
+      "sample": "common_voice_en_17578783-common_voice_en_17578780",
+      "hits": 7,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 61.832881927490234
+    },
+    {
+      "arm": "A1",
+      "concurrency": 16,
+      "sample": "common_voice_en_17578783-common_voice_en_17578781",
+      "hits": 6,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 59.269981384277344
+    },
+    {
+      "arm": "A1",
+      "concurrency": 16,
+      "sample": "common_voice_en_17662945-common_voice_en_17662954",
+      "hits": 12,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 62.20699691772461
+    },
+    {
+      "arm": "A1",
+      "concurrency": 16,
+      "sample": "common_voice_en_17662945-common_voice_en_17662956",
+      "hits": 13,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 70.11646270751953
+    },
+    {
+      "arm": "A1",
+      "concurrency": 16,
+      "sample": "common_voice_en_17718576-common_voice_en_17718578",
+      "hits": 11,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 45.111572265625
+    },
+    {
+      "arm": "A1",
+      "concurrency": 16,
+      "sample": "common_voice_en_17727889-common_voice_en_17727904",
+      "hits": 9,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 67.30702209472656
+    },
+    {
+      "arm": "A1",
+      "concurrency": 16,
+      "sample": "common_voice_en_17727889-common_voice_en_17727905",
+      "hits": 6,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 64.2282943725586
+    },
+    {
+      "arm": "A1",
+      "concurrency": 16,
+      "sample": "common_voice_en_17729945-common_voice_en_17729943",
+      "hits": 11,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 54.70759963989258
+    },
+    {
+      "arm": "A1",
+      "concurrency": 16,
+      "sample": "common_voice_en_17729945-common_voice_en_17729944",
+      "hits": 8,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 51.24112319946289
+    },
+    {
+      "arm": "A1",
+      "concurrency": 16,
+      "sample": "common_voice_en_17736608-common_voice_en_17736610",
+      "hits": 8,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 77.82173919677734
+    },
+    {
+      "arm": "A1",
+      "concurrency": 16,
+      "sample": "common_voice_en_17738848-common_voice_en_17744571",
+      "hits": 14,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 77.81036376953125
+    },
+    {
+      "arm": "A1",
+      "concurrency": 16,
+      "sample": "common_voice_en_17738848-common_voice_en_19083939",
+      "hits": 11,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 76.52731323242188
+    },
+    {
+      "arm": "A1",
+      "concurrency": 16,
+      "sample": "common_voice_en_17781154-common_voice_en_17781153",
+      "hits": 8,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 58.0594367980957
+    },
+    {
+      "arm": "A1",
+      "concurrency": 16,
+      "sample": "common_voice_en_17784-common_voice_en_17785",
+      "hits": 10,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 62.62983703613281
+    },
+    {
+      "arm": "A1",
+      "concurrency": 16,
+      "sample": "common_voice_en_17784-common_voice_en_17786",
+      "hits": 6,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 45.43244552612305
+    },
+    {
+      "arm": "A1",
+      "concurrency": 16,
+      "sample": "common_voice_en_177895-common_voice_en_177894",
+      "hits": 12,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 54.44085693359375
+    },
+    {
+      "arm": "A1",
+      "concurrency": 16,
+      "sample": "common_voice_en_177895-common_voice_en_177898",
+      "hits": 10,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 44.687618255615234
+    },
+    {
+      "arm": "A1",
+      "concurrency": 16,
+      "sample": "common_voice_en_17817002-common_voice_en_17817003",
+      "hits": 14,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 69.6110610961914
+    },
+    {
+      "arm": "A1",
+      "concurrency": 16,
+      "sample": "common_voice_en_17817002-common_voice_en_17817005",
+      "hits": 11,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 75.4798583984375
+    },
+    {
+      "arm": "A1",
+      "concurrency": 16,
+      "sample": "common_voice_en_17830764-common_voice_en_17830762",
+      "hits": 7,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 56.876380920410156
+    },
+    {
+      "arm": "A1",
+      "concurrency": 16,
+      "sample": "common_voice_en_17830764-common_voice_en_17830783",
+      "hits": 11,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 58.37509536743164
+    },
+    {
+      "arm": "A1",
+      "concurrency": 16,
+      "sample": "common_voice_en_17837104-common_voice_en_17837105",
+      "hits": 6,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 62.67586898803711
+    },
+    {
+      "arm": "A1",
+      "concurrency": 16,
+      "sample": "common_voice_en_17851231-common_voice_en_17851248",
+      "hits": 7,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 67.99072265625
+    },
+    {
+      "arm": "A1",
+      "concurrency": 16,
+      "sample": "common_voice_en_17851231-common_voice_en_17851256",
+      "hits": 9,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 68.82717895507812
+    },
+    {
+      "arm": "A1",
+      "concurrency": 16,
+      "sample": "common_voice_en_17854896-common_voice_en_17854894",
+      "hits": 8,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 73.63468170166016
+    },
+    {
+      "arm": "A1",
+      "concurrency": 16,
+      "sample": "common_voice_en_17854896-common_voice_en_17854897",
+      "hits": 6,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 73.54129791259766
+    },
+    {
+      "arm": "A1",
+      "concurrency": 16,
+      "sample": "common_voice_en_17861335-common_voice_en_17861337",
+      "hits": 10,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 68.29444122314453
+    },
+    {
+      "arm": "A1",
+      "concurrency": 16,
+      "sample": "common_voice_en_17861489-common_voice_en_17861487",
+      "hits": 9,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 55.50548553466797
+    },
+    {
+      "arm": "A1",
+      "concurrency": 16,
+      "sample": "common_voice_en_17874600-common_voice_en_17874601",
+      "hits": 19,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 59.361976623535156
+    },
+    {
+      "arm": "A1",
+      "concurrency": 16,
+      "sample": "common_voice_en_17874600-common_voice_en_17874602",
+      "hits": 14,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 59.454010009765625
+    },
+    {
+      "arm": "A1",
+      "concurrency": 16,
+      "sample": "common_voice_en_17875915-common_voice_en_17875925",
+      "hits": 12,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 62.044288635253906
+    },
+    {
+      "arm": "A1",
+      "concurrency": 16,
+      "sample": "common_voice_en_17879420-common_voice_en_17879418",
+      "hits": 6,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 49.4539909362793
+    },
+    {
+      "arm": "A1",
+      "concurrency": 16,
+      "sample": "common_voice_en_17879420-common_voice_en_17879438",
+      "hits": 9,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 58.53190612792969
+    },
+    {
+      "arm": "A1",
+      "concurrency": 16,
+      "sample": "common_voice_en_17880926-common_voice_en_17880932",
+      "hits": 9,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 64.45098876953125
+    },
+    {
+      "arm": "A1",
+      "concurrency": 16,
+      "sample": "common_voice_en_17889905-common_voice_en_17889907",
+      "hits": 12,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 74.54507446289062
+    },
+    {
+      "arm": "A1",
+      "concurrency": 16,
+      "sample": "common_voice_en_17893247-common_voice_en_17893246",
+      "hits": 9,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 68.53102111816406
+    },
+    {
+      "arm": "A1",
+      "concurrency": 16,
+      "sample": "common_voice_en_17893247-common_voice_en_17893250",
+      "hits": 10,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 59.75407409667969
+    },
+    {
+      "arm": "A1",
+      "concurrency": 16,
+      "sample": "common_voice_en_17899910-common_voice_en_17899909",
+      "hits": 4,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 57.21432113647461
+    },
+    {
+      "arm": "A1",
+      "concurrency": 16,
+      "sample": "common_voice_en_17920116-common_voice_en_17920112",
+      "hits": 3,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 38.143211364746094
+    },
+    {
+      "arm": "A1",
+      "concurrency": 16,
+      "sample": "common_voice_en_17986345-common_voice_en_17986347",
+      "hits": 10,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 62.049041748046875
+    },
+    {
+      "arm": "A1",
+      "concurrency": 16,
+      "sample": "common_voice_en_18012457-common_voice_en_18012447",
+      "hits": 14,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 70.3012924194336
+    },
+    {
+      "arm": "B1",
+      "concurrency": 4,
+      "sample": "common_voice_en_10119832-common_voice_en_10119840",
+      "hits": 8,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 61.77402114868164
+    },
+    {
+      "arm": "B1",
+      "concurrency": 4,
+      "sample": "common_voice_en_10119832-common_voice_en_10119847",
+      "hits": 7,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 67.43699645996094
+    },
+    {
+      "arm": "B1",
+      "concurrency": 4,
+      "sample": "common_voice_en_103675-common_voice_en_103676",
+      "hits": 16,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 44.9261360168457
+    },
+    {
+      "arm": "B1",
+      "concurrency": 4,
+      "sample": "common_voice_en_103675-common_voice_en_103677",
+      "hits": 8,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 40.47731018066406
+    },
+    {
+      "arm": "B1",
+      "concurrency": 4,
+      "sample": "common_voice_en_10933823-common_voice_en_10933822",
+      "hits": 11,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 63.045108795166016
+    },
+    {
+      "arm": "B1",
+      "concurrency": 4,
+      "sample": "common_voice_en_10933823-common_voice_en_10933825",
+      "hits": 6,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 65.0687484741211
+    },
+    {
+      "arm": "B1",
+      "concurrency": 4,
+      "sample": "common_voice_en_120405-common_voice_en_120402",
+      "hits": 25,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 62.538780212402344
+    },
+    {
+      "arm": "B1",
+      "concurrency": 4,
+      "sample": "common_voice_en_120405-common_voice_en_120406",
+      "hits": 11,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 66.12220764160156
+    },
+    {
+      "arm": "B1",
+      "concurrency": 4,
+      "sample": "common_voice_en_1205005-common_voice_en_1205007",
+      "hits": 10,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 62.29532241821289
+    },
+    {
+      "arm": "B1",
+      "concurrency": 4,
+      "sample": "common_voice_en_1205005-common_voice_en_1205008",
+      "hits": 7,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 60.27602005004883
+    },
+    {
+      "arm": "B1",
+      "concurrency": 4,
+      "sample": "common_voice_en_123125-common_voice_en_123126",
+      "hits": 12,
+      "sub": 2,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 74.8182373046875
+    },
+    {
+      "arm": "B1",
+      "concurrency": 4,
+      "sample": "common_voice_en_123125-common_voice_en_123127",
+      "hits": 14,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 79.45074462890625
+    },
+    {
+      "arm": "B1",
+      "concurrency": 4,
+      "sample": "common_voice_en_125386-common_voice_en_125388",
+      "hits": 15,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 75.05458068847656
+    },
+    {
+      "arm": "B1",
+      "concurrency": 4,
+      "sample": "common_voice_en_125386-common_voice_en_125389",
+      "hits": 10,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 57.76658630371094
+    },
+    {
+      "arm": "B1",
+      "concurrency": 4,
+      "sample": "common_voice_en_137148-common_voice_en_137152",
+      "hits": 11,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 52.5259895324707
+    },
+    {
+      "arm": "B1",
+      "concurrency": 4,
+      "sample": "common_voice_en_13900-common_voice_en_13901",
+      "hits": 12,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 63.46339416503906
+    },
+    {
+      "arm": "B1",
+      "concurrency": 4,
+      "sample": "common_voice_en_1416089-common_voice_en_1416090",
+      "hits": 10,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 69.18952941894531
+    },
+    {
+      "arm": "B1",
+      "concurrency": 4,
+      "sample": "common_voice_en_1416089-common_voice_en_1416093",
+      "hits": 13,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 67.70558166503906
+    },
+    {
+      "arm": "B1",
+      "concurrency": 4,
+      "sample": "common_voice_en_15265-common_voice_en_15266",
+      "hits": 8,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 65.75032043457031
+    },
+    {
+      "arm": "B1",
+      "concurrency": 4,
+      "sample": "common_voice_en_15265-common_voice_en_15268",
+      "hits": 10,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 70.10169982910156
+    },
+    {
+      "arm": "B1",
+      "concurrency": 4,
+      "sample": "common_voice_en_153872-common_voice_en_153873",
+      "hits": 8,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 60.5366096496582
+    },
+    {
+      "arm": "B1",
+      "concurrency": 4,
+      "sample": "common_voice_en_153872-common_voice_en_153874",
+      "hits": 16,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 60.839473724365234
+    },
+    {
+      "arm": "B1",
+      "concurrency": 4,
+      "sample": "common_voice_en_155313-common_voice_en_155315",
+      "hits": 18,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 51.59062194824219
+    },
+    {
+      "arm": "B1",
+      "concurrency": 4,
+      "sample": "common_voice_en_15734837-common_voice_en_15734838",
+      "hits": 8,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 17.310691833496094
+    },
+    {
+      "arm": "B1",
+      "concurrency": 4,
+      "sample": "common_voice_en_15735839-common_voice_en_15735837",
+      "hits": 4,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 58.85501480102539
+    },
+    {
+      "arm": "B1",
+      "concurrency": 4,
+      "sample": "common_voice_en_15903802-common_voice_en_15903807",
+      "hits": 12,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 64.05169677734375
+    },
+    {
+      "arm": "B1",
+      "concurrency": 4,
+      "sample": "common_voice_en_15903802-common_voice_en_15903815",
+      "hits": 10,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 66.1551742553711
+    },
+    {
+      "arm": "B1",
+      "concurrency": 4,
+      "sample": "common_voice_en_16666041-common_voice_en_16666040",
+      "hits": 12,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 64.0203857421875
+    },
+    {
+      "arm": "B1",
+      "concurrency": 4,
+      "sample": "common_voice_en_167249-common_voice_en_167246",
+      "hits": 8,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 57.14482498168945
+    },
+    {
+      "arm": "B1",
+      "concurrency": 4,
+      "sample": "common_voice_en_167249-common_voice_en_167247",
+      "hits": 9,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 46.44919204711914
+    },
+    {
+      "arm": "B1",
+      "concurrency": 4,
+      "sample": "common_voice_en_17147545-common_voice_en_17147546",
+      "hits": 13,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 73.82828521728516
+    },
+    {
+      "arm": "B1",
+      "concurrency": 4,
+      "sample": "common_voice_en_17161-common_voice_en_17159",
+      "hits": 9,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 62.33836364746094
+    },
+    {
+      "arm": "B1",
+      "concurrency": 4,
+      "sample": "common_voice_en_17161-common_voice_en_17160",
+      "hits": 15,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 52.434139251708984
+    },
+    {
+      "arm": "B1",
+      "concurrency": 4,
+      "sample": "common_voice_en_17249419-common_voice_en_17249428",
+      "hits": 17,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 62.30693054199219
+    },
+    {
+      "arm": "B1",
+      "concurrency": 4,
+      "sample": "common_voice_en_17255102-common_voice_en_17255101",
+      "hits": 9,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 62.565399169921875
+    },
+    {
+      "arm": "B1",
+      "concurrency": 4,
+      "sample": "common_voice_en_17256676-common_voice_en_17256678",
+      "hits": 12,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 73.53951263427734
+    },
+    {
+      "arm": "B1",
+      "concurrency": 4,
+      "sample": "common_voice_en_17259121-common_voice_en_17259122",
+      "hits": 6,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 68.39756774902344
+    },
+    {
+      "arm": "B1",
+      "concurrency": 4,
+      "sample": "common_voice_en_17263752-common_voice_en_17263750",
+      "hits": 19,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 65.87264251708984
+    },
+    {
+      "arm": "B1",
+      "concurrency": 4,
+      "sample": "common_voice_en_17263752-common_voice_en_17263755",
+      "hits": 9,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 68.39408874511719
+    },
+    {
+      "arm": "B1",
+      "concurrency": 4,
+      "sample": "common_voice_en_17263780-common_voice_en_17263781",
+      "hits": 10,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 56.734371185302734
+    },
+    {
+      "arm": "B1",
+      "concurrency": 4,
+      "sample": "common_voice_en_17263780-common_voice_en_17263782",
+      "hits": 13,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 57.15934753417969
+    },
+    {
+      "arm": "B1",
+      "concurrency": 4,
+      "sample": "common_voice_en_17267923-common_voice_en_17267922",
+      "hits": 5,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 55.35638427734375
+    },
+    {
+      "arm": "B1",
+      "concurrency": 4,
+      "sample": "common_voice_en_17268075-common_voice_en_17268076",
+      "hits": 19,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 61.28160858154297
+    },
+    {
+      "arm": "B1",
+      "concurrency": 4,
+      "sample": "common_voice_en_17271507-common_voice_en_17271509",
+      "hits": 10,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 62.939571380615234
+    },
+    {
+      "arm": "B1",
+      "concurrency": 4,
+      "sample": "common_voice_en_17271507-common_voice_en_17271510",
+      "hits": 12,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 55.38910675048828
+    },
+    {
+      "arm": "B1",
+      "concurrency": 4,
+      "sample": "common_voice_en_17274522-common_voice_en_17274523",
+      "hits": 8,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 78.16454315185547
+    },
+    {
+      "arm": "B1",
+      "concurrency": 4,
+      "sample": "common_voice_en_17274522-common_voice_en_17274525",
+      "hits": 8,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 71.57853698730469
+    },
+    {
+      "arm": "B1",
+      "concurrency": 4,
+      "sample": "common_voice_en_17274533-common_voice_en_17274531",
+      "hits": 17,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 60.74045944213867
+    },
+    {
+      "arm": "B1",
+      "concurrency": 16,
+      "sample": "common_voice_en_10119832-common_voice_en_10119840",
+      "hits": 8,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 63.65024948120117
+    },
+    {
+      "arm": "B1",
+      "concurrency": 16,
+      "sample": "common_voice_en_10119832-common_voice_en_10119847",
+      "hits": 7,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 69.59220886230469
+    },
+    {
+      "arm": "B1",
+      "concurrency": 16,
+      "sample": "common_voice_en_103675-common_voice_en_103676",
+      "hits": 16,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 47.6631965637207
+    },
+    {
+      "arm": "B1",
+      "concurrency": 16,
+      "sample": "common_voice_en_103675-common_voice_en_103677",
+      "hits": 8,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 45.65697479248047
+    },
+    {
+      "arm": "B1",
+      "concurrency": 16,
+      "sample": "common_voice_en_10933823-common_voice_en_10933822",
+      "hits": 11,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 70.35115051269531
+    },
+    {
+      "arm": "B1",
+      "concurrency": 16,
+      "sample": "common_voice_en_10933823-common_voice_en_10933825",
+      "hits": 6,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 66.70950317382812
+    },
+    {
+      "arm": "B1",
+      "concurrency": 16,
+      "sample": "common_voice_en_120405-common_voice_en_120402",
+      "hits": 25,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 59.98880386352539
+    },
+    {
+      "arm": "B1",
+      "concurrency": 16,
+      "sample": "common_voice_en_120405-common_voice_en_120406",
+      "hits": 11,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 59.9283447265625
+    },
+    {
+      "arm": "B1",
+      "concurrency": 16,
+      "sample": "common_voice_en_1205005-common_voice_en_1205007",
+      "hits": 10,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 61.87218475341797
+    },
+    {
+      "arm": "B1",
+      "concurrency": 16,
+      "sample": "common_voice_en_1205005-common_voice_en_1205008",
+      "hits": 7,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 61.29090118408203
+    },
+    {
+      "arm": "B1",
+      "concurrency": 16,
+      "sample": "common_voice_en_123125-common_voice_en_123126",
+      "hits": 12,
+      "sub": 2,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 81.51844024658203
+    },
+    {
+      "arm": "B1",
+      "concurrency": 16,
+      "sample": "common_voice_en_123125-common_voice_en_123127",
+      "hits": 14,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 74.37181091308594
+    },
+    {
+      "arm": "B1",
+      "concurrency": 16,
+      "sample": "common_voice_en_125386-common_voice_en_125388",
+      "hits": 15,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 68.20380401611328
+    },
+    {
+      "arm": "B1",
+      "concurrency": 16,
+      "sample": "common_voice_en_125386-common_voice_en_125389",
+      "hits": 10,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 61.253910064697266
+    },
+    {
+      "arm": "B1",
+      "concurrency": 16,
+      "sample": "common_voice_en_137148-common_voice_en_137152",
+      "hits": 11,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 53.70561981201172
+    },
+    {
+      "arm": "B1",
+      "concurrency": 16,
+      "sample": "common_voice_en_13900-common_voice_en_13901",
+      "hits": 12,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 57.28951644897461
+    },
+    {
+      "arm": "B1",
+      "concurrency": 16,
+      "sample": "common_voice_en_1416089-common_voice_en_1416090",
+      "hits": 10,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 59.27199172973633
+    },
+    {
+      "arm": "B1",
+      "concurrency": 16,
+      "sample": "common_voice_en_1416089-common_voice_en_1416093",
+      "hits": 13,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 72.50758361816406
+    },
+    {
+      "arm": "B1",
+      "concurrency": 16,
+      "sample": "common_voice_en_15265-common_voice_en_15266",
+      "hits": 8,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 64.97675323486328
+    },
+    {
+      "arm": "B1",
+      "concurrency": 16,
+      "sample": "common_voice_en_15265-common_voice_en_15268",
+      "hits": 10,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 64.06568145751953
+    },
+    {
+      "arm": "B1",
+      "concurrency": 16,
+      "sample": "common_voice_en_153872-common_voice_en_153873",
+      "hits": 8,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 55.070228576660156
+    },
+    {
+      "arm": "B1",
+      "concurrency": 16,
+      "sample": "common_voice_en_153872-common_voice_en_153874",
+      "hits": 16,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 64.17157745361328
+    },
+    {
+      "arm": "B1",
+      "concurrency": 16,
+      "sample": "common_voice_en_155313-common_voice_en_155315",
+      "hits": 18,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 57.01667022705078
+    },
+    {
+      "arm": "B1",
+      "concurrency": 16,
+      "sample": "common_voice_en_15734837-common_voice_en_15734838",
+      "hits": 8,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 39.4768180847168
+    },
+    {
+      "arm": "B1",
+      "concurrency": 16,
+      "sample": "common_voice_en_15735839-common_voice_en_15735837",
+      "hits": 4,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 49.78185272216797
+    },
+    {
+      "arm": "B1",
+      "concurrency": 16,
+      "sample": "common_voice_en_15903802-common_voice_en_15903807",
+      "hits": 12,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 68.72361755371094
+    },
+    {
+      "arm": "B1",
+      "concurrency": 16,
+      "sample": "common_voice_en_15903802-common_voice_en_15903815",
+      "hits": 10,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 57.9726448059082
+    },
+    {
+      "arm": "B1",
+      "concurrency": 16,
+      "sample": "common_voice_en_16666041-common_voice_en_16666040",
+      "hits": 12,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 64.4649429321289
+    },
+    {
+      "arm": "B1",
+      "concurrency": 16,
+      "sample": "common_voice_en_167249-common_voice_en_167246",
+      "hits": 8,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 65.08680725097656
+    },
+    {
+      "arm": "B1",
+      "concurrency": 16,
+      "sample": "common_voice_en_167249-common_voice_en_167247",
+      "hits": 9,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 59.057403564453125
+    },
+    {
+      "arm": "B1",
+      "concurrency": 16,
+      "sample": "common_voice_en_17147545-common_voice_en_17147546",
+      "hits": 13,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 66.10506439208984
+    },
+    {
+      "arm": "B1",
+      "concurrency": 16,
+      "sample": "common_voice_en_17161-common_voice_en_17159",
+      "hits": 9,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 63.5516242980957
+    },
+    {
+      "arm": "B1",
+      "concurrency": 16,
+      "sample": "common_voice_en_17161-common_voice_en_17160",
+      "hits": 15,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 62.47966384887695
+    },
+    {
+      "arm": "B1",
+      "concurrency": 16,
+      "sample": "common_voice_en_17249419-common_voice_en_17249428",
+      "hits": 17,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 66.06322479248047
+    },
+    {
+      "arm": "B1",
+      "concurrency": 16,
+      "sample": "common_voice_en_17255102-common_voice_en_17255101",
+      "hits": 9,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 52.005802154541016
+    },
+    {
+      "arm": "B1",
+      "concurrency": 16,
+      "sample": "common_voice_en_17256676-common_voice_en_17256678",
+      "hits": 12,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 66.6758041381836
+    },
+    {
+      "arm": "B1",
+      "concurrency": 16,
+      "sample": "common_voice_en_17259121-common_voice_en_17259122",
+      "hits": 6,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 66.71880340576172
+    },
+    {
+      "arm": "B1",
+      "concurrency": 16,
+      "sample": "common_voice_en_17263752-common_voice_en_17263750",
+      "hits": 19,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 70.10828399658203
+    },
+    {
+      "arm": "B1",
+      "concurrency": 16,
+      "sample": "common_voice_en_17263752-common_voice_en_17263755",
+      "hits": 9,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 62.77341079711914
+    },
+    {
+      "arm": "B1",
+      "concurrency": 16,
+      "sample": "common_voice_en_17263780-common_voice_en_17263781",
+      "hits": 10,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 52.33637237548828
+    },
+    {
+      "arm": "B1",
+      "concurrency": 16,
+      "sample": "common_voice_en_17263780-common_voice_en_17263782",
+      "hits": 13,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 58.30744552612305
+    },
+    {
+      "arm": "B1",
+      "concurrency": 16,
+      "sample": "common_voice_en_17267923-common_voice_en_17267922",
+      "hits": 5,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 63.87728500366211
+    },
+    {
+      "arm": "B1",
+      "concurrency": 16,
+      "sample": "common_voice_en_17268075-common_voice_en_17268076",
+      "hits": 19,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 60.2717399597168
+    },
+    {
+      "arm": "B1",
+      "concurrency": 16,
+      "sample": "common_voice_en_17271507-common_voice_en_17271509",
+      "hits": 10,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 51.001834869384766
+    },
+    {
+      "arm": "B1",
+      "concurrency": 16,
+      "sample": "common_voice_en_17271507-common_voice_en_17271510",
+      "hits": 12,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 56.28410720825195
+    },
+    {
+      "arm": "B1",
+      "concurrency": 16,
+      "sample": "common_voice_en_17274522-common_voice_en_17274523",
+      "hits": 8,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 79.489013671875
+    },
+    {
+      "arm": "B1",
+      "concurrency": 16,
+      "sample": "common_voice_en_17274522-common_voice_en_17274525",
+      "hits": 8,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 74.59913635253906
+    },
+    {
+      "arm": "B1",
+      "concurrency": 16,
+      "sample": "common_voice_en_17274533-common_voice_en_17274531",
+      "hits": 17,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 53.181297302246094
+    },
+    {
+      "arm": "B1",
+      "concurrency": 16,
+      "sample": "common_voice_en_17275818-common_voice_en_17275816",
+      "hits": 12,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 51.6965446472168
+    },
+    {
+      "arm": "B1",
+      "concurrency": 16,
+      "sample": "common_voice_en_17275818-common_voice_en_17275817",
+      "hits": 10,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 41.742794036865234
+    },
+    {
+      "arm": "B1",
+      "concurrency": 16,
+      "sample": "common_voice_en_17277080-common_voice_en_17277082",
+      "hits": 9,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 59.468406677246094
+    },
+    {
+      "arm": "B1",
+      "concurrency": 16,
+      "sample": "common_voice_en_17277080-common_voice_en_17277083",
+      "hits": 8,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 58.51129150390625
+    },
+    {
+      "arm": "B1",
+      "concurrency": 16,
+      "sample": "common_voice_en_17278904-common_voice_en_17278905",
+      "hits": 9,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 42.45164489746094
+    },
+    {
+      "arm": "B1",
+      "concurrency": 16,
+      "sample": "common_voice_en_17278904-common_voice_en_17278909",
+      "hits": 10,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 52.10622024536133
+    },
+    {
+      "arm": "B1",
+      "concurrency": 16,
+      "sample": "common_voice_en_17281385-common_voice_en_17281386",
+      "hits": 17,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 60.204612731933594
+    },
+    {
+      "arm": "B1",
+      "concurrency": 16,
+      "sample": "common_voice_en_17281385-common_voice_en_17281393",
+      "hits": 9,
+      "sub": 1,
+      "ins": 1,
+      "deleted": 0,
+      "sim": 64.98593139648438
+    },
+    {
+      "arm": "B1",
+      "concurrency": 16,
+      "sample": "common_voice_en_17288057-common_voice_en_17288056",
+      "hits": 5,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 58.68136978149414
+    },
+    {
+      "arm": "B1",
+      "concurrency": 16,
+      "sample": "common_voice_en_17288057-common_voice_en_17288059",
+      "hits": 6,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 52.9998664855957
+    },
+    {
+      "arm": "B1",
+      "concurrency": 16,
+      "sample": "common_voice_en_17324784-common_voice_en_17324785",
+      "hits": 8,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 63.82306671142578
+    },
+    {
+      "arm": "B1",
+      "concurrency": 16,
+      "sample": "common_voice_en_17324784-common_voice_en_17324786",
+      "hits": 12,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 68.2347183227539
+    },
+    {
+      "arm": "B1",
+      "concurrency": 16,
+      "sample": "common_voice_en_17347410-common_voice_en_17347409",
+      "hits": 6,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 50.8108024597168
+    },
+    {
+      "arm": "B1",
+      "concurrency": 16,
+      "sample": "common_voice_en_17352169-common_voice_en_17352173",
+      "hits": 13,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 73.6556625366211
+    },
+    {
+      "arm": "B1",
+      "concurrency": 16,
+      "sample": "common_voice_en_173534-common_voice_en_173537",
+      "hits": 13,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 67.05661010742188
+    },
+    {
+      "arm": "B1",
+      "concurrency": 16,
+      "sample": "common_voice_en_173534-common_voice_en_173540",
+      "hits": 13,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 63.5345573425293
+    },
+    {
+      "arm": "B1",
+      "concurrency": 16,
+      "sample": "common_voice_en_17369337-common_voice_en_17369336",
+      "hits": 11,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 34.98919677734375
+    },
+    {
+      "arm": "B1",
+      "concurrency": 16,
+      "sample": "common_voice_en_17369851-common_voice_en_17369849",
+      "hits": 8,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 66.55953979492188
+    },
+    {
+      "arm": "B1",
+      "concurrency": 16,
+      "sample": "common_voice_en_17375252-common_voice_en_17375256",
+      "hits": 9,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 50.536964416503906
+    },
+    {
+      "arm": "B1",
+      "concurrency": 16,
+      "sample": "common_voice_en_17380945-common_voice_en_17380947",
+      "hits": 12,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 63.8651008605957
+    },
+    {
+      "arm": "B1",
+      "concurrency": 16,
+      "sample": "common_voice_en_17389076-common_voice_en_17389120",
+      "hits": 9,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 61.36455535888672
+    },
+    {
+      "arm": "B1",
+      "concurrency": 16,
+      "sample": "common_voice_en_17389984-common_voice_en_17389987",
+      "hits": 14,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 64.2307357788086
+    },
+    {
+      "arm": "B1",
+      "concurrency": 16,
+      "sample": "common_voice_en_17389984-common_voice_en_17389988",
+      "hits": 14,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 63.71799087524414
+    },
+    {
+      "arm": "B1",
+      "concurrency": 16,
+      "sample": "common_voice_en_17401431-common_voice_en_17401433",
+      "hits": 9,
+      "sub": 1,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 73.15555572509766
+    },
+    {
+      "arm": "B1",
+      "concurrency": 16,
+      "sample": "common_voice_en_17406452-common_voice_en_17406455",
+      "hits": 18,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 69.55892944335938
+    },
+    {
+      "arm": "B1",
+      "concurrency": 16,
+      "sample": "common_voice_en_17406452-common_voice_en_17406466",
+      "hits": 17,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 64.08417510986328
+    },
+    {
+      "arm": "B1",
+      "concurrency": 16,
+      "sample": "common_voice_en_17406732-common_voice_en_17406734",
+      "hits": 15,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 46.69820785522461
+    },
+    {
+      "arm": "B1",
+      "concurrency": 16,
+      "sample": "common_voice_en_17406732-common_voice_en_17406735",
+      "hits": 17,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 45.74843978881836
+    },
+    {
+      "arm": "B1",
+      "concurrency": 16,
+      "sample": "common_voice_en_17429166-common_voice_en_17429168",
+      "hits": 4,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 51.17717361450195
+    },
+    {
+      "arm": "B1",
+      "concurrency": 16,
+      "sample": "common_voice_en_17429166-common_voice_en_17429171",
+      "hits": 10,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 64.94650268554688
+    },
+    {
+      "arm": "B1",
+      "concurrency": 16,
+      "sample": "common_voice_en_17442686-common_voice_en_17442688",
+      "hits": 7,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 60.67961883544922
+    },
+    {
+      "arm": "B1",
+      "concurrency": 16,
+      "sample": "common_voice_en_17444666-common_voice_en_17444667",
+      "hits": 21,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 57.18437576293945
+    },
+    {
+      "arm": "B1",
+      "concurrency": 16,
+      "sample": "common_voice_en_17444666-common_voice_en_17444668",
+      "hits": 12,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 46.44745635986328
+    },
+    {
+      "arm": "B1",
+      "concurrency": 16,
+      "sample": "common_voice_en_17451108-common_voice_en_17451109",
+      "hits": 14,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 61.28514862060547
+    },
+    {
+      "arm": "B1",
+      "concurrency": 16,
+      "sample": "common_voice_en_17502-common_voice_en_17503",
+      "hits": 7,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 46.5486946105957
+    },
+    {
+      "arm": "B1",
+      "concurrency": 16,
+      "sample": "common_voice_en_17519982-common_voice_en_17519985",
+      "hits": 9,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 66.1235122680664
+    },
+    {
+      "arm": "B1",
+      "concurrency": 16,
+      "sample": "common_voice_en_17519982-common_voice_en_17519988",
+      "hits": 8,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 58.16082763671875
+    },
+    {
+      "arm": "B1",
+      "concurrency": 16,
+      "sample": "common_voice_en_175348-common_voice_en_175349",
+      "hits": 10,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 61.73621368408203
+    },
+    {
+      "arm": "B1",
+      "concurrency": 16,
+      "sample": "common_voice_en_175348-common_voice_en_175350",
+      "hits": 16,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 60.905982971191406
+    },
+    {
+      "arm": "B1",
+      "concurrency": 16,
+      "sample": "common_voice_en_17578783-common_voice_en_17578780",
+      "hits": 7,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 61.909759521484375
+    },
+    {
+      "arm": "B1",
+      "concurrency": 16,
+      "sample": "common_voice_en_17578783-common_voice_en_17578781",
+      "hits": 6,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 67.24552917480469
+    },
+    {
+      "arm": "B1",
+      "concurrency": 16,
+      "sample": "common_voice_en_17662945-common_voice_en_17662954",
+      "hits": 12,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 60.525821685791016
+    },
+    {
+      "arm": "B1",
+      "concurrency": 16,
+      "sample": "common_voice_en_17662945-common_voice_en_17662956",
+      "hits": 13,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 66.4300765991211
+    },
+    {
+      "arm": "B1",
+      "concurrency": 16,
+      "sample": "common_voice_en_17718576-common_voice_en_17718578",
+      "hits": 11,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 40.48180389404297
+    },
+    {
+      "arm": "B1",
+      "concurrency": 16,
+      "sample": "common_voice_en_17727889-common_voice_en_17727904",
+      "hits": 9,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 60.3184928894043
+    },
+    {
+      "arm": "B1",
+      "concurrency": 16,
+      "sample": "common_voice_en_17727889-common_voice_en_17727905",
+      "hits": 6,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 60.453086853027344
+    },
+    {
+      "arm": "B1",
+      "concurrency": 16,
+      "sample": "common_voice_en_17729945-common_voice_en_17729943",
+      "hits": 11,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 62.03443908691406
+    },
+    {
+      "arm": "B1",
+      "concurrency": 16,
+      "sample": "common_voice_en_17729945-common_voice_en_17729944",
+      "hits": 8,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 60.6628532409668
+    },
+    {
+      "arm": "B1",
+      "concurrency": 16,
+      "sample": "common_voice_en_17736608-common_voice_en_17736610",
+      "hits": 8,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 76.88229370117188
+    },
+    {
+      "arm": "B1",
+      "concurrency": 16,
+      "sample": "common_voice_en_17738848-common_voice_en_17744571",
+      "hits": 14,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 77.40143585205078
+    },
+    {
+      "arm": "B1",
+      "concurrency": 16,
+      "sample": "common_voice_en_17738848-common_voice_en_19083939",
+      "hits": 11,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 75.78199768066406
+    },
+    {
+      "arm": "B1",
+      "concurrency": 16,
+      "sample": "common_voice_en_17781154-common_voice_en_17781153",
+      "hits": 8,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 60.10781478881836
+    },
+    {
+      "arm": "B1",
+      "concurrency": 16,
+      "sample": "common_voice_en_17784-common_voice_en_17785",
+      "hits": 10,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 54.080848693847656
+    },
+    {
+      "arm": "B1",
+      "concurrency": 16,
+      "sample": "common_voice_en_17784-common_voice_en_17786",
+      "hits": 6,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 47.36456298828125
+    },
+    {
+      "arm": "B1",
+      "concurrency": 16,
+      "sample": "common_voice_en_177895-common_voice_en_177894",
+      "hits": 12,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 56.37207794189453
+    },
+    {
+      "arm": "B1",
+      "concurrency": 16,
+      "sample": "common_voice_en_177895-common_voice_en_177898",
+      "hits": 10,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 48.79118347167969
+    },
+    {
+      "arm": "B1",
+      "concurrency": 16,
+      "sample": "common_voice_en_17817002-common_voice_en_17817003",
+      "hits": 14,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 70.32521057128906
+    },
+    {
+      "arm": "B1",
+      "concurrency": 16,
+      "sample": "common_voice_en_17817002-common_voice_en_17817005",
+      "hits": 11,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 64.08172607421875
+    },
+    {
+      "arm": "B1",
+      "concurrency": 16,
+      "sample": "common_voice_en_17830764-common_voice_en_17830762",
+      "hits": 7,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 52.68381881713867
+    },
+    {
+      "arm": "B1",
+      "concurrency": 16,
+      "sample": "common_voice_en_17830764-common_voice_en_17830783",
+      "hits": 11,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 57.20319747924805
+    },
+    {
+      "arm": "B1",
+      "concurrency": 16,
+      "sample": "common_voice_en_17837104-common_voice_en_17837105",
+      "hits": 6,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 52.43083190917969
+    },
+    {
+      "arm": "B1",
+      "concurrency": 16,
+      "sample": "common_voice_en_17851231-common_voice_en_17851248",
+      "hits": 7,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 72.24890899658203
+    },
+    {
+      "arm": "B1",
+      "concurrency": 16,
+      "sample": "common_voice_en_17851231-common_voice_en_17851256",
+      "hits": 9,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 68.2193603515625
+    },
+    {
+      "arm": "B1",
+      "concurrency": 16,
+      "sample": "common_voice_en_17854896-common_voice_en_17854894",
+      "hits": 8,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 68.31476593017578
+    },
+    {
+      "arm": "B1",
+      "concurrency": 16,
+      "sample": "common_voice_en_17854896-common_voice_en_17854897",
+      "hits": 6,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 73.64423370361328
+    },
+    {
+      "arm": "B1",
+      "concurrency": 16,
+      "sample": "common_voice_en_17861335-common_voice_en_17861337",
+      "hits": 10,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 58.59048843383789
+    },
+    {
+      "arm": "B1",
+      "concurrency": 16,
+      "sample": "common_voice_en_17861489-common_voice_en_17861487",
+      "hits": 9,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 40.26194763183594
+    },
+    {
+      "arm": "B1",
+      "concurrency": 16,
+      "sample": "common_voice_en_17874600-common_voice_en_17874601",
+      "hits": 19,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 53.81929397583008
+    },
+    {
+      "arm": "B1",
+      "concurrency": 16,
+      "sample": "common_voice_en_17874600-common_voice_en_17874602",
+      "hits": 14,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 60.50040054321289
+    },
+    {
+      "arm": "B1",
+      "concurrency": 16,
+      "sample": "common_voice_en_17875915-common_voice_en_17875925",
+      "hits": 12,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 63.43061447143555
+    },
+    {
+      "arm": "B1",
+      "concurrency": 16,
+      "sample": "common_voice_en_17879420-common_voice_en_17879418",
+      "hits": 6,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 62.540828704833984
+    },
+    {
+      "arm": "B1",
+      "concurrency": 16,
+      "sample": "common_voice_en_17879420-common_voice_en_17879438",
+      "hits": 9,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 58.3017463684082
+    },
+    {
+      "arm": "B1",
+      "concurrency": 16,
+      "sample": "common_voice_en_17880926-common_voice_en_17880932",
+      "hits": 9,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 65.9032211303711
+    },
+    {
+      "arm": "B1",
+      "concurrency": 16,
+      "sample": "common_voice_en_17889905-common_voice_en_17889907",
+      "hits": 12,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 74.51229095458984
+    },
+    {
+      "arm": "B1",
+      "concurrency": 16,
+      "sample": "common_voice_en_17893247-common_voice_en_17893246",
+      "hits": 9,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 68.83828735351562
+    },
+    {
+      "arm": "B1",
+      "concurrency": 16,
+      "sample": "common_voice_en_17893247-common_voice_en_17893250",
+      "hits": 10,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 60.10124588012695
+    },
+    {
+      "arm": "B1",
+      "concurrency": 16,
+      "sample": "common_voice_en_17899910-common_voice_en_17899909",
+      "hits": 4,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 54.55322265625
+    },
+    {
+      "arm": "B1",
+      "concurrency": 16,
+      "sample": "common_voice_en_17920116-common_voice_en_17920112",
+      "hits": 3,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 22.875768661499023
+    },
+    {
+      "arm": "B1",
+      "concurrency": 16,
+      "sample": "common_voice_en_17986345-common_voice_en_17986347",
+      "hits": 10,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 70.0728759765625
+    },
+    {
+      "arm": "B1",
+      "concurrency": 16,
+      "sample": "common_voice_en_18012457-common_voice_en_18012447",
+      "hits": 14,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 67.4305191040039
+    },
+    {
+      "arm": "B2",
+      "concurrency": 4,
+      "sample": "common_voice_en_10119832-common_voice_en_10119840",
+      "hits": 8,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 61.77461242675781
+    },
+    {
+      "arm": "B2",
+      "concurrency": 4,
+      "sample": "common_voice_en_10119832-common_voice_en_10119847",
+      "hits": 7,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 67.72969818115234
+    },
+    {
+      "arm": "B2",
+      "concurrency": 4,
+      "sample": "common_voice_en_103675-common_voice_en_103676",
+      "hits": 16,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 39.23149871826172
+    },
+    {
+      "arm": "B2",
+      "concurrency": 4,
+      "sample": "common_voice_en_103675-common_voice_en_103677",
+      "hits": 8,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 50.868988037109375
+    },
+    {
+      "arm": "B2",
+      "concurrency": 4,
+      "sample": "common_voice_en_10933823-common_voice_en_10933822",
+      "hits": 11,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 61.45197296142578
+    },
+    {
+      "arm": "B2",
+      "concurrency": 4,
+      "sample": "common_voice_en_10933823-common_voice_en_10933825",
+      "hits": 6,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 59.53550338745117
+    },
+    {
+      "arm": "B2",
+      "concurrency": 4,
+      "sample": "common_voice_en_120405-common_voice_en_120402",
+      "hits": 25,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 62.96249008178711
+    },
+    {
+      "arm": "B2",
+      "concurrency": 4,
+      "sample": "common_voice_en_120405-common_voice_en_120406",
+      "hits": 11,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 65.18264770507812
+    },
+    {
+      "arm": "B2",
+      "concurrency": 4,
+      "sample": "common_voice_en_1205005-common_voice_en_1205007",
+      "hits": 10,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 66.18780517578125
+    },
+    {
+      "arm": "B2",
+      "concurrency": 4,
+      "sample": "common_voice_en_1205005-common_voice_en_1205008",
+      "hits": 7,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 51.91024398803711
+    },
+    {
+      "arm": "B2",
+      "concurrency": 4,
+      "sample": "common_voice_en_123125-common_voice_en_123126",
+      "hits": 12,
+      "sub": 2,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 74.36400604248047
+    },
+    {
+      "arm": "B2",
+      "concurrency": 4,
+      "sample": "common_voice_en_123125-common_voice_en_123127",
+      "hits": 14,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 77.188232421875
+    },
+    {
+      "arm": "B2",
+      "concurrency": 4,
+      "sample": "common_voice_en_125386-common_voice_en_125388",
+      "hits": 15,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 65.84127044677734
+    },
+    {
+      "arm": "B2",
+      "concurrency": 4,
+      "sample": "common_voice_en_125386-common_voice_en_125389",
+      "hits": 10,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 65.72444915771484
+    },
+    {
+      "arm": "B2",
+      "concurrency": 4,
+      "sample": "common_voice_en_137148-common_voice_en_137152",
+      "hits": 11,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 53.64488220214844
+    },
+    {
+      "arm": "B2",
+      "concurrency": 4,
+      "sample": "common_voice_en_13900-common_voice_en_13901",
+      "hits": 12,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 57.53778076171875
+    },
+    {
+      "arm": "B2",
+      "concurrency": 4,
+      "sample": "common_voice_en_1416089-common_voice_en_1416090",
+      "hits": 10,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 59.9530143737793
+    },
+    {
+      "arm": "B2",
+      "concurrency": 4,
+      "sample": "common_voice_en_1416089-common_voice_en_1416093",
+      "hits": 13,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 66.27310180664062
+    },
+    {
+      "arm": "B2",
+      "concurrency": 4,
+      "sample": "common_voice_en_15265-common_voice_en_15266",
+      "hits": 8,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 71.80940246582031
+    },
+    {
+      "arm": "B2",
+      "concurrency": 4,
+      "sample": "common_voice_en_15265-common_voice_en_15268",
+      "hits": 10,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 64.86161041259766
+    },
+    {
+      "arm": "B2",
+      "concurrency": 4,
+      "sample": "common_voice_en_153872-common_voice_en_153873",
+      "hits": 8,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 57.2815055847168
+    },
+    {
+      "arm": "B2",
+      "concurrency": 4,
+      "sample": "common_voice_en_153872-common_voice_en_153874",
+      "hits": 16,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 66.51258850097656
+    },
+    {
+      "arm": "B2",
+      "concurrency": 4,
+      "sample": "common_voice_en_155313-common_voice_en_155315",
+      "hits": 18,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 57.682315826416016
+    },
+    {
+      "arm": "B2",
+      "concurrency": 4,
+      "sample": "common_voice_en_15734837-common_voice_en_15734838",
+      "hits": 8,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 36.482574462890625
+    },
+    {
+      "arm": "B2",
+      "concurrency": 4,
+      "sample": "common_voice_en_15735839-common_voice_en_15735837",
+      "hits": 4,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 53.190982818603516
+    },
+    {
+      "arm": "B2",
+      "concurrency": 4,
+      "sample": "common_voice_en_15903802-common_voice_en_15903807",
+      "hits": 12,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 67.66836547851562
+    },
+    {
+      "arm": "B2",
+      "concurrency": 4,
+      "sample": "common_voice_en_15903802-common_voice_en_15903815",
+      "hits": 10,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 71.55844116210938
+    },
+    {
+      "arm": "B2",
+      "concurrency": 4,
+      "sample": "common_voice_en_16666041-common_voice_en_16666040",
+      "hits": 12,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 66.97624969482422
+    },
+    {
+      "arm": "B2",
+      "concurrency": 4,
+      "sample": "common_voice_en_167249-common_voice_en_167246",
+      "hits": 8,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 54.808406829833984
+    },
+    {
+      "arm": "B2",
+      "concurrency": 4,
+      "sample": "common_voice_en_167249-common_voice_en_167247",
+      "hits": 9,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 60.47771072387695
+    },
+    {
+      "arm": "B2",
+      "concurrency": 4,
+      "sample": "common_voice_en_17147545-common_voice_en_17147546",
+      "hits": 13,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 72.9140853881836
+    },
+    {
+      "arm": "B2",
+      "concurrency": 4,
+      "sample": "common_voice_en_17161-common_voice_en_17159",
+      "hits": 9,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 68.72444152832031
+    },
+    {
+      "arm": "B2",
+      "concurrency": 4,
+      "sample": "common_voice_en_17161-common_voice_en_17160",
+      "hits": 15,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 53.558677673339844
+    },
+    {
+      "arm": "B2",
+      "concurrency": 4,
+      "sample": "common_voice_en_17249419-common_voice_en_17249428",
+      "hits": 17,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 66.59471130371094
+    },
+    {
+      "arm": "B2",
+      "concurrency": 4,
+      "sample": "common_voice_en_17255102-common_voice_en_17255101",
+      "hits": 9,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 55.80514144897461
+    },
+    {
+      "arm": "B2",
+      "concurrency": 4,
+      "sample": "common_voice_en_17256676-common_voice_en_17256678",
+      "hits": 12,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 73.98403930664062
+    },
+    {
+      "arm": "B2",
+      "concurrency": 4,
+      "sample": "common_voice_en_17259121-common_voice_en_17259122",
+      "hits": 6,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 62.529205322265625
+    },
+    {
+      "arm": "B2",
+      "concurrency": 4,
+      "sample": "common_voice_en_17263752-common_voice_en_17263750",
+      "hits": 19,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 63.16355514526367
+    },
+    {
+      "arm": "B2",
+      "concurrency": 4,
+      "sample": "common_voice_en_17263752-common_voice_en_17263755",
+      "hits": 9,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 62.49287796020508
+    },
+    {
+      "arm": "B2",
+      "concurrency": 4,
+      "sample": "common_voice_en_17263780-common_voice_en_17263781",
+      "hits": 10,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 45.98053741455078
+    },
+    {
+      "arm": "B2",
+      "concurrency": 4,
+      "sample": "common_voice_en_17263780-common_voice_en_17263782",
+      "hits": 13,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 55.67616271972656
+    },
+    {
+      "arm": "B2",
+      "concurrency": 4,
+      "sample": "common_voice_en_17267923-common_voice_en_17267922",
+      "hits": 5,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 53.28308868408203
+    },
+    {
+      "arm": "B2",
+      "concurrency": 4,
+      "sample": "common_voice_en_17268075-common_voice_en_17268076",
+      "hits": 19,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 63.032936096191406
+    },
+    {
+      "arm": "B2",
+      "concurrency": 4,
+      "sample": "common_voice_en_17271507-common_voice_en_17271509",
+      "hits": 10,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 52.718482971191406
+    },
+    {
+      "arm": "B2",
+      "concurrency": 4,
+      "sample": "common_voice_en_17271507-common_voice_en_17271510",
+      "hits": 12,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 56.02940368652344
+    },
+    {
+      "arm": "B2",
+      "concurrency": 4,
+      "sample": "common_voice_en_17274522-common_voice_en_17274523",
+      "hits": 8,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 81.05260467529297
+    },
+    {
+      "arm": "B2",
+      "concurrency": 4,
+      "sample": "common_voice_en_17274522-common_voice_en_17274525",
+      "hits": 8,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 74.68177032470703
+    },
+    {
+      "arm": "B2",
+      "concurrency": 4,
+      "sample": "common_voice_en_17274533-common_voice_en_17274531",
+      "hits": 17,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 51.052223205566406
+    },
+    {
+      "arm": "B2",
+      "concurrency": 16,
+      "sample": "common_voice_en_10119832-common_voice_en_10119840",
+      "hits": 8,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 68.24203491210938
+    },
+    {
+      "arm": "B2",
+      "concurrency": 16,
+      "sample": "common_voice_en_10119832-common_voice_en_10119847",
+      "hits": 7,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 64.16968536376953
+    },
+    {
+      "arm": "B2",
+      "concurrency": 16,
+      "sample": "common_voice_en_103675-common_voice_en_103676",
+      "hits": 16,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 43.14372634887695
+    },
+    {
+      "arm": "B2",
+      "concurrency": 16,
+      "sample": "common_voice_en_103675-common_voice_en_103677",
+      "hits": 8,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 32.615055084228516
+    },
+    {
+      "arm": "B2",
+      "concurrency": 16,
+      "sample": "common_voice_en_10933823-common_voice_en_10933822",
+      "hits": 11,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 69.3391342163086
+    },
+    {
+      "arm": "B2",
+      "concurrency": 16,
+      "sample": "common_voice_en_10933823-common_voice_en_10933825",
+      "hits": 6,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 59.90654373168945
+    },
+    {
+      "arm": "B2",
+      "concurrency": 16,
+      "sample": "common_voice_en_120405-common_voice_en_120402",
+      "hits": 25,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 69.22373962402344
+    },
+    {
+      "arm": "B2",
+      "concurrency": 16,
+      "sample": "common_voice_en_120405-common_voice_en_120406",
+      "hits": 11,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 53.84510803222656
+    },
+    {
+      "arm": "B2",
+      "concurrency": 16,
+      "sample": "common_voice_en_1205005-common_voice_en_1205007",
+      "hits": 10,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 48.13072204589844
+    },
+    {
+      "arm": "B2",
+      "concurrency": 16,
+      "sample": "common_voice_en_1205005-common_voice_en_1205008",
+      "hits": 7,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 59.46833419799805
+    },
+    {
+      "arm": "B2",
+      "concurrency": 16,
+      "sample": "common_voice_en_123125-common_voice_en_123126",
+      "hits": 12,
+      "sub": 2,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 67.50642395019531
+    },
+    {
+      "arm": "B2",
+      "concurrency": 16,
+      "sample": "common_voice_en_123125-common_voice_en_123127",
+      "hits": 14,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 74.2548828125
+    },
+    {
+      "arm": "B2",
+      "concurrency": 16,
+      "sample": "common_voice_en_125386-common_voice_en_125388",
+      "hits": 15,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 65.14667510986328
+    },
+    {
+      "arm": "B2",
+      "concurrency": 16,
+      "sample": "common_voice_en_125386-common_voice_en_125389",
+      "hits": 10,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 59.08530807495117
+    },
+    {
+      "arm": "B2",
+      "concurrency": 16,
+      "sample": "common_voice_en_137148-common_voice_en_137152",
+      "hits": 11,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 56.8995361328125
+    },
+    {
+      "arm": "B2",
+      "concurrency": 16,
+      "sample": "common_voice_en_13900-common_voice_en_13901",
+      "hits": 12,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 64.47309112548828
+    },
+    {
+      "arm": "B2",
+      "concurrency": 16,
+      "sample": "common_voice_en_1416089-common_voice_en_1416090",
+      "hits": 10,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 53.882198333740234
+    },
+    {
+      "arm": "B2",
+      "concurrency": 16,
+      "sample": "common_voice_en_1416089-common_voice_en_1416093",
+      "hits": 13,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 60.27993392944336
+    },
+    {
+      "arm": "B2",
+      "concurrency": 16,
+      "sample": "common_voice_en_15265-common_voice_en_15266",
+      "hits": 8,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 67.40682983398438
+    },
+    {
+      "arm": "B2",
+      "concurrency": 16,
+      "sample": "common_voice_en_15265-common_voice_en_15268",
+      "hits": 10,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 66.12149810791016
+    },
+    {
+      "arm": "B2",
+      "concurrency": 16,
+      "sample": "common_voice_en_153872-common_voice_en_153873",
+      "hits": 8,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 64.01345825195312
+    },
+    {
+      "arm": "B2",
+      "concurrency": 16,
+      "sample": "common_voice_en_153872-common_voice_en_153874",
+      "hits": 16,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 63.88491439819336
+    },
+    {
+      "arm": "B2",
+      "concurrency": 16,
+      "sample": "common_voice_en_155313-common_voice_en_155315",
+      "hits": 18,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 65.36795806884766
+    },
+    {
+      "arm": "B2",
+      "concurrency": 16,
+      "sample": "common_voice_en_15734837-common_voice_en_15734838",
+      "hits": 8,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 44.1611442565918
+    },
+    {
+      "arm": "B2",
+      "concurrency": 16,
+      "sample": "common_voice_en_15735839-common_voice_en_15735837",
+      "hits": 4,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 37.198062896728516
+    },
+    {
+      "arm": "B2",
+      "concurrency": 16,
+      "sample": "common_voice_en_15903802-common_voice_en_15903807",
+      "hits": 12,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 70.71115112304688
+    },
+    {
+      "arm": "B2",
+      "concurrency": 16,
+      "sample": "common_voice_en_15903802-common_voice_en_15903815",
+      "hits": 10,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 64.7403335571289
+    },
+    {
+      "arm": "B2",
+      "concurrency": 16,
+      "sample": "common_voice_en_16666041-common_voice_en_16666040",
+      "hits": 12,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 68.7097396850586
+    },
+    {
+      "arm": "B2",
+      "concurrency": 16,
+      "sample": "common_voice_en_167249-common_voice_en_167246",
+      "hits": 8,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 62.252532958984375
+    },
+    {
+      "arm": "B2",
+      "concurrency": 16,
+      "sample": "common_voice_en_167249-common_voice_en_167247",
+      "hits": 9,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 53.69013595581055
+    },
+    {
+      "arm": "B2",
+      "concurrency": 16,
+      "sample": "common_voice_en_17147545-common_voice_en_17147546",
+      "hits": 13,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 65.90209197998047
+    },
+    {
+      "arm": "B2",
+      "concurrency": 16,
+      "sample": "common_voice_en_17161-common_voice_en_17159",
+      "hits": 9,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 64.07206726074219
+    },
+    {
+      "arm": "B2",
+      "concurrency": 16,
+      "sample": "common_voice_en_17161-common_voice_en_17160",
+      "hits": 15,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 52.15567398071289
+    },
+    {
+      "arm": "B2",
+      "concurrency": 16,
+      "sample": "common_voice_en_17249419-common_voice_en_17249428",
+      "hits": 17,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 60.0570068359375
+    },
+    {
+      "arm": "B2",
+      "concurrency": 16,
+      "sample": "common_voice_en_17255102-common_voice_en_17255101",
+      "hits": 9,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 58.76625061035156
+    },
+    {
+      "arm": "B2",
+      "concurrency": 16,
+      "sample": "common_voice_en_17256676-common_voice_en_17256678",
+      "hits": 12,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 66.86447143554688
+    },
+    {
+      "arm": "B2",
+      "concurrency": 16,
+      "sample": "common_voice_en_17259121-common_voice_en_17259122",
+      "hits": 6,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 64.79109191894531
+    },
+    {
+      "arm": "B2",
+      "concurrency": 16,
+      "sample": "common_voice_en_17263752-common_voice_en_17263750",
+      "hits": 19,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 74.49629211425781
+    },
+    {
+      "arm": "B2",
+      "concurrency": 16,
+      "sample": "common_voice_en_17263752-common_voice_en_17263755",
+      "hits": 9,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 59.331703186035156
+    },
+    {
+      "arm": "B2",
+      "concurrency": 16,
+      "sample": "common_voice_en_17263780-common_voice_en_17263781",
+      "hits": 10,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 46.20753479003906
+    },
+    {
+      "arm": "B2",
+      "concurrency": 16,
+      "sample": "common_voice_en_17263780-common_voice_en_17263782",
+      "hits": 13,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 58.790367126464844
+    },
+    {
+      "arm": "B2",
+      "concurrency": 16,
+      "sample": "common_voice_en_17267923-common_voice_en_17267922",
+      "hits": 5,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 53.55436325073242
+    },
+    {
+      "arm": "B2",
+      "concurrency": 16,
+      "sample": "common_voice_en_17268075-common_voice_en_17268076",
+      "hits": 19,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 60.51343536376953
+    },
+    {
+      "arm": "B2",
+      "concurrency": 16,
+      "sample": "common_voice_en_17271507-common_voice_en_17271509",
+      "hits": 9,
+      "sub": 1,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 50.219886779785156
+    },
+    {
+      "arm": "B2",
+      "concurrency": 16,
+      "sample": "common_voice_en_17271507-common_voice_en_17271510",
+      "hits": 12,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 62.25443649291992
+    },
+    {
+      "arm": "B2",
+      "concurrency": 16,
+      "sample": "common_voice_en_17274522-common_voice_en_17274523",
+      "hits": 8,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 77.34123229980469
+    },
+    {
+      "arm": "B2",
+      "concurrency": 16,
+      "sample": "common_voice_en_17274522-common_voice_en_17274525",
+      "hits": 8,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 70.37387084960938
+    },
+    {
+      "arm": "B2",
+      "concurrency": 16,
+      "sample": "common_voice_en_17274533-common_voice_en_17274531",
+      "hits": 17,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 58.47821807861328
+    },
+    {
+      "arm": "B2",
+      "concurrency": 16,
+      "sample": "common_voice_en_17275818-common_voice_en_17275816",
+      "hits": 12,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 54.177154541015625
+    },
+    {
+      "arm": "B2",
+      "concurrency": 16,
+      "sample": "common_voice_en_17275818-common_voice_en_17275817",
+      "hits": 10,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 55.21494674682617
+    },
+    {
+      "arm": "B2",
+      "concurrency": 16,
+      "sample": "common_voice_en_17277080-common_voice_en_17277082",
+      "hits": 9,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 54.16172790527344
+    },
+    {
+      "arm": "B2",
+      "concurrency": 16,
+      "sample": "common_voice_en_17277080-common_voice_en_17277083",
+      "hits": 8,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 59.08793258666992
+    },
+    {
+      "arm": "B2",
+      "concurrency": 16,
+      "sample": "common_voice_en_17278904-common_voice_en_17278905",
+      "hits": 9,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 44.18082809448242
+    },
+    {
+      "arm": "B2",
+      "concurrency": 16,
+      "sample": "common_voice_en_17278904-common_voice_en_17278909",
+      "hits": 10,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 47.51131057739258
+    },
+    {
+      "arm": "B2",
+      "concurrency": 16,
+      "sample": "common_voice_en_17281385-common_voice_en_17281386",
+      "hits": 17,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 64.1063003540039
+    },
+    {
+      "arm": "B2",
+      "concurrency": 16,
+      "sample": "common_voice_en_17281385-common_voice_en_17281393",
+      "hits": 9,
+      "sub": 1,
+      "ins": 1,
+      "deleted": 0,
+      "sim": 62.642608642578125
+    },
+    {
+      "arm": "B2",
+      "concurrency": 16,
+      "sample": "common_voice_en_17288057-common_voice_en_17288056",
+      "hits": 5,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 54.226409912109375
+    },
+    {
+      "arm": "B2",
+      "concurrency": 16,
+      "sample": "common_voice_en_17288057-common_voice_en_17288059",
+      "hits": 6,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 53.63465118408203
+    },
+    {
+      "arm": "B2",
+      "concurrency": 16,
+      "sample": "common_voice_en_17324784-common_voice_en_17324785",
+      "hits": 8,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 58.175201416015625
+    },
+    {
+      "arm": "B2",
+      "concurrency": 16,
+      "sample": "common_voice_en_17324784-common_voice_en_17324786",
+      "hits": 12,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 66.53080749511719
+    },
+    {
+      "arm": "B2",
+      "concurrency": 16,
+      "sample": "common_voice_en_17347410-common_voice_en_17347409",
+      "hits": 6,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 47.57538604736328
+    },
+    {
+      "arm": "B2",
+      "concurrency": 16,
+      "sample": "common_voice_en_17352169-common_voice_en_17352173",
+      "hits": 13,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 69.04167175292969
+    },
+    {
+      "arm": "B2",
+      "concurrency": 16,
+      "sample": "common_voice_en_173534-common_voice_en_173537",
+      "hits": 13,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 67.78517150878906
+    },
+    {
+      "arm": "B2",
+      "concurrency": 16,
+      "sample": "common_voice_en_173534-common_voice_en_173540",
+      "hits": 13,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 54.841922760009766
+    },
+    {
+      "arm": "B2",
+      "concurrency": 16,
+      "sample": "common_voice_en_17369337-common_voice_en_17369336",
+      "hits": 11,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 20.762775421142578
+    },
+    {
+      "arm": "B2",
+      "concurrency": 16,
+      "sample": "common_voice_en_17369851-common_voice_en_17369849",
+      "hits": 8,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 58.47847366333008
+    },
+    {
+      "arm": "B2",
+      "concurrency": 16,
+      "sample": "common_voice_en_17375252-common_voice_en_17375256",
+      "hits": 9,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 51.453556060791016
+    },
+    {
+      "arm": "B2",
+      "concurrency": 16,
+      "sample": "common_voice_en_17380945-common_voice_en_17380947",
+      "hits": 12,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 60.274906158447266
+    },
+    {
+      "arm": "B2",
+      "concurrency": 16,
+      "sample": "common_voice_en_17389076-common_voice_en_17389120",
+      "hits": 9,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 62.22894287109375
+    },
+    {
+      "arm": "B2",
+      "concurrency": 16,
+      "sample": "common_voice_en_17389984-common_voice_en_17389987",
+      "hits": 14,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 68.73796844482422
+    },
+    {
+      "arm": "B2",
+      "concurrency": 16,
+      "sample": "common_voice_en_17389984-common_voice_en_17389988",
+      "hits": 14,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 64.76609802246094
+    },
+    {
+      "arm": "B2",
+      "concurrency": 16,
+      "sample": "common_voice_en_17401431-common_voice_en_17401433",
+      "hits": 9,
+      "sub": 1,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 73.49563598632812
+    },
+    {
+      "arm": "B2",
+      "concurrency": 16,
+      "sample": "common_voice_en_17406452-common_voice_en_17406455",
+      "hits": 18,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 53.38493728637695
+    },
+    {
+      "arm": "B2",
+      "concurrency": 16,
+      "sample": "common_voice_en_17406452-common_voice_en_17406466",
+      "hits": 17,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 62.03559494018555
+    },
+    {
+      "arm": "B2",
+      "concurrency": 16,
+      "sample": "common_voice_en_17406732-common_voice_en_17406734",
+      "hits": 15,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 44.558753967285156
+    },
+    {
+      "arm": "B2",
+      "concurrency": 16,
+      "sample": "common_voice_en_17406732-common_voice_en_17406735",
+      "hits": 17,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 44.846458435058594
+    },
+    {
+      "arm": "B2",
+      "concurrency": 16,
+      "sample": "common_voice_en_17429166-common_voice_en_17429168",
+      "hits": 4,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 53.32037353515625
+    },
+    {
+      "arm": "B2",
+      "concurrency": 16,
+      "sample": "common_voice_en_17429166-common_voice_en_17429171",
+      "hits": 10,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 69.66218566894531
+    },
+    {
+      "arm": "B2",
+      "concurrency": 16,
+      "sample": "common_voice_en_17442686-common_voice_en_17442688",
+      "hits": 7,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 44.27785873413086
+    },
+    {
+      "arm": "B2",
+      "concurrency": 16,
+      "sample": "common_voice_en_17444666-common_voice_en_17444667",
+      "hits": 21,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 65.24201965332031
+    },
+    {
+      "arm": "B2",
+      "concurrency": 16,
+      "sample": "common_voice_en_17444666-common_voice_en_17444668",
+      "hits": 12,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 49.709312438964844
+    },
+    {
+      "arm": "B2",
+      "concurrency": 16,
+      "sample": "common_voice_en_17451108-common_voice_en_17451109",
+      "hits": 14,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 59.54844284057617
+    },
+    {
+      "arm": "B2",
+      "concurrency": 16,
+      "sample": "common_voice_en_17502-common_voice_en_17503",
+      "hits": 7,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 48.66432571411133
+    },
+    {
+      "arm": "B2",
+      "concurrency": 16,
+      "sample": "common_voice_en_17519982-common_voice_en_17519985",
+      "hits": 9,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 66.67476654052734
+    },
+    {
+      "arm": "B2",
+      "concurrency": 16,
+      "sample": "common_voice_en_17519982-common_voice_en_17519988",
+      "hits": 8,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 58.49983215332031
+    },
+    {
+      "arm": "B2",
+      "concurrency": 16,
+      "sample": "common_voice_en_175348-common_voice_en_175349",
+      "hits": 10,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 52.75315475463867
+    },
+    {
+      "arm": "B2",
+      "concurrency": 16,
+      "sample": "common_voice_en_175348-common_voice_en_175350",
+      "hits": 16,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 62.29966735839844
+    },
+    {
+      "arm": "B2",
+      "concurrency": 16,
+      "sample": "common_voice_en_17578783-common_voice_en_17578780",
+      "hits": 7,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 65.83563232421875
+    },
+    {
+      "arm": "B2",
+      "concurrency": 16,
+      "sample": "common_voice_en_17578783-common_voice_en_17578781",
+      "hits": 6,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 51.53385543823242
+    },
+    {
+      "arm": "B2",
+      "concurrency": 16,
+      "sample": "common_voice_en_17662945-common_voice_en_17662954",
+      "hits": 12,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 75.00563049316406
+    },
+    {
+      "arm": "B2",
+      "concurrency": 16,
+      "sample": "common_voice_en_17662945-common_voice_en_17662956",
+      "hits": 13,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 70.56958770751953
+    },
+    {
+      "arm": "B2",
+      "concurrency": 16,
+      "sample": "common_voice_en_17718576-common_voice_en_17718578",
+      "hits": 11,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 42.65720748901367
+    },
+    {
+      "arm": "B2",
+      "concurrency": 16,
+      "sample": "common_voice_en_17727889-common_voice_en_17727904",
+      "hits": 9,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 75.17941284179688
+    },
+    {
+      "arm": "B2",
+      "concurrency": 16,
+      "sample": "common_voice_en_17727889-common_voice_en_17727905",
+      "hits": 6,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 76.80615234375
+    },
+    {
+      "arm": "B2",
+      "concurrency": 16,
+      "sample": "common_voice_en_17729945-common_voice_en_17729943",
+      "hits": 11,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 55.7166862487793
+    },
+    {
+      "arm": "B2",
+      "concurrency": 16,
+      "sample": "common_voice_en_17729945-common_voice_en_17729944",
+      "hits": 8,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 60.03816223144531
+    },
+    {
+      "arm": "B2",
+      "concurrency": 16,
+      "sample": "common_voice_en_17736608-common_voice_en_17736610",
+      "hits": 8,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 78.08634185791016
+    },
+    {
+      "arm": "B2",
+      "concurrency": 16,
+      "sample": "common_voice_en_17738848-common_voice_en_17744571",
+      "hits": 14,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 78.01022338867188
+    },
+    {
+      "arm": "B2",
+      "concurrency": 16,
+      "sample": "common_voice_en_17738848-common_voice_en_19083939",
+      "hits": 11,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 72.77159881591797
+    },
+    {
+      "arm": "B2",
+      "concurrency": 16,
+      "sample": "common_voice_en_17781154-common_voice_en_17781153",
+      "hits": 8,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 56.24086380004883
+    },
+    {
+      "arm": "B2",
+      "concurrency": 16,
+      "sample": "common_voice_en_17784-common_voice_en_17785",
+      "hits": 10,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 57.94860076904297
+    },
+    {
+      "arm": "B2",
+      "concurrency": 16,
+      "sample": "common_voice_en_17784-common_voice_en_17786",
+      "hits": 6,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 48.547218322753906
+    },
+    {
+      "arm": "B2",
+      "concurrency": 16,
+      "sample": "common_voice_en_177895-common_voice_en_177894",
+      "hits": 12,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 41.129512786865234
+    },
+    {
+      "arm": "B2",
+      "concurrency": 16,
+      "sample": "common_voice_en_177895-common_voice_en_177898",
+      "hits": 10,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 39.593467712402344
+    },
+    {
+      "arm": "B2",
+      "concurrency": 16,
+      "sample": "common_voice_en_17817002-common_voice_en_17817003",
+      "hits": 14,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 68.18635559082031
+    },
+    {
+      "arm": "B2",
+      "concurrency": 16,
+      "sample": "common_voice_en_17817002-common_voice_en_17817005",
+      "hits": 11,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 77.24482727050781
+    },
+    {
+      "arm": "B2",
+      "concurrency": 16,
+      "sample": "common_voice_en_17830764-common_voice_en_17830762",
+      "hits": 7,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 49.401371002197266
+    },
+    {
+      "arm": "B2",
+      "concurrency": 16,
+      "sample": "common_voice_en_17830764-common_voice_en_17830783",
+      "hits": 11,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 59.41039276123047
+    },
+    {
+      "arm": "B2",
+      "concurrency": 16,
+      "sample": "common_voice_en_17837104-common_voice_en_17837105",
+      "hits": 6,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 55.0018310546875
+    },
+    {
+      "arm": "B2",
+      "concurrency": 16,
+      "sample": "common_voice_en_17851231-common_voice_en_17851248",
+      "hits": 7,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 66.47257232666016
+    },
+    {
+      "arm": "B2",
+      "concurrency": 16,
+      "sample": "common_voice_en_17851231-common_voice_en_17851256",
+      "hits": 9,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 72.8997573852539
+    },
+    {
+      "arm": "B2",
+      "concurrency": 16,
+      "sample": "common_voice_en_17854896-common_voice_en_17854894",
+      "hits": 8,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 70.16079711914062
+    },
+    {
+      "arm": "B2",
+      "concurrency": 16,
+      "sample": "common_voice_en_17854896-common_voice_en_17854897",
+      "hits": 6,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 71.21168518066406
+    },
+    {
+      "arm": "B2",
+      "concurrency": 16,
+      "sample": "common_voice_en_17861335-common_voice_en_17861337",
+      "hits": 10,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 64.82884979248047
+    },
+    {
+      "arm": "B2",
+      "concurrency": 16,
+      "sample": "common_voice_en_17861489-common_voice_en_17861487",
+      "hits": 9,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 45.88434982299805
+    },
+    {
+      "arm": "B2",
+      "concurrency": 16,
+      "sample": "common_voice_en_17874600-common_voice_en_17874601",
+      "hits": 19,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 47.63535690307617
+    },
+    {
+      "arm": "B2",
+      "concurrency": 16,
+      "sample": "common_voice_en_17874600-common_voice_en_17874602",
+      "hits": 14,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 61.99729537963867
+    },
+    {
+      "arm": "B2",
+      "concurrency": 16,
+      "sample": "common_voice_en_17875915-common_voice_en_17875925",
+      "hits": 12,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 61.2980842590332
+    },
+    {
+      "arm": "B2",
+      "concurrency": 16,
+      "sample": "common_voice_en_17879420-common_voice_en_17879418",
+      "hits": 6,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 51.903228759765625
+    },
+    {
+      "arm": "B2",
+      "concurrency": 16,
+      "sample": "common_voice_en_17879420-common_voice_en_17879438",
+      "hits": 9,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 49.808311462402344
+    },
+    {
+      "arm": "B2",
+      "concurrency": 16,
+      "sample": "common_voice_en_17880926-common_voice_en_17880932",
+      "hits": 9,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 61.46874237060547
+    },
+    {
+      "arm": "B2",
+      "concurrency": 16,
+      "sample": "common_voice_en_17889905-common_voice_en_17889907",
+      "hits": 12,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 71.7048568725586
+    },
+    {
+      "arm": "B2",
+      "concurrency": 16,
+      "sample": "common_voice_en_17893247-common_voice_en_17893246",
+      "hits": 9,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 69.53892517089844
+    },
+    {
+      "arm": "B2",
+      "concurrency": 16,
+      "sample": "common_voice_en_17893247-common_voice_en_17893250",
+      "hits": 10,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 51.33912658691406
+    },
+    {
+      "arm": "B2",
+      "concurrency": 16,
+      "sample": "common_voice_en_17899910-common_voice_en_17899909",
+      "hits": 4,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 56.15829086303711
+    },
+    {
+      "arm": "B2",
+      "concurrency": 16,
+      "sample": "common_voice_en_17920116-common_voice_en_17920112",
+      "hits": 3,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 37.36895751953125
+    },
+    {
+      "arm": "B2",
+      "concurrency": 16,
+      "sample": "common_voice_en_17986345-common_voice_en_17986347",
+      "hits": 10,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 62.96312713623047
+    },
+    {
+      "arm": "B2",
+      "concurrency": 16,
+      "sample": "common_voice_en_18012457-common_voice_en_18012447",
+      "hits": 14,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 71.21308898925781
+    },
+    {
+      "arm": "A2",
+      "concurrency": 4,
+      "sample": "common_voice_en_10119832-common_voice_en_10119840",
+      "hits": 8,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 58.08769989013672
+    },
+    {
+      "arm": "A2",
+      "concurrency": 4,
+      "sample": "common_voice_en_10119832-common_voice_en_10119847",
+      "hits": 7,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 72.45933532714844
+    },
+    {
+      "arm": "A2",
+      "concurrency": 4,
+      "sample": "common_voice_en_103675-common_voice_en_103676",
+      "hits": 16,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 43.84564208984375
+    },
+    {
+      "arm": "A2",
+      "concurrency": 4,
+      "sample": "common_voice_en_103675-common_voice_en_103677",
+      "hits": 8,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 49.3581657409668
+    },
+    {
+      "arm": "A2",
+      "concurrency": 4,
+      "sample": "common_voice_en_10933823-common_voice_en_10933822",
+      "hits": 11,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 64.77942657470703
+    },
+    {
+      "arm": "A2",
+      "concurrency": 4,
+      "sample": "common_voice_en_10933823-common_voice_en_10933825",
+      "hits": 6,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 64.82828521728516
+    },
+    {
+      "arm": "A2",
+      "concurrency": 4,
+      "sample": "common_voice_en_120405-common_voice_en_120402",
+      "hits": 25,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 68.38502502441406
+    },
+    {
+      "arm": "A2",
+      "concurrency": 4,
+      "sample": "common_voice_en_120405-common_voice_en_120406",
+      "hits": 11,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 64.72347259521484
+    },
+    {
+      "arm": "A2",
+      "concurrency": 4,
+      "sample": "common_voice_en_1205005-common_voice_en_1205007",
+      "hits": 10,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 62.60050964355469
+    },
+    {
+      "arm": "A2",
+      "concurrency": 4,
+      "sample": "common_voice_en_1205005-common_voice_en_1205008",
+      "hits": 7,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 58.266048431396484
+    },
+    {
+      "arm": "A2",
+      "concurrency": 4,
+      "sample": "common_voice_en_123125-common_voice_en_123126",
+      "hits": 12,
+      "sub": 2,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 69.09922790527344
+    },
+    {
+      "arm": "A2",
+      "concurrency": 4,
+      "sample": "common_voice_en_123125-common_voice_en_123127",
+      "hits": 14,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 73.64430236816406
+    },
+    {
+      "arm": "A2",
+      "concurrency": 4,
+      "sample": "common_voice_en_125386-common_voice_en_125388",
+      "hits": 15,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 67.7872543334961
+    },
+    {
+      "arm": "A2",
+      "concurrency": 4,
+      "sample": "common_voice_en_125386-common_voice_en_125389",
+      "hits": 10,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 64.74725341796875
+    },
+    {
+      "arm": "A2",
+      "concurrency": 4,
+      "sample": "common_voice_en_137148-common_voice_en_137152",
+      "hits": 11,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 66.04598236083984
+    },
+    {
+      "arm": "A2",
+      "concurrency": 4,
+      "sample": "common_voice_en_13900-common_voice_en_13901",
+      "hits": 12,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 60.92692565917969
+    },
+    {
+      "arm": "A2",
+      "concurrency": 4,
+      "sample": "common_voice_en_1416089-common_voice_en_1416090",
+      "hits": 10,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 62.71040344238281
+    },
+    {
+      "arm": "A2",
+      "concurrency": 4,
+      "sample": "common_voice_en_1416089-common_voice_en_1416093",
+      "hits": 13,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 67.2136001586914
+    },
+    {
+      "arm": "A2",
+      "concurrency": 4,
+      "sample": "common_voice_en_15265-common_voice_en_15266",
+      "hits": 8,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 64.5935287475586
+    },
+    {
+      "arm": "A2",
+      "concurrency": 4,
+      "sample": "common_voice_en_15265-common_voice_en_15268",
+      "hits": 10,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 61.19328689575195
+    },
+    {
+      "arm": "A2",
+      "concurrency": 4,
+      "sample": "common_voice_en_153872-common_voice_en_153873",
+      "hits": 8,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 65.17192077636719
+    },
+    {
+      "arm": "A2",
+      "concurrency": 4,
+      "sample": "common_voice_en_153872-common_voice_en_153874",
+      "hits": 16,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 64.19930267333984
+    },
+    {
+      "arm": "A2",
+      "concurrency": 4,
+      "sample": "common_voice_en_155313-common_voice_en_155315",
+      "hits": 18,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 63.38985061645508
+    },
+    {
+      "arm": "A2",
+      "concurrency": 4,
+      "sample": "common_voice_en_15734837-common_voice_en_15734838",
+      "hits": 8,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 47.226505279541016
+    },
+    {
+      "arm": "A2",
+      "concurrency": 4,
+      "sample": "common_voice_en_15735839-common_voice_en_15735837",
+      "hits": 4,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 41.815670013427734
+    },
+    {
+      "arm": "A2",
+      "concurrency": 4,
+      "sample": "common_voice_en_15903802-common_voice_en_15903807",
+      "hits": 12,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 66.53901672363281
+    },
+    {
+      "arm": "A2",
+      "concurrency": 4,
+      "sample": "common_voice_en_15903802-common_voice_en_15903815",
+      "hits": 10,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 67.09580993652344
+    },
+    {
+      "arm": "A2",
+      "concurrency": 4,
+      "sample": "common_voice_en_16666041-common_voice_en_16666040",
+      "hits": 12,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 69.61690521240234
+    },
+    {
+      "arm": "A2",
+      "concurrency": 4,
+      "sample": "common_voice_en_167249-common_voice_en_167246",
+      "hits": 8,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 71.18856811523438
+    },
+    {
+      "arm": "A2",
+      "concurrency": 4,
+      "sample": "common_voice_en_167249-common_voice_en_167247",
+      "hits": 9,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 60.022117614746094
+    },
+    {
+      "arm": "A2",
+      "concurrency": 4,
+      "sample": "common_voice_en_17147545-common_voice_en_17147546",
+      "hits": 13,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 69.92628479003906
+    },
+    {
+      "arm": "A2",
+      "concurrency": 4,
+      "sample": "common_voice_en_17161-common_voice_en_17159",
+      "hits": 9,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 64.81428527832031
+    },
+    {
+      "arm": "A2",
+      "concurrency": 4,
+      "sample": "common_voice_en_17161-common_voice_en_17160",
+      "hits": 15,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 67.9552230834961
+    },
+    {
+      "arm": "A2",
+      "concurrency": 4,
+      "sample": "common_voice_en_17249419-common_voice_en_17249428",
+      "hits": 17,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 66.2647705078125
+    },
+    {
+      "arm": "A2",
+      "concurrency": 4,
+      "sample": "common_voice_en_17255102-common_voice_en_17255101",
+      "hits": 9,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 63.916664123535156
+    },
+    {
+      "arm": "A2",
+      "concurrency": 4,
+      "sample": "common_voice_en_17256676-common_voice_en_17256678",
+      "hits": 12,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 63.010345458984375
+    },
+    {
+      "arm": "A2",
+      "concurrency": 4,
+      "sample": "common_voice_en_17259121-common_voice_en_17259122",
+      "hits": 6,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 64.24251556396484
+    },
+    {
+      "arm": "A2",
+      "concurrency": 4,
+      "sample": "common_voice_en_17263752-common_voice_en_17263750",
+      "hits": 19,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 71.36161804199219
+    },
+    {
+      "arm": "A2",
+      "concurrency": 4,
+      "sample": "common_voice_en_17263752-common_voice_en_17263755",
+      "hits": 9,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 65.33586883544922
+    },
+    {
+      "arm": "A2",
+      "concurrency": 4,
+      "sample": "common_voice_en_17263780-common_voice_en_17263781",
+      "hits": 10,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 41.721317291259766
+    },
+    {
+      "arm": "A2",
+      "concurrency": 4,
+      "sample": "common_voice_en_17263780-common_voice_en_17263782",
+      "hits": 13,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 54.115177154541016
+    },
+    {
+      "arm": "A2",
+      "concurrency": 4,
+      "sample": "common_voice_en_17267923-common_voice_en_17267922",
+      "hits": 5,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 52.22722244262695
+    },
+    {
+      "arm": "A2",
+      "concurrency": 4,
+      "sample": "common_voice_en_17268075-common_voice_en_17268076",
+      "hits": 19,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 58.513580322265625
+    },
+    {
+      "arm": "A2",
+      "concurrency": 4,
+      "sample": "common_voice_en_17271507-common_voice_en_17271509",
+      "hits": 10,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 58.234169006347656
+    },
+    {
+      "arm": "A2",
+      "concurrency": 4,
+      "sample": "common_voice_en_17271507-common_voice_en_17271510",
+      "hits": 12,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 63.164337158203125
+    },
+    {
+      "arm": "A2",
+      "concurrency": 4,
+      "sample": "common_voice_en_17274522-common_voice_en_17274523",
+      "hits": 8,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 76.60736083984375
+    },
+    {
+      "arm": "A2",
+      "concurrency": 4,
+      "sample": "common_voice_en_17274522-common_voice_en_17274525",
+      "hits": 8,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 69.87835693359375
+    },
+    {
+      "arm": "A2",
+      "concurrency": 4,
+      "sample": "common_voice_en_17274533-common_voice_en_17274531",
+      "hits": 17,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 52.53791046142578
+    },
+    {
+      "arm": "A2",
+      "concurrency": 16,
+      "sample": "common_voice_en_10119832-common_voice_en_10119840",
+      "hits": 8,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 70.29351043701172
+    },
+    {
+      "arm": "A2",
+      "concurrency": 16,
+      "sample": "common_voice_en_10119832-common_voice_en_10119847",
+      "hits": 7,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 59.43272018432617
+    },
+    {
+      "arm": "A2",
+      "concurrency": 16,
+      "sample": "common_voice_en_103675-common_voice_en_103676",
+      "hits": 16,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 47.80787658691406
+    },
+    {
+      "arm": "A2",
+      "concurrency": 16,
+      "sample": "common_voice_en_103675-common_voice_en_103677",
+      "hits": 8,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 42.28248596191406
+    },
+    {
+      "arm": "A2",
+      "concurrency": 16,
+      "sample": "common_voice_en_10933823-common_voice_en_10933822",
+      "hits": 11,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 56.55418014526367
+    },
+    {
+      "arm": "A2",
+      "concurrency": 16,
+      "sample": "common_voice_en_10933823-common_voice_en_10933825",
+      "hits": 6,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 62.262855529785156
+    },
+    {
+      "arm": "A2",
+      "concurrency": 16,
+      "sample": "common_voice_en_120405-common_voice_en_120402",
+      "hits": 25,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 60.896419525146484
+    },
+    {
+      "arm": "A2",
+      "concurrency": 16,
+      "sample": "common_voice_en_120405-common_voice_en_120406",
+      "hits": 11,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 63.529144287109375
+    },
+    {
+      "arm": "A2",
+      "concurrency": 16,
+      "sample": "common_voice_en_1205005-common_voice_en_1205007",
+      "hits": 10,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 62.801002502441406
+    },
+    {
+      "arm": "A2",
+      "concurrency": 16,
+      "sample": "common_voice_en_1205005-common_voice_en_1205008",
+      "hits": 7,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 64.12993621826172
+    },
+    {
+      "arm": "A2",
+      "concurrency": 16,
+      "sample": "common_voice_en_123125-common_voice_en_123126",
+      "hits": 12,
+      "sub": 2,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 81.23382568359375
+    },
+    {
+      "arm": "A2",
+      "concurrency": 16,
+      "sample": "common_voice_en_123125-common_voice_en_123127",
+      "hits": 14,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 76.08096313476562
+    },
+    {
+      "arm": "A2",
+      "concurrency": 16,
+      "sample": "common_voice_en_125386-common_voice_en_125388",
+      "hits": 15,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 67.37869262695312
+    },
+    {
+      "arm": "A2",
+      "concurrency": 16,
+      "sample": "common_voice_en_125386-common_voice_en_125389",
+      "hits": 10,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 60.91911697387695
+    },
+    {
+      "arm": "A2",
+      "concurrency": 16,
+      "sample": "common_voice_en_137148-common_voice_en_137152",
+      "hits": 11,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 64.0618896484375
+    },
+    {
+      "arm": "A2",
+      "concurrency": 16,
+      "sample": "common_voice_en_13900-common_voice_en_13901",
+      "hits": 12,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 51.826107025146484
+    },
+    {
+      "arm": "A2",
+      "concurrency": 16,
+      "sample": "common_voice_en_1416089-common_voice_en_1416090",
+      "hits": 10,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 60.421974182128906
+    },
+    {
+      "arm": "A2",
+      "concurrency": 16,
+      "sample": "common_voice_en_1416089-common_voice_en_1416093",
+      "hits": 13,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 63.98985290527344
+    },
+    {
+      "arm": "A2",
+      "concurrency": 16,
+      "sample": "common_voice_en_15265-common_voice_en_15266",
+      "hits": 8,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 65.23825073242188
+    },
+    {
+      "arm": "A2",
+      "concurrency": 16,
+      "sample": "common_voice_en_15265-common_voice_en_15268",
+      "hits": 10,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 64.81014251708984
+    },
+    {
+      "arm": "A2",
+      "concurrency": 16,
+      "sample": "common_voice_en_153872-common_voice_en_153873",
+      "hits": 8,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 57.550071716308594
+    },
+    {
+      "arm": "A2",
+      "concurrency": 16,
+      "sample": "common_voice_en_153872-common_voice_en_153874",
+      "hits": 16,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 61.427677154541016
+    },
+    {
+      "arm": "A2",
+      "concurrency": 16,
+      "sample": "common_voice_en_155313-common_voice_en_155315",
+      "hits": 18,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 65.8696517944336
+    },
+    {
+      "arm": "A2",
+      "concurrency": 16,
+      "sample": "common_voice_en_15734837-common_voice_en_15734838",
+      "hits": 8,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 53.96221923828125
+    },
+    {
+      "arm": "A2",
+      "concurrency": 16,
+      "sample": "common_voice_en_15735839-common_voice_en_15735837",
+      "hits": 4,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 20.584980010986328
+    },
+    {
+      "arm": "A2",
+      "concurrency": 16,
+      "sample": "common_voice_en_15903802-common_voice_en_15903807",
+      "hits": 12,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 68.97820281982422
+    },
+    {
+      "arm": "A2",
+      "concurrency": 16,
+      "sample": "common_voice_en_15903802-common_voice_en_15903815",
+      "hits": 10,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 67.94571685791016
+    },
+    {
+      "arm": "A2",
+      "concurrency": 16,
+      "sample": "common_voice_en_16666041-common_voice_en_16666040",
+      "hits": 12,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 60.22954559326172
+    },
+    {
+      "arm": "A2",
+      "concurrency": 16,
+      "sample": "common_voice_en_167249-common_voice_en_167246",
+      "hits": 8,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 55.39472579956055
+    },
+    {
+      "arm": "A2",
+      "concurrency": 16,
+      "sample": "common_voice_en_167249-common_voice_en_167247",
+      "hits": 9,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 50.896793365478516
+    },
+    {
+      "arm": "A2",
+      "concurrency": 16,
+      "sample": "common_voice_en_17147545-common_voice_en_17147546",
+      "hits": 13,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 71.14706420898438
+    },
+    {
+      "arm": "A2",
+      "concurrency": 16,
+      "sample": "common_voice_en_17161-common_voice_en_17159",
+      "hits": 9,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 68.70454406738281
+    },
+    {
+      "arm": "A2",
+      "concurrency": 16,
+      "sample": "common_voice_en_17161-common_voice_en_17160",
+      "hits": 15,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 57.34940719604492
+    },
+    {
+      "arm": "A2",
+      "concurrency": 16,
+      "sample": "common_voice_en_17249419-common_voice_en_17249428",
+      "hits": 17,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 67.7327651977539
+    },
+    {
+      "arm": "A2",
+      "concurrency": 16,
+      "sample": "common_voice_en_17255102-common_voice_en_17255101",
+      "hits": 9,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 56.29583740234375
+    },
+    {
+      "arm": "A2",
+      "concurrency": 16,
+      "sample": "common_voice_en_17256676-common_voice_en_17256678",
+      "hits": 12,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 65.20612335205078
+    },
+    {
+      "arm": "A2",
+      "concurrency": 16,
+      "sample": "common_voice_en_17259121-common_voice_en_17259122",
+      "hits": 6,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 62.219871520996094
+    },
+    {
+      "arm": "A2",
+      "concurrency": 16,
+      "sample": "common_voice_en_17263752-common_voice_en_17263750",
+      "hits": 19,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 64.63129425048828
+    },
+    {
+      "arm": "A2",
+      "concurrency": 16,
+      "sample": "common_voice_en_17263752-common_voice_en_17263755",
+      "hits": 9,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 64.60136413574219
+    },
+    {
+      "arm": "A2",
+      "concurrency": 16,
+      "sample": "common_voice_en_17263780-common_voice_en_17263781",
+      "hits": 10,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 53.96114730834961
+    },
+    {
+      "arm": "A2",
+      "concurrency": 16,
+      "sample": "common_voice_en_17263780-common_voice_en_17263782",
+      "hits": 13,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 43.197837829589844
+    },
+    {
+      "arm": "A2",
+      "concurrency": 16,
+      "sample": "common_voice_en_17267923-common_voice_en_17267922",
+      "hits": 5,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 51.3430061340332
+    },
+    {
+      "arm": "A2",
+      "concurrency": 16,
+      "sample": "common_voice_en_17268075-common_voice_en_17268076",
+      "hits": 19,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 58.202903747558594
+    },
+    {
+      "arm": "A2",
+      "concurrency": 16,
+      "sample": "common_voice_en_17271507-common_voice_en_17271509",
+      "hits": 9,
+      "sub": 1,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 59.777164459228516
+    },
+    {
+      "arm": "A2",
+      "concurrency": 16,
+      "sample": "common_voice_en_17271507-common_voice_en_17271510",
+      "hits": 12,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 60.36934280395508
+    },
+    {
+      "arm": "A2",
+      "concurrency": 16,
+      "sample": "common_voice_en_17274522-common_voice_en_17274523",
+      "hits": 8,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 75.0322494506836
+    },
+    {
+      "arm": "A2",
+      "concurrency": 16,
+      "sample": "common_voice_en_17274522-common_voice_en_17274525",
+      "hits": 8,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 77.01998901367188
+    },
+    {
+      "arm": "A2",
+      "concurrency": 16,
+      "sample": "common_voice_en_17274533-common_voice_en_17274531",
+      "hits": 17,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 55.529109954833984
+    },
+    {
+      "arm": "A2",
+      "concurrency": 16,
+      "sample": "common_voice_en_17275818-common_voice_en_17275816",
+      "hits": 12,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 55.62702560424805
+    },
+    {
+      "arm": "A2",
+      "concurrency": 16,
+      "sample": "common_voice_en_17275818-common_voice_en_17275817",
+      "hits": 10,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 56.358062744140625
+    },
+    {
+      "arm": "A2",
+      "concurrency": 16,
+      "sample": "common_voice_en_17277080-common_voice_en_17277082",
+      "hits": 9,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 51.24430847167969
+    },
+    {
+      "arm": "A2",
+      "concurrency": 16,
+      "sample": "common_voice_en_17277080-common_voice_en_17277083",
+      "hits": 8,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 63.13003921508789
+    },
+    {
+      "arm": "A2",
+      "concurrency": 16,
+      "sample": "common_voice_en_17278904-common_voice_en_17278905",
+      "hits": 9,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 43.94965744018555
+    },
+    {
+      "arm": "A2",
+      "concurrency": 16,
+      "sample": "common_voice_en_17278904-common_voice_en_17278909",
+      "hits": 10,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 46.30112075805664
+    },
+    {
+      "arm": "A2",
+      "concurrency": 16,
+      "sample": "common_voice_en_17281385-common_voice_en_17281386",
+      "hits": 17,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 57.627235412597656
+    },
+    {
+      "arm": "A2",
+      "concurrency": 16,
+      "sample": "common_voice_en_17281385-common_voice_en_17281393",
+      "hits": 9,
+      "sub": 1,
+      "ins": 1,
+      "deleted": 0,
+      "sim": 70.06267547607422
+    },
+    {
+      "arm": "A2",
+      "concurrency": 16,
+      "sample": "common_voice_en_17288057-common_voice_en_17288056",
+      "hits": 5,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 44.162445068359375
+    },
+    {
+      "arm": "A2",
+      "concurrency": 16,
+      "sample": "common_voice_en_17288057-common_voice_en_17288059",
+      "hits": 6,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 50.2260856628418
+    },
+    {
+      "arm": "A2",
+      "concurrency": 16,
+      "sample": "common_voice_en_17324784-common_voice_en_17324785",
+      "hits": 8,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 61.52181625366211
+    },
+    {
+      "arm": "A2",
+      "concurrency": 16,
+      "sample": "common_voice_en_17324784-common_voice_en_17324786",
+      "hits": 12,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 71.4586410522461
+    },
+    {
+      "arm": "A2",
+      "concurrency": 16,
+      "sample": "common_voice_en_17347410-common_voice_en_17347409",
+      "hits": 6,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 64.57223510742188
+    },
+    {
+      "arm": "A2",
+      "concurrency": 16,
+      "sample": "common_voice_en_17352169-common_voice_en_17352173",
+      "hits": 13,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 68.63339233398438
+    },
+    {
+      "arm": "A2",
+      "concurrency": 16,
+      "sample": "common_voice_en_173534-common_voice_en_173537",
+      "hits": 13,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 62.11650466918945
+    },
+    {
+      "arm": "A2",
+      "concurrency": 16,
+      "sample": "common_voice_en_173534-common_voice_en_173540",
+      "hits": 13,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 63.01320266723633
+    },
+    {
+      "arm": "A2",
+      "concurrency": 16,
+      "sample": "common_voice_en_17369337-common_voice_en_17369336",
+      "hits": 11,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 27.476728439331055
+    },
+    {
+      "arm": "A2",
+      "concurrency": 16,
+      "sample": "common_voice_en_17369851-common_voice_en_17369849",
+      "hits": 8,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 68.24349212646484
+    },
+    {
+      "arm": "A2",
+      "concurrency": 16,
+      "sample": "common_voice_en_17375252-common_voice_en_17375256",
+      "hits": 9,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 52.01448059082031
+    },
+    {
+      "arm": "A2",
+      "concurrency": 16,
+      "sample": "common_voice_en_17380945-common_voice_en_17380947",
+      "hits": 12,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 65.69298553466797
+    },
+    {
+      "arm": "A2",
+      "concurrency": 16,
+      "sample": "common_voice_en_17389076-common_voice_en_17389120",
+      "hits": 9,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 70.68368530273438
+    },
+    {
+      "arm": "A2",
+      "concurrency": 16,
+      "sample": "common_voice_en_17389984-common_voice_en_17389987",
+      "hits": 14,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 69.193359375
+    },
+    {
+      "arm": "A2",
+      "concurrency": 16,
+      "sample": "common_voice_en_17389984-common_voice_en_17389988",
+      "hits": 14,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 66.71823120117188
+    },
+    {
+      "arm": "A2",
+      "concurrency": 16,
+      "sample": "common_voice_en_17401431-common_voice_en_17401433",
+      "hits": 9,
+      "sub": 1,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 77.30693817138672
+    },
+    {
+      "arm": "A2",
+      "concurrency": 16,
+      "sample": "common_voice_en_17406452-common_voice_en_17406455",
+      "hits": 18,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 56.437217712402344
+    },
+    {
+      "arm": "A2",
+      "concurrency": 16,
+      "sample": "common_voice_en_17406452-common_voice_en_17406466",
+      "hits": 17,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 68.404052734375
+    },
+    {
+      "arm": "A2",
+      "concurrency": 16,
+      "sample": "common_voice_en_17406732-common_voice_en_17406734",
+      "hits": 15,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 37.116249084472656
+    },
+    {
+      "arm": "A2",
+      "concurrency": 16,
+      "sample": "common_voice_en_17406732-common_voice_en_17406735",
+      "hits": 17,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 52.776180267333984
+    },
+    {
+      "arm": "A2",
+      "concurrency": 16,
+      "sample": "common_voice_en_17429166-common_voice_en_17429168",
+      "hits": 4,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 37.67398452758789
+    },
+    {
+      "arm": "A2",
+      "concurrency": 16,
+      "sample": "common_voice_en_17429166-common_voice_en_17429171",
+      "hits": 10,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 62.88455581665039
+    },
+    {
+      "arm": "A2",
+      "concurrency": 16,
+      "sample": "common_voice_en_17442686-common_voice_en_17442688",
+      "hits": 7,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 53.111412048339844
+    },
+    {
+      "arm": "A2",
+      "concurrency": 16,
+      "sample": "common_voice_en_17444666-common_voice_en_17444667",
+      "hits": 21,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 66.4251937866211
+    },
+    {
+      "arm": "A2",
+      "concurrency": 16,
+      "sample": "common_voice_en_17444666-common_voice_en_17444668",
+      "hits": 12,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 47.94295120239258
+    },
+    {
+      "arm": "A2",
+      "concurrency": 16,
+      "sample": "common_voice_en_17451108-common_voice_en_17451109",
+      "hits": 14,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 65.31501007080078
+    },
+    {
+      "arm": "A2",
+      "concurrency": 16,
+      "sample": "common_voice_en_17502-common_voice_en_17503",
+      "hits": 7,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 41.49129104614258
+    },
+    {
+      "arm": "A2",
+      "concurrency": 16,
+      "sample": "common_voice_en_17519982-common_voice_en_17519985",
+      "hits": 9,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 70.72610473632812
+    },
+    {
+      "arm": "A2",
+      "concurrency": 16,
+      "sample": "common_voice_en_17519982-common_voice_en_17519988",
+      "hits": 8,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 52.7782096862793
+    },
+    {
+      "arm": "A2",
+      "concurrency": 16,
+      "sample": "common_voice_en_175348-common_voice_en_175349",
+      "hits": 10,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 59.90986633300781
+    },
+    {
+      "arm": "A2",
+      "concurrency": 16,
+      "sample": "common_voice_en_175348-common_voice_en_175350",
+      "hits": 16,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 58.567237854003906
+    },
+    {
+      "arm": "A2",
+      "concurrency": 16,
+      "sample": "common_voice_en_17578783-common_voice_en_17578780",
+      "hits": 7,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 58.73044204711914
+    },
+    {
+      "arm": "A2",
+      "concurrency": 16,
+      "sample": "common_voice_en_17578783-common_voice_en_17578781",
+      "hits": 6,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 66.73970031738281
+    },
+    {
+      "arm": "A2",
+      "concurrency": 16,
+      "sample": "common_voice_en_17662945-common_voice_en_17662954",
+      "hits": 12,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 63.08528137207031
+    },
+    {
+      "arm": "A2",
+      "concurrency": 16,
+      "sample": "common_voice_en_17662945-common_voice_en_17662956",
+      "hits": 13,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 69.28681182861328
+    },
+    {
+      "arm": "A2",
+      "concurrency": 16,
+      "sample": "common_voice_en_17718576-common_voice_en_17718578",
+      "hits": 11,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 52.04906463623047
+    },
+    {
+      "arm": "A2",
+      "concurrency": 16,
+      "sample": "common_voice_en_17727889-common_voice_en_17727904",
+      "hits": 9,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 69.20700073242188
+    },
+    {
+      "arm": "A2",
+      "concurrency": 16,
+      "sample": "common_voice_en_17727889-common_voice_en_17727905",
+      "hits": 6,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 61.083526611328125
+    },
+    {
+      "arm": "A2",
+      "concurrency": 16,
+      "sample": "common_voice_en_17729945-common_voice_en_17729943",
+      "hits": 11,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 53.25368118286133
+    },
+    {
+      "arm": "A2",
+      "concurrency": 16,
+      "sample": "common_voice_en_17729945-common_voice_en_17729944",
+      "hits": 8,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 57.15079879760742
+    },
+    {
+      "arm": "A2",
+      "concurrency": 16,
+      "sample": "common_voice_en_17736608-common_voice_en_17736610",
+      "hits": 8,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 75.34396362304688
+    },
+    {
+      "arm": "A2",
+      "concurrency": 16,
+      "sample": "common_voice_en_17738848-common_voice_en_17744571",
+      "hits": 14,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 83.65660858154297
+    },
+    {
+      "arm": "A2",
+      "concurrency": 16,
+      "sample": "common_voice_en_17738848-common_voice_en_19083939",
+      "hits": 11,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 82.81790161132812
+    },
+    {
+      "arm": "A2",
+      "concurrency": 16,
+      "sample": "common_voice_en_17781154-common_voice_en_17781153",
+      "hits": 8,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 60.09994888305664
+    },
+    {
+      "arm": "A2",
+      "concurrency": 16,
+      "sample": "common_voice_en_17784-common_voice_en_17785",
+      "hits": 10,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 58.078861236572266
+    },
+    {
+      "arm": "A2",
+      "concurrency": 16,
+      "sample": "common_voice_en_17784-common_voice_en_17786",
+      "hits": 6,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 48.586116790771484
+    },
+    {
+      "arm": "A2",
+      "concurrency": 16,
+      "sample": "common_voice_en_177895-common_voice_en_177894",
+      "hits": 12,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 50.74286651611328
+    },
+    {
+      "arm": "A2",
+      "concurrency": 16,
+      "sample": "common_voice_en_177895-common_voice_en_177898",
+      "hits": 10,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 35.559669494628906
+    },
+    {
+      "arm": "A2",
+      "concurrency": 16,
+      "sample": "common_voice_en_17817002-common_voice_en_17817003",
+      "hits": 14,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 77.32360076904297
+    },
+    {
+      "arm": "A2",
+      "concurrency": 16,
+      "sample": "common_voice_en_17817002-common_voice_en_17817005",
+      "hits": 11,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 71.50367736816406
+    },
+    {
+      "arm": "A2",
+      "concurrency": 16,
+      "sample": "common_voice_en_17830764-common_voice_en_17830762",
+      "hits": 7,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 54.84914779663086
+    },
+    {
+      "arm": "A2",
+      "concurrency": 16,
+      "sample": "common_voice_en_17830764-common_voice_en_17830783",
+      "hits": 11,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 60.24569320678711
+    },
+    {
+      "arm": "A2",
+      "concurrency": 16,
+      "sample": "common_voice_en_17837104-common_voice_en_17837105",
+      "hits": 6,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 46.56086349487305
+    },
+    {
+      "arm": "A2",
+      "concurrency": 16,
+      "sample": "common_voice_en_17851231-common_voice_en_17851248",
+      "hits": 7,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 68.0363998413086
+    },
+    {
+      "arm": "A2",
+      "concurrency": 16,
+      "sample": "common_voice_en_17851231-common_voice_en_17851256",
+      "hits": 9,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 58.67835998535156
+    },
+    {
+      "arm": "A2",
+      "concurrency": 16,
+      "sample": "common_voice_en_17854896-common_voice_en_17854894",
+      "hits": 8,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 68.42420959472656
+    },
+    {
+      "arm": "A2",
+      "concurrency": 16,
+      "sample": "common_voice_en_17854896-common_voice_en_17854897",
+      "hits": 6,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 72.74100494384766
+    },
+    {
+      "arm": "A2",
+      "concurrency": 16,
+      "sample": "common_voice_en_17861335-common_voice_en_17861337",
+      "hits": 10,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 65.38695526123047
+    },
+    {
+      "arm": "A2",
+      "concurrency": 16,
+      "sample": "common_voice_en_17861489-common_voice_en_17861487",
+      "hits": 9,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 53.620147705078125
+    },
+    {
+      "arm": "A2",
+      "concurrency": 16,
+      "sample": "common_voice_en_17874600-common_voice_en_17874601",
+      "hits": 19,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 54.258121490478516
+    },
+    {
+      "arm": "A2",
+      "concurrency": 16,
+      "sample": "common_voice_en_17874600-common_voice_en_17874602",
+      "hits": 14,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 58.76580047607422
+    },
+    {
+      "arm": "A2",
+      "concurrency": 16,
+      "sample": "common_voice_en_17875915-common_voice_en_17875925",
+      "hits": 12,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 56.656639099121094
+    },
+    {
+      "arm": "A2",
+      "concurrency": 16,
+      "sample": "common_voice_en_17879420-common_voice_en_17879418",
+      "hits": 6,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 63.37398910522461
+    },
+    {
+      "arm": "A2",
+      "concurrency": 16,
+      "sample": "common_voice_en_17879420-common_voice_en_17879438",
+      "hits": 9,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 62.407981872558594
+    },
+    {
+      "arm": "A2",
+      "concurrency": 16,
+      "sample": "common_voice_en_17880926-common_voice_en_17880932",
+      "hits": 9,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 63.706050872802734
+    },
+    {
+      "arm": "A2",
+      "concurrency": 16,
+      "sample": "common_voice_en_17889905-common_voice_en_17889907",
+      "hits": 12,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 77.78547668457031
+    },
+    {
+      "arm": "A2",
+      "concurrency": 16,
+      "sample": "common_voice_en_17893247-common_voice_en_17893246",
+      "hits": 9,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 62.1877326965332
+    },
+    {
+      "arm": "A2",
+      "concurrency": 16,
+      "sample": "common_voice_en_17893247-common_voice_en_17893250",
+      "hits": 10,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 62.581050872802734
+    },
+    {
+      "arm": "A2",
+      "concurrency": 16,
+      "sample": "common_voice_en_17899910-common_voice_en_17899909",
+      "hits": 4,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 66.28063201904297
+    },
+    {
+      "arm": "A2",
+      "concurrency": 16,
+      "sample": "common_voice_en_17920116-common_voice_en_17920112",
+      "hits": 3,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 33.19320297241211
+    },
+    {
+      "arm": "A2",
+      "concurrency": 16,
+      "sample": "common_voice_en_17986345-common_voice_en_17986347",
+      "hits": 10,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 68.36190032958984
+    },
+    {
+      "arm": "A2",
+      "concurrency": 16,
+      "sample": "common_voice_en_18012457-common_voice_en_18012447",
+      "hits": 14,
+      "sub": 0,
+      "ins": 0,
+      "deleted": 0,
+      "sim": 72.76571655273438
+    }
+  ]
+}

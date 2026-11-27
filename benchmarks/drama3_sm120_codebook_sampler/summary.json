@@ -1,0 +1,132 @@
+{
+  "speed": {
+    "4": {
+      "audio_throughput_s_per_s": {
+        "baseline": 13.57,
+        "candidate": 14.3505,
+        "percent": 5.751658069270449
+      },
+      "rtf_mean": {
+        "baseline": 0.2858,
+        "candidate": 0.27025,
+        "percent": -5.440867739678101
+      },
+      "latency_mean_s": {
+        "baseline": 1.2275,
+        "candidate": 1.15,
+        "percent": -6.313645621181275
+      },
+      "audio_ttfp_median_s": {
+        "baseline": 0.11574999999999999,
+        "candidate": 0.1136,
+        "percent": -1.8574514038876777
+      },
+      "audio_ttfp_p95_s": {
+        "baseline": 0.18164999999999998,
+        "candidate": 0.1709,
+        "percent": -5.917974126066605
+      },
+      "max_playback_underrun_p95_s": {
+        "baseline": 0.0,
+        "candidate": 0.0026,
+        "percent": null
+      },
+      "audio_duration_mean_s": {
+        "baseline": 4.3335,
+        "candidate": 4.2975,
+        "percent": -0.8307372793354029
+      }
+    },
+    "16": {
+      "audio_throughput_s_per_s": {
+        "baseline": 28.192,
+        "candidate": 28.9895,
+        "percent": 2.8288166855845676
+      },
+      "rtf_mean": {
+        "baseline": 0.5483,
+        "candidate": 0.5345,
+        "percent": -2.516870326463616
+      },
+      "latency_mean_s": {
+        "baseline": 2.1675,
+        "candidate": 2.126,
+        "percent": -1.9146482122260666
+      },
+      "audio_ttfp_median_s": {
+        "baseline": 0.15739999999999998,
+        "candidate": 0.15344999999999998,
+        "percent": -2.509529860228721
+      },
+      "audio_ttfp_p95_s": {
+        "baseline": 0.32735000000000003,
+        "candidate": 0.5881,
+        "percent": 79.6548037268978
+      },
+      "max_playback_underrun_p95_s": {
+        "baseline": 0.21084999999999998,
+        "candidate": 0.15405000000000002,
+        "percent": -26.93858193028218
+      },
+      "audio_duration_mean_s": {
+        "baseline": 3.975,
+        "candidate": 4.0015,
+        "percent": 0.6666666666666599
+      }
+    }
+  },
+  "quality": {
+    "4": {
+      "A": {
+        "n": 96,
+        "ref_words": 1084,
+        "word_errors": 4,
+        "wer": 0.0036900369003690036,
+        "speaker_similarity": 62.667166312535606
+      },
+      "B": {
+        "n": 96,
+        "ref_words": 1084,
+        "word_errors": 4,
+        "wer": 0.0036900369003690036,
+        "speaker_similarity": 61.6219599644343
+      },
+      "paired_bootstrap_95": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          -2.397835930188497,
+          0.24922541777292886
+        ]
+      ]
+    },
+    "16": {
+      "A": {
+        "n": 256,
+        "ref_words": 2732,
+        "word_errors": 12,
+        "wer": 0.004392386530014641,
+        "speaker_similarity": 60.64640324562788
+      },
+      "B": {
+        "n": 256,
+        "ref_words": 2732,
+        "word_errors": 11,
+        "wer": 0.004026354319180088,
+        "speaker_similarity": 59.958200328052044
+      },
+      "paired_bootstrap_95": [
+        [
+          -0.11372251705837756,
+          0.0
+        ],
+        [
+          -1.4170468002557755,
+          0.050533607602119446
+        ]
+      ]
+    }
+  }
+}
