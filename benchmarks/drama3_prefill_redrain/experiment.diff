@@ -1,0 +1,40 @@
+--- a/sglang_omni/scheduling/omni_scheduler.py
++++ b/sglang_omni/scheduling/omni_scheduler.py
+@@ -1400,6 +1400,12 @@
+             else:
+                 pass
+
++        if new_reqs:
++            with open("/data/drama3-drain/mode") as mode_file:
++                self.drain_study_mode = mode_file.read().strip()
++            if "trace" in self.drain_study_mode:
++                for payload in new_reqs:
++                    _emit_event(request_id=payload.request_id, stage=None, event_name="study_inbox_read")
+         return new_reqs
+
+     def recv_scheduler_messages(self) -> list[IncomingMessage]:
+@@ -2533,9 +2539,24 @@
+                 running_batch.batch_is_full = False
+             else:
+                 pass
++            if self.waiting_queue and running_batch.is_empty() and self.tp_size == 1:
++                mode = self.__dict__.get("drain_study_mode", "")
++                initial = self.waiting_queue[0].rid
++                if "trace" in mode:
++                    _emit_event(request_id=initial, stage=None, event_name="study_before_select")
++                if mode.startswith("B") and len(self.waiting_queue) < 4:
++                    extra = self.recv_requests()
++                    if extra:
++                        self.process_input_requests(extra)
++                    if "trace" in mode:
++                        _emit_event(request_id=initial, stage=None, event_name="study_second_read", metadata={"added":len(extra)})
+             batch_plan = _Upstream.get_next_batch_to_run(
+                 self, running_batch, self.last_batch
+             )
++            picked = batch_plan.batch_to_run
++            if picked is not None and picked.forward_mode.is_extend() and "trace" in self.__dict__.get("drain_study_mode", ""):
++                for req in picked.reqs:
++                    _emit_event(request_id=req.rid, stage=None, event_name="study_batch_selected", metadata={"n":len(picked.reqs)})
+             self.running_batch = batch_plan.running_batch
+             if batch_plan.batch_to_run is not None or not self.enable_plain_fallback:
+                 return batch_plan.batch_to_run
