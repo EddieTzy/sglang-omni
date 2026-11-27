@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-11-27T03:09:59.822729+00:00",
+  "updated_at_utc": "2026-11-27T03:18:46.933769+00:00",
   "entries": [
     {
       "id": "fish-async-decode",
@@ -797,8 +797,8 @@
       "model": "Fish Audio Drama 3",
       "id": "drama3-sm120-small-batch-moe",
       "component": "小批量 FP8 专家计算",
-      "status": "草稿 PR #4715 已提交",
-      "workflow_category": "submitted",
+      "status": "PR #4715 已关闭，端到端吞吐提升较小，保留实验记录",
+      "workflow_category": "archived",
       "branch": "perf/drama3-sm120-moe-config-pr",
       "pr": 4715,
       "pr_url": "https://github.com/sgl-project/sglang-omni/pull/4715",

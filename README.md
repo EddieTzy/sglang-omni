@@ -10,7 +10,7 @@
 
 ## 2026-11-27 · Drama 3 在 RTX PRO 6000 上的实测
 
-英文 SeedTTS 共 704 次合成，小批量 FP8 MoE 配置让 C4/C16 的音频吞吐提高 1.98%/1.29%。C16 首包 P95 的两轮均值从 434 降到 312 ms，音色相似度从 60.70 到 60.14。另一个候选合并线性注意力双流投影，单层最多只省 0.40 µs，已归档。[MoE 草稿 PR](https://github.com/sgl-project/sglang-omni/pull/4715) · [MoE 数据和 trace](https://github.com/EddieTzy/sglang-omni/tree/f49fbbea8e2aa09c07f495c476b8d6455f12fcd6/benchmarks/drama3_sm120_moe) · [双流投影对照](https://github.com/EddieTzy/sglang-omni/tree/d78def4264b9adad95bbb2d3fb6c8e8c47ab63f7/benchmarks/drama3_sm120_gdn)
+英文 SeedTTS 共 704 次合成，小批量 FP8 MoE 配置让 C4/C16 的音频吞吐提高 1.98%/1.29%。C16 首包 P95 的两轮均值从 434 降到 312 ms，音色相似度从 60.70 到 60.14。另一个候选合并线性注意力双流投影，单层最多只省 0.40 µs，已归档。端到端吞吐提升较小，实验保留归档。[已关闭的 MoE PR](https://github.com/sgl-project/sglang-omni/pull/4715) · [MoE 数据和 trace](https://github.com/EddieTzy/sglang-omni/tree/f49fbbea8e2aa09c07f495c476b8d6455f12fcd6/benchmarks/drama3_sm120_moe) · [双流投影对照](https://github.com/EddieTzy/sglang-omni/tree/d78def4264b9adad95bbb2d3fb6c8e8c47ab63f7/benchmarks/drama3_sm120_gdn)
 
 ## Drama 3 在 RTX PRO 6000 上的流式首包
 
